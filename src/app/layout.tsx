@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "hao的博客",
   description: "分享技术与生活",
+  icons: {
+    icon: "/cat.png",
+  },
 };
 
 export default function RootLayout({

@@ -1,0 +1,493 @@
+3:I[9275,[],""]
+5:I[1343,[],""]
+4:["slug","0psu3-2026.5.16-misc","d"]
+0:["1Yp4leB02HKEKaBxm4vWY",[[["",{"children":["posts",{"children":[["slug","0psu3-2026.5.16-misc","d"],{"children":["__PAGE__?{\"slug\":\"0psu3-2026.5.16-misc\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["slug","0psu3-2026.5.16-misc","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"min-h-screen bg-gray-50","children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/my-blog/_next/static/css/b39605eb6db503ca.css","precedence":"next","crossOrigin":"$undefined"}]],"$L6"]]]]
+7:I[231,["231","static/chunks/231-88771e715960a93c.js","333","static/chunks/app/posts/%5Bslug%5D/page-e7d8fd582e0cb00f.js"],""]
+8:T927f,<h2>Secret_transfer</h2>
+<h3>题目信息</h3>
+<ul>
+<li><strong>题目</strong>: Secret_transfer</li>
+<li><strong>题目文件</strong>: <code>secret_transfer.pcapng</code></li>
+<li><strong>题目描述</strong>: 找到传输的秘密</li>
+<li><strong>hint</strong>:
+<ul>
+<li>1、只修改了密码</li>
+<li>2、Apple and png?</li>
+</ul>
+</li>
+<li><strong>类型</strong>: 流量分析 + 图片隐写 + 磁盘取证 + hash爆破</li>
+<li><strong>关键文件</strong>:
+<ul>
+<li><code>1</code> - 加密文件 (5242880 bytes)</li>
+<li><code>2</code> - 加密文件 (5242880 bytes)</li>
+<li><code>important.jpg</code> - 加密图片 (544 KB)</li>
+<li><code>peiqi_and_apple.png</code> - 加密图片 (1.67 MB)</li>
+</ul>
+</li>
+</ul>
+<h3>解题步骤</h3>
+<h4>1 初步分析</h4>
+<p>拿到附件，wireshark打开，大部分为TCP流量</p>
+<p>追踪TCP流，发现传了3个文件，分别为1、important.jpg、2，同时发现传jpg和2的请求头分别包含X-Message信息：</p>
+<pre><code>POST /upload/important.jpg HTTP/1.1
+X-Message: give u a key, but u should find it yourself
+
+POST /upload/2 HTTP/1.1
+X-Message: There's a mole. Password changed
+</code></pre>
+<p>文件>导出>HTTP，选择类型为application/octet-stream，导出1、important.jpg、2</p>
+<h4>2 important.jpg图片隐写分析</h4>
+<p>打开图片，发现边角处存在异常条纹，初步分析可能为lsb或盲水印</p>
+<p><img src="/bianjiao.png" alt="边角异常"></p>
+<p>lsb分析后无结果，考虑盲水印</p>
+<p><img src="/mangshuiyin.png" alt="盲水印"></p>
+<p>得到密钥：<code>cptbtptpbcptdtptpAA123</code></p>
+<h4>3 分析文件1、2</h4>
+<h5>3.1 文件1</h5>
+<p>初步分析1、2文件，大小均为5242880 bytes(5 MB整)，说明1、2文件可能类型相同且数据相似。用HxD打开查看16进制，发现都是乱码，</p>
+<p>尝试密钥、XOR、RC4等解密均无结果</p>
+<p>脚本分析1、2文件相似度</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> os
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">find_identical_parts</span>(<span class="hljs-params">file1, file2, min_chunk_size=<span class="hljs-number">64</span></span>):
+    identical_chunks = []
+    current_chunk = <span class="hljs-literal">None</span>
+
+    <span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(file1, <span class="hljs-string">'rb'</span>) <span class="hljs-keyword">as</span> f1, <span class="hljs-built_in">open</span>(file2, <span class="hljs-string">'rb'</span>) <span class="hljs-keyword">as</span> f2:
+        pos = <span class="hljs-number">0</span>
+        <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+            chunk1 = f1.read(<span class="hljs-number">3145728</span>)  
+            chunk2 = f2.read(<span class="hljs-number">3145728</span>)
+
+            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> chunk1:
+                <span class="hljs-keyword">if</span> current_chunk:
+                    identical_chunks.append(current_chunk)
+                <span class="hljs-keyword">break</span>
+
+            chunk_len = <span class="hljs-built_in">min</span>(<span class="hljs-built_in">len</span>(chunk1), <span class="hljs-built_in">len</span>(chunk2))
+            i = <span class="hljs-number">0</span>
+
+            <span class="hljs-keyword">while</span> i &#x3C; chunk_len:
+                <span class="hljs-keyword">if</span> chunk1[i] == chunk2[i]:
+                    <span class="hljs-keyword">if</span> current_chunk <span class="hljs-keyword">is</span> <span class="hljs-literal">None</span>:
+                        current_chunk = {<span class="hljs-string">'start'</span>: pos + i, <span class="hljs-string">'length'</span>: <span class="hljs-number">0</span>}
+                    current_chunk[<span class="hljs-string">'length'</span>] += <span class="hljs-number">1</span>
+                <span class="hljs-keyword">else</span>:
+                    <span class="hljs-keyword">if</span> current_chunk <span class="hljs-keyword">and</span> current_chunk[<span class="hljs-string">'length'</span>] >= min_chunk_size:
+                        identical_chunks.append(current_chunk)
+                    current_chunk = <span class="hljs-literal">None</span>
+                i += <span class="hljs-number">1</span>
+
+            pos += chunk_len
+
+    <span class="hljs-keyword">return</span> identical_chunks
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">compare_files</span>(<span class="hljs-params">file1, file2</span>):
+    diff_count = <span class="hljs-number">0</span>
+
+    <span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(file1, <span class="hljs-string">'rb'</span>) <span class="hljs-keyword">as</span> f1, <span class="hljs-built_in">open</span>(file2, <span class="hljs-string">'rb'</span>) <span class="hljs-keyword">as</span> f2:
+        pos = <span class="hljs-number">0</span>
+        <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+            chunk1 = f1.read(<span class="hljs-number">4096</span>)
+            chunk2 = f2.read(<span class="hljs-number">4096</span>)
+
+            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> chunk1:
+                <span class="hljs-keyword">break</span>
+
+            <span class="hljs-keyword">if</span> chunk1 != chunk2:
+                <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(chunk1)):
+                    <span class="hljs-keyword">if</span> chunk1[i] != chunk2[i]:
+                        diff_count += <span class="hljs-number">1</span>
+
+            pos += <span class="hljs-built_in">len</span>(chunk1)
+
+    <span class="hljs-keyword">return</span> diff_count
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">main</span>():
+    <span class="hljs-comment"># 替换成实际文件路径</span>
+    file1 = <span class="hljs-string">r'c:\Users\Administrator\Desktop\hao\1'</span>
+    file2 = <span class="hljs-string">r'c:\Users\Administrator\Desktop\hao\2'</span>
+
+    diff_count = compare_files(file1, file2)
+    identical_chunks = find_identical_parts(file1, file2, min_chunk_size=<span class="hljs-number">64</span>)
+    total_identical = <span class="hljs-built_in">sum</span>(chunk[<span class="hljs-string">'length'</span>] <span class="hljs-keyword">for</span> chunk <span class="hljs-keyword">in</span> identical_chunks) <span class="hljs-keyword">if</span> identical_chunks <span class="hljs-keyword">else</span> <span class="hljs-number">0</span>
+
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">f"[-] 不同字节数: 总长度：<span class="hljs-subst">{diff_count}</span> bytes"</span>)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">f"[+] 相同区域: <span class="hljs-subst">{<span class="hljs-built_in">len</span>(identical_chunks)}</span> 个, 总长度: <span class="hljs-subst">{total_identical}</span> bytes"</span>)
+    <span class="hljs-built_in">print</span>()
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"相同区域详细分析:"</span>)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">f"<span class="hljs-subst">{<span class="hljs-string">'编号'</span>:&#x3C;<span class="hljs-number">8</span>}</span> <span class="hljs-subst">{<span class="hljs-string">'起始位置'</span>:&#x3C;<span class="hljs-number">15</span>}</span> <span class="hljs-subst">{<span class="hljs-string">'结束位置'</span>:&#x3C;<span class="hljs-number">15</span>}</span> <span class="hljs-subst">{<span class="hljs-string">'长度'</span>:&#x3C;<span class="hljs-number">12</span>}</span>"</span>)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"-"</span> * <span class="hljs-number">50</span>)
+    <span class="hljs-keyword">for</span> idx, chunk <span class="hljs-keyword">in</span> <span class="hljs-built_in">enumerate</span>(identical_chunks, <span class="hljs-number">1</span>):
+        end_pos = chunk[<span class="hljs-string">'start'</span>] + chunk[<span class="hljs-string">'length'</span>] - <span class="hljs-number">1</span>
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">f"<span class="hljs-subst">{idx:&#x3C;<span class="hljs-number">8</span>}</span> <span class="hljs-subst">{<span class="hljs-built_in">hex</span>(chunk[<span class="hljs-string">'start'</span>]):&#x3C;<span class="hljs-number">15</span>}</span> <span class="hljs-subst">{<span class="hljs-built_in">hex</span>(end_pos):&#x3C;<span class="hljs-number">15</span>}</span> <span class="hljs-subst">{chunk[<span class="hljs-string">'length'</span>]:&#x3C;<span class="hljs-number">12</span>}</span>"</span>)
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">'__main__'</span>:
+    main()
+</code></pre>
+<pre><code>[-] 不同字节数: 总长度：1759464 bytes
+[+] 相同区域: 11 个, 总长度: 3476448 bytes
+
+相同区域详细分析:
+编号       起始位置            结束位置            长度
+--------------------------------------------------
+1        0x200           0x203ff         131584
+2        0x21180         0x229ff         6272
+3        0x23780         0x2505f         6368
+4        0x25360         0x2909f         15680
+5        0x290e0         0x297ff         1824
+6        0x298c0         0x299ff         320
+7        0x29c90         0x29dff         368
+8        0x2a090         0x2a3ff         880
+9        0x1d6e00        0x1d6fff        512
+10       0x1d7200        0x4dffff        3182080
+11       0x4e0200        0x4fffff        130560
+</code></pre>
+<p>通过脚本分析，这两个 5MB 文件不像是两个完全独立随机加密后的密文，而可能是磁盘镜像或容器文件等的不同版本</p>
+<p>原因：相同区域大量出现在 0x200 对齐 附近，也就是 512 字节扇区大小：</p>
+<pre><code>0x200
+0x203ff
+0x21180
+0x229ff
+...
+0x1d7200
+0x4dffff
+</code></pre>
+<p>0x200 = 512，这是磁盘扇区、文件系统、加密容器、虚拟磁盘里常见的块大小。</p>
+<p>尤其</p>
+<pre><code>0x1d7200 - 0x4dffff
+长度 3182080
+</code></pre>
+<p>有超过 3MB 连续完全相同，说明这两个文件大部分内容是一致的，只有局部区域发生变化。</p>
+<p>尝试VeraCrypt挂载，使用密钥<code>cptbtptpbcptdtptpAA123</code>，成功挂载</p>
+<p>打开挂载磁盘，发现<code>but_this_container_is_important.txt</code>和<code>nothing^~^.txt</code>，但没有实际内容。</p>
+<p>根据提示<code>只修改了密码</code>和veracrypt官方文档<a href="https://veracrypt.io/zh-cn/Changing%20Passwords%20and%20Keyfiles.html">veracrypt>文档>安全要求和预防措施>更改密码和密钥文件</a></p>
+<p><img src="/vcwendang.png" alt="vc文档"></p>
+<p>可知，如果1到2只修改了密码，主密钥并不会改变，因此可以使用1的主密钥解密2</p>
+<p>选择文件1>工具>备份加密卷头信息>输入密钥<code>cptbtptpbcptdtptpAA123</code>>此加密卷不包含隐藏加密卷>保存文件为Masterkey</p>
+<p>选择文件2>工具>恢复加密卷头信息>从外部备份文件中恢复加密卷头信息>输入密钥<code>cptbtptpbcptdtptpAA123</code>>成功恢复</p>
+<h5>3.2 文件2</h5>
+<p>使用密钥<code>cptbtptpbcptdtptpAA123</code>，成功挂载2</p>
+<p>打开挂载磁盘，只有一张图片<code>peiqi_and_apple.png</code>，查看属性发现磁盘已用空间大于图片占用空间，可能存在隐藏信息</p>
+<p>使用Magnet AXIOM进行磁盘取证，发现恢复的文件中有flag</p>
+<p><img src="/huifu.png" alt="flag"></p>
+<p>即<code>flag{M1SC_s0000000_FuN_AAA_????}</code>但后四位未知</p>
+<h4>4 peiqi_and_apple.png图片隐写分析</h4>
+<p>打开<code>peiqi_and_apple.png</code>，发现图片有许多明显的杂乱无章的像素条纹。</p>
+<p>根据提示<code>Apple and png?</code>，推测是苹果系统对png图片数据有着特殊的解码方式</p>
+<p><a href="https://zhuanlan.zhihu.com/p/446538506">在Apple系统中会变化的png文件</a></p>
+<p><a href="https://moonvy.com/blog/post/2021/%E5%9C%A8%E4%B8%8D%E5%90%8C%E8%AE%BE%E5%A4%87%E4%B8%8A%E6%98%BE%E7%A4%BA%E4%B8%8D%E4%B8%80%E6%A0%B7%E5%86%85%E5%AE%B9%E7%9A%84%E7%A5%9E%E5%A5%87PNG%E5%9B%BE%E7%89%87/#:~:text=%E8%8B%B9%E6%9E%9C%E4%B8%BA%E4%BA%86%E8%AE%A9%20PNG%20%E6%A0%BC%E5%BC%8F%E7%9A%84%E5%9B%BE%E7%89%87%E5%8F%AF%E4%BB%A5%E5%B9%B6%E8%A1%8C%E8%A7%A3%E7%A0%81%E5%B9%B6%E4%B8%94%E5%85%BC%E5%AE%B9%E5%8E%9F%E6%9C%AC%E7%9A%84%20PNG%20%E6%A0%87%E5%87%86%EF%BC%8C%E6%8A%8A%E5%9B%BE%E7%89%87%E5%86%85%E5%AE%B9%E5%88%86%E4%B8%BA%E3%80%8C%E5%89%8D%E5%8D%8A%E3%80%8D%E4%B8%8E%E3%80%8C%E5%90%8E%E5%8D%8A%E3%80%8D2%20%E9%83%A8%E5%88%86%EF%BC%8C%E5%B9%B6%E6%8A%8A%E5%83%8F%E7%B4%A0%E6%B5%81%E5%88%86%E4%B8%BA%E5%A4%9A%E4%B8%AA%20IDAT%20%E5%9D%97%EF%BC%8C%E7%84%B6%E5%90%8E%E5%9C%A8,Apple%20%E8%87%AA%E5%AE%B6%E7%9A%84%20PNG%20%E8%A7%A3%E7%A0%81%E5%99%A8%E8%A7%A3%E7%A0%81%E5%B0%B1%E5%8F%AF%E4%BB%A5%E5%88%86%E4%B8%BA%202%20%E4%B8%AA%E5%B9%B6%E8%A1%8C%E7%9A%84%E8%BF%87%E7%A8%8B%EF%BC%8C%E4%BB%A5%E6%AD%A4%E5%85%85%E5%88%86%E5%88%A9%E7%94%A8%E5%A4%9A%E6%A0%B8%E6%80%A7%E8%83%BD%EF%BC%8C%E5%90%8C%E6%97%B6%E8%BF%99%E6%A0%B7%E7%9A%84%20PNG%20%E5%9B%BE%E7%89%87%E4%B9%9F%E8%83%BD%E8%A2%AB%E6%99%AE%E9%80%9A%E8%A7%A3%E7%A0%81%E5%99%A8%E8%A7%A3%E7%A0%81">在不同设备上显示不一样内容的神奇 PNG 图片</a></p>
+<p>可知， Apple 的 PNG 解码器通过 iDOT 进行并行解码，这使得有些图片在苹果设备上显示与一般设备不同的内容</p>
+<p>使用<a href="https://www.fotoforensics.com/">fotoforensics</a>分析,发现隐藏字符串</p>
+<p><img src="/apple.png" alt="字符串"></p>
+<p>即</p>
+<pre><code>Qmkgjt1XnzkxgD6YzyTd2B6SgyuGgQ47jskqvu1KpveGES
+QmsQVv15YkJpwJ9wLpMwnU1TQCA8FsgmC438Sf54nqkuo6
+Qm6Vd2yU5zPVfZimuVKz3QrMvtDBsgzWjKd99vF4Qd9nny
+QmmMT5Yxf1LSxfuZvp5hgaMVRENbAWYrSAzyRzUmh9tJ52
+Qm1r2BgPwFNcFvRYroHNB5zmbzzY4wVDJbNDFwWxJKU6xu
+QmnE9LHt9cnX5THuuCMEm4cXvKkiqVms3ZK3vHr7LaKnCg
+QmTXLuTnvmXF7hZzpLvpji74YB8pGzALmmbvYjZ133GsQT
+Qm7HbQXBLvxF8iAkuHxseGaVqEgktjZSmCY5Z8dPvgDYpd
+QmKy9SBHbPPoguRc7hR2yBsQmebGVSgP6SoLEdva92KQXT
+QmmWeDACeHPicvZ3NCJ9kXhkIBnEjUc+FB9ajBSfKwVs==
+QmoZZTf83vtSAgkjYAhdKKtbPVuMKAyHsGdcThyUNAxt4E
+QmMrnUb4pU3ZJaeV7h5RjQiAnooq5QHT6jJtjMb2ZYZAXm
+Qmuv8x136vSdBGEF9PCSn6EevD+r8GKPSQ7AeICjvBsZ==
+QmSzFpYD1ZW9ju9mKfNtc9fYWrkCUtdqCF5URGf3kEcZcm
+QmMKjaPRnjg2Gv4ZFedaBSa2CZjS6553mPtLmRjMzaPp68
+QmQqg4r9q4RjrPWvF6WW4J/ZuIgTLKaFhZ6FYdHyOub6==
+QmvH26KafVwW6XaePZWLEw1flLWHfBriQWZL2+RQasMr==
+QmCG2FxKRyfXWnzLgDtFesnUXMG7bzboGpEXSbKvNB91E7
+Qmr5EDyzH7Ce3Sz1vxzxxtsMFokAyd8jc8PK99zR8nXY1o
+Qm5JB/kbINRR1EsjJv2TuGMDECHs9hVvc1RAzYn60Qwn==
+QmJOW+DQjq2SryBMq9pnVrQcCsuq2PPZITkDM6FSz0uv==
+Qmk1a8g6UMTDUpSfk3J9V6pQ3bsGJfTdpTM1t5wo4wQNX4
+QmTPVmoVns1r8so1pJ3ayfoRY7qp3NehS4i17FNgF9WkkA
+QmVagjVHGQWjeTfDzsecayaWjxVbnEcj8LNYz9oqNRjhTG
+QmujDPq9CM2x+pBEjOSpkhpJCtFJJCLXyj88vyxkuSBp==
+Qmvkf+EY/Eyko+uIl2UG4KNzp5b5mcUps1mT4f+b5uve==
+QmyFbXT9VMWTxmiGFRnWHxZ6TJfVLhgzN1NaKspXx8reNK
+QmayG5Fa4UJEG7nyKVS4u4rvgs7YKJShgzbcsjRCx5VPm2
+QmlGFa44GobBketOQY8lUkh8+FLqpVYqaI2qjmkS1M1i==
+QmAsyyWfyavJD4jUMF5BRF2JmNSs7sCJia547WaMKuubTX
+QmacXy/KOfK8kK6X/GLVCuqEWIl4H7O95BTQhj6rsHWT==
+</code></pre>
+<h4>5 字符串分析</h4>
+<h5>5.1 编码识别</h5>
+<p>初步观察字符串包含 <code>+</code>、<code>/</code> 和以 <code>==</code> 结尾，看似 Base64 编码特征,但解密结果为乱码</p>
+<p>进一步分析，字符均以 Qm 开头，且总长度为 46 字符，符合 IPFS CIDv0 特征，但标准 IPFS CIDv0 使用 Base58 编码</p>
+<p>先筛选出标准 IPFS CIDv0 字符串</p>
+<pre><code>Qmkgjt1XnzkxgD6YzyTd2B6SgyuGgQ47jskqvu1KpveGES
+QmsQVv15YkJpwJ9wLpMwnU1TQCA8FsgmC438Sf54nqkuo6
+Qm6Vd2yU5zPVfZimuVKz3QrMvtDBsgzWjKd99vF4Qd9nny
+QmmMT5Yxf1LSxfuZvp5hgaMVRENbAWYrSAzyRzUmh9tJ52
+Qm1r2BgPwFNcFvRYroHNB5zmbzzY4wVDJbNDFwWxJKU6xu
+QmnE9LHt9cnX5THuuCMEm4cXvKkiqVms3ZK3vHr7LaKnCg
+QmTXLuTnvmXF7hZzpLvpji74YB8pGzALmmbvYjZ133GsQT
+Qm7HbQXBLvxF8iAkuHxseGaVqEgktjZSmCY5Z8dPvgDYpd
+QmKy9SBHbPPoguRc7hR2yBsQmebGVSgP6SoLEdva92KQXT
+QmoZZTf83vtSAgkjYAhdKKtbPVuMKAyHsGdcThyUNAxt4E
+QmMrnUb4pU3ZJaeV7h5RjQiAnooq5QHT6jJtjMb2ZYZAXm
+QmSzFpYD1ZW9ju9mKfNtc9fYWrkCUtdqCF5URGf3kEcZcm
+QmMKjaPRnjg2Gv4ZFedaBSa2CZjS6553mPtLmRjMzaPp68
+QmCG2FxKRyfXWnzLgDtFesnUXMG7bzboGpEXSbKvNB91E7
+Qmr5EDyzH7Ce3Sz1vxzxxtsMFokAyd8jc8PK99zR8nXY1o
+Qmk1a8g6UMTDUpSfk3J9V6pQ3bsGJfTdpTM1t5wo4wQNX4
+QmTPVmoVns1r8so1pJ3ayfoRY7qp3NehS4i17FNgF9WkkA
+QmVagjVHGQWjeTfDzsecayaWjxVbnEcj8LNYz9oqNRjhTG
+QmyFbXT9VMWTxmiGFRnWHxZ6TJfVLhgzN1NaKspXx8reNK
+QmayG5Fa4UJEG7nyKVS4u4rvgs7YKJShgzbcsjRCx5VPm2
+QmAsyyWfyavJD4jUMF5BRF2JmNSs7sCJia547WaMKuubTX
+</code></pre>
+<p>IPFS 寻址</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> urllib.request
+<span class="hljs-keyword">import</span> sys
+
+<span class="hljs-keyword">if</span> sys.platform == <span class="hljs-string">'win32'</span>:
+    <span class="hljs-keyword">import</span> io
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding=<span class="hljs-string">'utf-8'</span>)
+
+BASE58_ALPHABET = <span class="hljs-string">'123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'</span>
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">base58_decode</span>(<span class="hljs-params">cid</span>):
+    <span class="hljs-string">"""Base58 解码"""</span>
+    result = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">for</span> char <span class="hljs-keyword">in</span> cid:
+        result = result * <span class="hljs-number">58</span> + BASE58_ALPHABET.index(char)
+    
+    bytes_length = (result.bit_length() + <span class="hljs-number">7</span>) // <span class="hljs-number">8</span> <span class="hljs-keyword">or</span> <span class="hljs-number">1</span>
+    decoded = result.to_bytes(bytes_length, <span class="hljs-string">'big'</span>)
+    <span class="hljs-keyword">return</span> decoded
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">validate_cid_v0</span>(<span class="hljs-params">cid</span>):
+    <span class="hljs-string">"""验证是否为有效的 CIDv0"""</span>
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> cid.startswith(<span class="hljs-string">'Qm'</span>):
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">False</span>
+    <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(cid) != <span class="hljs-number">46</span>:
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">False</span>
+    <span class="hljs-keyword">try</span>:
+        decoded = base58_decode(cid)
+        <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(decoded) != <span class="hljs-number">34</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">False</span>
+        <span class="hljs-keyword">if</span> decoded[<span class="hljs-number">0</span>] != <span class="hljs-number">0x12</span> <span class="hljs-keyword">or</span> decoded[<span class="hljs-number">1</span>] != <span class="hljs-number">0x20</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">False</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span>
+    <span class="hljs-keyword">except</span> Exception:
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">False</span>
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">get_ipfs_gateway_url</span>(<span class="hljs-params">cid, gateway=<span class="hljs-string">"https://ipfs.io/ipfs/"</span></span>):
+    <span class="hljs-string">"""生成 IPFS 网关访问链接"""</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">f"<span class="hljs-subst">{gateway}</span><span class="hljs-subst">{cid}</span>"</span>
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">fetch_ipfs_content</span>(<span class="hljs-params">cid, timeout=<span class="hljs-number">10</span></span>):
+    <span class="hljs-string">"""尝试从 IPFS 网关获取内容"""</span>
+    url = get_ipfs_gateway_url(cid)
+    <span class="hljs-keyword">try</span>:
+        response = urllib.request.urlopen(url, timeout=timeout)
+        content = response.read(<span class="hljs-number">2000</span>).decode(<span class="hljs-string">'utf-8'</span>, errors=<span class="hljs-string">'replace'</span>)
+        <span class="hljs-keyword">return</span> content
+    <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+        <span class="hljs-keyword">return</span> <span class="hljs-string">f"Error: <span class="hljs-subst">{<span class="hljs-built_in">str</span>(e)[:<span class="hljs-number">50</span>]}</span>"</span>
+
+ipfs_cids = [
+    <span class="hljs-string">"Qmkgjt1XnzkxgD6YzyTd2B6SgyuGgQ47jskqvu1KpveGES"</span>,
+    <span class="hljs-string">"QmsQVv15YkJpwJ9wLpMwnU1TQCA8FsgmC438Sf54nqkuo6"</span>,
+    <span class="hljs-string">"Qm6Vd2yU5zPVfZimuVKz3QrMvtDBsgzWjKd99vF4Qd9nny"</span>,
+    <span class="hljs-string">"QmmMT5Yxf1LSxfuZvp5hgaMVRENbAWYrSAzyRzUmh9tJ52"</span>,
+    <span class="hljs-string">"Qm1r2BgPwFNcFvRYroHNB5zmbzzY4wVDJbNDFwWxJKU6xu"</span>,
+    <span class="hljs-string">"QmnE9LHt9cnX5THuuCMEm4cXvKkiqVms3ZK3vHr7LaKnCg"</span>,
+    <span class="hljs-string">"QmTXLuTnvmXF7hZzpLvpji74YB8pGzALmmbvYjZ133GsQT"</span>,
+    <span class="hljs-string">"Qm7HbQXBLvxF8iAkuHxseGaVqEgktjZSmCY5Z8dPvgDYpd"</span>,
+    <span class="hljs-string">"QmKy9SBHbPPoguRc7hR2yBsQmebGVSgP6SoLEdva92KQXT"</span>,
+    <span class="hljs-string">"QmoZZTf83vtSAgkjYAhdKKtbPVuMKAyHsGdcThyUNAxt4E"</span>,
+    <span class="hljs-string">"QmMrnUb4pU3ZJaeV7h5RjQiAnooq5QHT6jJtjMb2ZYZAXm"</span>,
+    <span class="hljs-string">"QmSzFpYD1ZW9ju9mKfNtc9fYWrkCUtdqCF5URGf3kEcZcm"</span>,
+    <span class="hljs-string">"QmMKjaPRnjg2Gv4ZFedaBSa2CZjS6553mPtLmRjMzaPp68"</span>,
+    <span class="hljs-string">"QmCG2FxKRyfXWnzLgDtFesnUXMG7bzboGpEXSbKvNB91E7"</span>,
+    <span class="hljs-string">"Qmr5EDyzH7Ce3Sz1vxzxxtsMFokAyd8jc8PK99zR8nXY1o"</span>,
+    <span class="hljs-string">"Qmk1a8g6UMTDUpSfk3J9V6pQ3bsGJfTdpTM1t5wo4wQNX4"</span>,
+    <span class="hljs-string">"QmTPVmoVns1r8so1pJ3ayfoRY7qp3NehS4i17FNgF9WkkA"</span>,
+    <span class="hljs-string">"QmVagjVHGQWjeTfDzsecayaWjxVbnEcj8LNYz9oqNRjhTG"</span>,
+    <span class="hljs-string">"QmyFbXT9VMWTxmiGFRnWHxZ6TJfVLhgzN1NaKspXx8reNK"</span>,
+    <span class="hljs-string">"QmayG5Fa4UJEG7nyKVS4u4rvgs7YKJShgzbcsjRCx5VPm2"</span>,
+    <span class="hljs-string">"QmAsyyWfyavJD4jUMF5BRF2JmNSs7sCJia547WaMKuubTX"</span>
+]
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">analyze_cids</span>():
+    <span class="hljs-string">"""分析所有 CID"""</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"="</span> * <span class="hljs-number">80</span>)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"IPFS CID 分析脚本"</span>)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"="</span> * <span class="hljs-number">80</span>)
+    
+    valid_cids = []
+    invalid_cids = []
+    
+    <span class="hljs-keyword">for</span> i, cid <span class="hljs-keyword">in</span> <span class="hljs-built_in">enumerate</span>(ipfs_cids, <span class="hljs-number">1</span>):
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">f"\n[<span class="hljs-subst">{i}</span>] <span class="hljs-subst">{cid}</span>"</span>)
+        
+        is_valid = validate_cid_v0(cid)
+        <span class="hljs-keyword">if</span> is_valid:
+            <span class="hljs-built_in">print</span>(<span class="hljs-string">"   [OK] 有效 CIDv0"</span>)
+            valid_cids.append(cid)
+            
+            url = get_ipfs_gateway_url(cid)
+            <span class="hljs-built_in">print</span>(<span class="hljs-string">f"   -> 网关链接: <span class="hljs-subst">{url}</span>"</span>)
+            
+            <span class="hljs-built_in">print</span>(<span class="hljs-string">"   -> 尝试获取内容..."</span>, end=<span class="hljs-string">" "</span>)
+            content = fetch_ipfs_content(cid)
+            <span class="hljs-built_in">print</span>(<span class="hljs-string">"完成"</span>)
+            <span class="hljs-keyword">if</span> content <span class="hljs-keyword">and</span> <span class="hljs-keyword">not</span> content.startswith(<span class="hljs-string">"Error"</span>):
+                <span class="hljs-built_in">print</span>(<span class="hljs-string">f"   内容预览:\n<span class="hljs-subst">{content[:<span class="hljs-number">500</span>]}</span>"</span>)
+                <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(content) > <span class="hljs-number">500</span>:
+                    <span class="hljs-built_in">print</span>(<span class="hljs-string">"   ...(内容已截断)"</span>)
+            <span class="hljs-keyword">else</span>:
+                <span class="hljs-built_in">print</span>(<span class="hljs-string">f"   内容: <span class="hljs-subst">{content}</span>"</span>)
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-built_in">print</span>(<span class="hljs-string">"   [FAIL] 无效 CIDv0"</span>)
+            invalid_cids.append(cid)
+    
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"\n"</span> + <span class="hljs-string">"="</span> * <span class="hljs-number">80</span>)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">f"分析完成: <span class="hljs-subst">{<span class="hljs-built_in">len</span>(valid_cids)}</span> 有效, <span class="hljs-subst">{<span class="hljs-built_in">len</span>(invalid_cids)}</span> 无效"</span>)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"="</span> * <span class="hljs-number">80</span>)
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:
+    analyze_cids()
+</code></pre>
+<p>是出题人本地生成、未发布到公网的"专属 CID"
+得到5个有效 CID，但不在公共IPFS网络上</p>
+<pre><code>QmTXLuTnvmXF7hZzpLvpji74YB8pGzALmmbvYjZ133GsQT
+QmSzFpYD1ZW9ju9mKfNtc9fYWrkCUtdqCF5URGf3kEcZcm
+QmTPVmoVns1r8so1pJ3ayfoRY7qp3NehS4i17FNgF9WkkA
+QmVagjVHGQWjeTfDzsecayaWjxVbnEcj8LNYz9oqNRjhTG
+QmayG5Fa4UJEG7nyKVS4u4rvgs7YKJShgzbcsjRCx5VPm2
+</code></pre>
+<p>因为flag未知部分只有4个字符，且 IPFS CIDv0 的 hash 有着固定的生成流程，尝试爆破</p>
+<p><a href="https://blog.csdn.net/inthat/article/details/106235186">IPFS-文件HASH值计算</a>
+<a href="https://specs.ipfs.tech/unixfs/">UnixFS规范</a></p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> hashlib
+<span class="hljs-keyword">from</span> base58 <span class="hljs-keyword">import</span> b58decode
+
+<span class="hljs-comment"># ─── 1. CID → SHA-256 哈希值 ───────────────────────</span>
+cids = [
+    <span class="hljs-string">"QmTXLuTnvmXF7hZzpLvpji74YB8pGzALmmbvYjZ133GsQT"</span>,
+    <span class="hljs-string">"QmSzFpYD1ZW9ju9mKfNtc9fYWrkCUtdqCF5URGf3kEcZcm"</span>,
+    <span class="hljs-string">"QmTPVmoVns1r8so1pJ3ayfoRY7qp3NehS4i17FNgF9WkkA"</span>,
+    <span class="hljs-string">"QmVagjVHGQWjeTfDzsecayaWjxVbnEcj8LNYz9oqNRjhTG"</span>,
+    <span class="hljs-string">"QmayG5Fa4UJEG7nyKVS4u4rvgs7YKJShgzbcsjRCx5VPm2"</span>,
+]
+
+target_hashes = []
+<span class="hljs-keyword">for</span> cid <span class="hljs-keyword">in</span> cids:
+    raw = b58decode(cid)              <span class="hljs-comment"># 34 字节</span>
+    <span class="hljs-keyword">assert</span> raw[:<span class="hljs-number">2</span>] == <span class="hljs-string">b'\x12\x20'</span>     <span class="hljs-comment"># 校验 multihash 头</span>
+    target_hashes.append(raw[<span class="hljs-number">2</span>:])     <span class="hljs-comment"># 32 字节 SHA-256</span>
+
+<span class="hljs-comment"># ─── 2. UnixFS Protobuf 封装常量 ──────────────────</span>
+<span class="hljs-comment"># 4 字节文件的固定包裹: 0a 09 08 02 12 04 &#x3C;4字节> 18 04</span>
+PREFIX = <span class="hljs-built_in">bytes</span>.fromhex(<span class="hljs-string">"0a0908021204"</span>)  <span class="hljs-comment"># 6字节</span>
+SUFFIX = <span class="hljs-built_in">bytes</span>.fromhex(<span class="hljs-string">"1804"</span>)          <span class="hljs-comment"># 2字节</span>
+
+<span class="hljs-keyword">import</span> string
+CHARSET = (string.ascii_letters + string.digits + <span class="hljs-string">"_{"</span>).encode()  <span class="hljs-comment"># 按需调整字符集</span>
+<span class="hljs-keyword">assert</span> <span class="hljs-built_in">len</span>(CHARSET) == <span class="hljs-number">64</span>
+
+found = {}
+target_set = {h: i <span class="hljs-keyword">for</span> i, h <span class="hljs-keyword">in</span> <span class="hljs-built_in">enumerate</span>(target_hashes)}
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">f"开始爆破，搜索空间 <span class="hljs-subst">{<span class="hljs-built_in">len</span>(CHARSET)**<span class="hljs-number">4</span>:,}</span> 次..."</span>)
+<span class="hljs-keyword">for</span> a <span class="hljs-keyword">in</span> CHARSET:
+    <span class="hljs-keyword">for</span> b <span class="hljs-keyword">in</span> CHARSET:
+        <span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> CHARSET:
+            <span class="hljs-keyword">for</span> d <span class="hljs-keyword">in</span> CHARSET:
+                content = <span class="hljs-built_in">bytes</span>([a, b, c, d])                      <span class="hljs-comment"># 4字节</span>
+                pb = PREFIX + content + SUFFIX                      <span class="hljs-comment"># 12字节</span>
+                h = hashlib.sha256(pb).digest()
+                <span class="hljs-keyword">if</span> h <span class="hljs-keyword">in</span> target_set:
+                    idx = target_set[h]
+                    found[idx] = content.decode()
+                    <span class="hljs-built_in">print</span>(<span class="hljs-string">f"  [<span class="hljs-subst">{idx}</span>] <span class="hljs-subst">{cids[idx][:<span class="hljs-number">20</span>]}</span>… → <span class="hljs-subst">{content!r}</span>"</span>)
+                    <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(found) == <span class="hljs-built_in">len</span>(cids):
+                        <span class="hljs-keyword">break</span>
+            <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(found) == <span class="hljs-built_in">len</span>(cids):
+                <span class="hljs-keyword">break</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(found) == <span class="hljs-built_in">len</span>(cids):
+            <span class="hljs-keyword">break</span>
+    <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(found) == <span class="hljs-built_in">len</span>(cids):
+        <span class="hljs-keyword">break</span>
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"\n=== 结果 ==="</span>)
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(cids)):
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">f"<span class="hljs-subst">{i+<span class="hljs-number">1</span>}</span>. <span class="hljs-subst">{found.get(i, <span class="hljs-string">'&#x3C;未找到>'</span>)}</span>"</span>)
+</code></pre>
+<p>单纯4字节爆破无结果，尝试4字节 + <code>}</code></p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> hashlib
+<span class="hljs-keyword">from</span> base58 <span class="hljs-keyword">import</span> b58decode
+
+<span class="hljs-comment"># ─── 1. CID → SHA-256 哈希值 ───────────────────────</span>
+cids = [
+    <span class="hljs-string">"QmTXLuTnvmXF7hZzpLvpji74YB8pGzALmmbvYjZ133GsQT"</span>,
+    <span class="hljs-string">"QmSzFpYD1ZW9ju9mKfNtc9fYWrkCUtdqCF5URGf3kEcZcm"</span>,
+    <span class="hljs-string">"QmTPVmoVns1r8so1pJ3ayfoRY7qp3NehS4i17FNgF9WkkA"</span>,
+    <span class="hljs-string">"QmVagjVHGQWjeTfDzsecayaWjxVbnEcj8LNYz9oqNRjhTG"</span>,
+    <span class="hljs-string">"QmayG5Fa4UJEG7nyKVS4u4rvgs7YKJShgzbcsjRCx5VPm2"</span>,
+]
+
+target_hashes = []
+<span class="hljs-keyword">for</span> cid <span class="hljs-keyword">in</span> cids:
+    raw = b58decode(cid)              <span class="hljs-comment"># 34 字节</span>
+    <span class="hljs-keyword">assert</span> raw[:<span class="hljs-number">2</span>] == <span class="hljs-string">b'\x12\x20'</span>     <span class="hljs-comment"># 校验 multihash 头</span>
+    target_hashes.append(raw[<span class="hljs-number">2</span>:])     <span class="hljs-comment"># 32 字节 SHA-256</span>
+
+<span class="hljs-comment"># ─── 2. UnixFS Protobuf 封装常量 ──────────────────</span>
+<span class="hljs-comment"># 5 字节文件的固定包裹: 0a 0b 08 02 12 05 &#x3C;5字节> 18 05</span>
+PREFIX = <span class="hljs-built_in">bytes</span>.fromhex(<span class="hljs-string">"0a0b08021205"</span>)  <span class="hljs-comment"># 6字节</span>
+SUFFIX = <span class="hljs-built_in">bytes</span>.fromhex(<span class="hljs-string">"1805"</span>)          <span class="hljs-comment"># 2字节</span>
+TAIL_BYTE = <span class="hljs-string">b"}"</span>                        <span class="hljs-comment"># 末位固定</span>
+
+<span class="hljs-keyword">import</span> string
+CHARSET = (string.ascii_letters + string.digits + <span class="hljs-string">"_{"</span>).encode()  <span class="hljs-comment"># 按需调整字符集</span>
+<span class="hljs-keyword">assert</span> <span class="hljs-built_in">len</span>(CHARSET) == <span class="hljs-number">64</span>
+
+found = {}
+target_set = {h: i <span class="hljs-keyword">for</span> i, h <span class="hljs-keyword">in</span> <span class="hljs-built_in">enumerate</span>(target_hashes)}
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">f"开始爆破，搜索空间 <span class="hljs-subst">{<span class="hljs-built_in">len</span>(CHARSET)**<span class="hljs-number">4</span>:,}</span> 次..."</span>)
+<span class="hljs-keyword">for</span> a <span class="hljs-keyword">in</span> CHARSET:
+    <span class="hljs-keyword">for</span> b <span class="hljs-keyword">in</span> CHARSET:
+        <span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> CHARSET:
+            <span class="hljs-keyword">for</span> d <span class="hljs-keyword">in</span> CHARSET:
+                content = <span class="hljs-built_in">bytes</span>([a, b, c, d]) + TAIL_BYTE          <span class="hljs-comment"># 5字节</span>
+                pb = PREFIX + content + SUFFIX                      <span class="hljs-comment"># 13字节</span>
+                h = hashlib.sha256(pb).digest()
+                <span class="hljs-keyword">if</span> h <span class="hljs-keyword">in</span> target_set:
+                    idx = target_set[h]
+                    found[idx] = content.decode()
+                    <span class="hljs-built_in">print</span>(<span class="hljs-string">f"  [<span class="hljs-subst">{idx}</span>] <span class="hljs-subst">{cids[idx][:<span class="hljs-number">20</span>]}</span>… → <span class="hljs-subst">{content!r}</span>"</span>)
+                    <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(found) == <span class="hljs-built_in">len</span>(cids):
+                        <span class="hljs-keyword">break</span>
+            <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(found) == <span class="hljs-built_in">len</span>(cids):
+                <span class="hljs-keyword">break</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(found) == <span class="hljs-built_in">len</span>(cids):
+            <span class="hljs-keyword">break</span>
+    <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(found) == <span class="hljs-built_in">len</span>(cids):
+        <span class="hljs-keyword">break</span>
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"\n=== 结果 ==="</span>)
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(cids)):
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">f"<span class="hljs-subst">{i+<span class="hljs-number">1</span>}</span>. <span class="hljs-subst">{found.get(i, <span class="hljs-string">'&#x3C;未找到>'</span>)}</span>"</span>)
+</code></pre>
+<pre><code>=== 结果 ===
+1. &#x3C;未找到>
+2. &#x3C;未找到>
+3. &#x3C;未找到>
+4. n0vA}
+5. &#x3C;未找到>
+</code></pre>
+<p>得到字符串<code>n0vA}</code></p>
+<h4>6 最终flag</h4>
+<p>将磁盘取证得到的 <code>flag{M1SC_s0000000_FuN_AAA_????}</code> 与爆破得到的 <code>n0vA}</code> 拼接：</p>
+<pre><code>flag{M1SC_s0000000_FuN_AAA_n0vA}
+</code></pre>2:["$","div",null,{"className":"max-w-3xl mx-auto px-4 py-12","children":[["$","$L7",null,{"href":"/","className":"inline-block mb-8 text-primary hover:underline","children":"← 返回首页"}],["$","article",null,{"children":[["$","header",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 mb-4","children":"0psu3-2026.5.16-misc"}],["$","time",null,{"className":"text-gray-500","children":"2026-05-17"}]]}],["$","div",null,{"className":"prose prose-lg max-w-none text-gray-700","dangerouslySetInnerHTML":{"__html":"$8"}}]]}],["$","footer",null,{"className":"mt-16 pt-8 border-t border-gray-200","children":["$","$L7",null,{"href":"/","className":"inline-block text-primary hover:underline","children":"← 返回首页"}]}]]}]
+6:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"0psu3-2026.5.16-misc"}],["$","meta","3",{"name":"description","content":"misc-wp"}],["$","link","4",{"rel":"icon","href":"/cat.ico"}]]
+1:null

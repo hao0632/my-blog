@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { unified } from 'unified';
 import remarkParse from 'remark-parse';
+import remarkGfm from 'remark-gfm';
 import remarkRehype from 'remark-rehype';
 import rehypeHighlight from 'rehype-highlight';
 import rehypeStringify from 'rehype-stringify';
@@ -56,13 +57,21 @@ function getAllPosts(): Post[] {
 }
 
 async function markdownToHtml(markdown: string): Promise<string> {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  
   const result = await unified()
     .use(remarkParse)
-    .use(remarkRehype)
+    .use(remarkGfm)
+    .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeHighlight, true)
     .use(rehypeStringify)
     .process(markdown);
-  return result.toString();
+  
+  let html = result.toString();
+  
+  html = html.replace(/<img[^>]+src="\/([^"]+)"[^>]*>/g, `<img src="${basePath}/$1" />`);
+  
+  return html;
 }
 
 export { getPostSlugs, getPostBySlug, getAllPosts, markdownToHtml };

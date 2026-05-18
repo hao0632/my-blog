@@ -1,10 +1,10 @@
 3:I[9275,[],""]
 5:I[1343,[],""]
 4:["slug","0psu3-2026.5.16-misc","d"]
-0:["bCACTHhJoORR-smL_D2hW",[[["",{"children":["posts",{"children":[["slug","0psu3-2026.5.16-misc","d"],{"children":["__PAGE__?{\"slug\":\"0psu3-2026.5.16-misc\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["slug","0psu3-2026.5.16-misc","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"min-h-screen bg-gray-50","children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/my-blog/_next/static/css/98519eadfdbaae0a.css","precedence":"next","crossOrigin":"$undefined"}]],"$L6"]]]]
+0:["q59_Z9IaZHH-om43q-NBq",[[["",{"children":["posts",{"children":[["slug","0psu3-2026.5.16-misc","d"],{"children":["__PAGE__?{\"slug\":\"0psu3-2026.5.16-misc\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["slug","0psu3-2026.5.16-misc","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"min-h-screen bg-gray-50","children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/my-blog/_next/static/css/3a49f444d2107e85.css","precedence":"next","crossOrigin":"$undefined"}]],"$L6"]]]]
 7:I[231,["231","static/chunks/231-bb841edf8a6e8174.js","333","static/chunks/app/posts/%5Bslug%5D/page-70c3ce5d74c55cbf.js"],""]
 8:I[3132,["231","static/chunks/231-bb841edf8a6e8174.js","333","static/chunks/app/posts/%5Bslug%5D/page-70c3ce5d74c55cbf.js"],"default"]
-9:T91f8,<h2>Secret_transfer</h2>
+9:T91dd,<h2>Secret_transfer</h2>
 <h3>题目信息</h3>
 <ul>
 <li><strong>题目</strong>: Secret_transfer</li>
@@ -39,9 +39,9 @@ X-Message: There's a mole. Password changed
 <p>文件>导出>HTTP，选择类型为application/octet-stream，导出1、important.jpg、2</p>
 <h4>2 important.jpg 图片隐写分析</h4>
 <p>打开图片，发现边角处存在异常条纹，初步分析可能为lsb或盲水印</p>
-<p><img src="/bianjiao.png" alt="边角异常"></p>
+<p><img src="/my-blog/bianjiao.png" /></p>
 <p>lsb分析后无结果，考虑盲水印</p>
-<p><img src="/mangshuiyin.png" alt="盲水印"></p>
+<p><img src="/my-blog/mangshuiyin.png" /></p>
 <p>得到密钥：<strong>cptbtptpbcptdtptpAA123</strong></p>
 <h4>3 分析文件1、2</h4>
 <h5>3.1 文件1</h5>
@@ -163,7 +163,7 @@ X-Message: There's a mole. Password changed
 <p>尝试VeraCrypt挂载，使用密钥<strong>cptbtptpbcptdtptpAA123</strong>，成功挂载</p>
 <p>打开挂载磁盘，发现 but_this_container_is_important.txt 和 nothing^~^.txt ,但没有实际内容。</p>
 <p>根据提示<strong>只修改了密码</strong>和veracrypt官方文档<a href="https://veracrypt.io/zh-cn/Changing%20Passwords%20and%20Keyfiles.html">veracrypt>文档>安全要求和预防措施>更改密码和密钥文件</a></p>
-<p><img src="/vcwendang.png" alt="vc文档"></p>
+<p><img src="/my-blog/vcwendang.png" /></p>
 <p>可知，如果1到2只修改了密码，主密钥并不会改变，因此可以使用1的主密钥解密2</p>
 <p>选择文件1>工具>备份加密卷头信息>输入密钥 cptbtptpbcptdtptpAA123 >此加密卷不包含隐藏加密卷>保存文件为Masterkey</p>
 <p>选择文件2>工具>恢复加密卷头信息>从外部备份文件中恢复加密卷头信息>输入密钥 cptbtptpbcptdtptpAA123 >成功恢复</p>
@@ -171,7 +171,7 @@ X-Message: There's a mole. Password changed
 <p>使用密钥 cptbtptpbcptdtptpAA123 ，成功挂载2</p>
 <p>打开挂载磁盘，只有一张图片 peiqi_and_apple.png ，查看属性发现磁盘已用空间大于图片占用空间，可能存在隐藏信息</p>
 <p>使用Magnet AXIOM进行磁盘取证，发现恢复的文件中有flag</p>
-<p><img src="/huifu.png" alt="flag"></p>
+<p><img src="/my-blog/huifu.png" /></p>
 <p>即 <strong>flag{M1SC_s0000000_FuN_AAA_????}</strong> ，但后四位未知</p>
 <h4>4 peiqi_and_apple.png 图片隐写分析</h4>
 <p>打开 peiqi_and_apple.png ，发现图片有许多明显的杂乱无章的像素条纹。</p>
@@ -180,7 +180,7 @@ X-Message: There's a mole. Password changed
 <p><a href="https://moonvy.com/blog/post/2021/%E5%9C%A8%E4%B8%8D%E5%90%8C%E8%AE%BE%E5%A4%87%E4%B8%8A%E6%98%BE%E7%A4%BA%E4%B8%8D%E4%B8%80%E6%A0%B7%E5%86%85%E5%AE%B9%E7%9A%84%E7%A5%9E%E5%A5%87PNG%E5%9B%BE%E7%89%87/#:~:text=%E8%8B%B9%E6%9E%9C%E4%B8%BA%E4%BA%86%E8%AE%A9%20PNG%20%E6%A0%BC%E5%BC%8F%E7%9A%84%E5%9B%BE%E7%89%87%E5%8F%AF%E4%BB%A5%E5%B9%B6%E8%A1%8C%E8%A7%A3%E7%A0%81%E5%B9%B6%E4%B8%94%E5%85%BC%E5%AE%B9%E5%8E%9F%E6%9C%AC%E7%9A%84%20PNG%20%E6%A0%87%E5%87%86%EF%BC%8C%E6%8A%8A%E5%9B%BE%E7%89%87%E5%86%85%E5%AE%B9%E5%88%86%E4%B8%BA%E3%80%8C%E5%89%8D%E5%8D%8A%E3%80%8D%E4%B8%8E%E3%80%8C%E5%90%8E%E5%8D%8A%E3%80%8D2%20%E9%83%A8%E5%88%86%EF%BC%8C%E5%B9%B6%E6%8A%8A%E5%83%8F%E7%B4%A0%E6%B5%81%E5%88%86%E4%B8%BA%E5%A4%9A%E4%B8%AA%20IDAT%20%E5%9D%97%EF%BC%8C%E7%84%B6%E5%90%8E%E5%9C%A8,Apple%20%E8%87%AA%E5%AE%B6%E7%9A%84%20PNG%20%E8%A7%A3%E7%A0%81%E5%99%A8%E8%A7%A3%E7%A0%81%E5%B0%B1%E5%8F%AF%E4%BB%A5%E5%88%86%E4%B8%BA%202%20%E4%B8%AA%E5%B9%B6%E8%A1%8C%E7%9A%84%E8%BF%87%E7%A8%8B%EF%BC%8C%E4%BB%A5%E6%AD%A4%E5%85%85%E5%88%86%E5%88%A9%E7%94%A8%E5%A4%9A%E6%A0%B8%E6%80%A7%E8%83%BD%EF%BC%8C%E5%90%8C%E6%97%B6%E8%BF%99%E6%A0%B7%E7%9A%84%20PNG%20%E5%9B%BE%E7%89%87%E4%B9%9F%E8%83%BD%E8%A2%AB%E6%99%AE%E9%80%9A%E8%A7%A3%E7%A0%81%E5%99%A8%E8%A7%A3%E7%A0%81">在不同设备上显示不一样内容的神奇 PNG 图片</a></p>
 <p>可知， Apple 的 PNG 解码器通过 iDOT 进行并行解码，这使得有些图片在苹果设备上显示与一般设备不同的内容</p>
 <p>使用<a href="https://www.fotoforensics.com/">fotoforensics</a>分析,发现隐藏字符串</p>
-<p><img src="/apple.png" alt="字符串"></p>
+<p><img src="/my-blog/apple.png" /></p>
 <p>即</p>
 <pre><code>Qmkgjt1XnzkxgD6YzyTd2B6SgyuGgQ47jskqvu1KpveGES
 QmsQVv15YkJpwJ9wLpMwnU1TQCA8FsgmC438Sf54nqkuo6

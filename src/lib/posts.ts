@@ -69,7 +69,9 @@ async function markdownToHtml(markdown: string): Promise<string> {
   
   let html = result.toString();
   
-  html = html.replace(/<img[^>]+src="\/([^"]+)"[^>]*>/g, `<img src="${basePath}/$1" />`);
+  if (basePath) {
+    html = html.replace(/<img\s+([^>]*?)src=["']\/([^"']+)["']([^>]*)>/gi, `<img $1src="${basePath}/$2" $3>`);
+  }
   
   return html;
 }

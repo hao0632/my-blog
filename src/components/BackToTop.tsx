@@ -24,8 +24,8 @@ export default function BackToTop() {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed top-4 right-4 z-50 flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-lg border border-gray-200 transition-all duration-300 hover:bg-gray-50 hover:shadow-xl ${
-        isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'
+      className={`fixed bottom-4 right-4 z-50 flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-lg border border-gray-200 transition-all duration-300 hover:bg-gray-50 hover:shadow-xl ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
       }`}
       aria-label="返回顶部"
     >

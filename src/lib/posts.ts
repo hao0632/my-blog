@@ -10,6 +10,12 @@ import rehypeStringify from 'rehype-stringify';
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
+export interface Heading {
+  id: string;
+  text: string;
+  level: number;
+}
+
 export interface Post {
   slug: string;
   title: string;
@@ -56,6 +62,10 @@ function getAllPosts(): Post[] {
   return posts;
 }
 
+function slugify(text: string): string {
+  return text.toLowerCase().replace(/[^a-z0-9\u4e00-\u9fa5]+/g, '-').replace(/^-|-$/g, '');
+}
+
 async function markdownToHtml(markdown: string): Promise<string> {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
   
@@ -73,7 +83,44 @@ async function markdownToHtml(markdown: string): Promise<string> {
     html = html.replace(/<img\s+([^>]*?)src=["']\/([^"']+)["']([^>]*)>/gi, `<img $1src="${basePath}/$2" $3>`);
   }
   
+  html = html.replace(/<h([2-6])([^>]*)>([^<]+)<\/h\1>/g, (match, level, attrs, text) => {
+    const id = slugify(text);
+    return `<h${level}${attrs} id="${id}">${text}</h${level}>`;
+  });
+  
   return html;
 }
 
-export { getPostSlugs, getPostBySlug, getAllPosts, markdownToHtml };
+function extractHeadings(markdown: string): Heading[] {
+  const headings: Heading[] = [];
+  const regex = /^(#{2,6})\s+(.+)$/gm;
+  let match;
+  
+  while ((match = regex.exec(markdown)) !== null) {
+    const level = match[1].length;
+    const text = match[2].trim();
+    const id = text.toLowerCase().replace(/[^a-z0-9\u4e00-\u9fa5]+/g, '-').replace(/^-|-$/g, '');
+    
+    headings.push({
+      id,
+      text,
+      level,
+    });
+  }
+  
+  return headings;
+}
+
+function getPostBySlugWithHeadings(slug: string): (Post & { headings: Heading[] }) | null {
+  const post = getPostBySlug(slug);
+  if (!post) return null;
+  
+  const headings = extractHeadings(post.content);
+  
+  return {
+    ...post,
+    headings,
+  };
+}
+
+export { getPostSlugs, getPostBySlug, getAllPosts, markdownToHtml, getPostBySlugWithHeadings, extractHeadings };

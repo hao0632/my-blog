@@ -1,6 +1,8 @@
 import Link from "next/link";
-import { getPostBySlug, getAllPosts, markdownToHtml } from "@/lib/posts";
+import { getPostBySlugWithHeadings, getAllPosts, markdownToHtml } from "@/lib/posts";
 import CodeBlockWrapper from "@/components/CodeBlockWrapper";
+import TableOfContents from "@/components/TableOfContents";
+import BackToTop from "@/components/BackToTop";
 
 interface Props {
   params: { slug: string };
@@ -14,7 +16,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props) {
-  const post = getPostBySlug(params.slug);
+  const post = getPostBySlugWithHeadings(params.slug);
   if (!post) {
     return { title: "文章未找到" };
   }
@@ -25,7 +27,7 @@ export async function generateMetadata({ params }: Props) {
 }
 
 export default async function Post({ params }: Props) {
-  const post = getPostBySlug(params.slug);
+  const post = getPostBySlugWithHeadings(params.slug);
 
   if (!post) {
     return (
@@ -41,33 +43,43 @@ export default async function Post({ params }: Props) {
   const content = await markdownToHtml(post.content);
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-12">
-      <Link
-        href="/"
-        className="inline-block mb-8 text-primary hover:underline"
-      >
-        ← 返回首页
-      </Link>
-
-      <article>
-        <header className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">
-            {post.title}
-          </h1>
-          <time className="text-gray-500">{post.date}</time>
-        </header>
-
-        <CodeBlockWrapper htmlContent={content} />
-      </article>
-
-      <footer className="mt-16 pt-8 border-t border-gray-200">
+    <div className="min-h-screen">
+      <BackToTop />
+      
+      <div className="max-w-6xl mx-auto px-4 py-12">
         <Link
           href="/"
-          className="inline-block text-primary hover:underline"
+          className="inline-block mb-8 text-primary hover:underline"
         >
           ← 返回首页
         </Link>
-      </footer>
+
+        <div className="flex gap-8">
+          <article className="flex-1">
+            <header className="mb-8">
+              <h1 className="text-3xl font-bold text-gray-900 mb-4">
+                {post.title}
+              </h1>
+              <time className="text-gray-500">{post.date}</time>
+            </header>
+
+            <CodeBlockWrapper htmlContent={content} />
+          </article>
+
+          <aside className="w-64 flex-shrink-0">
+            <TableOfContents headings={post.headings} />
+          </aside>
+        </div>
+
+        <footer className="mt-16 pt-8 border-t border-gray-200">
+          <Link
+            href="/"
+            className="inline-block text-primary hover:underline"
+          >
+            ← 返回首页
+          </Link>
+        </footer>
+      </div>
     </div>
   );
 }

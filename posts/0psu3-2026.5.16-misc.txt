@@ -1,11 +1,13 @@
 3:I[9275,[],""]
 5:I[1343,[],""]
 4:["slug","0psu3-2026.5.16-misc","d"]
-0:["nhKy_WNQsUVcNuJKtuEXj",[[["",{"children":["posts",{"children":[["slug","0psu3-2026.5.16-misc","d"],{"children":["__PAGE__?{\"slug\":\"0psu3-2026.5.16-misc\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["slug","0psu3-2026.5.16-misc","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"min-h-screen bg-gray-50","children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/my-blog/_next/static/css/3a49f444d2107e85.css","precedence":"next","crossOrigin":"$undefined"}]],"$L6"]]]]
-7:I[231,["231","static/chunks/231-bb841edf8a6e8174.js","333","static/chunks/app/posts/%5Bslug%5D/page-70c3ce5d74c55cbf.js"],""]
-8:I[3132,["231","static/chunks/231-bb841edf8a6e8174.js","333","static/chunks/app/posts/%5Bslug%5D/page-70c3ce5d74c55cbf.js"],"default"]
-9:T9225,<h2>Secret_transfer</h2>
-<h3>题目信息</h3>
+0:["J3SgUTajaAUdcNCaeIEqJ",[[["",{"children":["posts",{"children":[["slug","0psu3-2026.5.16-misc","d"],{"children":["__PAGE__?{\"slug\":\"0psu3-2026.5.16-misc\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["slug","0psu3-2026.5.16-misc","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"min-h-screen bg-gray-50","children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/my-blog/_next/static/css/67f8379cfa2dbc6b.css","precedence":"next","crossOrigin":"$undefined"}]],"$L6"]]]]
+7:I[7311,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-5e1ca9bfe19fa7bb.js"],"default"]
+8:I[231,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-5e1ca9bfe19fa7bb.js"],""]
+9:I[3132,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-5e1ca9bfe19fa7bb.js"],"default"]
+b:I[7125,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-5e1ca9bfe19fa7bb.js"],"default"]
+a:T9390,<h2 id="secret-transfer">Secret_transfer</h2>
+<h3 id="题目信息">题目信息</h3>
 <ul>
 <li><strong>题目</strong>: Secret_transfer</li>
 <li><strong>题目文件</strong>: secret_transfer.pcapng</li>
@@ -26,8 +28,8 @@
 </ul>
 </li>
 </ul>
-<h3>解题步骤</h3>
-<h4>1 初步分析</h4>
+<h3 id="解题步骤">解题步骤</h3>
+<h4 id="一-初步分析">一、初步分析</h4>
 <p>拿到附件，wireshark打开，大部分为TCP流量</p>
 <p>追踪TCP流，发现传了3个文件，分别为1、important.jpg、2，同时发现传jpg和2的请求头分别包含X-Message信息：</p>
 <pre><code>POST /upload/important.jpg HTTP/1.1
@@ -37,14 +39,14 @@ POST /upload/2 HTTP/1.1
 X-Message: There's a mole. Password changed
 </code></pre>
 <p>文件>导出>HTTP，选择类型为application/octet-stream，导出1、important.jpg、2</p>
-<h4>2 important.jpg 图片隐写分析</h4>
+<h4 id="二-important-jpg-图片隐写分析">二、important.jpg 图片隐写分析</h4>
 <p>打开图片，发现边角处存在异常条纹，初步分析可能为lsb或盲水印</p>
 <p><img src="/my-blog/bianjiao.png"  alt="边角异常"></p>
 <p>lsb分析后无结果，考虑盲水印</p>
 <p><img src="/my-blog/mangshuiyin.png"  alt="盲水印"></p>
 <p>得到密钥：<strong>cptbtptpbcptdtptpAA123</strong></p>
-<h4>3 分析文件1、2</h4>
-<h5>3.1 文件1</h5>
+<h4 id="三-分析文件1-2">三、分析文件1、2</h4>
+<h5 id="3-1-文件1">3.1 文件1</h5>
 <p>初步分析1、2文件，大小均为5242880 bytes(5 MB整)，说明1、2文件可能类型相同且数据相似。用HxD打开查看16进制，发现都是乱码，</p>
 <p>尝试密钥、XOR、RC4等解密均无结果</p>
 <p>脚本分析1、2文件相似度</p>
@@ -167,13 +169,13 @@ X-Message: There's a mole. Password changed
 <p>可知，如果1到2只修改了密码，主密钥并不会改变，因此可以使用1的主密钥解密2</p>
 <p>选择文件1>工具>备份加密卷头信息>输入密钥 cptbtptpbcptdtptpAA123 >此加密卷不包含隐藏加密卷>保存文件为Masterkey</p>
 <p>选择文件2>工具>恢复加密卷头信息>从外部备份文件中恢复加密卷头信息>输入密钥 cptbtptpbcptdtptpAA123 >成功恢复</p>
-<h5>3.2 文件2</h5>
+<h5 id="3-2-文件2">3.2 文件2</h5>
 <p>使用密钥 cptbtptpbcptdtptpAA123 ，成功挂载2</p>
 <p>打开挂载磁盘，只有一张图片 peiqi_and_apple.png ，查看属性发现磁盘已用空间大于图片占用空间，可能存在隐藏信息</p>
 <p>使用Magnet AXIOM进行磁盘取证，发现恢复的文件中有flag</p>
 <p><img src="/my-blog/huifu.png"  alt="flag"></p>
 <p>即 <strong>flag{M1SC_s0000000_FuN_AAA_????}</strong> ，但后四位未知</p>
-<h4>4 peiqi_and_apple.png 图片隐写分析</h4>
+<h4 id="四-peiqi-and-apple-png-图片隐写分析">四、peiqi_and_apple.png 图片隐写分析</h4>
 <p>打开 peiqi_and_apple.png ，发现图片有许多明显的杂乱无章的像素条纹。</p>
 <p>根据提示<strong>Apple and png?</strong>，推测是苹果系统对png图片数据有着特殊的解码方式</p>
 <p><a href="https://zhuanlan.zhihu.com/p/446538506">在Apple系统中会变化的png文件</a></p>
@@ -214,8 +216,8 @@ QmlGFa44GobBketOQY8lUkh8+FLqpVYqaI2qjmkS1M1i==
 QmAsyyWfyavJD4jUMF5BRF2JmNSs7sCJia547WaMKuubTX
 QmacXy/KOfK8kK6X/GLVCuqEWIl4H7O95BTQhj6rsHWT==
 </code></pre>
-<h4>5 字符串分析</h4>
-<h5>5.1 编码识别</h5>
+<h4 id="五-字符串分析">五、字符串分析</h4>
+<h5 id="5-1-编码识别">5.1 编码识别</h5>
 <p>初步观察字符串包含 + 、 / 和以 == 结尾，看似 Base64 编码特征,但解密结果为乱码</p>
 <p>进一步分析，字符均以 Qm 开头，且总长度为 46 字符，符合 IPFS CIDv0 特征，但标准 IPFS CIDv0 使用 Base58 编码</p>
 <p>先筛选出标准 IPFS CIDv0 字符串</p>
@@ -362,6 +364,7 @@ QmTPVmoVns1r8so1pJ3ayfoRY7qp3NehS4i17FNgF9WkkA
 QmVagjVHGQWjeTfDzsecayaWjxVbnEcj8LNYz9oqNRjhTG
 QmayG5Fa4UJEG7nyKVS4u4rvgs7YKJShgzbcsjRCx5VPm2
 </code></pre>
+<h5 id="5-2-hash爆破">5.2 hash爆破</h5>
 <p>因为flag未知部分只有4个字符，且 IPFS CIDv0 的 hash 有着固定的生成流程，尝试爆破</p>
 <p><a href="https://blog.csdn.net/inthat/article/details/106235186">IPFS-文件HASH值计算</a></p>
 <p><a href="https://specs.ipfs.tech/unixfs/">UnixFS规范</a></p>
@@ -485,9 +488,9 @@ target_set = {h: i <span class="hljs-keyword">for</span> i, h <span class="hljs-
 5. &#x3C;未找到>
 </code></pre>
 <p>得到字符串<strong>n0vA}</strong></p>
-<h4>6 最终flag</h4>
+<h4 id="六-最终flag">六、最终flag</h4>
 <p>将磁盘取证得到的 <strong>flag{M1SC_s0000000_FuN_AAA_????}</strong> 与爆破得到的 <strong>n0vA}</strong> 拼接：</p>
 <pre><code>flag{M1SC_s0000000_FuN_AAA_n0vA}
-</code></pre>2:["$","div",null,{"className":"max-w-3xl mx-auto px-4 py-12","children":[["$","$L7",null,{"href":"/","className":"inline-block mb-8 text-primary hover:underline","children":"← 返回首页"}],["$","article",null,{"children":[["$","header",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 mb-4","children":"0psu3-2026.5.16-misc"}],["$","time",null,{"className":"text-gray-500","children":"2026-05-17"}]]}],["$","$L8",null,{"htmlContent":"$9"}]]}],["$","footer",null,{"className":"mt-16 pt-8 border-t border-gray-200","children":["$","$L7",null,{"href":"/","className":"inline-block text-primary hover:underline","children":"← 返回首页"}]}]]}]
+</code></pre>2:["$","div",null,{"className":"min-h-screen","children":[["$","$L7",null,{}],["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-12","children":[["$","$L8",null,{"href":"/","className":"inline-block mb-8 text-primary hover:underline","children":"← 返回首页"}],["$","div",null,{"className":"flex gap-8","children":[["$","article",null,{"className":"flex-1","children":[["$","header",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 mb-4","children":"0psu3-2026.5.16-misc"}],["$","time",null,{"className":"text-gray-500","children":"2026-05-17"}]]}],["$","$L9",null,{"htmlContent":"$a"}]]}],["$","aside",null,{"className":"w-64 flex-shrink-0","children":["$","$Lb",null,{"headings":[{"id":"secret-transfer","text":"Secret_transfer","level":2},{"id":"题目信息","text":"题目信息","level":3},{"id":"解题步骤","text":"解题步骤","level":3},{"id":"一-初步分析","text":"一、初步分析","level":4},{"id":"二-important-jpg-图片隐写分析","text":"二、important.jpg 图片隐写分析","level":4},{"id":"三-分析文件1-2","text":"三、分析文件1、2","level":4},{"id":"3-1-文件1","text":"3.1 文件1","level":5},{"id":"3-2-文件2","text":"3.2 文件2","level":5},{"id":"四-peiqi-and-apple-png-图片隐写分析","text":"四、peiqi_and_apple.png 图片隐写分析","level":4},{"id":"五-字符串分析","text":"五、字符串分析","level":4},{"id":"5-1-编码识别","text":"5.1 编码识别","level":5},{"id":"5-2-hash爆破","text":"5.2 hash爆破","level":5},{"id":"六-最终flag","text":"六、最终flag","level":4}]}]}]]}],["$","footer",null,{"className":"mt-16 pt-8 border-t border-gray-200","children":["$","$L8",null,{"href":"/","className":"inline-block text-primary hover:underline","children":"← 返回首页"}]}]]}]]}]
 6:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"0psu3-2026.5.16-misc"}],["$","meta","3",{"name":"description","content":"misc-wp"}],["$","link","4",{"rel":"icon","href":"/cat.ico"}]]
 1:null

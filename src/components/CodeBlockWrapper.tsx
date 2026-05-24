@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 
 export default function CodeBlockWrapper({ htmlContent }: { htmlContent: string }) {
   useEffect(() => {
+    // 处理代码块
     const codeBlocks = document.querySelectorAll('pre');
     
     codeBlocks.forEach((block) => {
@@ -57,6 +58,20 @@ export default function CodeBlockWrapper({ htmlContent }: { htmlContent: string 
       wrapper.appendChild(codeContainer);
       
       block.parentNode?.replaceChild(wrapper, block);
+    });
+
+    // 处理表格
+    const tables = document.querySelectorAll('.prose table');
+    
+    tables.forEach((table) => {
+      const parent = table.parentNode as HTMLElement | null;
+      if (parent?.classList.contains('table-wrapper')) return;
+      
+      const wrapper = document.createElement('div');
+      wrapper.className = 'table-wrapper';
+      
+      parent?.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
     });
   }, [htmlContent]);
 

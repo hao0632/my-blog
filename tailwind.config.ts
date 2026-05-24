@@ -26,6 +26,12 @@ const config: Config = {
                 content: '""',
               },
             },
+            "code::before": {
+              content: '""',
+            },
+            "code::after": {
+              content: '""',
+            },
             pre: {
               backgroundColor: "transparent",
               padding: "0",
@@ -37,6 +43,12 @@ const config: Config = {
                 content: '""',
               },
             },
+            "pre::before": {
+              content: '""',
+            },
+            "pre::after": {
+              content: '""',
+            },
             "pre code": {
               backgroundColor: "transparent",
               padding: "0",
@@ -46,6 +58,171 @@ const config: Config = {
               "&::after": {
                 content: '""',
               },
+            },
+            "pre code::before": {
+              content: '""',
+            },
+            "pre code::after": {
+              content: '""',
+            },
+          },
+        },
+        sm: {
+          css: {
+            code: {
+              backgroundColor: "transparent",
+              padding: "0",
+              "&::before": {
+                content: '""',
+              },
+              "&::after": {
+                content: '""',
+              },
+            },
+            "code::before": {
+              content: '""',
+            },
+            "code::after": {
+              content: '""',
+            },
+            pre: {
+              backgroundColor: "transparent",
+              padding: "0",
+              margin: "0",
+              "&::before": {
+                content: '""',
+              },
+              "&::after": {
+                content: '""',
+              },
+            },
+            "pre::before": {
+              content: '""',
+            },
+            "pre::after": {
+              content: '""',
+            },
+            "pre code": {
+              backgroundColor: "transparent",
+              padding: "0",
+              "&::before": {
+                content: '""',
+              },
+              "&::after": {
+                content: '""',
+              },
+            },
+            "pre code::before": {
+              content: '""',
+            },
+            "pre code::after": {
+              content: '""',
+            },
+          },
+        },
+        lg: {
+          css: {
+            code: {
+              backgroundColor: "transparent",
+              padding: "0",
+              "&::before": {
+                content: '""',
+              },
+              "&::after": {
+                content: '""',
+              },
+            },
+            "code::before": {
+              content: '""',
+            },
+            "code::after": {
+              content: '""',
+            },
+            pre: {
+              backgroundColor: "transparent",
+              padding: "0",
+              margin: "0",
+              "&::before": {
+                content: '""',
+              },
+              "&::after": {
+                content: '""',
+              },
+            },
+            "pre::before": {
+              content: '""',
+            },
+            "pre::after": {
+              content: '""',
+            },
+            "pre code": {
+              backgroundColor: "transparent",
+              padding: "0",
+              "&::before": {
+                content: '""',
+              },
+              "&::after": {
+                content: '""',
+              },
+            },
+            "pre code::before": {
+              content: '""',
+            },
+            "pre code::after": {
+              content: '""',
+            },
+          },
+        },
+        xl: {
+          css: {
+            code: {
+              backgroundColor: "transparent",
+              padding: "0",
+              "&::before": {
+                content: '""',
+              },
+              "&::after": {
+                content: '""',
+              },
+            },
+            "code::before": {
+              content: '""',
+            },
+            "code::after": {
+              content: '""',
+            },
+            pre: {
+              backgroundColor: "transparent",
+              padding: "0",
+              margin: "0",
+              "&::before": {
+                content: '""',
+              },
+              "&::after": {
+                content: '""',
+              },
+            },
+            "pre::before": {
+              content: '""',
+            },
+            "pre::after": {
+              content: '""',
+            },
+            "pre code": {
+              backgroundColor: "transparent",
+              padding: "0",
+              "&::before": {
+                content: '""',
+              },
+              "&::after": {
+                content: '""',
+              },
+            },
+            "pre code::before": {
+              content: '""',
+            },
+            "pre code::after": {
+              content: '""',
             },
           },
         },

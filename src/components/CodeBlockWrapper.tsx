@@ -16,12 +16,8 @@ export default function CodeBlockWrapper({ htmlContent }: { htmlContent: string 
       const match = className.match(/language-(\w+)/);
       const language = match ? match[1] : 'text';
       
-      // 获取代码内容并清理可能存在的反引号
-      let codeContent = codeElement.innerHTML;
-      
-      // 移除代码内容前后可能存在的反引号
-      codeContent = codeContent.replace(/^`+/, '').replace(/`+$/, '');
-      codeContent = codeContent.replace(/^\s*`/, '').replace(/`\s*$/, '');
+      // 获取代码内容
+      const codeContent = codeElement.innerHTML;
       
       const wrapper = document.createElement('div');
       wrapper.className = 'code-block-wrapper rounded-lg overflow-hidden border border-gray-200 bg-gray-50';

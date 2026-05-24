@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 移除代码块的伪元素反引号 */
+.prose code::before,
+.prose code::after,
+.prose pre::before,
+.prose pre::after,
+.prose pre code::before,
+.prose pre code::after {
+  content: '' !important;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 255, 255, 255;

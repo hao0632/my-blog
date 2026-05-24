@@ -20,7 +20,7 @@ export default function CodeBlockWrapper({ htmlContent }: { htmlContent: string 
       const codeContent = codeElement.innerHTML;
       
       const wrapper = document.createElement('div');
-      wrapper.className = 'code-block-wrapper rounded-lg overflow-hidden border border-gray-200 bg-gray-50';
+      wrapper.className = 'code-block-wrapper rounded-lg overflow-hidden border border-gray-200 bg-gray-50 w-full';
       
       const header = document.createElement('div');
       header.className = 'code-header flex items-center justify-between px-3 py-2 bg-gray-100 border-b border-gray-200';
@@ -44,7 +44,7 @@ export default function CodeBlockWrapper({ htmlContent }: { htmlContent: string 
       });
       
       const codeContainer = document.createElement('div');
-      codeContainer.className = 'code-content overflow-auto max-h-96';
+      codeContainer.className = 'code-content overflow-x-auto overflow-y-auto max-h-96';
       
       const newCode = document.createElement('code');
       newCode.className = codeElement.className;

@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 全局移动端适配 */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* 移除代码块的伪元素反引号 */
 .prose code::before,
 .prose code::after,
@@ -20,6 +30,7 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
+  overflow-x: hidden;
 }
 
 .prose a {
@@ -100,6 +111,7 @@ body {
 
 .code-content {
   background-color: #f8fafc;
+  width: 100%;
 }
 
 .code-content code {
@@ -111,6 +123,30 @@ body {
   font-size: 0.875rem;
   line-height: 1.6;
   white-space: pre;
+  min-width: max-content;
+}
+
+/* 移动端优化表格滚动 */
+.prose table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* 确保图片在移动端不溢出 */
+.prose img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 代码块移动端优化 */
+pre {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+code {
+  word-wrap: break-word;
 }
 
 .hljs-keyword,

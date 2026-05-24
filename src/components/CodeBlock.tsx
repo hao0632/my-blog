@@ -15,7 +15,7 @@ export default function CodeBlock({ code, language }: { code: string; language: 
   };
 
   return (
-    <pre ref={codeRef} className="relative bg-slate-800 rounded-lg overflow-hidden border border-slate-700 max-h-[400px] overflow-y-auto">
+    <div className="relative rounded-lg overflow-hidden border border-slate-700 w-full">
       <button
         onClick={handleCopy}
         className={`absolute top-2 right-2 px-2 py-1 text-xs rounded transition-all z-10 ${
@@ -26,9 +26,13 @@ export default function CodeBlock({ code, language }: { code: string; language: 
       >
         {copiedRef.current ? '✓ 已复制' : '复制'}
       </button>
-      <code className={`language-${language}`}>
-        {code}
-      </code>
-    </pre>
+      <div className="overflow-x-auto max-h-[400px] overflow-y-auto">
+        <pre ref={codeRef} className="bg-slate-800 p-4 min-w-max">
+          <code className={`language-${language} text-sm`}>
+            {code}
+          </code>
+        </pre>
+      </div>
+    </div>
   );
 }

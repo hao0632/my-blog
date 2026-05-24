@@ -46,27 +46,29 @@ export default async function Post({ params }: Props) {
     <div className="min-h-screen">
       <BackToTop />
       
-      <div className="max-w-6xl mx-auto px-4 py-12">
+      <div className="max-w-6xl mx-auto px-3 sm:px-4 py-8 sm:py-12">
         <Link
           href="/"
-          className="inline-block mb-8 text-primary hover:underline"
+          className="inline-block mb-6 sm:mb-8 text-primary hover:underline"
         >
           ← 返回首页
         </Link>
 
-        <div className="flex gap-8">
-          <article className="flex-1">
-            <header className="mb-8">
-              <h1 className="text-3xl font-bold text-gray-900 mb-4">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
+          <article className="flex-1 min-w-0">
+            <header className="mb-6 sm:mb-8">
+              <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
                 {post.title}
               </h1>
-              <time className="text-gray-500">{post.date}</time>
+              <time className="text-gray-500 text-sm sm:text-base">{post.date}</time>
             </header>
 
-            <CodeBlockWrapper htmlContent={content} />
+            <div className="prose-container overflow-x-auto">
+              <CodeBlockWrapper htmlContent={content} />
+            </div>
           </article>
 
-          <aside className="w-64 flex-shrink-0">
+          <aside className="w-full lg:w-64 flex-shrink-0">
             <TableOfContents headings={post.headings} />
           </aside>
         </div>

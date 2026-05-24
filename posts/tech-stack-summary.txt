@@ -1,0 +1,184 @@
+3:I[9275,[],""]
+5:I[1343,[],""]
+4:["slug","tech-stack-summary","d"]
+0:["jITJygxhlb_rHVLFZC37e",[[["",{"children":["posts",{"children":[["slug","tech-stack-summary","d"],{"children":["__PAGE__?{\"slug\":\"tech-stack-summary\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["slug","tech-stack-summary","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"min-h-screen bg-gray-50","children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/my-blog/_next/static/css/5a297c030cc2dd2c.css","precedence":"next","crossOrigin":"$undefined"}]],"$L6"]]]]
+7:I[7311,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-0ba707e9dbfc9737.js"],"default"]
+8:I[231,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-0ba707e9dbfc9737.js"],""]
+9:I[3132,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-0ba707e9dbfc9737.js"],"default"]
+b:I[7125,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-0ba707e9dbfc9737.js"],"default"]
+a:T1a10,<h2 id="概述">概述</h2>
+<p>这篇文章将详细介绍我的个人博客所使用的技术栈，包括前端框架、样式方案、Markdown 处理、部署流程等核心技术。</p>
+<hr>
+<h2 id="技术栈总览">技术栈总览</h2>
+<table>
+<thead>
+<tr>
+<th>分类</th>
+<th>技术</th>
+<th>版本</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>前端框架</strong></td>
+<td>Next.js</td>
+<td>14.2.3</td>
+<td>React 全栈框架</td>
+</tr>
+<tr>
+<td><strong>UI 库</strong></td>
+<td>React</td>
+<td>18.x</td>
+<td>UI 组件库</td>
+</tr>
+<tr>
+<td><strong>样式方案</strong></td>
+<td>TailwindCSS</td>
+<td>3.4.1</td>
+<td>原子化 CSS 框架</td>
+</tr>
+<tr>
+<td><strong>样式插件</strong></td>
+<td>@tailwindcss/typography</td>
+<td>0.5.19</td>
+<td>Markdown 排版优化</td>
+</tr>
+<tr>
+<td><strong>编程语言</strong></td>
+<td>TypeScript</td>
+<td>5.x</td>
+<td>类型安全的 JavaScript</td>
+</tr>
+<tr>
+<td><strong>Markdown解析</strong></td>
+<td>remark</td>
+<td>15.0.1</td>
+<td>Markdown AST 处理</td>
+</tr>
+<tr>
+<td><strong>HTML转换</strong></td>
+<td>rehype</td>
+<td>-</td>
+<td>Markdown 到 HTML 转换</td>
+</tr>
+<tr>
+<td><strong>代码高亮</strong></td>
+<td>highlight.js</td>
+<td>11.11.1</td>
+<td>代码语法高亮</td>
+</tr>
+<tr>
+<td><strong>部署工具</strong></td>
+<td>gh-pages</td>
+<td>6.3.0</td>
+<td>GitHub Pages 部署</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="核心技术详解">核心技术详解</h2>
+<h3 id="1-前端框架-next-js-14">1. 前端框架：Next.js 14</h3>
+<p>博客基于 <strong>Next.js 14</strong> 构建，采用 <strong>App Router</strong> 模式。</p>
+<p><strong>主要特点：</strong></p>
+<ul>
+<li><strong>静态站点生成（SSG）</strong>: 通过 <code>output: 'export'</code> 配置实现纯静态导出</li>
+<li><strong>文件系统路由</strong>: <code>src/app</code> 目录下的文件自动映射为路由</li>
+<li><strong>React Server Components</strong>: 默认支持服务端组件，提升性能</li>
+</ul>
+<p><strong>关键配置（next.config.js）：</strong></p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">const</span> nextConfig = {
+  <span class="hljs-attr">output</span>: <span class="hljs-string">'export'</span>,
+  <span class="hljs-attr">basePath</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">NEXT_PUBLIC_BASE_PATH</span> || <span class="hljs-string">''</span>,
+  <span class="hljs-attr">images</span>: {
+    <span class="hljs-attr">unoptimized</span>: <span class="hljs-literal">true</span>,
+  },
+}
+</code></pre>
+<h3 id="2-样式方案-tailwindcss-3">2. 样式方案：TailwindCSS 3</h3>
+<p>使用 <strong>TailwindCSS 3.4.1</strong> 作为样式框架，配合 <code>@tailwindcss/typography</code> 插件优化 Markdown 内容展示。</p>
+<p><strong>自定义配置（tailwind.config.ts）：</strong></p>
+<ul>
+<li>自定义主题色：<code>primary: #2563eb</code>（蓝色）、<code>secondary: #7c3aed</code>（紫色）</li>
+<li>扩展 typography 样式，移除默认的代码块背景色，便于自定义代码高亮</li>
+</ul>
+<h3 id="3-markdown-处理流程">3. Markdown 处理流程</h3>
+<p>博客使用 <strong>remark</strong> 和 <strong>rehype</strong> 系列工具链处理 Markdown 内容：</p>
+<pre><code>Markdown 文件
+    ↓
+gray-matter (解析 frontmatter)
+    ↓
+remark (解析 Markdown → AST)
+    ↓
+remark-gfm (支持 GitHub Flavored Markdown)
+    ↓
+remark-rehype (转换为 rehype AST)
+    ↓
+rehype-highlight (代码语法高亮)
+    ↓
+rehype-raw (保留原始 HTML)
+    ↓
+rehype-stringify (转换为 HTML 字符串)
+</code></pre>
+<h3 id="4-代码高亮-highlight-js">4. 代码高亮：highlight.js</h3>
+<p>使用 <code>highlight.js</code> 配合 <code>rehype-highlight</code> 实现代码块语法高亮，支持多种编程语言。</p>
+<h3 id="5-部署方案">5. 部署方案</h3>
+<p>采用 <strong>GitHub Pages</strong> 作为托管平台：</p>
+<p><strong>部署流程：</strong></p>
+<ol>
+<li><code>npm run build</code> - 构建静态站点到 <code>out</code> 目录</li>
+<li><code>gh-pages -d out</code> - 将构建产物推送到 <code>gh-pages</code> 分支</li>
+</ol>
+<p><strong>自动化部署：</strong>
+通过 <code>.github/workflows/deploy.yml</code> 配置 GitHub Actions，实现提交代码自动部署。</p>
+<hr>
+<h2 id="项目结构">项目结构</h2>
+<pre><code>my-blog/
+├── src/
+│   ├── app/                 # App Router 路由
+│   │   ├── layout.tsx       # 全局布局
+│   │   ├── page.tsx         # 首页
+│   │   └── posts/[slug]/    # 文章详情页
+│   ├── components/          # 自定义组件
+│   │   ├── CodeBlock.tsx    # 代码块组件
+│   │   ├── TableOfContents.tsx  # 目录组件
+│   │   └── BackToTop.tsx    # 返回顶部组件
+│   └── lib/
+│       └── posts.ts         # 文章数据处理
+├── posts/                   # Markdown 文章目录
+├── public/                  # 静态资源
+└── package.json             # 依赖配置
+</code></pre>
+<hr>
+<h2 id="技术选型理由">技术选型理由</h2>
+<h3 id="为什么选择-next-js">为什么选择 Next.js？</h3>
+<ol>
+<li><strong>静态导出能力</strong>: 适合博客这种以内容为主的站点</li>
+<li><strong>文件系统路由</strong>: 简化路由管理，文章文件即为路由</li>
+<li><strong>社区成熟</strong>: 丰富的生态系统和文档支持</li>
+<li><strong>性能优秀</strong>: 内置优化，无需额外配置</li>
+</ol>
+<h3 id="为什么选择-tailwindcss">为什么选择 TailwindCSS？</h3>
+<ol>
+<li><strong>快速开发</strong>: 原子化 CSS 提高开发效率</li>
+<li><strong>响应式设计</strong>: 内置响应式断点</li>
+<li><strong>主题定制</strong>: 灵活的主题配置能力</li>
+</ol>
+<h3 id="为什么选择-remark-rehype-生态">为什么选择 remark/rehype 生态？</h3>
+<ol>
+<li><strong>可扩展性强</strong>: 支持丰富的插件系统</li>
+<li><strong>社区活跃</strong>: 持续维护和更新</li>
+<li><strong>灵活性高</strong>: 可以定制 Markdown 解析和转换流程</li>
+</ol>
+<hr>
+<h2 id="总结">总结</h2>
+<p>我的博客采用了一套现代化的技术栈：</p>
+<ul>
+<li><strong>框架层</strong>: Next.js 14 + React 18</li>
+<li><strong>样式层</strong>: TailwindCSS 3 + @tailwindcss/typography</li>
+<li><strong>内容层</strong>: remark + rehype + highlight.js</li>
+<li><strong>部署层</strong>: GitHub Pages + GitHub Actions</li>
+</ul>
+<p>这套技术栈兼顾了开发效率、性能表现和可维护性，是构建现代静态博客的理想选择。</p>2:["$","div",null,{"className":"min-h-screen","children":[["$","$L7",null,{}],["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-12","children":[["$","$L8",null,{"href":"/","className":"inline-block mb-8 text-primary hover:underline","children":"← 返回首页"}],["$","div",null,{"className":"flex gap-8","children":[["$","article",null,{"className":"flex-1","children":[["$","header",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 mb-4","children":"my blog 技术栈"}],["$","time",null,{"className":"text-gray-500","children":"2026-05-24"}]]}],["$","$L9",null,{"htmlContent":"$a"}]]}],["$","aside",null,{"className":"w-64 flex-shrink-0","children":["$","$Lb",null,{"headings":[{"id":"概述","text":"概述","level":2},{"id":"技术栈总览","text":"技术栈总览","level":2},{"id":"核心技术详解","text":"核心技术详解","level":2},{"id":"1-前端框架-next-js-14","text":"1. 前端框架：Next.js 14","level":3},{"id":"2-样式方案-tailwindcss-3","text":"2. 样式方案：TailwindCSS 3","level":3},{"id":"3-markdown-处理流程","text":"3. Markdown 处理流程","level":3},{"id":"4-代码高亮-highlight-js","text":"4. 代码高亮：highlight.js","level":3},{"id":"5-部署方案","text":"5. 部署方案","level":3},{"id":"项目结构","text":"项目结构","level":2},{"id":"技术选型理由","text":"技术选型理由","level":2},{"id":"为什么选择-next-js","text":"为什么选择 Next.js？","level":3},{"id":"为什么选择-tailwindcss","text":"为什么选择 TailwindCSS？","level":3},{"id":"为什么选择-remark-rehype-生态","text":"为什么选择 remark/rehype 生态？","level":3},{"id":"总结","text":"总结","level":2}]}]}]]}],["$","footer",null,{"className":"mt-16 pt-8 border-t border-gray-200","children":["$","$L8",null,{"href":"/","className":"inline-block text-primary hover:underline","children":"← 返回首页"}]}]]}]]}]
+6:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"my blog 技术栈"}],["$","meta","3",{"name":"description","content":"前端框架、样式方案、Markdown 处理、部署流程"}],["$","link","4",{"rel":"icon","href":"/cat.ico"}]]
+1:null

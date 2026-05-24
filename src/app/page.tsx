@@ -63,7 +63,7 @@ export default function Home() {
         </div>
         <div className="border-t border-gray-800">
           <div className="px-4 py-4">
-            <p className="text-center text-gray-500 text-sm">© 2026 hao-0632's blog</p>
+            <p className="text-center text-gray-500 text-sm">{"© 2026 hao-0632's blog"}</p>
           </div>
         </div>
       </footer>

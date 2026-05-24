@@ -70,16 +70,34 @@ export default async function Post({ params }: Props) {
             <TableOfContents headings={post.headings} />
           </aside>
         </div>
-
-        <footer className="mt-16 pt-8 border-t border-gray-200">
-          <Link
-            href="/"
-            className="inline-block text-primary hover:underline"
-          >
-            ← 返回首页
-          </Link>
-        </footer>
       </div>
+
+      <footer className="bg-gray-900 text-gray-300">
+        <div className="max-w-6xl mx-auto px-4 py-12">
+          <div className="flex flex-col md:flex-row justify-between">
+            <div>
+              <h4 className="text-gray-400 mb-4">链接</h4>
+              <ul className="space-y-2">
+                <li>
+                  <a
+                    href="https://github.com/hao0632"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors"
+                  >
+                    GitHub
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="border-t border-gray-800">
+          <div className="px-4 py-4">
+            <p className="text-center text-gray-500 text-sm">© 2026 hao-0632's blog</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

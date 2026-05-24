@@ -20,7 +20,7 @@ excerpt: "学习 Markdown 语法"
 
 ### 链接和图片
 
-[访问我的 GitHub](https://github.com)
+[访问我的 GitHub](https://github.com/hao0632)
 
 ### 代码块
 

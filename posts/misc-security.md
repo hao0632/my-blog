@@ -78,7 +78,7 @@ python bwmforpy3.py decode 加水印.png 原图.png 盲水印.png --oldseed
 python bwm.py decode 加水印.png 原图.png 盲水印.png
 
 hint：原图与加水印图片xor异或后会出现条纹
-![盲水印](/misc-安全杂项/mangshuiyin.png)
+![盲水印](/misc-security/mangshuiyin.png)
 
 #### 2.1.4 频域盲水印
 python encode.py --image <原图> --watermark <水印> --result <加水印>
@@ -92,9 +92,9 @@ java --add-exports java.base/sun.security.provider=ALL-UNNAMED Extract /home/kal
 
 隐写原理：PNG的数据压缩后存储到IDAT块，并且只有存满才能存到下一个IDAT块，在IDAT隐写中，一个IDAT数据块没有存满，但是出现了新的IDAT块，对异常IDAT块进行Zlib解压缩，之后再对数据进行其他的处理。
 
-![SRK操作](/misc-安全杂项/idat1.png)
+![SRK操作](/misc-security/idat1.png)
 
-![说明](/misc-安全杂项/idat2.png)
+![说明](/misc-security/idat2.png)
 
 最后4字节为crc，去掉。
 
@@ -112,9 +112,9 @@ print(result)
 #### 2.1.8 其他hint
 
 这种即存在有效信息
-![有效信息](/misc-安全杂项/valid.png)
+![有效信息](/misc-security/valid.png)
 形如大概率为bmp图片
-![bmp示例](/misc-安全杂项/bmp.png)
+![bmp示例](/misc-security/bmp.png)
 
 ### 2.2 音频隐写
 #### 2.2.1 总览
@@ -125,19 +125,19 @@ MP3stego（key）、波形频谱图morse密码、拨号音解密、slienteye隐�
 
 #### 2.2.3 字母解释法
 国际无线电通话拼写字母（字母解释法）
-![字母解释法](/misc-安全杂项/zimu.png)
+![字母解释法](/misc-security/zimu.png)
 
 #### 2.2.4 拨号音解密
 .\dtmf2num <路径>（wav格式）
 随波逐流解密
-![拨号音解密](/misc-安全杂项/bohao.png)
+![拨号音解密](/misc-security/bohao.png)
 
 #### 2.2.5  grc文件fm解调
 C:\Users\Administrator\Desktop\hao\解调\demodulate.py
 
 #### 2.2.6 其他hint
 字符隐藏在相对重复十六进制片段中（如midi文件出现）
-![隐藏信息](/misc-安全杂项/hide.png)
+![隐藏信息](/misc-security/hide.png)
 
 ### 2.3 文档隐写
 #### 2.3.1 总览

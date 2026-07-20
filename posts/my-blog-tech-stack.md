@@ -1,5 +1,6 @@
 ---
 title: "my blog 技术栈"
+slug: "my-blog-tech-stack"
 date: "2026-05-24"
 excerpt: "前端框架、样式方案、Markdown 处理、部署流程"
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Markdown 写作指南"
+slug: "markdown-guide"
 date: "2026-05-10"
 excerpt: "学习 Markdown 语法"
 ---

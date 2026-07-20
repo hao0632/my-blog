@@ -1,5 +1,6 @@
 ---
 title: "欢迎来到我的博客"
+slug: "welcome"
 date: "2026-05-10"
 excerpt: "这是我的第一篇博客文章"
 ---

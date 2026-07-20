@@ -1,5 +1,6 @@
 ---
 title: "misc-安全杂项"
+slug: "misc-security"
 date: "2026-07-20"
 excerpt: "misc个人食用指北，持续更新"
 ---

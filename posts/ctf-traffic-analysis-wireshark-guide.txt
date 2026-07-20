@@ -1,0 +1,1307 @@
+3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4160,["231","static/chunks/231-4760956769979d51.js","185","static/chunks/app/layout-cf1eee64ea0339e6.js"],"default"]
+4:["slug","ctf-traffic-analysis-wireshark-guide","d"]
+0:["Vu_wo3O8e-w9_kIQy_KY8",[[["",{"children":["posts",{"children":[["slug","ctf-traffic-analysis-wireshark-guide","d"],{"children":["__PAGE__?{\"slug\":\"ctf-traffic-analysis-wireshark-guide\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["slug","ctf-traffic-analysis-wireshark-guide","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"min-h-screen bg-gray-50","children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/my-blog/_next/static/css/52967a4f0e01b0e9.css","precedence":"next","crossOrigin":"$undefined"}]],"$L7"]]]]
+8:I[7311,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-4c59b816d8fdf804.js"],"default"]
+9:I[231,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-4c59b816d8fdf804.js"],""]
+a:I[3132,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-4c59b816d8fdf804.js"],"default"]
+c:I[7125,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-4c59b816d8fdf804.js"],"default"]
+b:Tbaf5,<h2 id="">一、流量分析概述</h2>
+<p>流量分析（Traffic Analysis）是CTF中取证类题目的重要分支，主要通过分析网络数据包捕获文件（PCAP）来提取关键信息、还原攻击过程、挖掘隐藏数据。流量分析考验选手的网络协议知识、工具使用能力和逻辑推理能力。</p>
+<p><strong>核心工具：Wireshark</strong> —— 业界最强大的图形化网络协议分析器，提供直观的界面和丰富的功能。</p>
+<hr>
+<h2 id="wireshark">二、Wireshark界面详解</h2>
+<h3 id="2-1">2.1 主界面布局</h3>
+<p>Wireshark主界面分为以下几个区域：</p>
+<table>
+<thead>
+<tr>
+<th>区域</th>
+<th>名称</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>顶部</td>
+<td>菜单栏</td>
+<td>提供所有功能入口</td>
+</tr>
+<tr>
+<td>顶部</td>
+<td>工具栏</td>
+<td>常用操作快捷按钮</td>
+</tr>
+<tr>
+<td>左上</td>
+<td>过滤器栏</td>
+<td>输入显示过滤器</td>
+</tr>
+<tr>
+<td>中上</td>
+<td>数据包列表</td>
+<td>显示所有数据包的摘要</td>
+</tr>
+<tr>
+<td>中下</td>
+<td>数据包详情</td>
+<td>显示选中数据包的分层详情</td>
+</tr>
+<tr>
+<td>右下</td>
+<td>十六进制视图</td>
+<td>显示数据包的原始十六进制数据</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-2">2.2 工具栏按钮说明</h3>
+<table>
+<thead>
+<tr>
+<th>按钮图标</th>
+<th>功能</th>
+<th>快捷键</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Open</strong></td>
+<td>打开PCAP文件</td>
+<td>Ctrl+O</td>
+</tr>
+<tr>
+<td><strong>Capture</strong></td>
+<td>开始抓包</td>
+<td>Ctrl+E</td>
+</tr>
+<tr>
+<td><strong>Stop</strong></td>
+<td>停止抓包</td>
+<td>Ctrl+E</td>
+</tr>
+<tr>
+<td><strong>Filter</strong></td>
+<td>应用显示过滤器</td>
+<td>Enter</td>
+</tr>
+<tr>
+<td><strong>Clear</strong></td>
+<td>清除显示</td>
+<td>Ctrl+D</td>
+</tr>
+<tr>
+<td><strong>Previous</strong></td>
+<td>上一个数据包</td>
+<td>Ctrl+P</td>
+</tr>
+<tr>
+<td><strong>Next</strong></td>
+<td>下一个数据包</td>
+<td>Ctrl+N</td>
+</tr>
+<tr>
+<td><strong>Follow</strong></td>
+<td>追踪流</td>
+<td>Ctrl+Shift+F</td>
+</tr>
+<tr>
+<td><strong>Statistics</strong></td>
+<td>统计功能</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Zoom In</strong></td>
+<td>放大十六进制视图</td>
+<td>Ctrl++</td>
+</tr>
+<tr>
+<td><strong>Zoom Out</strong></td>
+<td>缩小十六进制视图</td>
+<td>Ctrl+-</td>
+</tr>
+<tr>
+<td><strong>Find</strong></td>
+<td>查找数据包</td>
+<td>Ctrl+F</td>
+</tr>
+<tr>
+<td><strong>Mark</strong></td>
+<td>标记数据包</td>
+<td>Ctrl+M</td>
+</tr>
+<tr>
+<td><strong>Save</strong></td>
+<td>保存捕获</td>
+<td>Ctrl+S</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="">三、分析方法论</h2>
+<h3 id="3-1">3.1 常规分析流程</h3>
+<pre><code>1. 打开PCAP文件 → 2. 协议统计分析 → 3. 关键会话筛选 → 4. 数据提取 → 5. 深度分析 → 6. Flag验证
+</code></pre>
+<h3 id="3-2">3.2 快速定位策略</h3>
+<p><strong>第一步：获取文件基本信息</strong></p>
+<ul>
+<li><code>File → Properties</code>：查看文件基本信息（捕获时间、数据包数量、文件大小等）</li>
+<li><code>Statistics → Summary</code>：详细统计信息</li>
+</ul>
+<p><strong>第二步：识别关键协议</strong></p>
+<ul>
+<li><code>Statistics → Protocol Hierarchy</code>：协议层次统计，快速识别主要协议</li>
+<li>观察数据包列表中的Protocol列</li>
+</ul>
+<p><strong>第三步：追踪特定数据流</strong></p>
+<ul>
+<li>在过滤器栏输入过滤条件</li>
+<li>右键点击数据包 → <code>Follow</code> 追踪流</li>
+<li>使用 <code>Statistics → Endpoints</code> 或 <code>Conversations</code> 查看通信端点</li>
+</ul>
+<hr>
+<h2 id="">四、显示过滤器详解</h2>
+<h3 id="4-1">4.1 基础语法</h3>
+<p>在Wireshark过滤器栏中输入过滤表达式，按回车或点击Apply按钮应用。</p>
+<p><strong>协议过滤：</strong></p>
+<pre><code>http          # 显示所有HTTP协议数据包
+tcp           # 显示所有TCP协议数据包
+dns           # 显示所有DNS协议数据包
+icmp          # 显示所有ICMP协议数据包
+smb           # 显示所有SMB协议数据包
+</code></pre>
+<p><strong>字段过滤：</strong></p>
+<pre><code>ip.src == 192.168.1.1    # 源IP地址
+ip.dst == 192.168.1.1    # 目标IP地址
+tcp.port == 80            # TCP端口号
+udp.port == 53            # UDP端口号
+http.request.method == "GET"  # HTTP方法
+</code></pre>
+<p><strong>逻辑运算符：</strong></p>
+<pre><code>&#x26;&#x26;  # 与（AND）
+||  # 或（OR）
+!   # 非（NOT）
+</code></pre>
+<p><strong>比较运算符：</strong></p>
+<pre><code>==  # 等于
+!=  # 不等于
+>   # 大于
+&#x3C;   # 小于
+contains  # 包含子字符串
+matches   # 正则表达式匹配
+</code></pre>
+<h3 id="4-2">4.2 常用过滤表达式速查表</h3>
+<table>
+<thead>
+<tr>
+<th>过滤表达式</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>http</code></td>
+<td>显示所有HTTP流量</td>
+</tr>
+<tr>
+<td><code>http.request.method == "POST"</code></td>
+<td>过滤HTTP POST请求</td>
+</tr>
+<tr>
+<td><code>http contains "flag"</code></td>
+<td>过滤包含"flag"的HTTP流量</td>
+</tr>
+<tr>
+<td><code>http.request.uri contains "login"</code></td>
+<td>过滤登录相关请求</td>
+</tr>
+<tr>
+<td><code>dns</code></td>
+<td>显示所有DNS流量</td>
+</tr>
+<tr>
+<td><code>dns.qry.type == 1</code></td>
+<td>过滤A记录查询</td>
+</tr>
+<tr>
+<td><code>dns.flags.response == 1</code></td>
+<td>过滤DNS响应</td>
+</tr>
+<tr>
+<td><code>dns contains "base64"</code></td>
+<td>过滤包含base64的DNS流量</td>
+</tr>
+<tr>
+<td><code>ftp</code></td>
+<td>显示所有FTP流量</td>
+</tr>
+<tr>
+<td><code>ftp.request.command == "USER"</code></td>
+<td>过滤FTP用户名</td>
+</tr>
+<tr>
+<td><code>ftp.request.command == "PASS"</code></td>
+<td>过滤FTP密码</td>
+</tr>
+<tr>
+<td><code>icmp</code></td>
+<td>显示所有ICMP流量</td>
+</tr>
+<tr>
+<td><code>icmp.type == 8</code></td>
+<td>过滤Ping请求</td>
+</tr>
+<tr>
+<td><code>icmp.type == 0</code></td>
+<td>过滤Ping响应</td>
+</tr>
+<tr>
+<td><code>tcp.analysis.retransmission</code></td>
+<td>过滤TCP重传</td>
+</tr>
+<tr>
+<td><code>tcp.analysis.out_of_order</code></td>
+<td>过滤TCP乱序</td>
+</tr>
+<tr>
+<td><code>tcp.port == 443</code></td>
+<td>过滤HTTPS流量</td>
+</tr>
+<tr>
+<td><code>smb</code></td>
+<td>显示所有SMB流量</td>
+</tr>
+<tr>
+<td><code>usb.capdata</code></td>
+<td>显示USB数据</td>
+</tr>
+<tr>
+<td><code>eapol</code></td>
+<td>显示WiFi握手包</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="wireshark">五、常见协议分析技巧（Wireshark操作）</h2>
+<h3 id="5-1-http">5.1 HTTP协议分析</h3>
+<p><strong>基本操作：</strong></p>
+<ol>
+<li>
+<p><strong>过滤HTTP流量</strong></p>
+<ul>
+<li>在过滤器栏输入 <code>http</code>，回车</li>
+</ul>
+</li>
+<li>
+<p><strong>查看HTTP请求详情</strong></p>
+<ul>
+<li>选中一个HTTP数据包</li>
+<li>在数据包详情面板展开 <code>Hypertext Transfer Protocol</code></li>
+<li>查看请求行、头部字段、请求体</li>
+</ul>
+</li>
+<li>
+<p><strong>提取HTTP请求参数</strong></p>
+<ul>
+<li>展开 <code>http.request.uri.query</code> 查看GET参数</li>
+<li>展开 <code>http.file_data</code> 查看POST数据</li>
+</ul>
+</li>
+<li>
+<p><strong>查看HTTP响应</strong></p>
+<ul>
+<li>找到对应的响应数据包（通常在请求包之后）</li>
+<li>展开 <code>http.response</code> 查看状态码</li>
+<li>展开 <code>http.file_data</code> 查看响应体内容</li>
+</ul>
+</li>
+<li>
+<p><strong>追踪HTTP流</strong></p>
+<ul>
+<li>右键点击HTTP数据包</li>
+<li>选择 <code>Follow → HTTP Stream</code></li>
+<li>在弹出窗口中查看完整的请求-响应对话</li>
+</ul>
+</li>
+</ol>
+<p><strong>关键分析点：</strong></p>
+<ul>
+<li>请求参数中的敏感数据（如token、password）</li>
+<li>响应中的隐藏信息（如注释、特殊编码）</li>
+<li>Cookie中的会话信息</li>
+<li>User-Agent、Referer等头部信息</li>
+</ul>
+<h3 id="5-2-https-tls">5.2 HTTPS/TLS协议分析</h3>
+<p><strong>解密配置步骤：</strong></p>
+<ol>
+<li>
+<p><strong>方法一：使用服务器私钥</strong></p>
+<ul>
+<li><code>Edit → Preferences → Protocols → TLS</code></li>
+<li>点击 <code>RSA Keys List</code> 旁边的 <code>Edit</code> 按钮</li>
+<li>添加密钥：IP地址、端口、协议、私钥文件路径</li>
+</ul>
+</li>
+<li>
+<p><strong>方法二：使用SSLKEYLOGFILE</strong></p>
+<ul>
+<li>在浏览器环境设置环境变量：<code>export SSLKEYLOGFILE=./sslkey.log</code></li>
+<li>在Wireshark中：<code>Edit → Preferences → Protocols → TLS</code></li>
+<li>在 <code>(Pre)-Master-Secret log filename</code> 中选择sslkey.log文件</li>
+</ul>
+</li>
+<li>
+<p><strong>方法三：使用浏览器插件导出密钥</strong></p>
+<ul>
+<li>使用Firefox的 <code>about:config</code> 设置 <code>security.ssl.debug</code> 为true</li>
+<li>或使用Chrome的 <code>chrome://net-export/</code> 导出SSL密钥</li>
+</ul>
+</li>
+</ol>
+<p><strong>分析步骤：</strong></p>
+<ol>
+<li>配置解密后，HTTP流量会以明文形式显示</li>
+<li>使用 <code>http</code> 过滤器查看解密后的内容</li>
+<li>检查证书信息：展开 <code>Transport Layer Security → Certificate</code></li>
+</ol>
+<p><strong>常见漏洞：</strong></p>
+<ul>
+<li>SSL/TLS版本降级攻击（如POODLE）</li>
+<li>证书验证绕过</li>
+<li>弱加密套件（如RC4、DES）</li>
+</ul>
+<h3 id="5-3-dns">5.3 DNS协议分析</h3>
+<p><strong>基本操作：</strong></p>
+<ol>
+<li>
+<p><strong>过滤DNS流量</strong></p>
+<ul>
+<li>在过滤器栏输入 <code>dns</code>，回车</li>
+</ul>
+</li>
+<li>
+<p><strong>查看DNS查询</strong></p>
+<ul>
+<li>选中DNS数据包</li>
+<li>在数据包详情面板展开 <code>Domain Name System (query)</code></li>
+<li>查看查询名称（<code>dns.qry.name</code>）和查询类型（<code>dns.qry.type</code>）</li>
+</ul>
+</li>
+<li>
+<p><strong>查看DNS响应</strong></p>
+<ul>
+<li>找到对应的响应数据包</li>
+<li>展开 <code>Domain Name System (response)</code></li>
+<li>查看响应记录（<code>dns.a</code>、<code>dns.aaaa</code>、<code>dns.txt</code>等）</li>
+</ul>
+</li>
+<li>
+<p><strong>DNS隧道检测</strong></p>
+<ul>
+<li>观察 <code>dns.qry.name</code> 是否包含异常字符串</li>
+<li>检查是否有大量DNS查询且子域名模式相似</li>
+</ul>
+</li>
+</ol>
+<p><strong>DNS类型代码：</strong></p>
+<table>
+<thead>
+<tr>
+<th>类型值</th>
+<th>名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>A</td>
+<td>IPv4地址记录</td>
+</tr>
+<tr>
+<td>2</td>
+<td>NS</td>
+<td>名称服务器记录</td>
+</tr>
+<tr>
+<td>5</td>
+<td>CNAME</td>
+<td>别名记录</td>
+</tr>
+<tr>
+<td>15</td>
+<td>MX</td>
+<td>邮件交换记录</td>
+</tr>
+<tr>
+<td>28</td>
+<td>AAAA</td>
+<td>IPv6地址记录</td>
+</tr>
+<tr>
+<td>16</td>
+<td>TXT</td>
+<td>文本记录</td>
+</tr>
+</tbody>
+</table>
+<p><strong>操作技巧：</strong></p>
+<ul>
+<li>使用 <code>dns.qry.type == 16</code> 过滤TXT记录（常用于数据传输）</li>
+<li>使用 <code>dns contains "="</code> 过滤可能包含base64编码的DNS流量</li>
+</ul>
+<h3 id="5-4-ftp">5.4 FTP协议分析</h3>
+<p><strong>基本操作：</strong></p>
+<ol>
+<li>
+<p><strong>过滤FTP流量</strong></p>
+<ul>
+<li>在过滤器栏输入 <code>ftp</code>，回车</li>
+</ul>
+</li>
+<li>
+<p><strong>提取用户名和密码</strong></p>
+<ul>
+<li>查找包含 <code>USER</code> 命令的数据包（<code>ftp.request.command == "USER"</code>）</li>
+<li>查找包含 <code>PASS</code> 命令的数据包（<code>ftp.request.command == "PASS"</code>）</li>
+<li>在数据包详情中查看命令参数</li>
+</ul>
+</li>
+<li>
+<p><strong>查看文件传输</strong></p>
+<ul>
+<li>FTP使用两个连接：控制连接（21端口）和数据连接</li>
+<li>数据连接通常使用随机端口</li>
+<li>使用 <code>Follow → TCP Stream</code> 查看文件传输内容</li>
+</ul>
+</li>
+<li>
+<p><strong>追踪FTP流</strong></p>
+<ul>
+<li>右键点击FTP数据包</li>
+<li>选择 <code>Follow → TCP Stream</code></li>
+<li>查看完整的FTP会话</li>
+</ul>
+</li>
+</ol>
+<h3 id="5-5-icmp">5.5 ICMP协议分析</h3>
+<p><strong>基本操作：</strong></p>
+<ol>
+<li>
+<p><strong>过滤ICMP流量</strong></p>
+<ul>
+<li>在过滤器栏输入 <code>icmp</code>，回车</li>
+</ul>
+</li>
+<li>
+<p><strong>查看ICMP类型</strong></p>
+<ul>
+<li>在数据包详情中查看 <code>icmp.type</code> 和 <code>icmp.code</code></li>
+</ul>
+</li>
+<li>
+<p><strong>ICMP类型对照表：</strong></p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Code</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>Echo Reply（响应）</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0-15</td>
+<td>Destination Unreachable（目标不可达）</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0-3</td>
+<td>Redirect（重定向）</td>
+</tr>
+<tr>
+<td>8</td>
+<td>0</td>
+<td>Echo Request（请求）</td>
+</tr>
+<tr>
+<td>11</td>
+<td>0-1</td>
+<td>Time Exceeded（超时）</td>
+</tr>
+</tbody>
+</table>
+<ol start="4">
+<li>
+<p><strong>ICMP隧道检测</strong></p>
+<ul>
+<li>过滤 <code>icmp.type == 8</code> 查看Ping请求</li>
+<li>检查 <code>icmp.data</code> 是否包含异常数据（非随机填充）</li>
+<li>观察payload长度是否异常大</li>
+</ul>
+</li>
+<li>
+<p><strong>提取ICMP数据</strong></p>
+<ul>
+<li>选中ICMP数据包</li>
+<li>在十六进制视图中查看数据部分</li>
+<li>右键十六进制数据 → <code>Copy → Bytes → As Hex Stream</code></li>
+</ul>
+</li>
+</ol>
+<h3 id="5-6-smb">5.6 SMB协议分析</h3>
+<p><strong>基本操作：</strong></p>
+<ol>
+<li>
+<p><strong>过滤SMB流量</strong></p>
+<ul>
+<li>在过滤器栏输入 <code>smb</code>，回车</li>
+</ul>
+</li>
+<li>
+<p><strong>查看SMB操作</strong></p>
+<ul>
+<li>在数据包详情中展开 <code>Server Message Block (SMB)</code></li>
+<li>查看 <code>smb.cmd</code> 字段了解操作类型</li>
+</ul>
+</li>
+<li>
+<p><strong>提取文件内容</strong></p>
+<ul>
+<li><code>File → Export Objects → SMB</code></li>
+<li>在弹出窗口中选择要导出的文件</li>
+<li>点击 <code>Save</code> 保存文件</li>
+</ul>
+</li>
+<li>
+<p><strong>查看共享信息</strong></p>
+<ul>
+<li>查找 <code>SMB Negotiate Protocol Request</code> 数据包</li>
+<li>查看 <code>smb.native_os</code> 和 <code>smb.native_lm</code> 字段</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="">六、特殊流量分析</h2>
+<h3 id="6-1-usb">6.1 USB流量分析</h3>
+<p><strong>USB键盘数据还原：</strong></p>
+<ol>
+<li>
+<p><strong>过滤USB键盘数据</strong></p>
+<ul>
+<li>在过滤器栏输入 <code>usb.capdata &#x26;&#x26; usb.endpoint_address == 0x81</code></li>
+</ul>
+</li>
+<li>
+<p><strong>查看USB数据</strong></p>
+<ul>
+<li>选中数据包，查看 <code>usb.capdata</code> 字段</li>
+<li>数据格式：第1字节=修饰键，第2字节=保留，第3-8字节=按键码</li>
+</ul>
+</li>
+<li>
+<p><strong>提取按键数据</strong></p>
+<ul>
+<li>右键点击数据包 → <code>Copy → Fields → usb.capdata</code></li>
+<li>或使用 <code>File → Export Packet Dissections → As Plain Text</code></li>
+</ul>
+</li>
+<li>
+<p><strong>按键码映射表（部分）：</strong></p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>按键码</th>
+<th>字符</th>
+<th>按键码</th>
+<th>字符</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x04</td>
+<td>a</td>
+<td>0x1E</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0x05</td>
+<td>b</td>
+<td>0x1F</td>
+<td>2</td>
+</tr>
+<tr>
+<td>0x06</td>
+<td>c</td>
+<td>0x20</td>
+<td>3</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td>0x28</td>
+<td>Enter</td>
+<td>0x2C</td>
+<td>Space</td>
+</tr>
+</tbody>
+</table>
+<ol start="5">
+<li>
+<p><strong>使用Wireshark自带工具</strong></p>
+<ul>
+<li>某些版本支持直接解析USB键盘数据</li>
+<li>查看 <code>usb.keyboard</code> 相关字段</li>
+</ul>
+</li>
+<li>
+<p><strong>Python脚本还原按键（推荐）</strong></p>
+</li>
+</ol>
+<p>在Wireshark中提取 <code>usb.capdata</code> 后，使用以下脚本还原按键：</p>
+<pre><code class="hljs language-python"><span class="hljs-comment">#!/usr/bin/env python3</span>
+usb_keyboard_codes = {
+    <span class="hljs-number">0x00</span>: <span class="hljs-string">''</span>, <span class="hljs-number">0x04</span>: <span class="hljs-string">'a'</span>, <span class="hljs-number">0x05</span>: <span class="hljs-string">'b'</span>, <span class="hljs-number">0x06</span>: <span class="hljs-string">'c'</span>, <span class="hljs-number">0x07</span>: <span class="hljs-string">'d'</span>, <span class="hljs-number">0x08</span>: <span class="hljs-string">'e'</span>,
+    <span class="hljs-number">0x09</span>: <span class="hljs-string">'f'</span>, <span class="hljs-number">0x0a</span>: <span class="hljs-string">'g'</span>, <span class="hljs-number">0x0b</span>: <span class="hljs-string">'h'</span>, <span class="hljs-number">0x0c</span>: <span class="hljs-string">'i'</span>, <span class="hljs-number">0x0d</span>: <span class="hljs-string">'j'</span>, <span class="hljs-number">0x0e</span>: <span class="hljs-string">'k'</span>,
+    <span class="hljs-number">0x0f</span>: <span class="hljs-string">'l'</span>, <span class="hljs-number">0x10</span>: <span class="hljs-string">'m'</span>, <span class="hljs-number">0x11</span>: <span class="hljs-string">'n'</span>, <span class="hljs-number">0x12</span>: <span class="hljs-string">'o'</span>, <span class="hljs-number">0x13</span>: <span class="hljs-string">'p'</span>, <span class="hljs-number">0x14</span>: <span class="hljs-string">'q'</span>,
+    <span class="hljs-number">0x15</span>: <span class="hljs-string">'r'</span>, <span class="hljs-number">0x16</span>: <span class="hljs-string">'s'</span>, <span class="hljs-number">0x17</span>: <span class="hljs-string">'t'</span>, <span class="hljs-number">0x18</span>: <span class="hljs-string">'u'</span>, <span class="hljs-number">0x19</span>: <span class="hljs-string">'v'</span>, <span class="hljs-number">0x1a</span>: <span class="hljs-string">'w'</span>,
+    <span class="hljs-number">0x1b</span>: <span class="hljs-string">'x'</span>, <span class="hljs-number">0x1c</span>: <span class="hljs-string">'y'</span>, <span class="hljs-number">0x1d</span>: <span class="hljs-string">'z'</span>, <span class="hljs-number">0x1e</span>: <span class="hljs-string">'1'</span>, <span class="hljs-number">0x1f</span>: <span class="hljs-string">'2'</span>, <span class="hljs-number">0x20</span>: <span class="hljs-string">'3'</span>,
+    <span class="hljs-number">0x21</span>: <span class="hljs-string">'4'</span>, <span class="hljs-number">0x22</span>: <span class="hljs-string">'5'</span>, <span class="hljs-number">0x23</span>: <span class="hljs-string">'6'</span>, <span class="hljs-number">0x24</span>: <span class="hljs-string">'7'</span>, <span class="hljs-number">0x25</span>: <span class="hljs-string">'8'</span>, <span class="hljs-number">0x26</span>: <span class="hljs-string">'9'</span>,
+    <span class="hljs-number">0x27</span>: <span class="hljs-string">'0'</span>, <span class="hljs-number">0x28</span>: <span class="hljs-string">'\n'</span>, <span class="hljs-number">0x29</span>: <span class="hljs-string">'ESC'</span>, <span class="hljs-number">0x2a</span>: <span class="hljs-string">'BACKSPACE'</span>, <span class="hljs-number">0x2b</span>: <span class="hljs-string">'TAB'</span>,
+    <span class="hljs-number">0x2c</span>: <span class="hljs-string">' '</span>, <span class="hljs-number">0x2d</span>: <span class="hljs-string">'-'</span>, <span class="hljs-number">0x2e</span>: <span class="hljs-string">'='</span>, <span class="hljs-number">0x2f</span>: <span class="hljs-string">'['</span>, <span class="hljs-number">0x30</span>: <span class="hljs-string">']'</span>, <span class="hljs-number">0x31</span>: <span class="hljs-string">'\\'</span>,
+    <span class="hljs-number">0x32</span>: <span class="hljs-string">'#'</span>, <span class="hljs-number">0x33</span>: <span class="hljs-string">';'</span>, <span class="hljs-number">0x34</span>: <span class="hljs-string">'\''</span>, <span class="hljs-number">0x35</span>: <span class="hljs-string">'`'</span>, <span class="hljs-number">0x36</span>: <span class="hljs-string">','</span>, <span class="hljs-number">0x37</span>: <span class="hljs-string">'.'</span>,
+    <span class="hljs-number">0x38</span>: <span class="hljs-string">'/'</span>, <span class="hljs-number">0x39</span>: <span class="hljs-string">'CAPS_LOCK'</span>, <span class="hljs-number">0x3a</span>: <span class="hljs-string">'F1'</span>, <span class="hljs-number">0x3b</span>: <span class="hljs-string">'F2'</span>, <span class="hljs-number">0x3c</span>: <span class="hljs-string">'F3'</span>,
+    <span class="hljs-number">0x3d</span>: <span class="hljs-string">'F4'</span>, <span class="hljs-number">0x3e</span>: <span class="hljs-string">'F5'</span>, <span class="hljs-number">0x3f</span>: <span class="hljs-string">'F6'</span>, <span class="hljs-number">0x40</span>: <span class="hljs-string">'F7'</span>, <span class="hljs-number">0x41</span>: <span class="hljs-string">'F8'</span>,
+    <span class="hljs-number">0x42</span>: <span class="hljs-string">'F9'</span>, <span class="hljs-number">0x43</span>: <span class="hljs-string">'F10'</span>, <span class="hljs-number">0x44</span>: <span class="hljs-string">'F11'</span>, <span class="hljs-number">0x45</span>: <span class="hljs-string">'F12'</span>, <span class="hljs-number">0x46</span>: <span class="hljs-string">'PRINT'</span>,
+    <span class="hljs-number">0x47</span>: <span class="hljs-string">'SCROLL_LOCK'</span>, <span class="hljs-number">0x48</span>: <span class="hljs-string">'PAUSE'</span>, <span class="hljs-number">0x49</span>: <span class="hljs-string">'INSERT'</span>, <span class="hljs-number">0x4a</span>: <span class="hljs-string">'HOME'</span>,
+    <span class="hljs-number">0x4b</span>: <span class="hljs-string">'PAGE_UP'</span>, <span class="hljs-number">0x4c</span>: <span class="hljs-string">'DELETE'</span>, <span class="hljs-number">0x4d</span>: <span class="hljs-string">'END'</span>, <span class="hljs-number">0x4e</span>: <span class="hljs-string">'PAGE_DOWN'</span>,
+    <span class="hljs-number">0x4f</span>: <span class="hljs-string">'RIGHT'</span>, <span class="hljs-number">0x50</span>: <span class="hljs-string">'LEFT'</span>, <span class="hljs-number">0x51</span>: <span class="hljs-string">'DOWN'</span>, <span class="hljs-number">0x52</span>: <span class="hljs-string">'UP'</span>, <span class="hljs-number">0x53</span>: <span class="hljs-string">'NUM_LOCK'</span>,
+    <span class="hljs-number">0x54</span>: <span class="hljs-string">'/'</span>, <span class="hljs-number">0x55</span>: <span class="hljs-string">'*'</span>, <span class="hljs-number">0x56</span>: <span class="hljs-string">'-'</span>, <span class="hljs-number">0x57</span>: <span class="hljs-string">'+'</span>, <span class="hljs-number">0x58</span>: <span class="hljs-string">'ENTER'</span>, <span class="hljs-number">0x59</span>: <span class="hljs-string">'1'</span>,
+    <span class="hljs-number">0x5a</span>: <span class="hljs-string">'2'</span>, <span class="hljs-number">0x5b</span>: <span class="hljs-string">'3'</span>, <span class="hljs-number">0x5c</span>: <span class="hljs-string">'4'</span>, <span class="hljs-number">0x5d</span>: <span class="hljs-string">'5'</span>, <span class="hljs-number">0x5e</span>: <span class="hljs-string">'6'</span>, <span class="hljs-number">0x5f</span>: <span class="hljs-string">'7'</span>,
+    <span class="hljs-number">0x60</span>: <span class="hljs-string">'8'</span>, <span class="hljs-number">0x61</span>: <span class="hljs-string">'9'</span>, <span class="hljs-number">0x62</span>: <span class="hljs-string">'0'</span>, <span class="hljs-number">0x63</span>: <span class="hljs-string">'.'</span>, <span class="hljs-number">0x64</span>: <span class="hljs-string">'='</span>, <span class="hljs-number">0x65</span>: <span class="hljs-string">'&#x3C;'</span>,
+    <span class="hljs-number">0x66</span>: <span class="hljs-string">'>'</span>, <span class="hljs-number">0x67</span>: <span class="hljs-string">'MUTE'</span>, <span class="hljs-number">0x68</span>: <span class="hljs-string">'VOL_DOWN'</span>, <span class="hljs-number">0x69</span>: <span class="hljs-string">'VOL_UP'</span>
+}
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">parse_usb_keyboard_data</span>(<span class="hljs-params">capdata</span>):
+    data = <span class="hljs-built_in">bytes</span>.fromhex(capdata.replace(<span class="hljs-string">':'</span>, <span class="hljs-string">''</span>))
+    modifier = data[<span class="hljs-number">0</span>]
+    keys = data[<span class="hljs-number">2</span>:]
+    
+    result = []
+    <span class="hljs-keyword">for</span> key_code <span class="hljs-keyword">in</span> keys:
+        <span class="hljs-keyword">if</span> key_code != <span class="hljs-number">0</span> <span class="hljs-keyword">and</span> key_code <span class="hljs-keyword">in</span> usb_keyboard_codes:
+            char = usb_keyboard_codes[key_code]
+            <span class="hljs-keyword">if</span> modifier &#x26; <span class="hljs-number">0x02</span>:
+                char = char.upper()
+            <span class="hljs-keyword">elif</span> modifier &#x26; <span class="hljs-number">0x20</span>:
+                char = char.upper()
+            result.append(char)
+    <span class="hljs-keyword">return</span> <span class="hljs-string">''</span>.join(result)
+
+<span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">'keydata.txt'</span>, <span class="hljs-string">'r'</span>) <span class="hljs-keyword">as</span> f:
+    <span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> f:
+        capdata = line.strip()
+        <span class="hljs-keyword">if</span> capdata:
+            <span class="hljs-built_in">print</span>(parse_usb_keyboard_data(capdata), end=<span class="hljs-string">''</span>)
+</code></pre>
+<p><strong>使用方法：</strong></p>
+<ol>
+<li>在Wireshark中过滤USB键盘数据：<code>usb.capdata &#x26;&#x26; usb.endpoint_address == 0x81</code></li>
+<li><code>File → Export Packet Dissections → As Plain Text</code>，选择 <code>Displayed</code> 并勾选 <code>Packet bytes</code></li>
+<li>提取 <code>usb.capdata</code> 字段值到 <code>keydata.txt</code></li>
+<li>运行脚本：<code>python3 decode_usb.py</code></li>
+</ol>
+<p><strong>USB鼠标数据还原：</strong></p>
+<ol>
+<li>
+<p><strong>过滤USB鼠标数据</strong></p>
+<ul>
+<li>在过滤器栏输入 <code>usb.capdata &#x26;&#x26; usb.device_address == &#x3C;设备地址></code></li>
+</ul>
+</li>
+<li>
+<p><strong>查看鼠标数据</strong></p>
+<ul>
+<li>第1字节：按钮状态（bit0=左键，bit1=右键）</li>
+<li>第2-3字节：X/Y坐标偏移</li>
+</ul>
+</li>
+</ol>
+<h3 id="6-2-802-11">6.2 无线流量分析（802.11）</h3>
+<p><strong>解密WiFi流量：</strong></p>
+<ol>
+<li>
+<p><strong>配置解密密钥</strong></p>
+<ul>
+<li><code>Edit → Preferences → Protocols → IEEE 802.11</code></li>
+<li>勾选 <code>Enable decryption</code></li>
+<li>点击 <code>Edit</code> 添加密钥（格式：<code>wpa-pwd:密码:SSID</code>）</li>
+</ul>
+</li>
+<li>
+<p><strong>过滤握手包</strong></p>
+<ul>
+<li>在过滤器栏输入 <code>eapol</code></li>
+</ul>
+</li>
+<li>
+<p><strong>分析WiFi流量</strong></p>
+<ul>
+<li>过滤 <code>wlan.fc.type_subtype == 0x08</code> 查看Beacon帧</li>
+<li>过滤 <code>wlan.fc.type_subtype == 0x04</code> 查看Probe Request</li>
+<li>过滤 <code>wlan.fc.type_subtype == 0x0c</code> 查看Deauthentication帧</li>
+</ul>
+</li>
+</ol>
+<p><strong>分析要点：</strong></p>
+<ul>
+<li>Probe Requests可泄露曾经连接过的SSID</li>
+<li>Beacon帧包含网络名称、加密类型等信息</li>
+<li>Deauthentication帧可能表示攻击行为</li>
+</ul>
+<hr>
+<h2 id="wireshark">七、Wireshark高级功能</h2>
+<h3 id="7-1-follow-stream">7.1 Follow Stream（追踪流）</h3>
+<p><strong>操作步骤：</strong></p>
+<ol>
+<li>右键点击数据包</li>
+<li>选择 <code>Follow</code></li>
+<li>选择流类型：
+<ul>
+<li><code>TCP Stream</code>：追踪TCP流</li>
+<li><code>UDP Stream</code>：追踪UDP流</li>
+<li><code>HTTP Stream</code>：追踪HTTP流</li>
+<li><code>TLS Stream</code>：追踪TLS流</li>
+</ul>
+</li>
+</ol>
+<p><strong>功能特点：</strong></p>
+<ul>
+<li>将双向通信合并显示</li>
+<li>支持ASCII和十六进制视图</li>
+<li>可保存流内容到文件</li>
+<li>可设置流过滤</li>
+</ul>
+<h3 id="7-2-expert-information">7.2 Expert Information（专家信息）</h3>
+<p><strong>操作步骤：</strong></p>
+<ol>
+<li><code>View → Expert Information</code></li>
+<li>或点击状态栏中的感叹号图标</li>
+</ol>
+<p><strong>信息级别：</strong></p>
+<ul>
+<li><strong>Error</strong>（红色）：协议错误、校验和错误等</li>
+<li><strong>Warning</strong>（黄色）：重传、乱序、重复ACK等</li>
+<li><strong>Note</strong>（蓝色）：连接建立、断开等</li>
+<li><strong>Chat</strong>（灰色）：一般性信息</li>
+</ul>
+<p><strong>应用场景：</strong></p>
+<ul>
+<li>快速定位网络问题</li>
+<li>识别攻击行为（如SYN flood）</li>
+<li>发现异常流量模式</li>
+</ul>
+<h3 id="7-3">7.3 统计功能详解</h3>
+<h4 id="7-3-1-protocol-hierarchy">7.3.1 Protocol Hierarchy（协议层次）</h4>
+<p><strong>操作：</strong> <code>Statistics → Protocol Hierarchy</code></p>
+<p><strong>用途：</strong></p>
+<ul>
+<li>统计各层协议的数据包数量和字节数</li>
+<li>快速识别主要协议类型</li>
+<li>判断流量特征</li>
+</ul>
+<h4 id="7-3-2-endpoints">7.3.2 Endpoints（端点统计）</h4>
+<p><strong>操作：</strong> <code>Statistics → Endpoints</code></p>
+<p><strong>用途：</strong></p>
+<ul>
+<li>统计所有通信端点（IP地址、MAC地址、端口）</li>
+<li>显示发送/接收数据包数量和字节数</li>
+<li>帮助识别活跃主机</li>
+</ul>
+<p><strong>操作技巧：</strong></p>
+<ul>
+<li>切换标签页查看不同协议的端点（IPv4、IPv6、TCP、UDP等）</li>
+<li>双击端点可设置过滤器</li>
+</ul>
+<h4 id="7-3-3-conversations">7.3.3 Conversations（会话统计）</h4>
+<p><strong>操作：</strong> <code>Statistics → Conversations</code></p>
+<p><strong>用途：</strong></p>
+<ul>
+<li>统计双向通信会话</li>
+<li>显示会话的数据包数量和字节数</li>
+<li>可按协议、IP地址、端口分组</li>
+</ul>
+<p><strong>操作技巧：</strong></p>
+<ul>
+<li>按字节数排序，识别流量最大的会话</li>
+<li>右键选择 <code>Follow TCP Stream</code> 追踪会话</li>
+</ul>
+<h4 id="7-3-4-io-graphs-io">7.3.4 IO Graphs（IO图表）</h4>
+<p><strong>操作：</strong> <code>Statistics → IO Graphs</code></p>
+<p><strong>用途：</strong></p>
+<ul>
+<li>可视化数据包时间分布</li>
+<li>可按协议、IP地址、端口过滤</li>
+<li>帮助识别攻击节奏（如DDoS）</li>
+</ul>
+<p><strong>操作技巧：</strong></p>
+<ul>
+<li>添加多条曲线对比不同协议</li>
+<li>设置时间范围和显示单位</li>
+<li>使用过滤器自定义曲线内容</li>
+</ul>
+<h4 id="7-3-5-flow-graph">7.3.5 Flow Graph（流图）</h4>
+<p><strong>操作：</strong> <code>Statistics → Flow Graph</code></p>
+<p><strong>用途：</strong></p>
+<ul>
+<li>可视化TCP/UDP流的交互过程</li>
+<li>显示请求-响应时序</li>
+<li>帮助理解协议交互</li>
+</ul>
+<p><strong>操作技巧：</strong></p>
+<ul>
+<li>选择不同的流类型（TCP、UDP、HTTP等）</li>
+<li>设置显示过滤条件</li>
+</ul>
+<h3 id="7-4">7.4 文件提取</h3>
+<h4 id="7-4-1-http">7.4.1 导出HTTP对象</h4>
+<p><strong>操作：</strong> <code>File → Export Objects → HTTP</code></p>
+<p><strong>步骤：</strong></p>
+<ol>
+<li>在弹出窗口中查看HTTP响应中的文件列表</li>
+<li>选择要导出的文件</li>
+<li>点击 <code>Save</code> 或 <code>Save All</code></li>
+</ol>
+<p><strong>支持的文件类型：</strong></p>
+<ul>
+<li>图片（PNG、JPG、GIF等）</li>
+<li>文档（HTML、CSS、JS等）</li>
+<li>可执行文件（EXE、ELF等）</li>
+<li>其他二进制文件</li>
+</ul>
+<h4 id="7-4-2-smb">7.4.2 导出SMB对象</h4>
+<p><strong>操作：</strong> <code>File → Export Objects → SMB</code></p>
+<p><strong>步骤：</strong></p>
+<ol>
+<li>在弹出窗口中查看SMB协议传输的文件列表</li>
+<li>选择要导出的文件</li>
+<li>点击 <code>Save</code></li>
+</ol>
+<h4 id="7-4-3">7.4.3 手动提取数据</h4>
+<p><strong>步骤：</strong></p>
+<ol>
+<li>追踪TCP流（<code>Follow → TCP Stream</code>）</li>
+<li>在弹出窗口中选择 <code>Raw</code> 视图</li>
+<li>点击 <code>Save As</code> 保存原始数据</li>
+<li>根据文件类型添加正确的扩展名</li>
+</ol>
+<h3 id="7-5">7.5 数据包标记</h3>
+<p><strong>操作步骤：</strong></p>
+<ol>
+<li>右键点击数据包</li>
+<li>选择 <code>Mark Packet (toggle)</code></li>
+<li>标记的数据包会显示为黑色背景</li>
+</ol>
+<p><strong>用途：</strong></p>
+<ul>
+<li>标记重要数据包便于后续查看</li>
+<li>对比分析多个相关数据包</li>
+<li>使用 <code>View → Marked Packets</code> 只显示标记的数据包</li>
+</ul>
+<h3 id="7-6">7.6 时间显示格式</h3>
+<p><strong>操作：</strong> <code>View → Time Display Format</code></p>
+<p><strong>选项：</strong></p>
+<ul>
+<li><code>Absolute Time</code>：绝对时间（年/月/日 时:分:秒.毫秒）</li>
+<li><code>Seconds Since Beginning of Capture</code>：相对于捕获开始的秒数</li>
+<li><code>Seconds Since Previous Captured Packet</code>：相对于上一个数据包的秒数</li>
+<li><code>UTC Time</code>：UTC时间</li>
+</ul>
+<p><strong>应用场景：</strong></p>
+<ul>
+<li>分析攻击时间线</li>
+<li>识别定时任务</li>
+<li>计算数据包间隔</li>
+</ul>
+<hr>
+<h2 id="">八、实战案例分析</h2>
+<h3 id="httpflag">案例一：HTTP流量中的隐藏Flag</h3>
+<p><strong>场景：</strong> 在HTTP响应中发现base64编码的字符串</p>
+<p><strong>Wireshark操作步骤：</strong></p>
+<ol>
+<li>
+<p><strong>打开PCAP文件</strong></p>
+<ul>
+<li><code>File → Open</code>，选择capture.pcap</li>
+</ul>
+</li>
+<li>
+<p><strong>过滤HTTP响应</strong></p>
+<ul>
+<li>在过滤器栏输入 <code>http.response</code>，回车</li>
+</ul>
+</li>
+<li>
+<p><strong>查找异常响应</strong></p>
+<ul>
+<li>浏览HTTP响应数据包，关注响应体较大的数据包</li>
+<li>查看 <code>http.file_data</code> 字段</li>
+</ul>
+</li>
+<li>
+<p><strong>追踪HTTP流</strong></p>
+<ul>
+<li>右键点击可疑数据包</li>
+<li>选择 <code>Follow → HTTP Stream</code></li>
+</ul>
+</li>
+<li>
+<p><strong>提取base64数据</strong></p>
+<ul>
+<li>在流窗口中查找 <code>data:image/base64,</code> 开头的字符串</li>
+<li>复制base64部分（不含前缀）</li>
+<li>使用CyberChef或在线工具解码</li>
+</ul>
+</li>
+</ol>
+<p><strong>关键点：</strong> 关注响应体中的非标准内容，特别是data URI格式</p>
+<h3 id="dns">案例二：DNS隧道数据提取</h3>
+<p><strong>场景：</strong> 大量异常DNS查询，子域名疑似编码数据</p>
+<p><strong>Wireshark操作步骤：</strong></p>
+<ol>
+<li>
+<p><strong>打开PCAP文件</strong></p>
+<ul>
+<li><code>File → Open</code>，选择capture.pcap</li>
+</ul>
+</li>
+<li>
+<p><strong>过滤DNS查询</strong></p>
+<ul>
+<li>在过滤器栏输入 <code>dns.qry.type == 1</code>，回车</li>
+</ul>
+</li>
+<li>
+<p><strong>观察DNS查询</strong></p>
+<ul>
+<li>查看 <code>dns.qry.name</code> 字段</li>
+<li>注意子域名是否有规律（如base64编码特征）</li>
+</ul>
+</li>
+<li>
+<p><strong>导出DNS查询列表</strong></p>
+<ul>
+<li><code>File → Export Packet Dissections → As Plain Text</code></li>
+<li>或使用 <code>Statistics → Conversations</code> 查看DNS会话</li>
+</ul>
+</li>
+<li>
+<p><strong>解码子域名</strong></p>
+<ul>
+<li>提取子域名部分（第一个点之前的内容）</li>
+<li>使用CyberChef进行base64解码</li>
+</ul>
+</li>
+</ol>
+<p><strong>关键点：</strong> DNS查询的子域名部分常被用于隐蔽通信</p>
+<h3 id="usb">案例三：USB键盘流量还原</h3>
+<p><strong>场景：</strong> PCAP文件包含USB流量，需要还原按键记录</p>
+<p><strong>Wireshark操作步骤：</strong></p>
+<ol>
+<li>
+<p><strong>打开PCAP文件</strong></p>
+<ul>
+<li><code>File → Open</code>，选择capture.pcap</li>
+</ul>
+</li>
+<li>
+<p><strong>过滤USB键盘数据</strong></p>
+<ul>
+<li>在过滤器栏输入 <code>usb.capdata &#x26;&#x26; usb.endpoint_address == 0x81</code></li>
+</ul>
+</li>
+<li>
+<p><strong>查看按键数据</strong></p>
+<ul>
+<li>逐个查看数据包的 <code>usb.capdata</code> 字段</li>
+<li>记录按键码序列</li>
+</ul>
+</li>
+<li>
+<p><strong>还原按键</strong></p>
+<ul>
+<li>使用按键码映射表转换为字符</li>
+<li>注意修饰键（如Shift）的影响</li>
+</ul>
+</li>
+</ol>
+<p><strong>关键点：</strong> USB键盘数据在Interrupt传输端点（通常是0x81）</p>
+<h3 id="">案例四：自定义协议分析</h3>
+<p><strong>场景：</strong> TCP流量中的自定义协议，数据加密传输</p>
+<p><strong>Wireshark操作步骤：</strong></p>
+<ol>
+<li>
+<p><strong>打开PCAP文件</strong></p>
+<ul>
+<li><code>File → Open</code>，选择capture.pcap</li>
+</ul>
+</li>
+<li>
+<p><strong>追踪TCP流</strong></p>
+<ul>
+<li>右键点击TCP数据包</li>
+<li>选择 <code>Follow → TCP Stream</code></li>
+</ul>
+</li>
+<li>
+<p><strong>观察数据模式</strong></p>
+<ul>
+<li>在流窗口中查看数据</li>
+<li>注意数据包长度、重复模式、特殊字节</li>
+</ul>
+</li>
+<li>
+<p><strong>分析数据包结构</strong></p>
+<ul>
+<li>回到数据包列表，查看每个数据包的长度</li>
+<li>对比多个数据包的十六进制数据</li>
+</ul>
+</li>
+<li>
+<p><strong>尝试解密</strong></p>
+<ul>
+<li>假设可能的加密方式（XOR、AES等）</li>
+<li>使用CyberChef尝试各种解密方法</li>
+</ul>
+</li>
+</ol>
+<p><strong>关键点：</strong> 耐心观察数据包结构，尝试多种解密方法</p>
+<hr>
+<h2 id="">九、常见坑与避坑指南</h2>
+<h3 id="9-1">9.1 时间同步问题</h3>
+<p><strong>问题：</strong> 数据包时间戳与实际时间不一致</p>
+<p><strong>解决方法：</strong></p>
+<ul>
+<li><code>View → Time Display Format</code> 切换到相对时间</li>
+<li><code>Edit → Preferences → Protocols → IEEE 802.11</code> 检查时区设置</li>
+<li>结合系统日志进行时间校准</li>
+</ul>
+<h3 id="9-2">9.2 加密流量处理</h3>
+<p><strong>问题：</strong> HTTPS流量无法直接读取内容</p>
+<p><strong>解决方法：</strong></p>
+<ul>
+<li>寻找SSL密钥文件</li>
+<li>检查是否有SSLKEYLOGFILE</li>
+<li>在Wireshark中配置TLS解密</li>
+<li>尝试查找未加密的通道</li>
+</ul>
+<h3 id="9-3">9.3 大数据量处理</h3>
+<p><strong>问题：</strong> PCAP文件过大，分析效率低</p>
+<p><strong>解决方法：</strong></p>
+<ul>
+<li>使用显示过滤器缩小范围</li>
+<li><code>File → Save As</code> 保存过滤后的数据包</li>
+<li>使用 <code>editcap</code> 分割文件（命令行工具）</li>
+<li>关注特定时间段或IP</li>
+</ul>
+<h3 id="9-4">9.4 协议混淆</h3>
+<p><strong>问题：</strong> 攻击者使用非标准端口或协议伪装</p>
+<p><strong>解决方法：</strong></p>
+<ul>
+<li>分析数据包特征而非依赖端口</li>
+<li>使用 <code>Statistics → Protocol Hierarchy</code> 识别协议</li>
+<li>关注应用层数据模式</li>
+</ul>
+<h3 id="9-5-usb">9.5 USB设备地址识别</h3>
+<p><strong>问题：</strong> USB流量包含多个设备，难以区分</p>
+<p><strong>解决方法：</strong></p>
+<ul>
+<li>使用 <code>usb.device_address</code> 字段过滤特定设备</li>
+<li>查看 <code>usb.device_descriptor</code> 了解设备信息</li>
+<li>通常键盘设备的 <code>usb.product</code> 包含 "Keyboard"</li>
+</ul>
+<hr>
+<h2 id="wireshark">十、Wireshark配置优化</h2>
+<h3 id="10-1">10.1 界面配置</h3>
+<p><strong>调整显示列：</strong></p>
+<ul>
+<li><code>Edit → Preferences → Columns</code></li>
+<li>添加常用列：<code>tcp.stream</code>（流编号）、<code>frame.time</code>（时间）等</li>
+</ul>
+<p><strong>配色方案：</strong></p>
+<ul>
+<li><code>View → Coloring Rules</code></li>
+<li>自定义不同协议的显示颜色</li>
+</ul>
+<h3 id="10-2">10.2 协议配置</h3>
+<p><strong>禁用不必要的协议解析：</strong></p>
+<ul>
+<li><code>Edit → Preferences → Protocols</code></li>
+<li>取消勾选不需要解析的协议</li>
+</ul>
+<p><strong>调整协议解析顺序：</strong></p>
+<ul>
+<li><code>Edit → Preferences → Protocols → TCP</code></li>
+<li>设置端口到协议的映射</li>
+</ul>
+<h3 id="10-3">10.3 性能优化</h3>
+<p><strong>禁用实时更新：</strong></p>
+<ul>
+<li><code>View → Auto Scroll in Live Capture</code> 取消勾选</li>
+</ul>
+<p><strong>限制数据包缓存：</strong></p>
+<ul>
+<li><code>Edit → Preferences → Capture</code></li>
+<li>设置合适的缓冲区大小</li>
+</ul>
+<p><strong>使用快速过滤：</strong></p>
+<ul>
+<li>在过滤器栏输入过滤条件时，Wireshark会实时过滤</li>
+</ul>
+<h3 id="10-4-profile">10.4 Profile管理</h3>
+<p><strong>Profile作用：</strong></p>
+<ul>
+<li>保存个性化的配置（过滤器、配色、列显示等）</li>
+<li>快速切换不同的分析场景</li>
+<li>方便团队协作共享配置</li>
+</ul>
+<p><strong>操作步骤：</strong></p>
+<ol>
+<li>
+<p><strong>创建新Profile</strong></p>
+<ul>
+<li>点击右下角的Profile名称（默认为Default）</li>
+<li>选择 <code>New</code></li>
+<li>输入Profile名称（如CTF_Analysis）</li>
+</ul>
+</li>
+<li>
+<p><strong>配置Profile</strong></p>
+<ul>
+<li>设置常用过滤器到Filter按钮</li>
+<li>自定义列显示</li>
+<li>配置配色规则</li>
+<li>设置协议解析选项</li>
+</ul>
+</li>
+<li>
+<p><strong>导出/导入Profile</strong></p>
+<ul>
+<li><code>Configuration Profiles</code> 窗口中选择Profile</li>
+<li>点击 <code>Export</code> 导出为 <code>.zip</code> 文件</li>
+<li>点击 <code>Import</code> 导入其他Profile</li>
+</ul>
+</li>
+<li>
+<p><strong>切换Profile</strong></p>
+<ul>
+<li>点击右下角的Profile名称</li>
+<li>选择目标Profile</li>
+</ul>
+</li>
+</ol>
+<h3 id="10-5-lua">10.5 Lua脚本解析自定义协议</h3>
+<p><strong>适用场景：</strong></p>
+<ul>
+<li>分析非标准协议</li>
+<li>自定义数据包解析逻辑</li>
+<li>自动提取特定字段</li>
+</ul>
+<p><strong>创建Lua脚本：</strong></p>
+<pre><code class="hljs language-lua"><span class="hljs-comment">-- custom_protocol.lua</span>
+<span class="hljs-keyword">local</span> custom_proto = Proto(<span class="hljs-string">"custom"</span>, <span class="hljs-string">"Custom Protocol"</span>)
+
+<span class="hljs-keyword">local</span> fields = {
+    magic = ProtoField.<span class="hljs-built_in">string</span>(<span class="hljs-string">"custom.magic"</span>, <span class="hljs-string">"Magic"</span>, base.ASCII),
+    length = ProtoField.uint16(<span class="hljs-string">"custom.length"</span>, <span class="hljs-string">"Length"</span>, base.DEC),
+    <span class="hljs-built_in">type</span> = ProtoField.uint8(<span class="hljs-string">"custom.type"</span>, <span class="hljs-string">"Type"</span>, base.DEC),
+    data = ProtoField.<span class="hljs-built_in">string</span>(<span class="hljs-string">"custom.data"</span>, <span class="hljs-string">"Data"</span>, base.ASCII)
+}
+
+custom_proto.fields = fields
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">custom_proto.dissector</span><span class="hljs-params">(buffer, pinfo, tree)</span></span>
+    <span class="hljs-keyword">if</span> buffer:<span class="hljs-built_in">len</span>() &#x3C; <span class="hljs-number">8</span> <span class="hljs-keyword">then</span> <span class="hljs-keyword">return</span> <span class="hljs-keyword">end</span>
+    
+    pinfo.cols.protocol = <span class="hljs-string">"CUSTOM"</span>
+    
+    <span class="hljs-keyword">local</span> subtree = tree:add(custom_proto, buffer(), <span class="hljs-string">"Custom Protocol Data"</span>)
+    
+    <span class="hljs-keyword">local</span> magic = buffer(<span class="hljs-number">0</span>, <span class="hljs-number">4</span>):<span class="hljs-built_in">string</span>()
+    <span class="hljs-keyword">if</span> magic ~= <span class="hljs-string">"CUST"</span> <span class="hljs-keyword">then</span> <span class="hljs-keyword">return</span> <span class="hljs-keyword">end</span>
+    
+    subtree:add(fields.magic, buffer(<span class="hljs-number">0</span>, <span class="hljs-number">4</span>))
+    subtree:add(fields.length, buffer(<span class="hljs-number">4</span>, <span class="hljs-number">2</span>))
+    subtree:add(fields.<span class="hljs-built_in">type</span>, buffer(<span class="hljs-number">6</span>, <span class="hljs-number">1</span>))
+    
+    <span class="hljs-keyword">local</span> data_len = buffer(<span class="hljs-number">4</span>, <span class="hljs-number">2</span>):uint()
+    <span class="hljs-keyword">if</span> buffer:<span class="hljs-built_in">len</span>() >= <span class="hljs-number">8</span> + data_len <span class="hljs-keyword">then</span>
+        subtree:add(fields.data, buffer(<span class="hljs-number">7</span>, data_len))
+    <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-keyword">local</span> tcp_port = DissectorTable.get(<span class="hljs-string">"tcp.port"</span>)
+tcp_port:add(<span class="hljs-number">12345</span>, custom_proto)
+</code></pre>
+<p><strong>加载Lua脚本：</strong></p>
+<ol>
+<li><code>Tools → Lua → Load Lua Script</code></li>
+<li>选择编写好的Lua脚本文件</li>
+<li>Wireshark会自动解析对应端口的数据包</li>
+</ol>
+<p><strong>调试Lua脚本：</strong></p>
+<ul>
+<li>使用 <code>print()</code> 输出调试信息</li>
+<li>在 <code>View → Lua Console</code> 中查看输出</li>
+</ul>
+<hr>
+<h2 id="">十一、学习资源推荐</h2>
+<h3 id="11-1">11.1 在线资源</h3>
+<ul>
+<li><a href="https://www.wireshark.org/docs/">Wireshark官方文档</a></li>
+<li><a href="https://www.wireshark.org/docs/wsug_html_chunked/">Wireshark用户指南</a></li>
+<li><a href="https://en.wikipedia.org/wiki/TCP/IP_Illustrated">TCP/IP详解系列书籍</a></li>
+<li><a href="https://cryptopals.com/">CryptoPals密码学挑战</a></li>
+</ul>
+<h3 id="11-2">11.2 练习平台</h3>
+<ul>
+<li>Hack The Box（网络取证题目）</li>
+<li>TryHackMe（流量分析房间）</li>
+<li>picoCTF（入门级取证题目）</li>
+<li>国内CTF平台（XCTF、CTFHub）</li>
+</ul>
+<h3 id="11-3">11.3 社区资源</h3>
+<ul>
+<li><a href="https://ask.wireshark.org/">Wireshark问答论坛</a></li>
+<li><a href="https://www.wireshark.org/lists/">Wireshark邮件列表</a></li>
+<li><a href="https://github.com/wireshark/wireshark">GitHub Wireshark项目</a></li>
+</ul>
+<hr>
+<h2 id="">十二、总结</h2>
+<p>Wireshark是CTF流量分析的核心工具，掌握其使用技巧对于解题至关重要：</p>
+<ol>
+<li><strong>扎实的网络协议基础</strong>：理解TCP/IP模型、常见协议工作原理</li>
+<li><strong>熟练的Wireshark操作</strong>：掌握过滤语法、统计功能、文件提取等</li>
+<li><strong>敏锐的观察能力</strong>：发现异常模式和隐藏信息</li>
+<li><strong>灵活的思维方式</strong>：尝试多种可能性，不局限于单一方法</li>
+<li><strong>耐心和细心</strong>：处理大量数据时保持专注</li>
+</ol>
+<p>通过不断练习和总结，流量分析能力会逐渐提升，成为CTF比赛中的强力武器。</p>
+<hr>
+<p><em>本文总结了CTF流量分析中Wireshark的核心使用技巧和实战经验，希望对大家有所帮助。如有补充或疑问，欢迎交流讨论！</em></p>2:["$","div",null,{"className":"min-h-screen","children":[["$","$L8",null,{}],["$","div",null,{"className":"max-w-6xl mx-auto px-3 sm:px-4 py-8 sm:py-12","children":[["$","$L9",null,{"href":"/","className":"inline-block mb-6 sm:mb-8 text-primary hover:underline","children":"← 返回首页"}],["$","div",null,{"className":"flex flex-col lg:flex-row gap-6 lg:gap-8","children":[["$","article",null,{"className":"flex-1 min-w-0","children":[["$","header",null,{"className":"mb-6 sm:mb-8","children":[["$","h1",null,{"className":"text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4","children":"CTF流量分析经验总结——Wireshark实战指南"}],["$","time",null,{"className":"text-gray-500 text-sm sm:text-base","children":"2026-07-20"}]]}],["$","div",null,{"className":"prose-container overflow-x-auto","children":["$","$La",null,{"htmlContent":"$b"}]}]]}],["$","aside",null,{"className":"w-full lg:w-64 flex-shrink-0","children":["$","$Lc",null,{"headings":[{"id":"一-流量分析概述","text":"一、流量分析概述","level":2},{"id":"二-wireshark界面详解","text":"二、Wireshark界面详解","level":2},{"id":"2-1-主界面布局","text":"2.1 主界面布局","level":3},{"id":"2-2-工具栏按钮说明","text":"2.2 工具栏按钮说明","level":3},{"id":"三-分析方法论","text":"三、分析方法论","level":2},{"id":"3-1-常规分析流程","text":"3.1 常规分析流程","level":3},{"id":"3-2-快速定位策略","text":"3.2 快速定位策略","level":3},{"id":"四-显示过滤器详解","text":"四、显示过滤器详解","level":2},{"id":"4-1-基础语法","text":"4.1 基础语法","level":3},{"id":"4-2-常用过滤表达式速查表","text":"4.2 常用过滤表达式速查表","level":3},{"id":"五-常见协议分析技巧-wireshark操作","text":"五、常见协议分析技巧（Wireshark操作）","level":2},{"id":"5-1-http协议分析","text":"5.1 HTTP协议分析","level":3},{"id":"5-2-https-tls协议分析","text":"5.2 HTTPS/TLS协议分析","level":3},{"id":"5-3-dns协议分析","text":"5.3 DNS协议分析","level":3},{"id":"5-4-ftp协议分析","text":"5.4 FTP协议分析","level":3},{"id":"5-5-icmp协议分析","text":"5.5 ICMP协议分析","level":3},{"id":"5-6-smb协议分析","text":"5.6 SMB协议分析","level":3},{"id":"六-特殊流量分析","text":"六、特殊流量分析","level":2},{"id":"6-1-usb流量分析","text":"6.1 USB流量分析","level":3},{"id":"6-2-无线流量分析-802-11","text":"6.2 无线流量分析（802.11）","level":3},{"id":"七-wireshark高级功能","text":"七、Wireshark高级功能","level":2},{"id":"7-1-follow-stream-追踪流","text":"7.1 Follow Stream（追踪流）","level":3},{"id":"7-2-expert-information-专家信息","text":"7.2 Expert Information（专家信息）","level":3},{"id":"7-3-统计功能详解","text":"7.3 统计功能详解","level":3},{"id":"7-3-1-protocol-hierarchy-协议层次","text":"7.3.1 Protocol Hierarchy（协议层次）","level":4},{"id":"7-3-2-endpoints-端点统计","text":"7.3.2 Endpoints（端点统计）","level":4},{"id":"7-3-3-conversations-会话统计","text":"7.3.3 Conversations（会话统计）","level":4},{"id":"7-3-4-io-graphs-io图表","text":"7.3.4 IO Graphs（IO图表）","level":4},{"id":"7-3-5-flow-graph-流图","text":"7.3.5 Flow Graph（流图）","level":4},{"id":"7-4-文件提取","text":"7.4 文件提取","level":3},{"id":"7-4-1-导出http对象","text":"7.4.1 导出HTTP对象","level":4},{"id":"7-4-2-导出smb对象","text":"7.4.2 导出SMB对象","level":4},{"id":"7-4-3-手动提取数据","text":"7.4.3 手动提取数据","level":4},{"id":"7-5-数据包标记","text":"7.5 数据包标记","level":3},{"id":"7-6-时间显示格式","text":"7.6 时间显示格式","level":3},{"id":"八-实战案例分析","text":"八、实战案例分析","level":2},{"id":"案例一-http流量中的隐藏flag","text":"案例一：HTTP流量中的隐藏Flag","level":3},{"id":"案例二-dns隧道数据提取","text":"案例二：DNS隧道数据提取","level":3},{"id":"案例三-usb键盘流量还原","text":"案例三：USB键盘流量还原","level":3},{"id":"案例四-自定义协议分析","text":"案例四：自定义协议分析","level":3},{"id":"九-常见坑与避坑指南","text":"九、常见坑与避坑指南","level":2},{"id":"9-1-时间同步问题","text":"9.1 时间同步问题","level":3},{"id":"9-2-加密流量处理","text":"9.2 加密流量处理","level":3},{"id":"9-3-大数据量处理","text":"9.3 大数据量处理","level":3},{"id":"9-4-协议混淆","text":"9.4 协议混淆","level":3},{"id":"9-5-usb设备地址识别","text":"9.5 USB设备地址识别","level":3},{"id":"十-wireshark配置优化","text":"十、Wireshark配置优化","level":2},{"id":"10-1-界面配置","text":"10.1 界面配置","level":3},{"id":"10-2-协议配置","text":"10.2 协议配置","level":3},{"id":"10-3-性能优化","text":"10.3 性能优化","level":3},{"id":"10-4-profile管理","text":"10.4 Profile管理","level":3},{"id":"10-5-lua脚本解析自定义协议","text":"10.5 Lua脚本解析自定义协议","level":3},{"id":"十一-学习资源推荐","text":"十一、学习资源推荐","level":2},{"id":"11-1-在线资源","text":"11.1 在线资源","level":3},{"id":"11-2-练习平台","text":"11.2 练习平台","level":3},{"id":"11-3-社区资源","text":"11.3 社区资源","level":3},{"id":"十二-总结","text":"十二、总结","level":2}]}]}]]}]]}],["$","footer",null,{"className":"bg-gray-900 text-gray-300","children":[["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-12","children":["$","div",null,{"className":"flex flex-col md:flex-row justify-between","children":["$","div",null,{"children":[["$","h4",null,{"className":"text-gray-400 mb-4","children":"链接"}],["$","ul",null,{"className":"space-y-2","children":["$","li",null,{"children":["$","a",null,{"href":"https://github.com/hao0632","target":"_blank","rel":"noopener noreferrer","className":"hover:text-white transition-colors","children":"GitHub"}]}]}]]}]}]}],["$","div",null,{"className":"border-t border-gray-800","children":["$","div",null,{"className":"px-4 py-4","children":["$","p",null,{"className":"text-center text-gray-500 text-sm","children":"© 2026 hao-0632's blog"}]}]}]]}]]}]
+7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"CTF流量分析经验总结——Wireshark实战指南"}],["$","meta","3",{"name":"description","content":"全面总结CTF流量分析中Wireshark的核心使用技巧和实战经验"}],["$","link","4",{"rel":"icon","href":"/cat.ico"}]]
+1:null

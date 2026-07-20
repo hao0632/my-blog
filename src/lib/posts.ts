@@ -32,17 +32,18 @@ function getPostSlugs(): string[] {
   }
 }
 
-function getPostBySlug(slug: string): Post | null {
-  const realSlug = slug.replace(/\.md$/, '');
-  const fullPath = path.join(postsDirectory, `${realSlug}.md`);
+function getPostByFilename(filename: string): Post | null {
+  const fullPath = path.join(postsDirectory, filename);
   
   try {
     const fileContents = fs.readFileSync(fullPath, 'utf8');
     const { data, content } = matter(fileContents);
     
+    const cleanSlug = data.slug || slugify(data.title || filename.replace(/\.md$/, ''));
+    
     return {
-      slug: realSlug,
-      title: data.title || realSlug,
+      slug: cleanSlug,
+      title: data.title || filename.replace(/\.md$/, ''),
       date: data.date ? String(data.date) : '',
       excerpt: data.excerpt || content.slice(0, 100) + '...',
       content: content,
@@ -52,10 +53,23 @@ function getPostBySlug(slug: string): Post | null {
   }
 }
 
+function getPostBySlug(slug: string): Post | null {
+  const filenames = getPostSlugs();
+  
+  for (const filename of filenames) {
+    const post = getPostByFilename(filename);
+    if (post && post.slug === slug) {
+      return post;
+    }
+  }
+  
+  return null;
+}
+
 function getAllPosts(): Post[] {
-  const slugs = getPostSlugs();
-  const posts = slugs
-    .map((slug) => getPostBySlug(slug))
+  const filenames = getPostSlugs();
+  const posts = filenames
+    .map((filename) => getPostByFilename(filename))
     .filter((post): post is Post => post !== null)
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
   
@@ -63,7 +77,11 @@ function getAllPosts(): Post[] {
 }
 
 function slugify(text: string): string {
-  return text.toLowerCase().replace(/[^a-z0-9\u4e00-\u9fa5]+/g, '-').replace(/^-|-$/g, '');
+  return text
+    .toLowerCase()
+    .replace(/[\u4e00-\u9fa5]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
 }
 
 async function markdownToHtml(markdown: string): Promise<string> {

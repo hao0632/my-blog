@@ -34,16 +34,19 @@ function getPostSlugs(): string[] {
 
 function getPostByFilename(filename: string): Post | null {
   const fullPath = path.join(postsDirectory, filename);
+  const filenameWithoutExt = filename.replace(/\.md$/, '');
   
   try {
     const fileContents = fs.readFileSync(fullPath, 'utf8');
     const { data, content } = matter(fileContents);
     
-    const cleanSlug = data.slug || slugify(data.title || filename.replace(/\.md$/, ''));
+    const title = data.title || filenameWithoutExt;
+    const cleanSlug = data.slug || slugify(title);
+    const finalSlug = cleanSlug || filenameWithoutExt;
     
     return {
-      slug: cleanSlug,
-      title: data.title || filename.replace(/\.md$/, ''),
+      slug: finalSlug,
+      title: title,
       date: data.date ? String(data.date) : '',
       excerpt: data.excerpt || content.slice(0, 100) + '...',
       content: content,

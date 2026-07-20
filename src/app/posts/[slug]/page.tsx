@@ -10,6 +10,13 @@ interface Props {
 
 export async function generateStaticParams() {
   const posts = getAllPosts();
+  const invalid = posts.filter(p => !p.slug || p.slug === 'posts');
+  if (invalid.length) {
+    throw new Error(
+      `Invalid post slug(s) found: ${invalid.map(p => String(p.slug)).join(', ')}. ` +
+      `Make sure no slug is empty or equals 'posts'.`
+    );
+  }
   return posts.map((post) => ({
     slug: post.slug,
   }));

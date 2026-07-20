@@ -1,0 +1,2176 @@
+3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4160,["231","static/chunks/231-4760956769979d51.js","185","static/chunks/app/layout-cf1eee64ea0339e6.js"],"default"]
+4:["slug","misc","d"]
+0:["pfOpJRY4kKgA3625KRSQ3",[[["",{"children":["posts",{"children":[["slug","misc","d"],{"children":["__PAGE__?{\"slug\":\"misc\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["slug","misc","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"min-h-screen bg-gray-50","children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/my-blog/_next/static/css/52f8a1d3a762bd61.css","precedence":"next","crossOrigin":"$undefined"}]],"$L7"]]]]
+8:I[7311,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-71832d6c1c8b7c44.js"],"default"]
+9:I[231,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-71832d6c1c8b7c44.js"],""]
+a:I[3132,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-71832d6c1c8b7c44.js"],"default"]
+c:I[7125,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-71832d6c1c8b7c44.js"],"default"]
+b:T13af7,<h2 id="">写在前面</h2>
+<p>作为CTF中题型边界最宽泛、自由度最高的门类，misc涉及的范围极广，文章记录了作者的misc学习笔记。</p>
+<h2 id="1">1. 信息搜集技术</h2>
+<h3 id="1-1">1.1 网络信息搜集技巧</h3>
+<ul>
+<li>公开渠道</li>
+<li>目标 Web 网页、地理位置、相关组织</li>
+<li>组织结构和人员、个人资料、电话、电子邮件</li>
+<li>网络配置、安全防护机制的策略和技术细节</li>
+<li>通过搜索引擎查找特定安全漏洞或私密信息的方法</li>
+<li>Google Hacking Database</li>
+<li>科学上网</li>
+</ul>
+<h3 id="1-2">1.2 基本搜索技巧</h3>
+<ul>
+<li>Google 基本搜索与挖掘技巧</li>
+<li>保持简单明了的关键词</li>
+<li>使用最可能出现在要查找的网页上的字词</li>
+<li>尽量简明扼要地描述要查找的内容</li>
+<li>选择独特性的描述字词</li>
+<li>社会公共信息库查询</li>
+<li>个人信息：人口统计局</li>
+<li>企业等实体：YellowPage、企业信用信息网</li>
+<li>网站、域名、IP：whois 等</li>
+</ul>
+<h3 id="1-3">1.3 地图和街景搜索</h3>
+<ul>
+<li>国外：Google Map、Google Earth、Google Street View</li>
+<li>国内：百度地图、卫星地图、街景</li>
+<li>从网络世界到物理世界：IP2Location</li>
+<li>whois 数据库</li>
+<li>GeoIP</li>
+<li>IP2Location</li>
+<li>纯真数据库（QQ IP 查询）</li>
+</ul>
+<h2 id="2">2. 隐写综合</h2>
+<h3 id="2-1">2.1 图片隐写</h3>
+<h4 id="2-1-1">2.1.1 总览</h4>
+<p>文件附加、exif信息包含（jpg）、图像宽高隐写、文件头尾修改、盲水印、F5隐写、rgb通道隐写、slienteye隐写、stegsolve文件信息、steghide隐写（key）、gif分帧、gif时间间隔、图片边缘隐藏（边缘像素块rgb通道）十六进制高位/低位提取、字节反转、立体图</p>
+<h4 id="2-1-2-zsteg">2.1.2 zsteg 使用</h4>
+<p>基本用法: zsteg [选项] 示例.png [参数]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a, --all</td>
+<td>尝试所有已知方法</td>
+</tr>
+<tr>
+<td>E, --extract NAME</td>
+<td>提取指定的有效载荷，NAME 格式如 '1b,rgb,lsb'</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>迭代/提取参数</th>
+<th>描述</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>o, --order X</td>
+<td>像素迭代顺序（默认值：'auto'）</td>
+<td>有效值: ALL,xy,yx,XY,YX,xy',yX,bY,</td>
+</tr>
+<tr>
+<td>c, --channels X</td>
+<td>通道（R/G/B/A），逗号分隔</td>
+<td>有效值: r,g,b,a,rg,bgr,rgba,r3g2b3,</td>
+</tr>
+<tr>
+<td>b, --bits N</td>
+<td>位数，单个整数值或 '1,3,5' 或范围 '1-8'</td>
+<td>高级：指定单个位如 '00001110' 或 '0x88'</td>
+</tr>
+<tr>
+<td>lsb</td>
+<td>最低有效位优先</td>
+<td></td>
+</tr>
+<tr>
+<td>msb</td>
+<td>最高有效位优先</td>
+<td></td>
+</tr>
+<tr>
+<td>P, --prime</td>
+<td>只分析/提取素数字节/像素</td>
+<td></td>
+</tr>
+<tr>
+<td>shift N</td>
+<td>预填充 N 个零位</td>
+<td></td>
+</tr>
+<tr>
+<td>invert</td>
+<td>反转位（XOR 0xff）</td>
+<td></td>
+</tr>
+<tr>
+<td>pixel-align</td>
+<td>像素对齐隐藏数据</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>分析参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>l, --limit N</td>
+<td>限制检查的字节数，0 = 无限制（默认值：256）</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-1-3">2.1.3 普通盲水印</h4>
+<p>python bwmforpy3.py decode 加水印.png 原图.png 盲水印.png --oldseed
+python bwm.py decode 加水印.png 原图.png 盲水印.png</p>
+<p>hint：原图与加水印图片xor异或后会出现条纹
+<img src="/my-blog/misc-security/mangshuiyin.png"  alt="盲水印"></p>
+<h4 id="2-1-4">2.1.4 频域盲水印</h4>
+<p>python encode.py --image &#x3C;原图> --watermark &#x3C;水印> --result &#x3C;加水印>
+python decode.py --original 加水印.png --image 原图.png --result 水印.png</p>
+<h4 id="2-1-5-f5">2.1.5.F5隐写</h4>
+<p>解密操作：Kali中的F5文件夹里执行
+java --add-exports java.base/sun.security.provider=ALL-UNNAMED Extract /home/kali/桌面/F5-steganography/示例.jpg -p 密钥，解密结果保存到output.txt中</p>
+<h4 id="2-1-6-idat">2.1.6.IDAT隐写</h4>
+<p>隐写原理：PNG的数据压缩后存储到IDAT块，并且只有存满才能存到下一个IDAT块，在IDAT隐写中，一个IDAT数据块没有存满，但是出现了新的IDAT块，对异常IDAT块进行Zlib解压缩，之后再对数据进行其他的处理。</p>
+<p><img src="/my-blog/misc-security/idat1.png"  alt="SRK操作"></p>
+<p><img src="/my-blog/misc-security/idat2.png"  alt="说明"></p>
+<p>最后4字节为crc，去掉。</p>
+<p>py脚本：</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> zlib
+<span class="hljs-keyword">import</span> binascii
+IDAT = <span class="hljs-string">"66 6c 61 67 "</span>.decode(<span class="hljs-string">'hex'</span>) <span class="hljs-comment"># 双引号中填IDAT数据</span>
+result = binascii.hexlify(zlib.decompress(IDAT))
+<span class="hljs-built_in">print</span>(result)
+</code></pre>
+<h4 id="2-1-7-hao">2.1.7 十六进制高位/低位隐藏信息（hao/高位低位）</h4>
+<h4 id="2-1-8-hint">2.1.8 其他hint</h4>
+<p>这种即存在有效信息
+<img src="/my-blog/misc-security/valid.png"  alt="有效信息">
+形如大概率为bmp图片
+<img src="/my-blog/misc-security/bmp.png"  alt="bmp示例"></p>
+<h3 id="2-2">2.2 音频隐写</h3>
+<h4 id="2-2-1">2.2.1 总览</h4>
+<p>MP3stego（key）、波形频谱图morse密码、拨号音解密、slienteye隐写、音频倒放、国际无线电通话拼写字母（字母解释法）、grc文件fm解调，sstv图像转音频（ SSTV 解码）<a href="https://sstv-decoder.mathieurenaud.fr/">https://sstv-decoder.mathieurenaud.fr/</a></p>
+<h4 id="2-2-2-mp3stego">2.2.2  MP3stego</h4>
+<p>.\Decode.exe -X -P &#x3C;密钥> 示例.mp3</p>
+<h4 id="2-2-3">2.2.3 字母解释法</h4>
+<p>国际无线电通话拼写字母（字母解释法）
+<img src="/my-blog/misc-security/zimu.png"  alt="字母解释法"></p>
+<h4 id="2-2-4">2.2.4 拨号音解密</h4>
+<p>.\dtmf2num &#x3C;路径>（wav格式）
+随波逐流解密
+<img src="/my-blog/misc-security/bohao.png"  alt="拨号音解密"></p>
+<h4 id="2-2-5-grcfm">2.2.5  grc文件fm解调</h4>
+<p>C:\Users\Administrator\Desktop\hao\解调\demodulate.py</p>
+<h4 id="2-2-6-hint">2.2.6 其他hint</h4>
+<p>字符隐藏在相对重复十六进制片段中（如midi文件出现）
+<img src="/my-blog/misc-security/hide.png"  alt="隐藏信息"></p>
+<h3 id="2-3">2.3 文档隐写</h3>
+<h4 id="2-3-1">2.3.1 总览</h4>
+<p>docx转zip、word隐藏文本</p>
+<h4 id="2-3-2-word">2.3.2 加密 Word 爆破与宏破解</h4>
+<p>office2john 示例.docm > word.hash  （rar2john 1.rar>rar.hash）<br>
+john --mask='?a' word.hash
+john --show word.hash
+在分析一些宏病毒时，按下Alt+F11尝试查看宏代码，但是往往会遇到密码保护。
+可以将文件在任意一款十六进制编辑工具中打开该文件，比如010 editor，搜索DPB字符串，改成DPX，注意不要减少或者增加其他字符，保存退出。
+重新打开文件，Alt + F11打开，右键打开属性，设置一个密码保存，重新打开文件Alt + F11输入密码即可查看宏代码。</p>
+<h2 id="3">3. 压缩包分析</h2>
+<h3 id="3-1">3.1 总览</h3>
+<p>zip伪加密、弱密码字典攻击、掩码攻击、暴力破解、多文件crc32爆破、明文攻击、hashcat爆破、文件附加、异常时间戳</p>
+<h3 id="3-2-lzip-lzip-d-1-lzip">3.2 lzip解压：lzip -d 1.lzip</h3>
+<h3 id="3-3-bkcrack">3.3 bkcrack明文攻击</h3>
+<ul>
+<li>密文ZIP (-C): 包含加密文件的ZIP档案</li>
+<li>明文内容 (-p): 已知的明文文件或内容</li>
+<li>目标文件 (-c): 要攻击的加密文件名</li>
+</ul>
+<h4 id="3-3-1">3.3.1 基本用法</h4>
+<ul>
+<li>明文攻击基础命令
+/usr/local/bkcrack -C Desktop.zip -c readme.txt -p readme.txt</li>
+</ul>
+<p>参数说明: - -C encrypted.zip: 加密的ZIP文件 - -c target_file.txt: ZIP中要攻击的目标文件 - -p plaintext_file.txt: 本地的已知明文文件</p>
+<ul>
+<li>使用ZIP中的明文
+bkcrack -C encrypted.zip -c secret.txt -P plaintext.zip -p known.txt</li>
+</ul>
+<p>参数说明: - -P plaintext.zip: 包含明文的ZIP文件 - -p known.txt: ZIP中对应的明文文件</p>
+<ul>
+<li>指定偏移量
+bkcrack -C encrypted.zip -c target.txt -p plain.txt -o 10</li>
+</ul>
+<p>参数说明: - -o 10: 明文相对于密文的偏移量(字节)</p>
+<h4 id="3-3-2">3.3.2 高级用法</h4>
+<p>使用十六进制数据
+bkcrack -C encrypted.zip -c target.txt -x 0 504b0304
+参数说明: - -x 0 504b0304: 在偏移0处指定十六进制明文数据</p>
+<p>截断明文
+/usr/local/bkcrack -C flag.zip -c flag.txt -p flag.txt -t 12
+参数说明: - -t 100: 只使用前100字节的明文</p>
+<p>密钥恢复后的操作
+创建新的可解密ZIP
+/usr/local/bkcrack -C Desktop.zip -k df96dc88 b432ddfd df4b9e93 -U decrypted.zip newpassword
+参数说明: - -k: 三个恢复的内部密钥 - -U decrypted.zip: 输出的新ZIP文件 - newpassword: 为新ZIP设置的密码</p>
+<p>直接解密文件
+/usr/local/bkcrack -C flag.zip -k 68cc45ab 864060ce ac958caa -c flag.txt -d output.txt
+参数说明: - -d output.txt: 直接解密输出到文件</p>
+<p>恢复原始密码
+bkcrack -k 12345678 87654321 abcdefab -r 8 ?a
+参数说明: - -r 8: 密码长度 - ?a: 字符集(a=所有ASCII可打印字符)</p>
+<p>命令参考
+参数	长参数	描述
+-C	--cipher-zip	加密的ZIP文件
+-c	--cipher-file	目标加密文件
+-P	--plain-zip	明文ZIP文件
+-p	--plain-file	明文文件
+-k	--keys	内部密钥
+-U	--unlock	创建解锁的ZIP
+-d	--decipher	解密文件
+-o	--offset	偏移量
+-x	--extra	十六进制明文
+-t	--truncate	截断大小
+-r	--recover-password	恢复原始密码
+字符集选项 (用于密码恢复)
+?l: 小写字母 (a-z)
+?u: 大写字母 (A-Z)
+?d: 数字 (0-9)
+?s: 特殊字符
+?a: 所有ASCII可打印字符</p>
+<p>2.1.7  bkcrack明文攻击png
+echo 89504E470D0A1A0A0000000D49484452 | xxd -r -ps > png_header
+/usr/local/bkcrack -C 1.zip -c xor.png -p png_header -o 0 > 1.log&#x26;
+/usr/local/bkcrack -C 1.zip -c xor.png -k 68cc45ab 864060ce ac958caa -d lbj.png</p>
+<p>3.Hashcat
+.\hashcat [选项]... &#x3C;哈希文件> [字典/掩码/目录]...</p>
+<p>核心选项：
+-m &#x3C;num>：哈希类型（0=MD5，1000=NTLM）。
+-a &#x3C;num>：攻击模式（0=字典）。
+-o &#x3C;file>：输出破解结果。
+--show：显示已破解哈希。
+-V：版本；-h：帮助。
+完整帮助：hashcat -h | grep &#x3C;关键词>。</p>
+<p>0=MD5	100=SHA1	1000=NTLM	3200=bcrypt	17220=ZIP	22000=WPA2	13000=rar
+查询：hashcat -h | grep ZIP。</p>
+<p>4.1 直攻/字典攻击 (-a 0)
+命令：hashcat -m 0 -a 0 hashes.txt rockyou.txt
+带规则：hashcat -m 0 -a 0 hashes.txt rockyou.txt -r rules/best64.rule</p>
+<p>4.2 组合攻击 (-a 1)
+合并两个词典生成多词密码（如 “admin” + “123” = “admin123”）。</p>
+<p>命令：hashcat -m 0 -a 1 hashes.txt dict1.txt dict2.txt</p>
+<p>4.3 暴力/掩码攻击 (-a 3)
+尝试所有组合。使用占位符：
+占位符	字符集
+?l	a-z
+?u	A-Z
+?d	0-9
+?s	符号
+?a	全 ASCII
+?h	十六进制小写
+示例：hashcat -m 13000 -a 3 hash.txt nsfocus?d?d?d?d?d
+增量：-i --increment-min=4 --increment-max=8（长度 4-8）。
+4.4 混合攻击 (-a 6/7)
+字典 + 掩码 (-a 6)：词典后缀掩码。如：hashcat -m 0 -a 6 hashes.txt rockyou.txt ?d?d
+掩码 + 字典 (-a 7)：前缀词典。</p>
+<p>6.1 破解 ZIP 文件密码
+hashcat -m 17220 zip.hash rockyou.txt -r rules/best64.rule -o cracked.txt</p>
+<p>6.2 WPA2 Wi-Fi 破解
+捕获握手（aircrack-ng），转换为 hccapx。
+hashcat -m 22000 wpa.hccapx rockyou.txt
+.\hashcat -m 22000 123.hc22000 rockyou.txt</p>
+<p>hashcat -m 1000 ntlm.hash ?a?a?a?a?a?a?a?a -i</p>
+<p>可以直接把m函数去掉</p>
+<p>六、编码扩展</p>
+<p>ADGFX密码：FA XX DD AG FF XG FD XG DD DG GA XF FA</p>
+<p>手机键盘密码</p>
+<p>变形：999<em>666</em>88<em>2</em>777<em>33</em>6<em>999</em>4<em>4444</em>777<em>555</em>333<em>777</em>444<em>33</em>66<em>3</em>7777</p>
+<p>Xor异或（一般给密码：如文件名等）</p>
+<p>二进制：摩斯码，ASCII码，Base64隐写（===）形式，字节转十进制后奇偶性</p>
+<p>Base64换表：分别为密文、自定义表、标准表
+import base64</p>
+<h1>原始字符串</h1>
+<p>s = "jJuPnIyanISosKignJCTk6Cdnoyaycvegv=="</p>
+<h1>转换字符映射</h1>
+<p>mapping= str.maketrans("/+9876543210zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA","ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/")</p>
+<h1>应用映射</h1>
+<p>translated = s.translate(mapping)</p>
+<h1>添加base64填充（如果需要）</h1>
+<p>translated += '=' * ((4 - len(translated) % 4) % 4)</p>
+<h1>解码并打印结果</h1>
+<p>result = base64.b64decode(translated).decode('utf-8')
+print(result)</p>
+<p>%3d%3d是==，注意base编码</p>
+<p>一串大小写字母、数字、+/，可能为base64编码或其变体</p>
+<p>较长的base64,可能为base64隐写，末尾大量加号可能需要改等号</p>
+<p>Unicode编码
+key{you are right&#x26;#125</p>
+<p>代码混淆
+jsfuck ：{ } [ ] + !
+Brainfuck ：>&#x3C;+-.,[ ]
+Brainfuck颜文字变种解密
+这种颜文字是Brainfuck的变种加密
+JJEncode：
+AAEncode：颜文字
+控制台（需联网）</p>
+<p>Emoji可能为base100编码</p>
+<p>空字符snow编码 whitespace？/零宽？</p>
+<p>纯小写字母加数字，可能为md5</p>
+<p>base32编码为不区分大小写（因为域名只能是小写），但需要转换为大写才能正确解码
+也可能为大小写错乱base64编码</p>
+<p>Aes加密后也有=</p>
+<p>Md5爆破
+import hashlib
+from itertools import product</p>
+<p>猪圈密码大概率会出现变体，如</p>
+<h1>已知前缀和目标哈希</h1>
+<p>prefix = "flag{www_shiyanbar_com_is_very_good_"
+target_hash = "38e4c352809e150186920aac37190cbc"</p>
+<h1>可选字符集（你可以根据题目要求调整）</h1>
+<p>charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&#x26;*"  # 包含大小写字母、数字、常见特殊字符</p>
+<h1>暴力破解长度为 4 的后缀</h1>
+<p>for guess in product(charset, repeat=4):
+suffix = ''.join(guess)
+test_str = prefix + suffix + "}"
+md5_hash = hashlib.md5(test_str.encode()).hexdigest()</p>
+<pre><code>if md5_hash == target_hash:
+    print(f"[+] 找到匹配的后缀: {suffix}")
+    print(f"[+] 完整 flag: {test_str}")
+    print(f"[+] MD5: {md5_hash}")
+    break
+</code></pre>
+<p>else:
+print("[-] 未找到匹配项")</p>
+<p>其他特殊编码：观察出现方式，不同字符间关系，联想传统编码</p>
+<p>二进制转二维码</p>
+<h1>导入PIL库中的Image模块，用于图像处理和创建图像：</h1>
+<p>from PIL import Image</p>
+<h1>定义函数：将二进制字符串转换为二维码图像</h1>
+<p>def generate_qrcode_from_binary(binary_str, img_size):
+# 断言：验证二进制字符串长度是否等于图像像素总数（宽×高）
+# 若长度不匹配，会抛出AssertionError错误
+assert len(binary_str) == img_size[0] * img_size[1], "Size mismatch!"
+# 创建一个新的RGB图像，背景为白色，尺寸为img_size（宽, 高）
+pic = Image.new("RGB", img_size, color="white")
+# 初始化索引，用于遍历二进制字符串的每个字符
+index = 0
+# 遍历图像的每一行（y坐标）
+for y in range(img_size[1]):
+# 遍历图像的每一列（x坐标）
+for x in range(img_size[0]):
+# 若当前二进制字符为'1'，则将对应像素设置为黑色（RGB值为(0,0,0)）
+if binary_str[index] == '1':
+pic.putpixel([x, y], (0, 0, 0))
+# 索引自增，处理下一个二进制字符
+index += 1
+# 返回生成的图像对象
+return pic</p>
+<h1>示例二进制数据：长度为25×25=625的二进制字符串，用于生成二维码</h1>
+<p>binary_data = "00000110"</p>
+<h1>定义图像尺寸为25x25像素</h1>
+<p>img_size = (108, 108)</p>
+<h1>调用函数生成二维码图像</h1>
+<p>qrcode = generate_qrcode_from_binary(binary_data, img_size)</p>
+<h1>在默认图像查看器中显示生成的二维码</h1>
+<p>qrcode.show()</p>
+<h1>将生成的二维码保存为"flag.png"文件</h1>
+<p>qrcode.save("flag.png")</p>
+<p>二维码
+二维码宽高
+二维码缺失
+二维码反色
+二维码拼接
+二进制转二维码，xy坐标转二维码</p>
+<p>Gaps使用
+(1)使用montage工具对照片进行拼合
+montage 输入文件路径 -tile 长宽数量 -geometry 拼图间隙 输出路径
+示例： montage ./*.png -tile 8X6 -geometry +0+0 flag.png
+(2)gaps run 预处理图片路径 输出路劲 --参数
+示例：gaps run /home/kali/桌面/gaps/flag.jpg /home/kali/桌面/gaps/newflag.jpg --generations=48 --population=120 --size=100</p>
+<p>Cap握手包hashcat破解
+.\hashcat -m 22000 -a 3 123.hc22000 1391040?d?d?d?d</p>
+<p>.cap文件为WiFi握手包，可转换后hashcat爆破
+Where is the flag？包大小也可能有用</p>
+<p>Crc32</p>
+<h1>参数crc 为压缩包里面文件CRC32的值</h1>
+<p>import itertools
+import string
+import binascii</p>
+<p>dic = string.ascii_letters + string.digits + '+/='
+crc = 0x7615DE6A</p>
+<p>for secret_number in itertools.product(dic, repeat=4):
+secret_number = ''.join(secret_number)  # 转换元组为字符串
+encoded_s = secret_number.encode('utf-8')  # 编码后的 s
+if binascii.crc32(encoded_s) &#x26; 0xffffffff == crc:
+print(secret_number)
+exit(0)</p>
+<p>（读取文件）</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> string
+<span class="hljs-keyword">import</span> binascii
+<span class="hljs-keyword">import</span> zipfile
+
+dic = string.ascii_letters + string.digits + <span class="hljs-string">'+/='</span>
+
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">crash_CRC32</span>(<span class="hljs-params">crc</span>):
+    <span class="hljs-keyword">for</span> a <span class="hljs-keyword">in</span> dic:
+        <span class="hljs-keyword">for</span> b <span class="hljs-keyword">in</span> dic:
+            <span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> dic:
+                <span class="hljs-keyword">for</span> d <span class="hljs-keyword">in</span> dic:
+                    s = a + b + c + d
+                    encoded_s = s.encode(<span class="hljs-string">'utf-8'</span>)  <span class="hljs-comment"># 编码后的 s</span>
+                    <span class="hljs-keyword">if</span> binascii.crc32(encoded_s) &#x26; <span class="hljs-number">0xffffffff</span> == crc:
+                        <span class="hljs-keyword">return</span> s
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>
+
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">get_CRC32</span>(<span class="hljs-params">zip_file_name</span>):
+    <span class="hljs-comment"># 打开 zip 文件</span>
+    <span class="hljs-keyword">with</span> zipfile.ZipFile(zip_file_name, <span class="hljs-string">'r'</span>) <span class="hljs-keyword">as</span> <span class="hljs-built_in">zip</span>:
+        <span class="hljs-comment"># 使用字典来存储文件名与其 CRC32 值的映射</span>
+        crc_values = {}
+        <span class="hljs-comment"># 遍历 zip 文件中的每一个条目</span>
+        <span class="hljs-keyword">for</span> zip_info <span class="hljs-keyword">in</span> <span class="hljs-built_in">zip</span>.infolist():
+            <span class="hljs-comment"># 将文件名和对应的 CRC32 值存入字典</span>
+            crc_values[zip_info.filename] = zip_info.CRC
+        <span class="hljs-keyword">return</span> crc_values
+
+
+base = <span class="hljs-string">'D:\工作\安全\Misc\zip'</span>
+<span class="hljs-built_in">str</span> = <span class="hljs-string">''</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, <span class="hljs-number">68</span>):
+    <span class="hljs-comment"># 此处有68个文件，文件名为out0.zip-out67.zip</span>
+    zip_file_name = base + <span class="hljs-string">f'\\out<span class="hljs-subst">{i}</span>.zip'</span>
+    crc_list = get_CRC32(zip_file_name)
+    <span class="hljs-comment"># 遍历每一个压缩文件里面的每一个文件的CRC</span>
+    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> crc_list.items():
+        <span class="hljs-comment"># 将获取的CRC32放入函数进行破解，然后将值进行拼接</span>
+        crc = j[<span class="hljs-number">1</span>]
+        crc = crash_CRC32(crc)
+        <span class="hljs-keyword">if</span> crc == <span class="hljs-number">0</span>:
+            <span class="hljs-built_in">print</span>(<span class="hljs-string">'发生未知错误'</span>)
+            exit(<span class="hljs-number">0</span>)
+        <span class="hljs-built_in">str</span> += crc
+        <span class="hljs-built_in">print</span>(<span class="hljs-built_in">str</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-built_in">str</span>)
+</code></pre>
+<p><strong>Base</strong></p>
+<h2 id="">七、流量分析</h2>
+<ul>
+<li>
+<p>分组字节流藏有flag，直接搜flag或f，fl，ag，flag{等</p>
+</li>
+<li>
+<p>flag编码，可能存在干扰字符</p>
+</li>
+<li>
+<p>包长度，响应时间可能存在隐藏信息</p>
+</li>
+<li>
+<p>大量get/post参数，可能是盲注</p>
+</li>
+<li>
+<p>Tcp流隐藏信息，编码形式</p>
+</li>
+<li>
+<p>隐藏压缩包可以查找504b0304，导出对象很好用</p>
+</li>
+<li>
+<p>Info中可能隐藏信息，如base64编码</p>
+</li>
+<li>
+<p>一般tcp无信息，无密钥tls不看</p>
+</li>
+<li>
+<p>看报文包长度寻找信息</p>
+</li>
+<li>
+<p>icmp流量，data块长度，时间，etc</p>
+</li>
+<li>
+<p>菜刀流量可能出现gzip压缩导致直接搜flag搜不到</p>
+</li>
+<li>
+<p>分析base64编码</p>
+</li>
+</ul>
+<p><strong>不可打印字符可能为控制字符，对照ascii表</strong></p>
+<h3 id="">蓝牙协议</h3>
+<ul>
+<li>分组字节流搜索flag</li>
+<li>协议分级OBEX传输协议，作为过滤器选中</li>
+<li>蓝牙pin：分组详情搜pin e.g. pin code：141854</li>
+</ul>
+<h3 id="">键盘流量</h3>
+<p>导出键盘流量：</p>
+<pre><code class="hljs language-bash">tshark -r <span class="hljs-string">"C:\Users\Administrator\Desktop\1.pcapng"</span> -T fields -e usbhid.data | Where-Object { <span class="hljs-variable">$_</span> -notmatch <span class="hljs-string">'^0000000000000000$'</span> -and <span class="hljs-variable">$_</span> -notmatch <span class="hljs-string">'^\s*$'</span> } > <span class="hljs-string">"C:\Users\Administrator\Desktop\usbdata.txt"</span>
+py -3 <span class="hljs-string">"C:\Users\Administrator\Desktop\键盘流量脚本.py"</span>
+</code></pre>
+<h3 id="tp-link-802-11">无线流量（Tp-link）802.11</h3>
+<p><strong>爆破无线连接密码hashcat：</strong></p>
+<pre><code class="hljs language-bash"><span class="hljs-comment"># WPA握手包转换: hcxtools</span>
+hcxpcapngtool &#x3C;文件路径> -o &#x3C;输出文件名.hc22000>
+hcxpcapngtool /home/kali/桌面/ctf.pcap -o 123.hc22000
+.\hashcat -m 22000 123.hc22000 rockyou.txt
+airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
+<span class="hljs-comment"># 或编辑-首选项-IEEE802.11-编辑-wpa-pwd-password:ssid</span>
+</code></pre>
+<h3 id="ssl-tls">SSL/TLS流量</h3>
+<ul>
+<li>一般给密钥</li>
+<li>编辑-首选项-TLS（2.0为ssl）-secret.log-加载</li>
+<li>给rsa私钥的话是rsa keys list</li>
+</ul>
+<h3 id="">哥斯拉流量</h3>
+<p><strong>通用连接特征：</strong></p>
+<ul>
+<li>哥斯拉在进行初始化时会产生一个较大的数据包（第一个），后续操作产生的数据包则相对较小</li>
+<li>第一个请求包的http响应体一般是空的</li>
+<li>Cookie最后出现分号（可能没有）</li>
+<li>Accept字段（弱特征）默认是特定值</li>
+</ul>
+<p><strong>第二次请求特征：</strong></p>
+<ul>
+<li>会携带响应数据包设置的Cookie值</li>
+<li>http响应体是一段相对固定长的串，长度为64个字节</li>
+<li>可分为前16字节，中间32字节，结尾16字节</li>
+</ul>
+<p><strong>第三次请求特征：</strong></p>
+<ul>
+<li>前16个字节和最后的16个字节和第二响应包是一致的</li>
+<li>后续包同样有这个特性</li>
+</ul>
+<p><strong>原因：</strong>
+哥斯拉对响应报文格式的设计，一个32位的md5字符串会被拆分为两部分，分别放在base64编码数据的前后。</p>
+<p><strong>关键参数：</strong></p>
+<ul>
+<li>xc为加密密钥</li>
+<li>pass为解密密码</li>
+</ul>
+<p><strong>后门反连通道：</strong> tcp、http、dns、icmp......</p>
+<p><strong>ekp版本解密操作：</strong>
+返回包为单次base解密</p>
+<h3 id="payload">常用payload句法</h3>
+<ul>
+<li><code>__[::-1]</code>：把字节串反过来</li>
+<li><code>base64.b64decode(...)</code>：Base64解码</li>
+<li><code>zlib.decompress(...)</code>：zlib解压</li>
+<li><code>exec(...)</code>：直接执行解压出来的Python代码</li>
+</ul>
+<h2 id="">八、工控</h2>
+<h3 id="modbus">Modbus协议</h3>
+<h2 id="">九、漏洞相关</h2>
+<h3 id="apache-shiro-cve-2016-4437">Apache Shiro（CVE-2016-4437）反序列化漏洞</h3>
+<p>通过构造恶意的 rememberMe Cookie触发反序列化漏洞，从而执行任意命令</p>
+<p><strong>关键字：</strong> 返回包的 Set-Cookie 中存在 <code>rememberMe=deleteMe</code> 字段</p>
+<h3 id="dnslog">DNSLog外带</h3>
+<ul>
+<li><strong>DNS</strong>：(Domain Name System)域名系统，负责把域名转换成IP地址</li>
+<li><strong>DNSlog</strong>：DNS的日志，DNS在域名解析的时候会留下域名和解析IP的记录</li>
+<li><strong>DNSlog外带原理</strong>：DNS在解析的时候会留下日志，我们将信息放在高级域名中，传递到自己这里，然后通过读日志获取信息</li>
+</ul>
+<h2 id="">十、杂项技巧</h2>
+<p><strong>Word文件可以改为zip</strong></p>
+<p><strong>Nbt包，试试放到7z看</strong></p>
+<p><strong>宽带信息用routerpassview，conf.bin</strong></p>
+<p><strong>压缩包较小，试试明文攻击</strong></p>
+<p><strong>Zip，rar可尝试字典爆破</strong></p>
+<p><strong>薛定谔的猫？Zip附加python代码</strong></p>
+<p><strong>文档模糊查找，可用wps</strong></p>
+<h3 id="pyc">pyc隐写</h3>
+<p>（原来是12）python3 stegosaurus.py 1.pyc -x</p>
+<h3 id="shell">Shell命令</h3>
+<pre><code class="hljs language-bash"><span class="hljs-built_in">ls</span>          <span class="hljs-comment"># 查看未隐藏文件</span>
+<span class="hljs-built_in">ls</span> -la      <span class="hljs-comment"># 查看全部文件及其属性</span>
+</code></pre>
+<p><strong>命令后加<code>1>&#x26;2</code>，将输出显示为错误信息</strong></p>
+<p><strong>Linux添加文件执行权限：</strong></p>
+<pre><code class="hljs language-bash"><span class="hljs-built_in">chmod</span> +x run_me2    <span class="hljs-comment"># 添加执行权限</span>
+./run_me2           <span class="hljs-comment"># 运行文件</span>
+</code></pre>
+<p><strong>vol.py -h</strong></p>
+<p><code>volatility -f [对象] --profile=[操作系统] [插件参数]</code></p>
+<h2 id="volatility3">Volatility3 完整使用手册</h2>
+<h3 id="">目录</h3>
+<ol>
+<li><a href="#1-%E7%AE%80%E4%BB%8B">简介</a></li>
+<li><a href="#2-%E5%91%BD%E4%BB%A4%E8%AF%AD%E6%B3%95">命令语法</a></li>
+<li><a href="#3-%E9%80%89%E9%A1%B9%E8%AF%A6%E8%A7%A3">选项详解</a></li>
+<li><a href="#4-%E6%8F%92%E4%BB%B6%E5%88%97%E8%A1%A8">插件列表</a></li>
+<li><a href="#5-%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B">使用示例</a></li>
+</ol>
+<hr>
+<h3 id="1">1. 简介</h3>
+<p>Volatility3 是一款开源的内存取证框架，用于分析内存快照中的数据。支持多平台（Windows、Linux、macOS）的内存分析。</p>
+<hr>
+<h3 id="2">2. 命令语法</h3>
+<pre><code class="hljs language-bash">vol.py [选项] PLUGIN [插件参数]
+</code></pre>
+<hr>
+<h3 id="3">3. 选项详解</h3>
+<h4 id="">基础选项</h4>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-h, --help</code></td>
+<td>显示帮助信息</td>
+</tr>
+<tr>
+<td><code>-v, --verbosity</code></td>
+<td>增加输出详细程度</td>
+</tr>
+<tr>
+<td><code>-q, --quiet</code></td>
+<td>禁用进度反馈</td>
+</tr>
+</tbody>
+</table>
+<h4 id="">配置选项</h4>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-c, --config CONFIG</code></td>
+<td>从JSON文件加载配置</td>
+</tr>
+<tr>
+<td><code>--parallelism [{processes,threads,off}]</code></td>
+<td>启用并行处理（默认关闭）</td>
+</tr>
+<tr>
+<td><code>-e, --extend EXTEND</code></td>
+<td>扩展配置设置</td>
+</tr>
+<tr>
+<td><code>--write-config</code></td>
+<td>将配置写入config.json</td>
+</tr>
+<tr>
+<td><code>--save-config PATH</code></td>
+<td>保存配置到指定文件</td>
+</tr>
+<tr>
+<td><code>--clear-cache</code></td>
+<td>清除所有短期缓存项</td>
+</tr>
+<tr>
+<td><code>--cache-path PATH</code></td>
+<td>更改缓存路径（默认: ~/.cache/volatility3）</td>
+</tr>
+<tr>
+<td><code>--offline</code></td>
+<td>不在线搜索ISF文件</td>
+</tr>
+<tr>
+<td><code>-u, --remote-isf-url URL</code></td>
+<td>在线搜索ISF JSON文件</td>
+</tr>
+</tbody>
+</table>
+<h4 id="">路径选项</h4>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-p, --plugin-dirs DIRS</code></td>
+<td>分号分隔的插件目录列表</td>
+</tr>
+<tr>
+<td><code>-s, --symbol-dirs DIRS</code></td>
+<td>分号分隔的符号文件目录列表</td>
+</tr>
+</tbody>
+</table>
+<h4 id="">输出选项</h4>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-l, --log FILE</code></td>
+<td>将日志输出到文件</td>
+</tr>
+<tr>
+<td><code>-o, --output-dir DIR</code></td>
+<td>指定输出目录</td>
+</tr>
+<tr>
+<td><code>-r, --renderer TYPE</code></td>
+<td>指定输出格式：quick, none, csv, pretty, json, jsonl, arrow, parquet</td>
+</tr>
+<tr>
+<td><code>--hide-columns [COLS...]</code></td>
+<td>空格分隔的列前缀列表（不区分大小写）</td>
+</tr>
+</tbody>
+</table>
+<h4 id="">内存层选项</h4>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-f, --file FILE</code></td>
+<td>快捷方式，等价于 --single-location=file://</td>
+</tr>
+<tr>
+<td><code>--single-location URI</code></td>
+<td>指定基础内存位置</td>
+</tr>
+<tr>
+<td><code>--stackers [LIST...]</code></td>
+<td>指定栈器列表</td>
+</tr>
+<tr>
+<td><code>--single-swap-locations [LIST...]</code></td>
+<td>指定交换层URI列表</td>
+</tr>
+</tbody>
+</table>
+<h4 id="">过滤选项</h4>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--filters FILTERS</code></td>
+<td>应用输出过滤器，格式: [+-]列名,模式[!]</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="4">4. 插件列表</h3>
+<h4 id="4-1">4.1 通用插件</h4>
+<table>
+<thead>
+<tr>
+<th>插件</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>banners.Banners</code></td>
+<td>识别Linux banner</td>
+</tr>
+<tr>
+<td><code>configwriter.ConfigWriter</code></td>
+<td>运行自动插件并输出配置</td>
+</tr>
+<tr>
+<td><code>frameworkinfo.FrameworkInfo</code></td>
+<td>列出框架组件</td>
+</tr>
+<tr>
+<td><code>isfinfo.IsfInfo</code></td>
+<td>显示ISF文件信息</td>
+</tr>
+<tr>
+<td><code>layerwriter.LayerWriter</code></td>
+<td>输出主层数据</td>
+</tr>
+<tr>
+<td><code>regexscan.RegExScan</code></td>
+<td>使用正则表达式扫描内核内存</td>
+</tr>
+<tr>
+<td><code>timeliner.Timeliner</code></td>
+<td>整合时间相关信息</td>
+</tr>
+<tr>
+<td><code>vmscan.Vmscan</code></td>
+<td>扫描Intel VT-d结构</td>
+</tr>
+<tr>
+<td><code>yarascan.YaraScan</code></td>
+<td>使用YARA规则扫描内核内存</td>
+</tr>
+</tbody>
+</table>
+<h4 id="4-2-linux">4.2 Linux 插件</h4>
+<table>
+<thead>
+<tr>
+<th>插件</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>linux.bash.Bash</code></td>
+<td>恢复bash命令历史</td>
+</tr>
+<tr>
+<td><code>linux.boottime.Boottime</code></td>
+<td>显示系统启动时间</td>
+</tr>
+<tr>
+<td><code>linux.capabilities.Capabilities</code></td>
+<td>列出进程权限</td>
+</tr>
+<tr>
+<td><code>linux.check_afinfo.Check_afinfo</code></td>
+<td>验证网络协议函数指针（已弃用）</td>
+</tr>
+<tr>
+<td><code>linux.check_creds.Check_creds</code></td>
+<td>检查进程凭证共享（已弃用）</td>
+</tr>
+<tr>
+<td><code>linux.check_idt.Check_idt</code></td>
+<td>检查IDT是否被修改（已弃用）</td>
+</tr>
+<tr>
+<td><code>linux.check_modules.Check_modules</code></td>
+<td>比较模块列表（已弃用）</td>
+</tr>
+<tr>
+<td><code>linux.check_syscall.Check_syscall</code></td>
+<td>检查系统调用表钩子（已弃用）</td>
+</tr>
+<tr>
+<td><code>linux.ebpf.EBPF</code></td>
+<td>枚举eBPF程序</td>
+</tr>
+<tr>
+<td><code>linux.elfs.Elfs</code></td>
+<td>列出所有进程的内存映射ELF文件</td>
+</tr>
+<tr>
+<td><code>linux.envars.Envars</code></td>
+<td>列出进程环境变量</td>
+</tr>
+<tr>
+<td><code>linux.graphics.fbdev.Fbdev</code></td>
+<td>提取framebuffer</td>
+</tr>
+<tr>
+<td><code>linux.hidden_modules.Hidden_modules</code></td>
+<td>查找隐藏内核模块（已弃用）</td>
+</tr>
+<tr>
+<td><code>linux.iomem.IOMem</code></td>
+<td>生成/proc/iomem类似输出</td>
+</tr>
+<tr>
+<td><code>linux.ip.Addr</code></td>
+<td>列出网络接口信息</td>
+</tr>
+<tr>
+<td><code>linux.ip.Link</code></td>
+<td>列出网络接口链接信息</td>
+</tr>
+<tr>
+<td><code>linux.kallsyms.Kallsyms</code></td>
+<td>枚举Kallsyms符号</td>
+</tr>
+<tr>
+<td><code>linux.keyboard_notifiers.Keyboard_notifiers</code></td>
+<td>解析键盘通知链（已弃用）</td>
+</tr>
+<tr>
+<td><code>linux.kmsg.Kmsg</code></td>
+<td>内核日志缓冲区读取器</td>
+</tr>
+<tr>
+<td><code>linux.kthreads.Kthreads</code></td>
+<td>枚举kthread函数</td>
+</tr>
+<tr>
+<td><code>linux.library_list.LibraryList</code></td>
+<td>枚举进程加载的库</td>
+</tr>
+<tr>
+<td><code>linux.lsmod.Lsmod</code></td>
+<td>列出已加载内核模块</td>
+</tr>
+<tr>
+<td><code>linux.lsof.Lsof</code></td>
+<td>列出进程打开文件</td>
+</tr>
+<tr>
+<td><code>linux.malfind.Malfind</code></td>
+<td>检测潜在注入代码（已弃用）</td>
+</tr>
+<tr>
+<td><code>linux.mountinfo.MountInfo</code></td>
+<td>列出进程挂载命名空间的挂载点</td>
+</tr>
+<tr>
+<td><code>linux.netfilter.Netfilter</code></td>
+<td>列出Netfilter钩子（已弃用）</td>
+</tr>
+<tr>
+<td><code>linux.pagecache.Files</code></td>
+<td>从内存列出文件</td>
+</tr>
+<tr>
+<td><code>linux.pagecache.InodePages</code></td>
+<td>列出并恢复缓存inode页</td>
+</tr>
+<tr>
+<td><code>linux.pagecache.RecoverFs</code></td>
+<td>恢复缓存文件系统到压缩tarball</td>
+</tr>
+<tr>
+<td><code>linux.pidhashtable.PIDHashTable</code></td>
+<td>通过PID哈希表枚举进程</td>
+</tr>
+<tr>
+<td><code>linux.proc.Maps</code></td>
+<td>列出所有进程的内存映射</td>
+</tr>
+<tr>
+<td><code>linux.psaux.PsAux</code></td>
+<td>列出进程及其命令行参数</td>
+</tr>
+<tr>
+<td><code>linux.pscallstack.PsCallStack</code></td>
+<td>枚举每个任务的调用栈</td>
+</tr>
+<tr>
+<td><code>linux.pslist.PsList</code></td>
+<td>列出进程</td>
+</tr>
+<tr>
+<td><code>linux.psscan.PsScan</code></td>
+<td>扫描进程</td>
+</tr>
+<tr>
+<td><code>linux.pstree.PsTree</code></td>
+<td>以树形结构列出进程</td>
+</tr>
+<tr>
+<td><code>linux.ptrace.Ptrace</code></td>
+<td>枚举ptrace追踪关系</td>
+</tr>
+<tr>
+<td><code>linux.sockscan.Sockscan</code></td>
+<td>扫描网络连接</td>
+</tr>
+<tr>
+<td><code>linux.sockstat.Sockstat</code></td>
+<td>列出所有网络连接</td>
+</tr>
+<tr>
+<td><code>linux.tracing.ftrace.CheckFtrace</code></td>
+<td>检测ftrace钩子</td>
+</tr>
+<tr>
+<td><code>linux.tracing.perf_events.PerfEvents</code></td>
+<td>列出性能事件</td>
+</tr>
+<tr>
+<td><code>linux.tracing.tracepoints.CheckTracepoints</code></td>
+<td>检测tracepoints钩子</td>
+</tr>
+<tr>
+<td><code>linux.tty_check.tty_check</code></td>
+<td>检查tty设备钩子（已弃用）</td>
+</tr>
+<tr>
+<td><code>linux.vmaregexscan.VmaRegExScan</code></td>
+<td>使用正则表达式扫描虚拟内存区域</td>
+</tr>
+<tr>
+<td><code>linux.vmayarascan.VmaYaraScan</code></td>
+<td>使用YARA扫描虚拟内存区域</td>
+</tr>
+<tr>
+<td><code>linux.vmcoreinfo.VMCoreInfo</code></td>
+<td>枚举VMCoreInfo表</td>
+</tr>
+<tr>
+<td><code>linux.module_extract.ModuleExtract</code></td>
+<td>从内核地址重建ELF文件</td>
+</tr>
+<tr>
+<td><code>linux.modxview.Modxview</code></td>
+<td>整合lsmod、check_modules和hidden_modules结果（已弃用）</td>
+</tr>
+</tbody>
+</table>
+<h4 id="4-3-linux">4.3 Linux 恶意软件检测插件</h4>
+<table>
+<thead>
+<tr>
+<th>插件</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>linux.malware.check_afinfo.Check_afinfo</code></td>
+<td>验证网络协议函数指针</td>
+</tr>
+<tr>
+<td><code>linux.malware.check_creds.Check_creds</code></td>
+<td>检查进程凭证共享</td>
+</tr>
+<tr>
+<td><code>linux.malware.check_idt.Check_idt</code></td>
+<td>检查IDT是否被修改</td>
+</tr>
+<tr>
+<td><code>linux.malware.check_modules.Check_modules</code></td>
+<td>比较模块列表</td>
+</tr>
+<tr>
+<td><code>linux.malware.check_syscall.Check_syscall</code></td>
+<td>检查系统调用表钩子</td>
+</tr>
+<tr>
+<td><code>linux.malware.hidden_modules.Hidden_modules</code></td>
+<td>查找隐藏内核模块</td>
+</tr>
+<tr>
+<td><code>linux.malware.keyboard_notifiers.Keyboard_notifiers</code></td>
+<td>解析键盘通知链</td>
+</tr>
+<tr>
+<td><code>linux.malware.malfind.Malfind</code></td>
+<td>检测潜在注入代码</td>
+</tr>
+<tr>
+<td><code>linux.malware.modxview.Modxview</code></td>
+<td>整合模块检查结果</td>
+</tr>
+<tr>
+<td><code>linux.malware.netfilter.Netfilter</code></td>
+<td>列出Netfilter钩子</td>
+</tr>
+<tr>
+<td><code>linux.malware.process_spoofing.ProcessSpoofing</code></td>
+<td>检测进程欺骗</td>
+</tr>
+<tr>
+<td><code>linux.malware.tty_check.Tty_Check</code></td>
+<td>检查tty设备钩子</td>
+</tr>
+</tbody>
+</table>
+<h4 id="4-4-macos">4.4 macOS 插件</h4>
+<table>
+<thead>
+<tr>
+<th>插件</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mac.bash.Bash</code></td>
+<td>恢复bash命令历史</td>
+</tr>
+<tr>
+<td><code>mac.check_syscall.Check_syscall</code></td>
+<td>检查系统调用表钩子</td>
+</tr>
+<tr>
+<td><code>mac.check_sysctl.Check_sysctl</code></td>
+<td>检查sysctl处理器钩子</td>
+</tr>
+<tr>
+<td><code>mac.check_trap_table.Check_trap_table</code></td>
+<td>检查mach陷阱表钩子</td>
+</tr>
+<tr>
+<td><code>mac.dmesg.Dmesg</code></td>
+<td>打印内核日志缓冲区</td>
+</tr>
+<tr>
+<td><code>mac.ifconfig.Ifconfig</code></td>
+<td>列出网络接口信息</td>
+</tr>
+<tr>
+<td><code>mac.kauth_listeners.Kauth_listeners</code></td>
+<td>列出kauth监听器</td>
+</tr>
+<tr>
+<td><code>mac.kauth_scopes.Kauth_scopes</code></td>
+<td>列出kauth作用域</td>
+</tr>
+<tr>
+<td><code>mac.kevents.Kevents</code></td>
+<td>列出进程注册的事件处理器</td>
+</tr>
+<tr>
+<td><code>mac.list_files.List_Files</code></td>
+<td>列出所有进程的打开文件描述符</td>
+</tr>
+<tr>
+<td><code>mac.lsmod.Lsmod</code></td>
+<td>列出已加载内核模块</td>
+</tr>
+<tr>
+<td><code>mac.lsof.Lsof</code></td>
+<td>列出所有进程的打开文件描述符</td>
+</tr>
+<tr>
+<td><code>mac.malfind.Malfind</code></td>
+<td>检测潜在注入代码</td>
+</tr>
+<tr>
+<td><code>mac.mount.Mount</code></td>
+<td>输出类似mount命令的结果</td>
+</tr>
+<tr>
+<td><code>mac.netstat.Netstat</code></td>
+<td>列出所有网络连接</td>
+</tr>
+<tr>
+<td><code>mac.proc_maps.Maps</code></td>
+<td>列出进程内存映射</td>
+</tr>
+<tr>
+<td><code>mac.psaux.Psaux</code></td>
+<td>恢复程序命令行参数</td>
+</tr>
+<tr>
+<td><code>mac.pslist.PsList</code></td>
+<td>列出进程</td>
+</tr>
+<tr>
+<td><code>mac.pstree.PsTree</code></td>
+<td>以树形结构列出进程</td>
+</tr>
+<tr>
+<td><code>mac.socket_filters.Socket_filters</code></td>
+<td>枚举内核socket过滤器</td>
+</tr>
+<tr>
+<td><code>mac.timers.Timers</code></td>
+<td>检查恶意内核定时器</td>
+</tr>
+<tr>
+<td><code>mac.trustedbsd.Trustedbsd</code></td>
+<td>检查恶意trustedbsd模块</td>
+</tr>
+<tr>
+<td><code>mac.vfsevents.VFSevents</code></td>
+<td>列出过滤文件系统事件的进程</td>
+</tr>
+</tbody>
+</table>
+<h4 id="4-5-windows">4.5 Windows 插件</h4>
+<table>
+<thead>
+<tr>
+<th>插件</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>windows.amcache.Amcache</code></td>
+<td>从AmCache提取执行应用信息（已弃用）</td>
+</tr>
+<tr>
+<td><code>windows.bigpools.BigPools</code></td>
+<td>列出大页池</td>
+</tr>
+<tr>
+<td><code>windows.cachedump.Cachedump</code></td>
+<td>导出LSA机密（已弃用）</td>
+</tr>
+<tr>
+<td><code>windows.callbacks.Callbacks</code></td>
+<td>列出内核回调和通知例程</td>
+</tr>
+<tr>
+<td><code>windows.cmdline.CmdLine</code></td>
+<td>列出进程命令行参数</td>
+</tr>
+<tr>
+<td><code>windows.cmdscan.CmdScan</code></td>
+<td>查找Windows命令历史</td>
+</tr>
+<tr>
+<td><code>windows.consoles.Consoles</code></td>
+<td>查找Windows控制台缓冲区</td>
+</tr>
+<tr>
+<td><code>windows.crashinfo.Crashinfo</code></td>
+<td>列出Windows崩溃转储信息</td>
+</tr>
+<tr>
+<td><code>windows.debugregisters.DebugRegisters</code></td>
+<td>显示调试寄存器</td>
+</tr>
+<tr>
+<td><code>windows.deskscan.DeskScan</code></td>
+<td>扫描每个窗口站的桌面实例</td>
+</tr>
+<tr>
+<td><code>windows.desktops.Desktops</code></td>
+<td>枚举每个窗口站的桌面实例</td>
+</tr>
+<tr>
+<td><code>windows.devicetree.DeviceTree</code></td>
+<td>列出驱动和设备树</td>
+</tr>
+<tr>
+<td><code>windows.direct_system_calls.DirectSystemCalls</code></td>
+<td>检测Direct System Call（已弃用）</td>
+</tr>
+<tr>
+<td><code>windows.dlllist.DllList</code></td>
+<td>列出加载的DLL</td>
+</tr>
+<tr>
+<td><code>windows.driverirp.DriverIrp</code></td>
+<td>列出驱动IRP</td>
+</tr>
+<tr>
+<td><code>windows.drivermodule.DriverModule</code></td>
+<td>检测隐藏驱动（已弃用）</td>
+</tr>
+<tr>
+<td><code>windows.driverscan.DriverScan</code></td>
+<td>扫描驱动</td>
+</tr>
+<tr>
+<td><code>windows.dumpfiles.DumpFiles</code></td>
+<td>导出缓存文件内容</td>
+</tr>
+<tr>
+<td><code>windows.envars.Envars</code></td>
+<td>显示进程环境变量</td>
+</tr>
+<tr>
+<td><code>windows.etwpatch.EtwPatch</code></td>
+<td>识别ETW补丁技术</td>
+</tr>
+<tr>
+<td><code>windows.filescan.FileScan</code></td>
+<td>扫描文件对象</td>
+</tr>
+<tr>
+<td><code>windows.getservicesids.GetServiceSIDs</code></td>
+<td>列出进程令牌SID</td>
+</tr>
+<tr>
+<td><code>windows.getsids.GetSIDs</code></td>
+<td>打印每个进程的所有者SID</td>
+</tr>
+<tr>
+<td><code>windows.handles.Handles</code></td>
+<td>列出进程打开句柄</td>
+</tr>
+<tr>
+<td><code>windows.hashdump.Hashdump</code></td>
+<td>导出用户哈希（已弃用）</td>
+</tr>
+<tr>
+<td><code>windows.hollowprocesses.HollowProcesses</code></td>
+<td>列出空心进程（已弃用）</td>
+</tr>
+<tr>
+<td><code>windows.iat.IAT</code></td>
+<td>提取导入地址表</td>
+</tr>
+<tr>
+<td><code>windows.indirect_system_calls.IndirectSystemCalls</code></td>
+<td>检测Indirect System Call（已弃用）</td>
+</tr>
+<tr>
+<td><code>windows.info.Info</code></td>
+<td>显示操作系统和内核信息</td>
+</tr>
+<tr>
+<td><code>windows.joblinks.JobLinks</code></td>
+<td>打印进程作业链接信息</td>
+</tr>
+<tr>
+<td><code>windows.kpcrs.KPCRs</code></td>
+<td>打印每个处理器的KPCR结构</td>
+</tr>
+<tr>
+<td><code>windows.ldrmodules.LdrModules</code></td>
+<td>列出加载模块</td>
+</tr>
+<tr>
+<td><code>windows.lsadump.Lsadump</code></td>
+<td>导出LSA机密（已弃用）</td>
+</tr>
+<tr>
+<td><code>windows.malfind.Malfind</code></td>
+<td>检测潜在注入代码（已弃用）</td>
+</tr>
+<tr>
+<td><code>windows.mbrscan.MBRScan</code></td>
+<td>扫描MBR</td>
+</tr>
+<tr>
+<td><code>windows.memmap.Memmap</code></td>
+<td>打印内存映射</td>
+</tr>
+<tr>
+<td><code>windows.mftscan.ADS</code></td>
+<td>扫描备用数据流</td>
+</tr>
+<tr>
+<td><code>windows.mftscan.MFTScan</code></td>
+<td>扫描MFT文件对象</td>
+</tr>
+<tr>
+<td><code>windows.mftscan.ResidentData</code></td>
+<td>扫描含驻留数据的MFT记录</td>
+</tr>
+<tr>
+<td><code>windows.modscan.ModScan</code></td>
+<td>扫描模块</td>
+</tr>
+<tr>
+<td><code>windows.modules.Modules</code></td>
+<td>列出加载的内核模块</td>
+</tr>
+<tr>
+<td><code>windows.mutantscan.MutantScan</code></td>
+<td>扫描互斥体</td>
+</tr>
+<tr>
+<td><code>windows.netscan.NetScan</code></td>
+<td>扫描网络对象</td>
+</tr>
+<tr>
+<td><code>windows.netstat.NetStat</code></td>
+<td>遍历网络跟踪结构</td>
+</tr>
+<tr>
+<td><code>windows.orphan_kernel_threads.Threads</code></td>
+<td>列出进程线程</td>
+</tr>
+<tr>
+<td><code>windows.pe_symbols.PESymbols</code></td>
+<td>打印PE文件符号</td>
+</tr>
+<tr>
+<td><code>windows.pedump.PEDump</code></td>
+<td>从指定地址提取PE文件</td>
+</tr>
+<tr>
+<td><code>windows.poolscanner.PoolScanner</code></td>
+<td>通用池扫描器</td>
+</tr>
+<tr>
+<td><code>windows.privileges.Privs</code></td>
+<td>列出进程令牌权限</td>
+</tr>
+<tr>
+<td><code>windows.processghosting.ProcessGhosting</code></td>
+<td>检测进程幽灵（已弃用）</td>
+</tr>
+<tr>
+<td><code>windows.pslist.PsList</code></td>
+<td>列出进程</td>
+</tr>
+<tr>
+<td><code>windows.psscan.PsScan</code></td>
+<td>扫描进程</td>
+</tr>
+<tr>
+<td><code>windows.pstree.PsTree</code></td>
+<td>以树形结构列出进程</td>
+</tr>
+<tr>
+<td><code>windows.psxview.PsXView</code></td>
+<td>多方法检测隐藏进程（已弃用）</td>
+</tr>
+<tr>
+<td><code>windows.sessions.Sessions</code></td>
+<td>列出带会话信息的进程</td>
+</tr>
+<tr>
+<td><code>windows.shimcachemem.ShimcacheMem</code></td>
+<td>读取Shimcache条目</td>
+</tr>
+<tr>
+<td><code>windows.skeleton_key_check.Skeleton_Key_Check</code></td>
+<td>检测Skeleton Key恶意软件</td>
+</tr>
+<tr>
+<td><code>windows.ssdt.SSDT</code></td>
+<td>列出系统调用表</td>
+</tr>
+<tr>
+<td><code>windows.statistics.Statistics</code></td>
+<td>列出内存空间统计</td>
+</tr>
+<tr>
+<td><code>windows.strings.Strings</code></td>
+<td>显示字符串所属进程</td>
+</tr>
+<tr>
+<td><code>windows.suspended_threads.SuspendedThreads</code></td>
+<td>枚举挂起线程</td>
+</tr>
+<tr>
+<td><code>windows.suspicious_threads.SuspiciousThreads</code></td>
+<td>列出可疑用户态线程（已弃用）</td>
+</tr>
+<tr>
+<td><code>windows.svcdiff.SvcDiff</code></td>
+<td>比较服务列表（已弃用）</td>
+</tr>
+<tr>
+<td><code>windows.svclist.SvcList</code></td>
+<td>列出services.exe中的服务</td>
+</tr>
+<tr>
+<td><code>windows.svcscan.SvcScan</code></td>
+<td>扫描Windows服务</td>
+</tr>
+<tr>
+<td><code>windows.symlinkscan.SymlinkScan</code></td>
+<td>扫描符号链接</td>
+</tr>
+<tr>
+<td><code>windows.thrdscan.ThrdScan</code></td>
+<td>扫描线程</td>
+</tr>
+<tr>
+<td><code>windows.threads.Threads</code></td>
+<td>列出进程线程</td>
+</tr>
+<tr>
+<td><code>windows.timers.Timers</code></td>
+<td>打印内核定时器和DPC</td>
+</tr>
+<tr>
+<td><code>windows.truecrypt.Passphrase</code></td>
+<td>TrueCrypt缓存密码查找器</td>
+</tr>
+<tr>
+<td><code>windows.unhooked_system_calls.unhooked_system_calls</code></td>
+<td>检测钩子（已弃用）</td>
+</tr>
+<tr>
+<td><code>windows.unloadedmodules.UnloadedModules</code></td>
+<td>列出已卸载内核模块</td>
+</tr>
+<tr>
+<td><code>windows.vadinfo.VadInfo</code></td>
+<td>列出进程内存范围</td>
+</tr>
+<tr>
+<td><code>windows.vadregexscan.VadRegExScan</code></td>
+<td>使用正则表达式扫描VAD</td>
+</tr>
+<tr>
+<td><code>windows.vadwalk.VadWalk</code></td>
+<td>遍历VAD树</td>
+</tr>
+<tr>
+<td><code>windows.vadyarascan.VadYaraScan</code></td>
+<td>使用YARA扫描VAD</td>
+</tr>
+<tr>
+<td><code>windows.verinfo.VerInfo</code></td>
+<td>列出PE文件版本信息</td>
+</tr>
+<tr>
+<td><code>windows.virtmap.VirtMap</code></td>
+<td>列出虚拟映射段</td>
+</tr>
+<tr>
+<td><code>windows.windows.Windows</code></td>
+<td>枚举桌面实例的窗口</td>
+</tr>
+<tr>
+<td><code>windows.windowstations.WindowStations</code></td>
+<td>扫描顶级窗口站</td>
+</tr>
+</tbody>
+</table>
+<h4 id="4-6-windows">4.6 Windows 注册表插件</h4>
+<table>
+<thead>
+<tr>
+<th>插件</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>windows.registry.amcache.Amcache</code></td>
+<td>从AmCache提取执行应用信息</td>
+</tr>
+<tr>
+<td><code>windows.registry.cachedump.Cachedump</code></td>
+<td>导出LSA机密</td>
+</tr>
+<tr>
+<td><code>windows.registry.certificates.Certificates</code></td>
+<td>列出证书存储中的证书</td>
+</tr>
+<tr>
+<td><code>windows.registry.getcellroutine.GetCellRoutine</code></td>
+<td>检测被hook的GetCellRoutine</td>
+</tr>
+<tr>
+<td><code>windows.registry.hashdump.Hashdump</code></td>
+<td>导出用户哈希</td>
+</tr>
+<tr>
+<td><code>windows.registry.hivelist.HiveList</code></td>
+<td>列出注册表配置单元</td>
+</tr>
+<tr>
+<td><code>windows.registry.hivescan.HiveScan</code></td>
+<td>扫描注册表配置单元</td>
+</tr>
+<tr>
+<td><code>windows.registry.lsadump.Lsadump</code></td>
+<td>导出LSA机密</td>
+</tr>
+<tr>
+<td><code>windows.registry.printkey.PrintKey</code></td>
+<td>列出注册表键值</td>
+</tr>
+<tr>
+<td><code>windows.registry.scheduled_tasks.ScheduledTasks</code></td>
+<td>解码计划任务信息</td>
+</tr>
+<tr>
+<td><code>windows.registry.userassist.UserAssist</code></td>
+<td>打印UserAssist注册表键</td>
+</tr>
+</tbody>
+</table>
+<h4 id="4-7-windows">4.7 Windows 恶意软件检测插件</h4>
+<table>
+<thead>
+<tr>
+<th>插件</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>windows.malware.direct_system_calls.DirectSystemCalls</code></td>
+<td>检测Direct System Call</td>
+</tr>
+<tr>
+<td><code>windows.malware.drivermodule.DriverModule</code></td>
+<td>检测隐藏驱动</td>
+</tr>
+<tr>
+<td><code>windows.malware.hollowprocesses.HollowProcesses</code></td>
+<td>列出空心进程</td>
+</tr>
+<tr>
+<td><code>windows.malware.indirect_system_calls.IndirectSystemCalls</code></td>
+<td>检测Indirect System Call</td>
+</tr>
+<tr>
+<td><code>windows.malware.ldrmodules.LdrModules</code></td>
+<td>列出加载模块</td>
+</tr>
+<tr>
+<td><code>windows.malware.malfind.Malfind</code></td>
+<td>检测潜在注入代码</td>
+</tr>
+<tr>
+<td><code>windows.malware.pebmasquerade.PebMasquerade</code></td>
+<td>检测进程名称欺骗</td>
+</tr>
+<tr>
+<td><code>windows.malware.processghosting.ProcessGhosting</code></td>
+<td>检测进程幽灵</td>
+</tr>
+<tr>
+<td><code>windows.malware.psxview.PsXView</code></td>
+<td>多方法检测隐藏进程</td>
+</tr>
+<tr>
+<td><code>windows.malware.skeleton_key_check.Skeleton_Key_Check</code></td>
+<td>检测Skeleton Key</td>
+</tr>
+<tr>
+<td><code>windows.malware.suspicious_threads.SuspiciousThreads</code></td>
+<td>列出可疑线程</td>
+</tr>
+<tr>
+<td><code>windows.malware.svcdiff.SvcDiff</code></td>
+<td>比较服务列表检测rootkit</td>
+</tr>
+<tr>
+<td><code>windows.malware.unhooked_system_calls.UnhookedSystemCalls</code></td>
+<td>检测钩子</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="5">5. 使用示例</h3>
+<table>
+<thead>
+<tr>
+<th>示例</th>
+<th>说明</th>
+<th>命令</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>示例1</td>
+<td>列出Windows进程</td>
+<td><code>vol.py -f memory.dmp windows.pslist.PsList</code></td>
+</tr>
+<tr>
+<td>示例2</td>
+<td>扫描Windows网络连接</td>
+<td><code>vol.py -f memory.dmp windows.netscan.NetScan</code></td>
+</tr>
+<tr>
+<td>示例3</td>
+<td>导出用户哈希</td>
+<td><code>vol.py -f memory.dmp windows.registry.hashdump.Hashdump</code></td>
+</tr>
+<tr>
+<td>示例4</td>
+<td>分析Linux进程</td>
+<td><code>vol.py -f linux.img linux.psaux.PsAux</code></td>
+</tr>
+<tr>
+<td>示例5</td>
+<td>恢复bash历史</td>
+<td><code>vol.py -f linux.img linux.bash.Bash</code></td>
+</tr>
+<tr>
+<td>示例6</td>
+<td>使用YARA扫描</td>
+<td><code>vol.py -f memory.dmp yarascan.YaraScan --yara-rules rules.yar</code></td>
+</tr>
+<tr>
+<td>示例7</td>
+<td>以CSV格式输出</td>
+<td><code>vol.py -f memory.dmp windows.pslist.PsList -r csv</code></td>
+</tr>
+<tr>
+<td>示例8</td>
+<td>查看插件帮助</td>
+<td><code>vol.py windows.pslist.PsList --help</code></td>
+</tr>
+<tr>
+<td>示例9</td>
+<td>使用过滤器</td>
+<td><code>vol.py -f memory.dmp windows.pslist.PsList --filters "+Name,calc"</code></td>
+</tr>
+<tr>
+<td>示例10</td>
+<td>指定输出目录</td>
+<td><code>vol.py -f memory.dmp windows.dumpfiles.DumpFiles -o output/</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="sm4">SM4解密</h3>
+<pre><code class="hljs language-php"><span class="hljs-meta">&#x3C;?php</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SM4</span> </span>{
+    <span class="hljs-keyword">const</span> <span class="hljs-variable constant_">ENCRYPT</span> = 1;
+    <span class="hljs-keyword">const</span> <span class="hljs-variable constant_">DECRYPT</span> = 0;
+    <span class="hljs-keyword">private</span> <span class="hljs-variable">$sk</span>; 
+    <span class="hljs-keyword">private</span> <span class="hljs-built_in">static</span> <span class="hljs-variable">$FK</span> = [0xA3B1BAC6, 0x56AA3350, 0x677D9197, 0xB27022DC];
+    <span class="hljs-keyword">private</span> <span class="hljs-built_in">static</span> <span class="hljs-variable">$CK</span> = [
+        0x00070E15, 0x1C232A31, 0x383F464D, 0x545B6269,
+        0x70777E85, 0x8C939AA1, 0xA8AFB6BD, 0xC4CBD2D9,
+        0xE0E7EEF5, 0xFC030A11, 0x181F262D, 0x343B4249,
+        0x50575E65, 0x6C737A81, 0x888F969D, 0xA4ABB2B9,
+        0xC0C7CED5, 0xDCE3EAF1, 0xF8FF060D, 0x141B2229,
+        0x30373E45, 0x4C535A61, 0x686F767D, 0x848B9299,
+        0xA0A7AEB5, 0xBCC3CAD1, 0xD8DFE6ED, 0xF4FB0209,
+        0x10171E25, 0x2C333A41, 0x484F565D, 0x646B7279
+    ];
+    <span class="hljs-keyword">private</span> <span class="hljs-built_in">static</span> <span class="hljs-variable">$SboxTable</span> = [
+        0xD6, 0x90, 0xE9, 0xFE, 0xCC, 0xE1, 0x3D, 0xB7, 0x16, 0xB6, 0x14, 0xC2, 0x28, 0xFB, 0x2C, 0x05,
+        0x2B, 0x67, 0x9A, 0x76, 0x2A, 0xBE, 0x04, 0xC3, 0xAA, 0x44, 0x13, 0x26, 0x49, 0x86, 0x06, 0x99,
+        0x9C, 0x42, 0x50, 0xF4, 0x91, 0xEF, 0x98, 0x7A, 0x33, 0x54, 0x0B, 0x43, 0xED, 0xCF, 0xAC, 0x62,
+        0xE4, 0xB3, 0x1C, 0xA9, 0xC9, 0x08, 0xE8, 0x95, 0x80, 0xDF, 0x94, 0xFA, 0x75, 0x8F, 0x3F, 0xA6,
+        0x47, 0x07, 0xA7, 0xFC, 0xF3, 0x73, 0x17, 0xBA, 0x83, 0x59, 0x3C, 0x19, 0xE6, 0x85, 0x4F, 0xA8,
+        0x68, 0x6B, 0x81, 0xB2, 0x71, 0x64, 0xDA, 0x8B, 0xF8, 0xEB, 0x0F, 0x4B, 0x70, 0x56, 0x9D, 0x35,
+        0x1E, 0x24, 0x0E, 0x5E, 0x63, 0x58, 0xD1, 0xA2, 0x25, 0x22, 0x7C, 0x3B, 0x01, 0x0D, 0x2D, 0xEC,
+        0x84, 0x9B, 0x1E, 0x87, 0xE0, 0x3E, 0xB5, 0x66, 0x48, 0x02, 0x6C, 0xBB, 0xBB, 0x32, 0x83, 0x27,
+        0x9E, 0x01, 0x8D, 0x53, 0x9B, 0x64, 0x7B, 0x6B, 0x6A, 0x6C, 0xEC, 0xBB, 0xC4, 0x94, 0x3B, 0x0C,
+        0x76, 0xD2, 0x09, 0xAA, 0x16, 0x15, 0x3D, 0x2D, 0x0A, 0xFD, 0xE4, 0xB7, 0x37, 0x63, 0x28, 0xDD,
+        0x7C, 0xEA, 0x97, 0x8C, 0x6D, 0xC7, 0xF2, 0x3E, 0x1A, 0x71, 0x1D, 0x29, 0xC5, 0x89, 0x6F, 0xB7,
+        0x62, 0x0E, 0xAA, 0x18, 0xBE, 0x1B, 0xFC, 0x56, 0x36, 0x24, 0x07, 0x82, 0xFA, 0x54, 0x5B, 0x40,
+        0x8F, 0xED, 0x1F, 0xDA, 0x93, 0x80, 0xF9, 0x61, 0x1C, 0x70, 0xC3, 0x85, 0x95, 0xA9, 0x79, 0x08,
+        0x46, 0x29, 0x02, 0x3B, 0x4D, 0x83, 0x3A, 0x0A, 0x49, 0x06, 0x24, 0x1A, 0x47, 0x5C, 0x0D, 0xEA,
+        0x9E, 0xCB, 0x55, 0x20, 0x15, 0x8A, 0x9A, 0xCB, 0x43, 0x0C, 0xF0, 0x0B, 0x40, 0x58, 0x00, 0x8F,
+        0xEB, 0xBE, 0x3D, 0xC2, 0x9F, 0x51, 0xFA, 0x13, 0x3B, 0x0D, 0x90, 0x5B, 0x6E, 0x45, 0x59, 0x33
+    ];
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span>(<span class="hljs-params"><span class="hljs-variable">$key</span></span>) </span>{
+        <span class="hljs-variable language_">$this</span>-><span class="hljs-title function_ invoke__">setKey</span>(<span class="hljs-variable">$key</span>);
+    }
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setKey</span>(<span class="hljs-params"><span class="hljs-variable">$key</span></span>) </span>{
+        <span class="hljs-keyword">if</span> (<span class="hljs-title function_ invoke__">strlen</span>(<span class="hljs-variable">$key</span>) != 16) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Exception</span>(<span class="hljs-string">"SM4"</span>);
+        }
+        <span class="hljs-variable">$key</span> = <span class="hljs-variable language_">$this</span>-><span class="hljs-title function_ invoke__">strToIntArray</span>(<span class="hljs-variable">$key</span>);
+        <span class="hljs-variable">$k</span> = <span class="hljs-title function_ invoke__">array_merge</span>(<span class="hljs-variable">$key</span>, [0, 0, 0, 0]);
+        <span class="hljs-keyword">for</span> (<span class="hljs-variable">$i</span> = 0; <span class="hljs-variable">$i</span> &#x3C; 4; <span class="hljs-variable">$i</span>++) {
+            <span class="hljs-variable">$k</span>[<span class="hljs-variable">$i</span>] ^= <span class="hljs-built_in">self</span>::<span class="hljs-variable">$FK</span>[<span class="hljs-variable">$i</span>];
+        }
+        <span class="hljs-keyword">for</span> (<span class="hljs-variable">$i</span> = 0; <span class="hljs-variable">$i</span> &#x3C; 32; <span class="hljs-variable">$i</span>++) {
+            <span class="hljs-variable">$k</span>[<span class="hljs-variable">$i</span> + 4] = <span class="hljs-variable">$k</span>[<span class="hljs-variable">$i</span>] ^ <span class="hljs-variable language_">$this</span>-><span class="hljs-title function_ invoke__">CKF</span>(<span class="hljs-variable">$k</span>[<span class="hljs-variable">$i</span> + 1], <span class="hljs-variable">$k</span>[<span class="hljs-variable">$i</span> + 2], <span class="hljs-variable">$k</span>[<span class="hljs-variable">$i</span> + 3], <span class="hljs-built_in">self</span>::<span class="hljs-variable">$CK</span>[<span class="hljs-variable">$i</span>]);
+            <span class="hljs-variable language_">$this</span>->sk[<span class="hljs-variable">$i</span>] = <span class="hljs-variable">$k</span>[<span class="hljs-variable">$i</span> + 4];
+        }
+    }
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">encrypt</span>(<span class="hljs-params"><span class="hljs-variable">$plaintext</span></span>) </span>{
+        <span class="hljs-variable">$len</span> = <span class="hljs-title function_ invoke__">strlen</span>(<span class="hljs-variable">$plaintext</span>);
+        <span class="hljs-variable">$padding</span> = 16 - (<span class="hljs-variable">$len</span> % 16);
+        <span class="hljs-variable">$plaintext</span> .= <span class="hljs-title function_ invoke__">str_repeat</span>(<span class="hljs-title function_ invoke__">chr</span>(<span class="hljs-variable">$padding</span>), <span class="hljs-variable">$padding</span>); 
+        <span class="hljs-variable">$ciphertext</span> = <span class="hljs-string">''</span>;
+        <span class="hljs-keyword">for</span> (<span class="hljs-variable">$i</span> = 0; <span class="hljs-variable">$i</span> &#x3C; <span class="hljs-title function_ invoke__">strlen</span>(<span class="hljs-variable">$plaintext</span>); <span class="hljs-variable">$i</span> += 16) {
+            <span class="hljs-variable">$block</span> = <span class="hljs-title function_ invoke__">substr</span>(<span class="hljs-variable">$plaintext</span>, <span class="hljs-variable">$i</span>, 16);
+            <span class="hljs-variable">$ciphertext</span> .= <span class="hljs-variable language_">$this</span>-><span class="hljs-title function_ invoke__">cryptBlock</span>(<span class="hljs-variable">$block</span>, <span class="hljs-built_in">self</span>::<span class="hljs-variable constant_">ENCRYPT</span>);
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-variable">$ciphertext</span>;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">decrypt</span>(<span class="hljs-params"><span class="hljs-variable">$ciphertext</span></span>) </span>{
+        <span class="hljs-variable">$plaintext</span> = <span class="hljs-string">''</span>;
+        <span class="hljs-keyword">for</span> (<span class="hljs-variable">$i</span> = 0; <span class="hljs-variable">$i</span> &#x3C; <span class="hljs-title function_ invoke__">strlen</span>(<span class="hljs-variable">$ciphertext</span>); <span class="hljs-variable">$i</span> += 16) {
+            <span class="hljs-variable">$block</span> = <span class="hljs-title function_ invoke__">substr</span>(<span class="hljs-variable">$ciphertext</span>, <span class="hljs-variable">$i</span>, 16);
+            <span class="hljs-variable">$plaintext</span> .= <span class="hljs-variable language_">$this</span>-><span class="hljs-title function_ invoke__">cryptBlock</span>(<span class="hljs-variable">$block</span>, <span class="hljs-built_in">self</span>::<span class="hljs-variable constant_">DECRYPT</span>);
+        }
+        <span class="hljs-variable">$padding</span> = <span class="hljs-title function_ invoke__">ord</span>(<span class="hljs-title function_ invoke__">substr</span>(<span class="hljs-variable">$plaintext</span>, -1));
+        <span class="hljs-keyword">return</span> <span class="hljs-title function_ invoke__">substr</span>(<span class="hljs-variable">$plaintext</span>, 0, <span class="hljs-title function_ invoke__">strlen</span>(<span class="hljs-variable">$plaintext</span>) - <span class="hljs-variable">$padding</span>);
+    }
+
+    <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">cryptBlock</span>(<span class="hljs-params"><span class="hljs-variable">$block</span>, <span class="hljs-variable">$mode</span></span>) </span>{
+        <span class="hljs-variable">$x</span> = <span class="hljs-variable language_">$this</span>-><span class="hljs-title function_ invoke__">strToIntArray</span>(<span class="hljs-variable">$block</span>);
+
+        <span class="hljs-keyword">if</span> (<span class="hljs-variable">$mode</span> == <span class="hljs-built_in">self</span>::<span class="hljs-variable constant_">ENCRYPT</span>) {
+            <span class="hljs-variable">$roundKeys</span> = <span class="hljs-variable language_">$this</span>->sk;
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-variable">$roundKeys</span> = <span class="hljs-title function_ invoke__">array_reverse</span>(<span class="hljs-variable">$this</span>->sk);
+        }
+
+        <span class="hljs-keyword">for</span> (<span class="hljs-variable">$i</span> = 0; <span class="hljs-variable">$i</span> &#x3C; 32; <span class="hljs-variable">$i</span>++) {
+            <span class="hljs-variable">$roundKey</span> = <span class="hljs-variable">$roundKeys</span>[<span class="hljs-variable">$i</span>];
+            <span class="hljs-variable">$x</span>[4] = <span class="hljs-variable">$x</span>[0] ^ <span class="hljs-variable language_">$this</span>-><span class="hljs-title function_ invoke__">F</span>(<span class="hljs-variable">$x</span>[1], <span class="hljs-variable">$x</span>[2], <span class="hljs-variable">$x</span>[3], <span class="hljs-variable">$roundKey</span>);
+            <span class="hljs-title function_ invoke__">array_shift</span>(<span class="hljs-variable">$x</span>);
+        }
+        <span class="hljs-variable">$x</span> = <span class="hljs-title function_ invoke__">array_reverse</span>(<span class="hljs-variable">$x</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-variable language_">$this</span>-><span class="hljs-title function_ invoke__">intArrayToStr</span>(<span class="hljs-variable">$x</span>);
+    }
+
+    <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">F</span>(<span class="hljs-params"><span class="hljs-variable">$x1</span>, <span class="hljs-variable">$x2</span>, <span class="hljs-variable">$x3</span>, <span class="hljs-variable">$rk</span></span>) </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-variable language_">$this</span>-><span class="hljs-title function_ invoke__">T</span>(<span class="hljs-variable">$x1</span> ^ <span class="hljs-variable">$x2</span> ^ <span class="hljs-variable">$x3</span> ^ <span class="hljs-variable">$rk</span>);
+    }
+    <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">CKF</span>(<span class="hljs-params"><span class="hljs-variable">$a</span>, <span class="hljs-variable">$b</span>, <span class="hljs-variable">$c</span>, <span class="hljs-variable">$ck</span></span>) </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-variable">$a</span> ^ <span class="hljs-variable language_">$this</span>-><span class="hljs-title function_ invoke__">T</span>(<span class="hljs-variable">$b</span> ^ <span class="hljs-variable">$c</span> ^ <span class="hljs-variable">$ck</span>);
+    }
+    <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">T</span>(<span class="hljs-params"><span class="hljs-variable">$x</span></span>) </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-variable language_">$this</span>-><span class="hljs-title function_ invoke__">L</span>(<span class="hljs-variable">$this</span>-><span class="hljs-title function_ invoke__">S</span>(<span class="hljs-variable">$x</span>));
+    }
+    <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">S</span>(<span class="hljs-params"><span class="hljs-variable">$x</span></span>) </span>{
+        <span class="hljs-variable">$result</span> = 0;
+        <span class="hljs-keyword">for</span> (<span class="hljs-variable">$i</span> = 0; <span class="hljs-variable">$i</span> &#x3C; 4; <span class="hljs-variable">$i</span>++) {
+            <span class="hljs-variable">$byte</span> = (<span class="hljs-variable">$x</span> >> (24 - <span class="hljs-variable">$i</span> * 8)) &#x26; 0xFF;
+            <span class="hljs-variable">$result</span> |= <span class="hljs-built_in">self</span>::<span class="hljs-variable">$SboxTable</span>[<span class="hljs-variable">$byte</span>] &#x3C;&#x3C; (24 - <span class="hljs-variable">$i</span> * 8);
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-variable">$result</span>;
+    }
+    <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">L</span>(<span class="hljs-params"><span class="hljs-variable">$x</span></span>) </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-variable">$x</span> ^ <span class="hljs-variable language_">$this</span>-><span class="hljs-title function_ invoke__">rotl</span>(<span class="hljs-variable">$x</span>, 2) ^ <span class="hljs-variable language_">$this</span>-><span class="hljs-title function_ invoke__">rotl</span>(<span class="hljs-variable">$x</span>, 10) ^ <span class="hljs-variable language_">$this</span>-><span class="hljs-title function_ invoke__">rotl</span>(<span class="hljs-variable">$x</span>, 18) ^ <span class="hljs-variable language_">$this</span>-><span class="hljs-title function_ invoke__">rotl</span>(<span class="hljs-variable">$x</span>, 24);
+    }
+    <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rotl</span>(<span class="hljs-params"><span class="hljs-variable">$x</span>, <span class="hljs-variable">$n</span></span>) </span>{
+        <span class="hljs-keyword">return</span> ((<span class="hljs-variable">$x</span> &#x3C;&#x3C; <span class="hljs-variable">$n</span>) &#x26; 0xFFFFFFFF) | ((<span class="hljs-variable">$x</span> >> (32 - <span class="hljs-variable">$n</span>)) &#x26; 0xFFFFFFFF);
+    }
+    <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">strToIntArray</span>(<span class="hljs-params"><span class="hljs-variable">$str</span></span>) </span>{
+        <span class="hljs-variable">$result</span> = [];
+        <span class="hljs-keyword">for</span> (<span class="hljs-variable">$i</span> = 0; <span class="hljs-variable">$i</span> &#x3C; 4; <span class="hljs-variable">$i</span>++) {
+            <span class="hljs-variable">$offset</span> = <span class="hljs-variable">$i</span> * 4;
+            <span class="hljs-variable">$result</span>[<span class="hljs-variable">$i</span>] =
+                (<span class="hljs-title function_ invoke__">ord</span>(<span class="hljs-variable">$str</span>[<span class="hljs-variable">$offset</span>]) &#x3C;&#x3C; 24) |
+                (<span class="hljs-title function_ invoke__">ord</span>(<span class="hljs-variable">$str</span>[<span class="hljs-variable">$offset</span> + 1]) &#x3C;&#x3C; 16) |
+                (<span class="hljs-title function_ invoke__">ord</span>(<span class="hljs-variable">$str</span>[<span class="hljs-variable">$offset</span> + 2]) &#x3C;&#x3C; 8) |
+                <span class="hljs-title function_ invoke__">ord</span>(<span class="hljs-variable">$str</span>[<span class="hljs-variable">$offset</span> + 3]);
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-variable">$result</span>;
+    }
+    <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">intArrayToStr</span>(<span class="hljs-params"><span class="hljs-variable">$array</span></span>) </span>{
+        <span class="hljs-variable">$str</span> = <span class="hljs-string">''</span>;
+        <span class="hljs-keyword">foreach</span> (<span class="hljs-variable">$array</span> <span class="hljs-keyword">as</span> <span class="hljs-variable">$int</span>) {
+            <span class="hljs-variable">$str</span> .= <span class="hljs-title function_ invoke__">chr</span>((<span class="hljs-variable">$int</span> >> 24) &#x26; 0xFF);
+            <span class="hljs-variable">$str</span> .= <span class="hljs-title function_ invoke__">chr</span>((<span class="hljs-variable">$int</span> >> 16) &#x26; 0xFF);
+            <span class="hljs-variable">$str</span> .= <span class="hljs-title function_ invoke__">chr</span>((<span class="hljs-variable">$int</span> >> 8) &#x26; 0xFF);
+            <span class="hljs-variable">$str</span> .= <span class="hljs-title function_ invoke__">chr</span>(<span class="hljs-variable">$int</span> &#x26; 0xFF);
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-variable">$str</span>;
+    }
+}
+<span class="hljs-keyword">try</span> {
+    <span class="hljs-variable">$key</span> = <span class="hljs-string">"a8a58b78f41eeb6a"</span>;
+    <span class="hljs-variable">$sm4</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">SM4</span>(<span class="hljs-variable">$key</span>);
+    <span class="hljs-variable">$plaintext</span> = <span class="hljs-string">"flag"</span>;
+    <span class="hljs-variable">$ciphertext_b64</span> = <span class="hljs-string">"VCWBIdzfjm45EmYFWcqXX0VpQeZPeI6Qqyjsv31yuPTDC80lhFlaJY2R3TintdQu"</span>;
+    <span class="hljs-variable">$ciphertext</span> = <span class="hljs-title function_ invoke__">base64_decode</span>(<span class="hljs-variable">$ciphertext_b64</span>);
+    <span class="hljs-variable">$decryptedtext</span> = <span class="hljs-variable">$sm4</span>-><span class="hljs-title function_ invoke__">decrypt</span>(<span class="hljs-variable">$ciphertext</span>);
+    <span class="hljs-keyword">echo</span> <span class="hljs-variable">$decryptedtext</span>;
+} <span class="hljs-keyword">catch</span> (<span class="hljs-built_in">Exception</span> <span class="hljs-variable">$e</span>) {
+    <span class="hljs-keyword">echo</span> <span class="hljs-variable">$e</span>-><span class="hljs-title function_ invoke__">getMessage</span>() ;
+}
+<span class="hljs-meta">?></span>
+</code></pre>
+<h2 id="">应急响应</h2>
+<h3 id="">恶意文件检测</h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VirusTotal</td>
+<td><a href="https://www.virustotal.com/gui/home/upload">https://www.virustotal.com/gui/home/upload</a></td>
+</tr>
+<tr>
+<td>VirSCAN</td>
+<td><a href="https://www.virscan.org/">https://www.virscan.org/</a></td>
+</tr>
+<tr>
+<td>Virus Scan by Jotti</td>
+<td><a href="https://virusscan.jotti.org/">https://virusscan.jotti.org/</a></td>
+</tr>
+<tr>
+<td>ScanVir</td>
+<td><a href="http://www.scanvir.com/">http://www.scanvir.com/</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ip">IP识别网站</h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IP138</td>
+<td><a href="http://www.ip138.com/">http://www.ip138.com/</a></td>
+</tr>
+<tr>
+<td>微步在线</td>
+<td><a href="https://x.threatbook.cn/">https://x.threatbook.cn/</a></td>
+</tr>
+<tr>
+<td>站长工具</td>
+<td><a href="https://ip.tool.chinaz.com/">https://ip.tool.chinaz.com/</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="">勒索病毒解密</h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No More Ransom</td>
+<td><a href="https://www.nomoreransom.org/zh/index.html">https://www.nomoreransom.org/zh/index.html</a></td>
+</tr>
+<tr>
+<td>360勒索病毒解密</td>
+<td><a href="http://lesuobingdu.360.cn/">http://lesuobingdu.360.cn/</a></td>
+</tr>
+<tr>
+<td>ID-Ransomware</td>
+<td><a href="https://id-ransomware.malwarehunterteam.com/index.php">https://id-ransomware.malwarehunterteam.com/index.php</a></td>
+</tr>
+<tr>
+<td>腾讯管家</td>
+<td><a href="https://guanjia.qq.com/pr/ls/">https://guanjia.qq.com/pr/ls/</a></td>
+</tr>
+<tr>
+<td>启明星辰</td>
+<td><a href="https://lesuo.venuseye.com.cn/">https://lesuo.venuseye.com.cn/</a></td>
+</tr>
+<tr>
+<td>奇安信</td>
+<td><a href="https://lesuobingdu.qianxin.com/">https://lesuobingdu.qianxin.com/</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="">云沙箱</h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>链接</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Any.Run</td>
+<td><a href="https://app.any.run/">https://app.any.run/</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>微步云沙箱</td>
+<td><a href="https://s.threatbook.cn/">https://s.threatbook.cn/</a></td>
+<td>信息详细</td>
+</tr>
+<tr>
+<td>VirusTotal</td>
+<td><a href="https://www.virustotal.com/gui/">https://www.virustotal.com/gui/</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>JoeSanbox</td>
+<td><a href="https://www.joesandbox.com/">https://www.joesandbox.com/</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>腾讯哈勃分析系统</td>
+<td><a href="https://habo.qq.com/">https://habo.qq.com/</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>360沙箱云</td>
+<td><a href="https://ata.360.cn/detection">https://ata.360.cn/detection</a></td>
+<td>APK</td>
+</tr>
+<tr>
+<td>奇安信沙箱</td>
+<td><a href="https://sandbox.ti.qianxin.com/sandbox/page">https://sandbox.ti.qianxin.com/sandbox/page</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>微点沙箱</td>
+<td><a href="https://sandbox.depthsec.com.cn/index.php/">https://sandbox.depthsec.com.cn/index.php/</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>大圣云沙箱</td>
+<td><a href="https://mac-cloud.riskivy.com">https://mac-cloud.riskivy.com</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>魔盾安全分析</td>
+<td><a href="https://www.maldun.com/analysis/">https://www.maldun.com/analysis/</a></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="">威胁情报</h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>深信服</td>
+<td><a href="https://ti.sangfor.com.cn/analysis-platform">https://ti.sangfor.com.cn/analysis-platform</a></td>
+</tr>
+<tr>
+<td>微步在线</td>
+<td><a href="https://x.threatbook.com/">https://x.threatbook.com/</a></td>
+</tr>
+<tr>
+<td>启明星辰</td>
+<td><a href="https://www.venuseve.com.cn/">https://www.venuseve.com.cn/</a></td>
+</tr>
+<tr>
+<td>鼎普科技</td>
+<td><a href="https://ti.dbappsecurity.com.cn/">https://ti.dbappsecurity.com.cn/</a></td>
+</tr>
+<tr>
+<td>360威胁情报</td>
+<td><a href="https://ti.360.net/#/homepage">https://ti.360.net/#/homepage</a></td>
+</tr>
+<tr>
+<td>绿盟科技</td>
+<td><a href="https://ti.nsfocus.com/">https://ti.nsfocus.com/</a></td>
+</tr>
+<tr>
+<td>天津大学红皇后</td>
+<td><a href="https://redgueen.tj-un.com/lntelHome.html">https://redgueen.tj-un.com/lntelHome.html</a></td>
+</tr>
+<tr>
+<td>IBM X-Force</td>
+<td><a href="https://exchange.xforce.ibmcloud.com/">https://exchange.xforce.ibmcloud.com/</a></td>
+</tr>
+<tr>
+<td>ThreatMiner</td>
+<td><a href="https://www.threatminer.org/">https://www.threatminer.org/</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>IOC情报（特征信息）</strong>：域名，IP，URL形式（SSL证书，Hash等）</p>
+<h3 id="">病毒查杀</h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>链接</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>360杀毒</td>
+<td><a href="https://sd.360.cn/">https://sd.360.cn/</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>火绒安全</td>
+<td><a href="https://www.huorong.cn/">https://www.huorong.cn/</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>ClamAV</td>
+<td><a href="http://www.clamav.net/download.html">http://www.clamav.net/download.html</a></td>
+<td>Linux病毒</td>
+</tr>
+<tr>
+<td>Dr.Web CureIt</td>
+<td><a href="https://free.drweb.ru/download+cureit+free/">https://free.drweb.ru/download+cureit+free/</a></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rootkit">Rootkit后门检测工具</h3>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chkrootkit</td>
+<td><a href="http://www.chkrootkit.org">http://www.chkrootkit.org</a></td>
+</tr>
+<tr>
+<td>rkhunter</td>
+<td><a href="http://rkhunter.sourceforge.net">http://rkhunter.sourceforge.net</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="">进程类常用工具</h3>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PC Hunter</td>
+<td>进程，网络，文件系统、Hosts文件、启动信息（启动项、服务、计划任务）</td>
+</tr>
+<tr>
+<td>Procmon</td>
+<td>进程监控，文件操作，注册表读写</td>
+</tr>
+<tr>
+<td>ProcessExplorer</td>
+<td>任务管理器Pro</td>
+</tr>
+</tbody>
+</table>
+<h2 id="">侧信道攻击</h2>
+<p><strong>核心原理</strong>：程序在运行的时候，不同复杂度所用的时间和消耗的能量是不同的。侧信道攻击正是利用计算设备在执行加密操作时无意间泄露的物理信息来推断密钥或其他敏感数据。</p>
+<p><strong>常见侧信道</strong>：功耗、时间、电磁辐射、声波等。</p>
+<h3 id="">能量轨迹</h3>
+<p>能量轨迹是指设备在执行加密操作时消耗的功率随时间变化的记录。通过分析能量轨迹，可以推测出设备在不同时间点上执行的操作，从而恢复加密数据。</p>
+<h3 id="">攻击分类</h3>
+<table>
+<thead>
+<tr>
+<th>攻击类型</th>
+<th>英文缩写</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>简单能量分析</td>
+<td>SPA</td>
+<td>通过观察单次加密操作的功耗曲线，直接推断设备的内部状态，需要攻击者具有一定的设备内部知识</td>
+</tr>
+<tr>
+<td>差分能量分析</td>
+<td>DPA</td>
+<td>通过多次加密操作的功耗曲线，结合统计分析方法来推断敏感信息，对噪声更为鲁棒</td>
+</tr>
+<tr>
+<td>相关能量分析</td>
+<td>CPA</td>
+<td>DPA的一种变种，通过计算实际测量的功耗轨迹与假设功耗模型之间的相关性来推断密钥信息</td>
+</tr>
+<tr>
+<td>模板攻击</td>
+<td>TA</td>
+<td>攻击者事先在相同设备上构建功耗轨迹模板，通过对比相似度来推断密钥，被认为是最强的侧信道攻击之一</td>
+</tr>
+</tbody>
+</table>
+<p>0110111010</p>
+<h2 id="pyjail">pyjail沙箱逃逸</h2>
+<h3 id="python-jail">Python jail：读文件相关限制</h3>
+<p><code>read /app/where_is_flag.txt</code> 直接输文件路径绕过</p>
+<h3 id="python-jail-unicode">Python jail：Unicode 与过滤</h3>2:["$","div",null,{"className":"min-h-screen","children":[["$","$L8",null,{}],["$","div",null,{"className":"max-w-6xl mx-auto px-3 sm:px-4 py-8 sm:py-12","children":[["$","$L9",null,{"href":"/","className":"inline-block mb-6 sm:mb-8 text-primary hover:underline","children":"← 返回首页"}],["$","div",null,{"className":"flex flex-col lg:flex-row gap-6 lg:gap-8","children":[["$","article",null,{"className":"flex-1 min-w-0","children":[["$","header",null,{"className":"mb-6 sm:mb-8","children":[["$","h1",null,{"className":"text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4","children":"misc-安全杂项"}],["$","time",null,{"className":"text-gray-500 text-sm sm:text-base","children":"2026-07-20"}]]}],["$","div",null,{"className":"prose-container overflow-x-auto","children":["$","$La",null,{"htmlContent":"$b"}]}]]}],["$","aside",null,{"className":"w-full lg:w-64 flex-shrink-0","children":["$","$Lc",null,{"headings":[{"id":"写在前面","text":"写在前面","level":2},{"id":"1-信息搜集技术","text":"1. 信息搜集技术","level":2},{"id":"1-1-网络信息搜集技巧","text":"1.1 网络信息搜集技巧","level":3},{"id":"1-2-基本搜索技巧","text":"1.2 基本搜索技巧","level":3},{"id":"1-3-地图和街景搜索","text":"1.3 地图和街景搜索","level":3},{"id":"2-隐写综合","text":"2. 隐写综合","level":2},{"id":"2-1-图片隐写","text":"2.1 图片隐写","level":3},{"id":"2-1-1-总览","text":"2.1.1 总览","level":4},{"id":"2-1-2-zsteg-使用","text":"2.1.2 zsteg 使用","level":4},{"id":"2-1-3-普通盲水印","text":"2.1.3 普通盲水印","level":4},{"id":"2-1-4-频域盲水印","text":"2.1.4 频域盲水印","level":4},{"id":"2-1-5-f5隐写","text":"2.1.5.F5隐写","level":4},{"id":"2-1-6-idat隐写","text":"2.1.6.IDAT隐写","level":4},{"id":"2-1-7-十六进制高位-低位隐藏信息-hao-高位低位","text":"2.1.7 十六进制高位/低位隐藏信息（hao/高位低位）","level":4},{"id":"2-1-8-其他hint","text":"2.1.8 其他hint","level":4},{"id":"2-2-音频隐写","text":"2.2 音频隐写","level":3},{"id":"2-2-1-总览","text":"2.2.1 总览","level":4},{"id":"2-2-2-mp3stego","text":"2.2.2  MP3stego","level":4},{"id":"2-2-3-字母解释法","text":"2.2.3 字母解释法","level":4},{"id":"2-2-4-拨号音解密","text":"2.2.4 拨号音解密","level":4},{"id":"2-2-5-grc文件fm解调","text":"2.2.5  grc文件fm解调","level":4},{"id":"2-2-6-其他hint","text":"2.2.6 其他hint","level":4},{"id":"2-3-文档隐写","text":"2.3 文档隐写","level":3},{"id":"2-3-1-总览","text":"2.3.1 总览","level":4},{"id":"2-3-2-加密-word-爆破与宏破解","text":"2.3.2 加密 Word 爆破与宏破解","level":4},{"id":"3-压缩包分析","text":"3. 压缩包分析","level":2},{"id":"3-1-总览","text":"3.1 总览","level":3},{"id":"3-2-lzip解压-lzip-d-1-lzip","text":"3.2 lzip解压：lzip -d 1.lzip","level":3},{"id":"3-3-bkcrack明文攻击","text":"3.3 bkcrack明文攻击","level":3},{"id":"3-3-1-基本用法","text":"3.3.1 基本用法","level":4},{"id":"3-3-2-高级用法","text":"3.3.2 高级用法","level":4},{"id":"七-流量分析","text":"七、流量分析","level":2},{"id":"蓝牙协议","text":"蓝牙协议","level":3},{"id":"键盘流量","text":"键盘流量","level":3},{"id":"无线流量-tp-link-802-11","text":"无线流量（Tp-link）802.11","level":3},{"id":"ssl-tls流量","text":"SSL/TLS流量","level":3},{"id":"哥斯拉流量","text":"哥斯拉流量","level":3},{"id":"常用payload句法","text":"常用payload句法","level":3},{"id":"八-工控","text":"八、工控","level":2},{"id":"modbus协议","text":"Modbus协议","level":3},{"id":"九-漏洞相关","text":"九、漏洞相关","level":2},{"id":"apache-shiro-cve-2016-4437-反序列化漏洞","text":"Apache Shiro（CVE-2016-4437）反序列化漏洞","level":3},{"id":"dnslog外带","text":"DNSLog外带","level":3},{"id":"十-杂项技巧","text":"十、杂项技巧","level":2},{"id":"pyc隐写","text":"pyc隐写","level":3},{"id":"shell命令","text":"Shell命令","level":3},{"id":"volatility3-完整使用手册","text":"Volatility3 完整使用手册","level":2},{"id":"目录","text":"目录","level":3},{"id":"1-简介","text":"1. 简介","level":3},{"id":"2-命令语法","text":"2. 命令语法","level":3},{"id":"3-选项详解","text":"3. 选项详解","level":3},{"id":"基础选项","text":"基础选项","level":4},{"id":"配置选项","text":"配置选项","level":4},{"id":"路径选项","text":"路径选项","level":4},{"id":"输出选项","text":"输出选项","level":4},{"id":"内存层选项","text":"内存层选项","level":4},{"id":"过滤选项","text":"过滤选项","level":4},{"id":"4-插件列表","text":"4. 插件列表","level":3},{"id":"4-1-通用插件","text":"4.1 通用插件","level":4},{"id":"4-2-linux-插件","text":"4.2 Linux 插件","level":4},{"id":"4-3-linux-恶意软件检测插件","text":"4.3 Linux 恶意软件检测插件","level":4},{"id":"4-4-macos-插件","text":"4.4 macOS 插件","level":4},{"id":"4-5-windows-插件","text":"4.5 Windows 插件","level":4},{"id":"4-6-windows-注册表插件","text":"4.6 Windows 注册表插件","level":4},{"id":"4-7-windows-恶意软件检测插件","text":"4.7 Windows 恶意软件检测插件","level":4},{"id":"5-使用示例","text":"5. 使用示例","level":3},{"id":"sm4解密","text":"SM4解密","level":3},{"id":"应急响应","text":"应急响应","level":2},{"id":"恶意文件检测","text":"恶意文件检测","level":3},{"id":"ip识别网站","text":"IP识别网站","level":3},{"id":"勒索病毒解密","text":"勒索病毒解密","level":3},{"id":"云沙箱","text":"云沙箱","level":3},{"id":"威胁情报","text":"威胁情报","level":3},{"id":"病毒查杀","text":"病毒查杀","level":3},{"id":"rootkit后门检测工具","text":"Rootkit后门检测工具","level":3},{"id":"进程类常用工具","text":"进程类常用工具","level":3},{"id":"侧信道攻击","text":"侧信道攻击","level":2},{"id":"能量轨迹","text":"能量轨迹","level":3},{"id":"攻击分类","text":"攻击分类","level":3},{"id":"pyjail沙箱逃逸","text":"pyjail沙箱逃逸","level":2},{"id":"python-jail-读文件相关限制","text":"Python jail：读文件相关限制","level":3},{"id":"python-jail-unicode-与过滤","text":"Python jail：Unicode 与过滤","level":3}]}]}]]}]]}],["$","footer",null,{"className":"bg-gray-900 text-gray-300","children":[["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-12","children":["$","div",null,{"className":"flex flex-col md:flex-row justify-between","children":["$","div",null,{"children":[["$","h4",null,{"className":"text-gray-400 mb-4","children":"链接"}],["$","ul",null,{"className":"space-y-2","children":["$","li",null,{"children":["$","a",null,{"href":"https://github.com/hao0632","target":"_blank","rel":"noopener noreferrer","className":"hover:text-white transition-colors","children":"GitHub"}]}]}]]}]}]}],["$","div",null,{"className":"border-t border-gray-800","children":["$","div",null,{"className":"px-4 py-4","children":["$","p",null,{"className":"text-center text-gray-500 text-sm","children":"© 2026 hao-0632's blog"}]}]}]]}]]}]
+7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"misc-安全杂项"}],["$","meta","3",{"name":"description","content":"misc个人食用指北，持续更新"}],["$","link","4",{"rel":"icon","href":"/cat.ico"}]]
+1:null

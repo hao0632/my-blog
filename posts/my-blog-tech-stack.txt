@@ -2,15 +2,15 @@
 5:I[1343,[],""]
 6:I[4160,["231","static/chunks/231-4760956769979d51.js","185","static/chunks/app/layout-cf1eee64ea0339e6.js"],"default"]
 4:["slug","my-blog-tech-stack","d"]
-0:["Vu_wo3O8e-w9_kIQy_KY8",[[["",{"children":["posts",{"children":[["slug","my-blog-tech-stack","d"],{"children":["__PAGE__?{\"slug\":\"my-blog-tech-stack\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["slug","my-blog-tech-stack","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"min-h-screen bg-gray-50","children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/my-blog/_next/static/css/52967a4f0e01b0e9.css","precedence":"next","crossOrigin":"$undefined"}]],"$L7"]]]]
+0:["tw2XuU0mMjm5wuoyc_Y0k",[[["",{"children":["posts",{"children":[["slug","my-blog-tech-stack","d"],{"children":["__PAGE__?{\"slug\":\"my-blog-tech-stack\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["slug","my-blog-tech-stack","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"min-h-screen bg-gray-50","children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/my-blog/_next/static/css/52967a4f0e01b0e9.css","precedence":"next","crossOrigin":"$undefined"}]],"$L7"]]]]
 8:I[7311,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-4c59b816d8fdf804.js"],"default"]
 9:I[231,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-4c59b816d8fdf804.js"],""]
 a:I[3132,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-4c59b816d8fdf804.js"],"default"]
 c:I[7125,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-4c59b816d8fdf804.js"],"default"]
-b:T194d,<h2 id="">概述</h2>
+b:T1a10,<h2 id="概述">概述</h2>
 <p>这篇文章将详细介绍我的个人博客所使用的技术栈，包括前端框架、样式方案、Markdown 处理、部署流程等核心技术。</p>
 <hr>
-<h2 id="">技术栈总览</h2>
+<h2 id="技术栈总览">技术栈总览</h2>
 <table>
 <thead>
 <tr>
@@ -78,8 +78,8 @@ b:T194d,<h2 id="">概述</h2>
 </tbody>
 </table>
 <hr>
-<h2 id="">核心技术详解</h2>
-<h3 id="1-next-js-14">1. 前端框架：Next.js 14</h3>
+<h2 id="核心技术详解">核心技术详解</h2>
+<h3 id="1-前端框架-next-js-14">1. 前端框架：Next.js 14</h3>
 <p>博客基于 <strong>Next.js 14</strong> 构建，采用 <strong>App Router</strong> 模式。</p>
 <p><strong>主要特点：</strong></p>
 <ul>
@@ -96,14 +96,14 @@ b:T194d,<h2 id="">概述</h2>
   },
 }
 </code></pre>
-<h3 id="2-tailwindcss-3">2. 样式方案：TailwindCSS 3</h3>
+<h3 id="2-样式方案-tailwindcss-3">2. 样式方案：TailwindCSS 3</h3>
 <p>使用 <strong>TailwindCSS 3.4.1</strong> 作为样式框架，配合 <code>@tailwindcss/typography</code> 插件优化 Markdown 内容展示。</p>
 <p><strong>自定义配置（tailwind.config.ts）：</strong></p>
 <ul>
 <li>自定义主题色：<code>primary: #2563eb</code>（蓝色）、<code>secondary: #7c3aed</code>（紫色）</li>
 <li>扩展 typography 样式，移除默认的代码块背景色，便于自定义代码高亮</li>
 </ul>
-<h3 id="3-markdown">3. Markdown 处理流程</h3>
+<h3 id="3-markdown-处理流程">3. Markdown 处理流程</h3>
 <p>博客使用 <strong>remark</strong> 和 <strong>rehype</strong> 系列工具链处理 Markdown 内容：</p>
 <pre><code>Markdown 文件
     ↓
@@ -121,9 +121,9 @@ rehype-raw (保留原始 HTML)
     ↓
 rehype-stringify (转换为 HTML 字符串)
 </code></pre>
-<h3 id="4-highlight-js">4. 代码高亮：highlight.js</h3>
+<h3 id="4-代码高亮-highlight-js">4. 代码高亮：highlight.js</h3>
 <p>使用 <code>highlight.js</code> 配合 <code>rehype-highlight</code> 实现代码块语法高亮，支持多种编程语言。</p>
-<h3 id="5">5. 部署方案</h3>
+<h3 id="5-部署方案">5. 部署方案</h3>
 <p>采用 <strong>GitHub Pages</strong> 作为托管平台：</p>
 <p><strong>部署流程：</strong></p>
 <ol>
@@ -133,7 +133,7 @@ rehype-stringify (转换为 HTML 字符串)
 <p><strong>自动化部署：</strong>
 通过 <code>.github/workflows/deploy.yml</code> 配置 GitHub Actions，实现提交代码自动部署。</p>
 <hr>
-<h2 id="">项目结构</h2>
+<h2 id="项目结构">项目结构</h2>
 <pre><code>my-blog/
 ├── src/
 │   ├── app/                 # App Router 路由
@@ -151,28 +151,28 @@ rehype-stringify (转换为 HTML 字符串)
 └── package.json             # 依赖配置
 </code></pre>
 <hr>
-<h2 id="">技术选型理由</h2>
-<h3 id="next-js">为什么选择 Next.js？</h3>
+<h2 id="技术选型理由">技术选型理由</h2>
+<h3 id="为什么选择-next-js">为什么选择 Next.js？</h3>
 <ol>
 <li><strong>静态导出能力</strong>: 适合博客这种以内容为主的站点</li>
 <li><strong>文件系统路由</strong>: 简化路由管理，文章文件即为路由</li>
 <li><strong>社区成熟</strong>: 丰富的生态系统和文档支持</li>
 <li><strong>性能优秀</strong>: 内置优化，无需额外配置</li>
 </ol>
-<h3 id="tailwindcss">为什么选择 TailwindCSS？</h3>
+<h3 id="为什么选择-tailwindcss">为什么选择 TailwindCSS？</h3>
 <ol>
 <li><strong>快速开发</strong>: 原子化 CSS 提高开发效率</li>
 <li><strong>响应式设计</strong>: 内置响应式断点</li>
 <li><strong>主题定制</strong>: 灵活的主题配置能力</li>
 </ol>
-<h3 id="remark-rehype">为什么选择 remark/rehype 生态？</h3>
+<h3 id="为什么选择-remark-rehype-生态">为什么选择 remark/rehype 生态？</h3>
 <ol>
 <li><strong>可扩展性强</strong>: 支持丰富的插件系统</li>
 <li><strong>社区活跃</strong>: 持续维护和更新</li>
 <li><strong>灵活性高</strong>: 可以定制 Markdown 解析和转换流程</li>
 </ol>
 <hr>
-<h2 id="">总结</h2>
+<h2 id="总结">总结</h2>
 <p>我的博客采用了一套现代化的技术栈：</p>
 <ul>
 <li><strong>框架层</strong>: Next.js 14 + React 18</li>

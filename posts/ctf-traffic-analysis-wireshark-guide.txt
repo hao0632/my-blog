@@ -2,17 +2,17 @@
 5:I[1343,[],""]
 6:I[4160,["231","static/chunks/231-4760956769979d51.js","185","static/chunks/app/layout-cf1eee64ea0339e6.js"],"default"]
 4:["slug","ctf-traffic-analysis-wireshark-guide","d"]
-0:["Vu_wo3O8e-w9_kIQy_KY8",[[["",{"children":["posts",{"children":[["slug","ctf-traffic-analysis-wireshark-guide","d"],{"children":["__PAGE__?{\"slug\":\"ctf-traffic-analysis-wireshark-guide\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["slug","ctf-traffic-analysis-wireshark-guide","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"min-h-screen bg-gray-50","children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/my-blog/_next/static/css/52967a4f0e01b0e9.css","precedence":"next","crossOrigin":"$undefined"}]],"$L7"]]]]
+0:["tw2XuU0mMjm5wuoyc_Y0k",[[["",{"children":["posts",{"children":[["slug","ctf-traffic-analysis-wireshark-guide","d"],{"children":["__PAGE__?{\"slug\":\"ctf-traffic-analysis-wireshark-guide\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["slug","ctf-traffic-analysis-wireshark-guide","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"min-h-screen bg-gray-50","children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/my-blog/_next/static/css/52967a4f0e01b0e9.css","precedence":"next","crossOrigin":"$undefined"}]],"$L7"]]]]
 8:I[7311,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-4c59b816d8fdf804.js"],"default"]
 9:I[231,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-4c59b816d8fdf804.js"],""]
 a:I[3132,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-4c59b816d8fdf804.js"],"default"]
 c:I[7125,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-4c59b816d8fdf804.js"],"default"]
-b:Tbaf5,<h2 id="">一、流量分析概述</h2>
+b:Tbeca,<h2 id="一-流量分析概述">一、流量分析概述</h2>
 <p>流量分析（Traffic Analysis）是CTF中取证类题目的重要分支，主要通过分析网络数据包捕获文件（PCAP）来提取关键信息、还原攻击过程、挖掘隐藏数据。流量分析考验选手的网络协议知识、工具使用能力和逻辑推理能力。</p>
 <p><strong>核心工具：Wireshark</strong> —— 业界最强大的图形化网络协议分析器，提供直观的界面和丰富的功能。</p>
 <hr>
-<h2 id="wireshark">二、Wireshark界面详解</h2>
-<h3 id="2-1">2.1 主界面布局</h3>
+<h2 id="二-wireshark界面详解">二、Wireshark界面详解</h2>
+<h3 id="2-1-主界面布局">2.1 主界面布局</h3>
 <p>Wireshark主界面分为以下几个区域：</p>
 <table>
 <thead>
@@ -55,7 +55,7 @@ b:Tbaf5,<h2 id="">一、流量分析概述</h2>
 </tr>
 </tbody>
 </table>
-<h3 id="2-2">2.2 工具栏按钮说明</h3>
+<h3 id="2-2-工具栏按钮说明">2.2 工具栏按钮说明</h3>
 <table>
 <thead>
 <tr>
@@ -138,11 +138,11 @@ b:Tbaf5,<h2 id="">一、流量分析概述</h2>
 </tbody>
 </table>
 <hr>
-<h2 id="">三、分析方法论</h2>
-<h3 id="3-1">3.1 常规分析流程</h3>
+<h2 id="三-分析方法论">三、分析方法论</h2>
+<h3 id="3-1-常规分析流程">3.1 常规分析流程</h3>
 <pre><code>1. 打开PCAP文件 → 2. 协议统计分析 → 3. 关键会话筛选 → 4. 数据提取 → 5. 深度分析 → 6. Flag验证
 </code></pre>
-<h3 id="3-2">3.2 快速定位策略</h3>
+<h3 id="3-2-快速定位策略">3.2 快速定位策略</h3>
 <p><strong>第一步：获取文件基本信息</strong></p>
 <ul>
 <li><code>File → Properties</code>：查看文件基本信息（捕获时间、数据包数量、文件大小等）</li>
@@ -160,8 +160,8 @@ b:Tbaf5,<h2 id="">一、流量分析概述</h2>
 <li>使用 <code>Statistics → Endpoints</code> 或 <code>Conversations</code> 查看通信端点</li>
 </ul>
 <hr>
-<h2 id="">四、显示过滤器详解</h2>
-<h3 id="4-1">4.1 基础语法</h3>
+<h2 id="四-显示过滤器详解">四、显示过滤器详解</h2>
+<h3 id="4-1-基础语法">4.1 基础语法</h3>
 <p>在Wireshark过滤器栏中输入过滤表达式，按回车或点击Apply按钮应用。</p>
 <p><strong>协议过滤：</strong></p>
 <pre><code>http          # 显示所有HTTP协议数据包
@@ -190,7 +190,7 @@ http.request.method == "GET"  # HTTP方法
 contains  # 包含子字符串
 matches   # 正则表达式匹配
 </code></pre>
-<h3 id="4-2">4.2 常用过滤表达式速查表</h3>
+<h3 id="4-2-常用过滤表达式速查表">4.2 常用过滤表达式速查表</h3>
 <table>
 <thead>
 <tr>
@@ -282,8 +282,8 @@ matches   # 正则表达式匹配
 </tbody>
 </table>
 <hr>
-<h2 id="wireshark">五、常见协议分析技巧（Wireshark操作）</h2>
-<h3 id="5-1-http">5.1 HTTP协议分析</h3>
+<h2 id="五-常见协议分析技巧-wireshark操作">五、常见协议分析技巧（Wireshark操作）</h2>
+<h3 id="5-1-http协议分析">5.1 HTTP协议分析</h3>
 <p><strong>基本操作：</strong></p>
 <ol>
 <li>
@@ -331,7 +331,7 @@ matches   # 正则表达式匹配
 <li>Cookie中的会话信息</li>
 <li>User-Agent、Referer等头部信息</li>
 </ul>
-<h3 id="5-2-https-tls">5.2 HTTPS/TLS协议分析</h3>
+<h3 id="5-2-https-tls协议分析">5.2 HTTPS/TLS协议分析</h3>
 <p><strong>解密配置步骤：</strong></p>
 <ol>
 <li>
@@ -370,7 +370,7 @@ matches   # 正则表达式匹配
 <li>证书验证绕过</li>
 <li>弱加密套件（如RC4、DES）</li>
 </ul>
-<h3 id="5-3-dns">5.3 DNS协议分析</h3>
+<h3 id="5-3-dns协议分析">5.3 DNS协议分析</h3>
 <p><strong>基本操作：</strong></p>
 <ol>
 <li>
@@ -450,7 +450,7 @@ matches   # 正则表达式匹配
 <li>使用 <code>dns.qry.type == 16</code> 过滤TXT记录（常用于数据传输）</li>
 <li>使用 <code>dns contains "="</code> 过滤可能包含base64编码的DNS流量</li>
 </ul>
-<h3 id="5-4-ftp">5.4 FTP协议分析</h3>
+<h3 id="5-4-ftp协议分析">5.4 FTP协议分析</h3>
 <p><strong>基本操作：</strong></p>
 <ol>
 <li>
@@ -484,7 +484,7 @@ matches   # 正则表达式匹配
 </ul>
 </li>
 </ol>
-<h3 id="5-5-icmp">5.5 ICMP协议分析</h3>
+<h3 id="5-5-icmp协议分析">5.5 ICMP协议分析</h3>
 <p><strong>基本操作：</strong></p>
 <ol>
 <li>
@@ -557,7 +557,7 @@ matches   # 正则表达式匹配
 </ul>
 </li>
 </ol>
-<h3 id="5-6-smb">5.6 SMB协议分析</h3>
+<h3 id="5-6-smb协议分析">5.6 SMB协议分析</h3>
 <p><strong>基本操作：</strong></p>
 <ol>
 <li>
@@ -590,8 +590,8 @@ matches   # 正则表达式匹配
 </li>
 </ol>
 <hr>
-<h2 id="">六、特殊流量分析</h2>
-<h3 id="6-1-usb">6.1 USB流量分析</h3>
+<h2 id="六-特殊流量分析">六、特殊流量分析</h2>
+<h3 id="6-1-usb流量分析">6.1 USB流量分析</h3>
 <p><strong>USB键盘数据还原：</strong></p>
 <ol>
 <li>
@@ -741,7 +741,7 @@ usb_keyboard_codes = {
 </ul>
 </li>
 </ol>
-<h3 id="6-2-802-11">6.2 无线流量分析（802.11）</h3>
+<h3 id="6-2-无线流量分析-802-11">6.2 无线流量分析（802.11）</h3>
 <p><strong>解密WiFi流量：</strong></p>
 <ol>
 <li>
@@ -774,8 +774,8 @@ usb_keyboard_codes = {
 <li>Deauthentication帧可能表示攻击行为</li>
 </ul>
 <hr>
-<h2 id="wireshark">七、Wireshark高级功能</h2>
-<h3 id="7-1-follow-stream">7.1 Follow Stream（追踪流）</h3>
+<h2 id="七-wireshark高级功能">七、Wireshark高级功能</h2>
+<h3 id="7-1-follow-stream-追踪流">7.1 Follow Stream（追踪流）</h3>
 <p><strong>操作步骤：</strong></p>
 <ol>
 <li>右键点击数据包</li>
@@ -796,7 +796,7 @@ usb_keyboard_codes = {
 <li>可保存流内容到文件</li>
 <li>可设置流过滤</li>
 </ul>
-<h3 id="7-2-expert-information">7.2 Expert Information（专家信息）</h3>
+<h3 id="7-2-expert-information-专家信息">7.2 Expert Information（专家信息）</h3>
 <p><strong>操作步骤：</strong></p>
 <ol>
 <li><code>View → Expert Information</code></li>
@@ -815,8 +815,8 @@ usb_keyboard_codes = {
 <li>识别攻击行为（如SYN flood）</li>
 <li>发现异常流量模式</li>
 </ul>
-<h3 id="7-3">7.3 统计功能详解</h3>
-<h4 id="7-3-1-protocol-hierarchy">7.3.1 Protocol Hierarchy（协议层次）</h4>
+<h3 id="7-3-统计功能详解">7.3 统计功能详解</h3>
+<h4 id="7-3-1-protocol-hierarchy-协议层次">7.3.1 Protocol Hierarchy（协议层次）</h4>
 <p><strong>操作：</strong> <code>Statistics → Protocol Hierarchy</code></p>
 <p><strong>用途：</strong></p>
 <ul>
@@ -824,7 +824,7 @@ usb_keyboard_codes = {
 <li>快速识别主要协议类型</li>
 <li>判断流量特征</li>
 </ul>
-<h4 id="7-3-2-endpoints">7.3.2 Endpoints（端点统计）</h4>
+<h4 id="7-3-2-endpoints-端点统计">7.3.2 Endpoints（端点统计）</h4>
 <p><strong>操作：</strong> <code>Statistics → Endpoints</code></p>
 <p><strong>用途：</strong></p>
 <ul>
@@ -837,7 +837,7 @@ usb_keyboard_codes = {
 <li>切换标签页查看不同协议的端点（IPv4、IPv6、TCP、UDP等）</li>
 <li>双击端点可设置过滤器</li>
 </ul>
-<h4 id="7-3-3-conversations">7.3.3 Conversations（会话统计）</h4>
+<h4 id="7-3-3-conversations-会话统计">7.3.3 Conversations（会话统计）</h4>
 <p><strong>操作：</strong> <code>Statistics → Conversations</code></p>
 <p><strong>用途：</strong></p>
 <ul>
@@ -850,7 +850,7 @@ usb_keyboard_codes = {
 <li>按字节数排序，识别流量最大的会话</li>
 <li>右键选择 <code>Follow TCP Stream</code> 追踪会话</li>
 </ul>
-<h4 id="7-3-4-io-graphs-io">7.3.4 IO Graphs（IO图表）</h4>
+<h4 id="7-3-4-io-graphs-io图表">7.3.4 IO Graphs（IO图表）</h4>
 <p><strong>操作：</strong> <code>Statistics → IO Graphs</code></p>
 <p><strong>用途：</strong></p>
 <ul>
@@ -864,7 +864,7 @@ usb_keyboard_codes = {
 <li>设置时间范围和显示单位</li>
 <li>使用过滤器自定义曲线内容</li>
 </ul>
-<h4 id="7-3-5-flow-graph">7.3.5 Flow Graph（流图）</h4>
+<h4 id="7-3-5-flow-graph-流图">7.3.5 Flow Graph（流图）</h4>
 <p><strong>操作：</strong> <code>Statistics → Flow Graph</code></p>
 <p><strong>用途：</strong></p>
 <ul>
@@ -877,8 +877,8 @@ usb_keyboard_codes = {
 <li>选择不同的流类型（TCP、UDP、HTTP等）</li>
 <li>设置显示过滤条件</li>
 </ul>
-<h3 id="7-4">7.4 文件提取</h3>
-<h4 id="7-4-1-http">7.4.1 导出HTTP对象</h4>
+<h3 id="7-4-文件提取">7.4 文件提取</h3>
+<h4 id="7-4-1-导出http对象">7.4.1 导出HTTP对象</h4>
 <p><strong>操作：</strong> <code>File → Export Objects → HTTP</code></p>
 <p><strong>步骤：</strong></p>
 <ol>
@@ -893,7 +893,7 @@ usb_keyboard_codes = {
 <li>可执行文件（EXE、ELF等）</li>
 <li>其他二进制文件</li>
 </ul>
-<h4 id="7-4-2-smb">7.4.2 导出SMB对象</h4>
+<h4 id="7-4-2-导出smb对象">7.4.2 导出SMB对象</h4>
 <p><strong>操作：</strong> <code>File → Export Objects → SMB</code></p>
 <p><strong>步骤：</strong></p>
 <ol>
@@ -901,7 +901,7 @@ usb_keyboard_codes = {
 <li>选择要导出的文件</li>
 <li>点击 <code>Save</code></li>
 </ol>
-<h4 id="7-4-3">7.4.3 手动提取数据</h4>
+<h4 id="7-4-3-手动提取数据">7.4.3 手动提取数据</h4>
 <p><strong>步骤：</strong></p>
 <ol>
 <li>追踪TCP流（<code>Follow → TCP Stream</code>）</li>
@@ -909,7 +909,7 @@ usb_keyboard_codes = {
 <li>点击 <code>Save As</code> 保存原始数据</li>
 <li>根据文件类型添加正确的扩展名</li>
 </ol>
-<h3 id="7-5">7.5 数据包标记</h3>
+<h3 id="7-5-数据包标记">7.5 数据包标记</h3>
 <p><strong>操作步骤：</strong></p>
 <ol>
 <li>右键点击数据包</li>
@@ -922,7 +922,7 @@ usb_keyboard_codes = {
 <li>对比分析多个相关数据包</li>
 <li>使用 <code>View → Marked Packets</code> 只显示标记的数据包</li>
 </ul>
-<h3 id="7-6">7.6 时间显示格式</h3>
+<h3 id="7-6-时间显示格式">7.6 时间显示格式</h3>
 <p><strong>操作：</strong> <code>View → Time Display Format</code></p>
 <p><strong>选项：</strong></p>
 <ul>
@@ -938,8 +938,8 @@ usb_keyboard_codes = {
 <li>计算数据包间隔</li>
 </ul>
 <hr>
-<h2 id="">八、实战案例分析</h2>
-<h3 id="httpflag">案例一：HTTP流量中的隐藏Flag</h3>
+<h2 id="八-实战案例分析">八、实战案例分析</h2>
+<h3 id="案例一-http流量中的隐藏flag">案例一：HTTP流量中的隐藏Flag</h3>
 <p><strong>场景：</strong> 在HTTP响应中发现base64编码的字符串</p>
 <p><strong>Wireshark操作步骤：</strong></p>
 <ol>
@@ -979,7 +979,7 @@ usb_keyboard_codes = {
 </li>
 </ol>
 <p><strong>关键点：</strong> 关注响应体中的非标准内容，特别是data URI格式</p>
-<h3 id="dns">案例二：DNS隧道数据提取</h3>
+<h3 id="案例二-dns隧道数据提取">案例二：DNS隧道数据提取</h3>
 <p><strong>场景：</strong> 大量异常DNS查询，子域名疑似编码数据</p>
 <p><strong>Wireshark操作步骤：</strong></p>
 <ol>
@@ -1018,7 +1018,7 @@ usb_keyboard_codes = {
 </li>
 </ol>
 <p><strong>关键点：</strong> DNS查询的子域名部分常被用于隐蔽通信</p>
-<h3 id="usb">案例三：USB键盘流量还原</h3>
+<h3 id="案例三-usb键盘流量还原">案例三：USB键盘流量还原</h3>
 <p><strong>场景：</strong> PCAP文件包含USB流量，需要还原按键记录</p>
 <p><strong>Wireshark操作步骤：</strong></p>
 <ol>
@@ -1050,7 +1050,7 @@ usb_keyboard_codes = {
 </li>
 </ol>
 <p><strong>关键点：</strong> USB键盘数据在Interrupt传输端点（通常是0x81）</p>
-<h3 id="">案例四：自定义协议分析</h3>
+<h3 id="案例四-自定义协议分析">案例四：自定义协议分析</h3>
 <p><strong>场景：</strong> TCP流量中的自定义协议，数据加密传输</p>
 <p><strong>Wireshark操作步骤：</strong></p>
 <ol>
@@ -1091,8 +1091,8 @@ usb_keyboard_codes = {
 </ol>
 <p><strong>关键点：</strong> 耐心观察数据包结构，尝试多种解密方法</p>
 <hr>
-<h2 id="">九、常见坑与避坑指南</h2>
-<h3 id="9-1">9.1 时间同步问题</h3>
+<h2 id="九-常见坑与避坑指南">九、常见坑与避坑指南</h2>
+<h3 id="9-1-时间同步问题">9.1 时间同步问题</h3>
 <p><strong>问题：</strong> 数据包时间戳与实际时间不一致</p>
 <p><strong>解决方法：</strong></p>
 <ul>
@@ -1100,7 +1100,7 @@ usb_keyboard_codes = {
 <li><code>Edit → Preferences → Protocols → IEEE 802.11</code> 检查时区设置</li>
 <li>结合系统日志进行时间校准</li>
 </ul>
-<h3 id="9-2">9.2 加密流量处理</h3>
+<h3 id="9-2-加密流量处理">9.2 加密流量处理</h3>
 <p><strong>问题：</strong> HTTPS流量无法直接读取内容</p>
 <p><strong>解决方法：</strong></p>
 <ul>
@@ -1109,7 +1109,7 @@ usb_keyboard_codes = {
 <li>在Wireshark中配置TLS解密</li>
 <li>尝试查找未加密的通道</li>
 </ul>
-<h3 id="9-3">9.3 大数据量处理</h3>
+<h3 id="9-3-大数据量处理">9.3 大数据量处理</h3>
 <p><strong>问题：</strong> PCAP文件过大，分析效率低</p>
 <p><strong>解决方法：</strong></p>
 <ul>
@@ -1118,7 +1118,7 @@ usb_keyboard_codes = {
 <li>使用 <code>editcap</code> 分割文件（命令行工具）</li>
 <li>关注特定时间段或IP</li>
 </ul>
-<h3 id="9-4">9.4 协议混淆</h3>
+<h3 id="9-4-协议混淆">9.4 协议混淆</h3>
 <p><strong>问题：</strong> 攻击者使用非标准端口或协议伪装</p>
 <p><strong>解决方法：</strong></p>
 <ul>
@@ -1126,7 +1126,7 @@ usb_keyboard_codes = {
 <li>使用 <code>Statistics → Protocol Hierarchy</code> 识别协议</li>
 <li>关注应用层数据模式</li>
 </ul>
-<h3 id="9-5-usb">9.5 USB设备地址识别</h3>
+<h3 id="9-5-usb设备地址识别">9.5 USB设备地址识别</h3>
 <p><strong>问题：</strong> USB流量包含多个设备，难以区分</p>
 <p><strong>解决方法：</strong></p>
 <ul>
@@ -1135,8 +1135,8 @@ usb_keyboard_codes = {
 <li>通常键盘设备的 <code>usb.product</code> 包含 "Keyboard"</li>
 </ul>
 <hr>
-<h2 id="wireshark">十、Wireshark配置优化</h2>
-<h3 id="10-1">10.1 界面配置</h3>
+<h2 id="十-wireshark配置优化">十、Wireshark配置优化</h2>
+<h3 id="10-1-界面配置">10.1 界面配置</h3>
 <p><strong>调整显示列：</strong></p>
 <ul>
 <li><code>Edit → Preferences → Columns</code></li>
@@ -1147,7 +1147,7 @@ usb_keyboard_codes = {
 <li><code>View → Coloring Rules</code></li>
 <li>自定义不同协议的显示颜色</li>
 </ul>
-<h3 id="10-2">10.2 协议配置</h3>
+<h3 id="10-2-协议配置">10.2 协议配置</h3>
 <p><strong>禁用不必要的协议解析：</strong></p>
 <ul>
 <li><code>Edit → Preferences → Protocols</code></li>
@@ -1158,7 +1158,7 @@ usb_keyboard_codes = {
 <li><code>Edit → Preferences → Protocols → TCP</code></li>
 <li>设置端口到协议的映射</li>
 </ul>
-<h3 id="10-3">10.3 性能优化</h3>
+<h3 id="10-3-性能优化">10.3 性能优化</h3>
 <p><strong>禁用实时更新：</strong></p>
 <ul>
 <li><code>View → Auto Scroll in Live Capture</code> 取消勾选</li>
@@ -1172,7 +1172,7 @@ usb_keyboard_codes = {
 <ul>
 <li>在过滤器栏输入过滤条件时，Wireshark会实时过滤</li>
 </ul>
-<h3 id="10-4-profile">10.4 Profile管理</h3>
+<h3 id="10-4-profile管理">10.4 Profile管理</h3>
 <p><strong>Profile作用：</strong></p>
 <ul>
 <li>保存个性化的配置（过滤器、配色、列显示等）</li>
@@ -1214,7 +1214,7 @@ usb_keyboard_codes = {
 </ul>
 </li>
 </ol>
-<h3 id="10-5-lua">10.5 Lua脚本解析自定义协议</h3>
+<h3 id="10-5-lua脚本解析自定义协议">10.5 Lua脚本解析自定义协议</h3>
 <p><strong>适用场景：</strong></p>
 <ul>
 <li>分析非标准协议</li>
@@ -1269,29 +1269,29 @@ tcp_port:add(<span class="hljs-number">12345</span>, custom_proto)
 <li>在 <code>View → Lua Console</code> 中查看输出</li>
 </ul>
 <hr>
-<h2 id="">十一、学习资源推荐</h2>
-<h3 id="11-1">11.1 在线资源</h3>
+<h2 id="十一-学习资源推荐">十一、学习资源推荐</h2>
+<h3 id="11-1-在线资源">11.1 在线资源</h3>
 <ul>
 <li><a href="https://www.wireshark.org/docs/">Wireshark官方文档</a></li>
 <li><a href="https://www.wireshark.org/docs/wsug_html_chunked/">Wireshark用户指南</a></li>
 <li><a href="https://en.wikipedia.org/wiki/TCP/IP_Illustrated">TCP/IP详解系列书籍</a></li>
 <li><a href="https://cryptopals.com/">CryptoPals密码学挑战</a></li>
 </ul>
-<h3 id="11-2">11.2 练习平台</h3>
+<h3 id="11-2-练习平台">11.2 练习平台</h3>
 <ul>
 <li>Hack The Box（网络取证题目）</li>
 <li>TryHackMe（流量分析房间）</li>
 <li>picoCTF（入门级取证题目）</li>
 <li>国内CTF平台（XCTF、CTFHub）</li>
 </ul>
-<h3 id="11-3">11.3 社区资源</h3>
+<h3 id="11-3-社区资源">11.3 社区资源</h3>
 <ul>
 <li><a href="https://ask.wireshark.org/">Wireshark问答论坛</a></li>
 <li><a href="https://www.wireshark.org/lists/">Wireshark邮件列表</a></li>
 <li><a href="https://github.com/wireshark/wireshark">GitHub Wireshark项目</a></li>
 </ul>
 <hr>
-<h2 id="">十二、总结</h2>
+<h2 id="十二-总结">十二、总结</h2>
 <p>Wireshark是CTF流量分析的核心工具，掌握其使用技巧对于解题至关重要：</p>
 <ol>
 <li><strong>扎实的网络协议基础</strong>：理解TCP/IP模型、常见协议工作原理</li>

@@ -2,15 +2,15 @@
 5:I[1343,[],""]
 6:I[4160,["231","static/chunks/231-4760956769979d51.js","185","static/chunks/app/layout-cf1eee64ea0339e6.js"],"default"]
 4:["slug","misc-security","d"]
-0:["Vu_wo3O8e-w9_kIQy_KY8",[[["",{"children":["posts",{"children":[["slug","misc-security","d"],{"children":["__PAGE__?{\"slug\":\"misc-security\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["slug","misc-security","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"min-h-screen bg-gray-50","children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/my-blog/_next/static/css/52967a4f0e01b0e9.css","precedence":"next","crossOrigin":"$undefined"}]],"$L7"]]]]
+0:["tw2XuU0mMjm5wuoyc_Y0k",[[["",{"children":["posts",{"children":[["slug","misc-security","d"],{"children":["__PAGE__?{\"slug\":\"misc-security\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["slug","misc-security","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"min-h-screen bg-gray-50","children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/my-blog/_next/static/css/52967a4f0e01b0e9.css","precedence":"next","crossOrigin":"$undefined"}]],"$L7"]]]]
 8:I[7311,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-4c59b816d8fdf804.js"],"default"]
 9:I[231,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-4c59b816d8fdf804.js"],""]
 a:I[3132,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-4c59b816d8fdf804.js"],"default"]
 c:I[7125,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-4c59b816d8fdf804.js"],"default"]
-b:T13af7,<h2 id="">写在前面</h2>
+b:T13f27,<h2 id="写在前面">写在前面</h2>
 <p>作为CTF中题型边界最宽泛、自由度最高的门类，misc涉及的范围极广，文章记录了作者的misc学习笔记。</p>
-<h2 id="1">1. 信息搜集技术</h2>
-<h3 id="1-1">1.1 网络信息搜集技巧</h3>
+<h2 id="1-信息搜集技术">1. 信息搜集技术</h2>
+<h3 id="1-1-网络信息搜集技巧">1.1 网络信息搜集技巧</h3>
 <ul>
 <li>公开渠道</li>
 <li>目标 Web 网页、地理位置、相关组织</li>
@@ -20,7 +20,7 @@ b:T13af7,<h2 id="">写在前面</h2>
 <li>Google Hacking Database</li>
 <li>科学上网</li>
 </ul>
-<h3 id="1-2">1.2 基本搜索技巧</h3>
+<h3 id="1-2-基本搜索技巧">1.2 基本搜索技巧</h3>
 <ul>
 <li>Google 基本搜索与挖掘技巧</li>
 <li>保持简单明了的关键词</li>
@@ -32,7 +32,7 @@ b:T13af7,<h2 id="">写在前面</h2>
 <li>企业等实体：YellowPage、企业信用信息网</li>
 <li>网站、域名、IP：whois 等</li>
 </ul>
-<h3 id="1-3">1.3 地图和街景搜索</h3>
+<h3 id="1-3-地图和街景搜索">1.3 地图和街景搜索</h3>
 <ul>
 <li>国外：Google Map、Google Earth、Google Street View</li>
 <li>国内：百度地图、卫星地图、街景</li>
@@ -42,11 +42,11 @@ b:T13af7,<h2 id="">写在前面</h2>
 <li>IP2Location</li>
 <li>纯真数据库（QQ IP 查询）</li>
 </ul>
-<h2 id="2">2. 隐写综合</h2>
-<h3 id="2-1">2.1 图片隐写</h3>
-<h4 id="2-1-1">2.1.1 总览</h4>
+<h2 id="2-隐写综合">2. 隐写综合</h2>
+<h3 id="2-1-图片隐写">2.1 图片隐写</h3>
+<h4 id="2-1-1-总览">2.1.1 总览</h4>
 <p>文件附加、exif信息包含（jpg）、图像宽高隐写、文件头尾修改、盲水印、F5隐写、rgb通道隐写、slienteye隐写、stegsolve文件信息、steghide隐写（key）、gif分帧、gif时间间隔、图片边缘隐藏（边缘像素块rgb通道）十六进制高位/低位提取、字节反转、立体图</p>
-<h4 id="2-1-2-zsteg">2.1.2 zsteg 使用</h4>
+<h4 id="2-1-2-zsteg-使用">2.1.2 zsteg 使用</h4>
 <p>基本用法: zsteg [选项] 示例.png [参数]</p>
 <table>
 <thead>
@@ -136,18 +136,18 @@ b:T13af7,<h2 id="">写在前面</h2>
 </tr>
 </tbody>
 </table>
-<h4 id="2-1-3">2.1.3 普通盲水印</h4>
+<h4 id="2-1-3-普通盲水印">2.1.3 普通盲水印</h4>
 <p>python bwmforpy3.py decode 加水印.png 原图.png 盲水印.png --oldseed
 python bwm.py decode 加水印.png 原图.png 盲水印.png</p>
 <p>hint：原图与加水印图片xor异或后会出现条纹
 <img src="/my-blog/misc-security/mangshuiyin.png"  alt="盲水印"></p>
-<h4 id="2-1-4">2.1.4 频域盲水印</h4>
+<h4 id="2-1-4-频域盲水印">2.1.4 频域盲水印</h4>
 <p>python encode.py --image &#x3C;原图> --watermark &#x3C;水印> --result &#x3C;加水印>
 python decode.py --original 加水印.png --image 原图.png --result 水印.png</p>
-<h4 id="2-1-5-f5">2.1.5.F5隐写</h4>
+<h4 id="2-1-5-f5隐写">2.1.5.F5隐写</h4>
 <p>解密操作：Kali中的F5文件夹里执行
 java --add-exports java.base/sun.security.provider=ALL-UNNAMED Extract /home/kali/桌面/F5-steganography/示例.jpg -p 密钥，解密结果保存到output.txt中</p>
-<h4 id="2-1-6-idat">2.1.6.IDAT隐写</h4>
+<h4 id="2-1-6-idat隐写">2.1.6.IDAT隐写</h4>
 <p>隐写原理：PNG的数据压缩后存储到IDAT块，并且只有存满才能存到下一个IDAT块，在IDAT隐写中，一个IDAT数据块没有存满，但是出现了新的IDAT块，对异常IDAT块进行Zlib解压缩，之后再对数据进行其他的处理。</p>
 <p><img src="/my-blog/misc-security/idat1.png"  alt="SRK操作"></p>
 <p><img src="/my-blog/misc-security/idat2.png"  alt="说明"></p>
@@ -159,50 +159,50 @@ IDAT = <span class="hljs-string">"66 6c 61 67 "</span>.decode(<span class="hljs-
 result = binascii.hexlify(zlib.decompress(IDAT))
 <span class="hljs-built_in">print</span>(result)
 </code></pre>
-<h4 id="2-1-7-hao">2.1.7 十六进制高位/低位隐藏信息（hao/高位低位）</h4>
-<h4 id="2-1-8-hint">2.1.8 其他hint</h4>
+<h4 id="2-1-7-十六进制高位-低位隐藏信息-hao-高位低位">2.1.7 十六进制高位/低位隐藏信息（hao/高位低位）</h4>
+<h4 id="2-1-8-其他hint">2.1.8 其他hint</h4>
 <p>这种即存在有效信息
 <img src="/my-blog/misc-security/valid.png"  alt="有效信息">
 形如大概率为bmp图片
 <img src="/my-blog/misc-security/bmp.png"  alt="bmp示例"></p>
-<h3 id="2-2">2.2 音频隐写</h3>
-<h4 id="2-2-1">2.2.1 总览</h4>
+<h3 id="2-2-音频隐写">2.2 音频隐写</h3>
+<h4 id="2-2-1-总览">2.2.1 总览</h4>
 <p>MP3stego（key）、波形频谱图morse密码、拨号音解密、slienteye隐写、音频倒放、国际无线电通话拼写字母（字母解释法）、grc文件fm解调，sstv图像转音频（ SSTV 解码）<a href="https://sstv-decoder.mathieurenaud.fr/">https://sstv-decoder.mathieurenaud.fr/</a></p>
 <h4 id="2-2-2-mp3stego">2.2.2  MP3stego</h4>
 <p>.\Decode.exe -X -P &#x3C;密钥> 示例.mp3</p>
-<h4 id="2-2-3">2.2.3 字母解释法</h4>
+<h4 id="2-2-3-字母解释法">2.2.3 字母解释法</h4>
 <p>国际无线电通话拼写字母（字母解释法）
 <img src="/my-blog/misc-security/zimu.png"  alt="字母解释法"></p>
-<h4 id="2-2-4">2.2.4 拨号音解密</h4>
+<h4 id="2-2-4-拨号音解密">2.2.4 拨号音解密</h4>
 <p>.\dtmf2num &#x3C;路径>（wav格式）
 随波逐流解密
 <img src="/my-blog/misc-security/bohao.png"  alt="拨号音解密"></p>
-<h4 id="2-2-5-grcfm">2.2.5  grc文件fm解调</h4>
+<h4 id="2-2-5-grc文件fm解调">2.2.5  grc文件fm解调</h4>
 <p>C:\Users\Administrator\Desktop\hao\解调\demodulate.py</p>
-<h4 id="2-2-6-hint">2.2.6 其他hint</h4>
+<h4 id="2-2-6-其他hint">2.2.6 其他hint</h4>
 <p>字符隐藏在相对重复十六进制片段中（如midi文件出现）
 <img src="/my-blog/misc-security/hide.png"  alt="隐藏信息"></p>
-<h3 id="2-3">2.3 文档隐写</h3>
-<h4 id="2-3-1">2.3.1 总览</h4>
+<h3 id="2-3-文档隐写">2.3 文档隐写</h3>
+<h4 id="2-3-1-总览">2.3.1 总览</h4>
 <p>docx转zip、word隐藏文本</p>
-<h4 id="2-3-2-word">2.3.2 加密 Word 爆破与宏破解</h4>
+<h4 id="2-3-2-加密-word-爆破与宏破解">2.3.2 加密 Word 爆破与宏破解</h4>
 <p>office2john 示例.docm > word.hash  （rar2john 1.rar>rar.hash）<br>
 john --mask='?a' word.hash
 john --show word.hash
 在分析一些宏病毒时，按下Alt+F11尝试查看宏代码，但是往往会遇到密码保护。
 可以将文件在任意一款十六进制编辑工具中打开该文件，比如010 editor，搜索DPB字符串，改成DPX，注意不要减少或者增加其他字符，保存退出。
 重新打开文件，Alt + F11打开，右键打开属性，设置一个密码保存，重新打开文件Alt + F11输入密码即可查看宏代码。</p>
-<h2 id="3">3. 压缩包分析</h2>
-<h3 id="3-1">3.1 总览</h3>
+<h2 id="3-压缩包分析">3. 压缩包分析</h2>
+<h3 id="3-1-总览">3.1 总览</h3>
 <p>zip伪加密、弱密码字典攻击、掩码攻击、暴力破解、多文件crc32爆破、明文攻击、hashcat爆破、文件附加、异常时间戳</p>
-<h3 id="3-2-lzip-lzip-d-1-lzip">3.2 lzip解压：lzip -d 1.lzip</h3>
-<h3 id="3-3-bkcrack">3.3 bkcrack明文攻击</h3>
+<h3 id="3-2-lzip解压-lzip-d-1-lzip">3.2 lzip解压：lzip -d 1.lzip</h3>
+<h3 id="3-3-bkcrack明文攻击">3.3 bkcrack明文攻击</h3>
 <ul>
 <li>密文ZIP (-C): 包含加密文件的ZIP档案</li>
 <li>明文内容 (-p): 已知的明文文件或内容</li>
 <li>目标文件 (-c): 要攻击的加密文件名</li>
 </ul>
-<h4 id="3-3-1">3.3.1 基本用法</h4>
+<h4 id="3-3-1-基本用法">3.3.1 基本用法</h4>
 <ul>
 <li>明文攻击基础命令
 /usr/local/bkcrack -C Desktop.zip -c readme.txt -p readme.txt</li>
@@ -218,7 +218,7 @@ bkcrack -C encrypted.zip -c secret.txt -P plaintext.zip -p known.txt</li>
 bkcrack -C encrypted.zip -c target.txt -p plain.txt -o 10</li>
 </ul>
 <p>参数说明: - -o 10: 明文相对于密文的偏移量(字节)</p>
-<h4 id="3-3-2">3.3.2 高级用法</h4>
+<h4 id="3-3-2-高级用法">3.3.2 高级用法</h4>
 <p>使用十六进制数据
 bkcrack -C encrypted.zip -c target.txt -x 0 504b0304
 参数说明: - -x 0 504b0304: 在偏移0处指定十六进制明文数据</p>
@@ -471,7 +471,7 @@ base = <span class="hljs-string">'D:\工作\安全\Misc\zip'</span>
 <span class="hljs-built_in">print</span>(<span class="hljs-built_in">str</span>)
 </code></pre>
 <p><strong>Base</strong></p>
-<h2 id="">七、流量分析</h2>
+<h2 id="七-流量分析">七、流量分析</h2>
 <ul>
 <li>
 <p>分组字节流藏有flag，直接搜flag或f，fl，ag，flag{等</p>
@@ -511,18 +511,18 @@ base = <span class="hljs-string">'D:\工作\安全\Misc\zip'</span>
 </li>
 </ul>
 <p><strong>不可打印字符可能为控制字符，对照ascii表</strong></p>
-<h3 id="">蓝牙协议</h3>
+<h3 id="蓝牙协议">蓝牙协议</h3>
 <ul>
 <li>分组字节流搜索flag</li>
 <li>协议分级OBEX传输协议，作为过滤器选中</li>
 <li>蓝牙pin：分组详情搜pin e.g. pin code：141854</li>
 </ul>
-<h3 id="">键盘流量</h3>
+<h3 id="键盘流量">键盘流量</h3>
 <p>导出键盘流量：</p>
 <pre><code class="hljs language-bash">tshark -r <span class="hljs-string">"C:\Users\Administrator\Desktop\1.pcapng"</span> -T fields -e usbhid.data | Where-Object { <span class="hljs-variable">$_</span> -notmatch <span class="hljs-string">'^0000000000000000$'</span> -and <span class="hljs-variable">$_</span> -notmatch <span class="hljs-string">'^\s*$'</span> } > <span class="hljs-string">"C:\Users\Administrator\Desktop\usbdata.txt"</span>
 py -3 <span class="hljs-string">"C:\Users\Administrator\Desktop\键盘流量脚本.py"</span>
 </code></pre>
-<h3 id="tp-link-802-11">无线流量（Tp-link）802.11</h3>
+<h3 id="无线流量-tp-link-802-11">无线流量（Tp-link）802.11</h3>
 <p><strong>爆破无线连接密码hashcat：</strong></p>
 <pre><code class="hljs language-bash"><span class="hljs-comment"># WPA握手包转换: hcxtools</span>
 hcxpcapngtool &#x3C;文件路径> -o &#x3C;输出文件名.hc22000>
@@ -531,13 +531,13 @@ hcxpcapngtool /home/kali/桌面/ctf.pcap -o 123.hc22000
 airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 <span class="hljs-comment"># 或编辑-首选项-IEEE802.11-编辑-wpa-pwd-password:ssid</span>
 </code></pre>
-<h3 id="ssl-tls">SSL/TLS流量</h3>
+<h3 id="ssl-tls流量">SSL/TLS流量</h3>
 <ul>
 <li>一般给密钥</li>
 <li>编辑-首选项-TLS（2.0为ssl）-secret.log-加载</li>
 <li>给rsa私钥的话是rsa keys list</li>
 </ul>
-<h3 id="">哥斯拉流量</h3>
+<h3 id="哥斯拉流量">哥斯拉流量</h3>
 <p><strong>通用连接特征：</strong></p>
 <ul>
 <li>哥斯拉在进行初始化时会产生一个较大的数据包（第一个），后续操作产生的数据包则相对较小</li>
@@ -566,26 +566,26 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 <p><strong>后门反连通道：</strong> tcp、http、dns、icmp......</p>
 <p><strong>ekp版本解密操作：</strong>
 返回包为单次base解密</p>
-<h3 id="payload">常用payload句法</h3>
+<h3 id="常用payload句法">常用payload句法</h3>
 <ul>
 <li><code>__[::-1]</code>：把字节串反过来</li>
 <li><code>base64.b64decode(...)</code>：Base64解码</li>
 <li><code>zlib.decompress(...)</code>：zlib解压</li>
 <li><code>exec(...)</code>：直接执行解压出来的Python代码</li>
 </ul>
-<h2 id="">八、工控</h2>
-<h3 id="modbus">Modbus协议</h3>
-<h2 id="">九、漏洞相关</h2>
-<h3 id="apache-shiro-cve-2016-4437">Apache Shiro（CVE-2016-4437）反序列化漏洞</h3>
+<h2 id="八-工控">八、工控</h2>
+<h3 id="modbus协议">Modbus协议</h3>
+<h2 id="九-漏洞相关">九、漏洞相关</h2>
+<h3 id="apache-shiro-cve-2016-4437-反序列化漏洞">Apache Shiro（CVE-2016-4437）反序列化漏洞</h3>
 <p>通过构造恶意的 rememberMe Cookie触发反序列化漏洞，从而执行任意命令</p>
 <p><strong>关键字：</strong> 返回包的 Set-Cookie 中存在 <code>rememberMe=deleteMe</code> 字段</p>
-<h3 id="dnslog">DNSLog外带</h3>
+<h3 id="dnslog外带">DNSLog外带</h3>
 <ul>
 <li><strong>DNS</strong>：(Domain Name System)域名系统，负责把域名转换成IP地址</li>
 <li><strong>DNSlog</strong>：DNS的日志，DNS在域名解析的时候会留下域名和解析IP的记录</li>
 <li><strong>DNSlog外带原理</strong>：DNS在解析的时候会留下日志，我们将信息放在高级域名中，传递到自己这里，然后通过读日志获取信息</li>
 </ul>
-<h2 id="">十、杂项技巧</h2>
+<h2 id="十-杂项技巧">十、杂项技巧</h2>
 <p><strong>Word文件可以改为zip</strong></p>
 <p><strong>Nbt包，试试放到7z看</strong></p>
 <p><strong>宽带信息用routerpassview，conf.bin</strong></p>
@@ -593,9 +593,9 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 <p><strong>Zip，rar可尝试字典爆破</strong></p>
 <p><strong>薛定谔的猫？Zip附加python代码</strong></p>
 <p><strong>文档模糊查找，可用wps</strong></p>
-<h3 id="pyc">pyc隐写</h3>
+<h3 id="pyc隐写">pyc隐写</h3>
 <p>（原来是12）python3 stegosaurus.py 1.pyc -x</p>
-<h3 id="shell">Shell命令</h3>
+<h3 id="shell命令">Shell命令</h3>
 <pre><code class="hljs language-bash"><span class="hljs-built_in">ls</span>          <span class="hljs-comment"># 查看未隐藏文件</span>
 <span class="hljs-built_in">ls</span> -la      <span class="hljs-comment"># 查看全部文件及其属性</span>
 </code></pre>
@@ -606,8 +606,8 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </code></pre>
 <p><strong>vol.py -h</strong></p>
 <p><code>volatility -f [对象] --profile=[操作系统] [插件参数]</code></p>
-<h2 id="volatility3">Volatility3 完整使用手册</h2>
-<h3 id="">目录</h3>
+<h2 id="volatility3-完整使用手册">Volatility3 完整使用手册</h2>
+<h3 id="目录">目录</h3>
 <ol>
 <li><a href="#1-%E7%AE%80%E4%BB%8B">简介</a></li>
 <li><a href="#2-%E5%91%BD%E4%BB%A4%E8%AF%AD%E6%B3%95">命令语法</a></li>
@@ -616,15 +616,15 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 <li><a href="#5-%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B">使用示例</a></li>
 </ol>
 <hr>
-<h3 id="1">1. 简介</h3>
+<h3 id="1-简介">1. 简介</h3>
 <p>Volatility3 是一款开源的内存取证框架，用于分析内存快照中的数据。支持多平台（Windows、Linux、macOS）的内存分析。</p>
 <hr>
-<h3 id="2">2. 命令语法</h3>
+<h3 id="2-命令语法">2. 命令语法</h3>
 <pre><code class="hljs language-bash">vol.py [选项] PLUGIN [插件参数]
 </code></pre>
 <hr>
-<h3 id="3">3. 选项详解</h3>
-<h4 id="">基础选项</h4>
+<h3 id="3-选项详解">3. 选项详解</h3>
+<h4 id="基础选项">基础选项</h4>
 <table>
 <thead>
 <tr>
@@ -647,7 +647,7 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </tr>
 </tbody>
 </table>
-<h4 id="">配置选项</h4>
+<h4 id="配置选项">配置选项</h4>
 <table>
 <thead>
 <tr>
@@ -694,7 +694,7 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </tr>
 </tbody>
 </table>
-<h4 id="">路径选项</h4>
+<h4 id="路径选项">路径选项</h4>
 <table>
 <thead>
 <tr>
@@ -713,7 +713,7 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </tr>
 </tbody>
 </table>
-<h4 id="">输出选项</h4>
+<h4 id="输出选项">输出选项</h4>
 <table>
 <thead>
 <tr>
@@ -740,7 +740,7 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </tr>
 </tbody>
 </table>
-<h4 id="">内存层选项</h4>
+<h4 id="内存层选项">内存层选项</h4>
 <table>
 <thead>
 <tr>
@@ -767,7 +767,7 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </tr>
 </tbody>
 </table>
-<h4 id="">过滤选项</h4>
+<h4 id="过滤选项">过滤选项</h4>
 <table>
 <thead>
 <tr>
@@ -783,8 +783,8 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </tbody>
 </table>
 <hr>
-<h3 id="4">4. 插件列表</h3>
-<h4 id="4-1">4.1 通用插件</h4>
+<h3 id="4-插件列表">4. 插件列表</h3>
+<h4 id="4-1-通用插件">4.1 通用插件</h4>
 <table>
 <thead>
 <tr>
@@ -831,7 +831,7 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </tr>
 </tbody>
 </table>
-<h4 id="4-2-linux">4.2 Linux 插件</h4>
+<h4 id="4-2-linux-插件">4.2 Linux 插件</h4>
 <table>
 <thead>
 <tr>
@@ -1034,7 +1034,7 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </tr>
 </tbody>
 </table>
-<h4 id="4-3-linux">4.3 Linux 恶意软件检测插件</h4>
+<h4 id="4-3-linux-恶意软件检测插件">4.3 Linux 恶意软件检测插件</h4>
 <table>
 <thead>
 <tr>
@@ -1093,7 +1093,7 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </tr>
 </tbody>
 </table>
-<h4 id="4-4-macos">4.4 macOS 插件</h4>
+<h4 id="4-4-macos-插件">4.4 macOS 插件</h4>
 <table>
 <thead>
 <tr>
@@ -1196,7 +1196,7 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </tr>
 </tbody>
 </table>
-<h4 id="4-5-windows">4.5 Windows 插件</h4>
+<h4 id="4-5-windows-插件">4.5 Windows 插件</h4>
 <table>
 <thead>
 <tr>
@@ -1527,7 +1527,7 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </tr>
 </tbody>
 </table>
-<h4 id="4-6-windows">4.6 Windows 注册表插件</h4>
+<h4 id="4-6-windows-注册表插件">4.6 Windows 注册表插件</h4>
 <table>
 <thead>
 <tr>
@@ -1582,7 +1582,7 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </tr>
 </tbody>
 </table>
-<h4 id="4-7-windows">4.7 Windows 恶意软件检测插件</h4>
+<h4 id="4-7-windows-恶意软件检测插件">4.7 Windows 恶意软件检测插件</h4>
 <table>
 <thead>
 <tr>
@@ -1646,7 +1646,7 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </tbody>
 </table>
 <hr>
-<h3 id="5">5. 使用示例</h3>
+<h3 id="5-使用示例">5. 使用示例</h3>
 <table>
 <thead>
 <tr>
@@ -1708,7 +1708,7 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </tr>
 </tbody>
 </table>
-<h3 id="sm4">SM4解密</h3>
+<h3 id="sm4解密">SM4解密</h3>
 <pre><code class="hljs language-php"><span class="hljs-meta">&#x3C;?php</span>
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SM4</span> </span>{
     <span class="hljs-keyword">const</span> <span class="hljs-variable constant_">ENCRYPT</span> = 1;
@@ -1860,8 +1860,8 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 }
 <span class="hljs-meta">?></span>
 </code></pre>
-<h2 id="">应急响应</h2>
-<h3 id="">恶意文件检测</h3>
+<h2 id="应急响应">应急响应</h2>
+<h3 id="恶意文件检测">恶意文件检测</h3>
 <table>
 <thead>
 <tr>
@@ -1888,7 +1888,7 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </tr>
 </tbody>
 </table>
-<h3 id="ip">IP识别网站</h3>
+<h3 id="ip识别网站">IP识别网站</h3>
 <table>
 <thead>
 <tr>
@@ -1911,7 +1911,7 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </tr>
 </tbody>
 </table>
-<h3 id="">勒索病毒解密</h3>
+<h3 id="勒索病毒解密">勒索病毒解密</h3>
 <table>
 <thead>
 <tr>
@@ -1946,7 +1946,7 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </tr>
 </tbody>
 </table>
-<h3 id="">云沙箱</h3>
+<h3 id="云沙箱">云沙箱</h3>
 <table>
 <thead>
 <tr>
@@ -2008,7 +2008,7 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </tr>
 </tbody>
 </table>
-<h3 id="">威胁情报</h3>
+<h3 id="威胁情报">威胁情报</h3>
 <table>
 <thead>
 <tr>
@@ -2056,7 +2056,7 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </tbody>
 </table>
 <p><strong>IOC情报（特征信息）</strong>：域名，IP，URL形式（SSL证书，Hash等）</p>
-<h3 id="">病毒查杀</h3>
+<h3 id="病毒查杀">病毒查杀</h3>
 <table>
 <thead>
 <tr>
@@ -2088,7 +2088,7 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </tr>
 </tbody>
 </table>
-<h3 id="rootkit">Rootkit后门检测工具</h3>
+<h3 id="rootkit后门检测工具">Rootkit后门检测工具</h3>
 <table>
 <thead>
 <tr>
@@ -2107,7 +2107,7 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </tr>
 </tbody>
 </table>
-<h3 id="">进程类常用工具</h3>
+<h3 id="进程类常用工具">进程类常用工具</h3>
 <table>
 <thead>
 <tr>
@@ -2130,12 +2130,12 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </tr>
 </tbody>
 </table>
-<h2 id="">侧信道攻击</h2>
+<h2 id="侧信道攻击">侧信道攻击</h2>
 <p><strong>核心原理</strong>：程序在运行的时候，不同复杂度所用的时间和消耗的能量是不同的。侧信道攻击正是利用计算设备在执行加密操作时无意间泄露的物理信息来推断密钥或其他敏感数据。</p>
 <p><strong>常见侧信道</strong>：功耗、时间、电磁辐射、声波等。</p>
-<h3 id="">能量轨迹</h3>
+<h3 id="能量轨迹">能量轨迹</h3>
 <p>能量轨迹是指设备在执行加密操作时消耗的功率随时间变化的记录。通过分析能量轨迹，可以推测出设备在不同时间点上执行的操作，从而恢复加密数据。</p>
-<h3 id="">攻击分类</h3>
+<h3 id="攻击分类">攻击分类</h3>
 <table>
 <thead>
 <tr>
@@ -2168,9 +2168,9 @@ airdecap-ng -e ctf（网络名称ssid） -p password1 ctf.pcap
 </tbody>
 </table>
 <p>0110111010</p>
-<h2 id="pyjail">pyjail沙箱逃逸</h2>
-<h3 id="python-jail">Python jail：读文件相关限制</h3>
+<h2 id="pyjail沙箱逃逸">pyjail沙箱逃逸</h2>
+<h3 id="python-jail-读文件相关限制">Python jail：读文件相关限制</h3>
 <p><code>read /app/where_is_flag.txt</code> 直接输文件路径绕过</p>
-<h3 id="python-jail-unicode">Python jail：Unicode 与过滤</h3>2:["$","div",null,{"className":"min-h-screen","children":[["$","$L8",null,{}],["$","div",null,{"className":"max-w-6xl mx-auto px-3 sm:px-4 py-8 sm:py-12","children":[["$","$L9",null,{"href":"/","className":"inline-block mb-6 sm:mb-8 text-primary hover:underline","children":"← 返回首页"}],["$","div",null,{"className":"flex flex-col lg:flex-row gap-6 lg:gap-8","children":[["$","article",null,{"className":"flex-1 min-w-0","children":[["$","header",null,{"className":"mb-6 sm:mb-8","children":[["$","h1",null,{"className":"text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4","children":"misc-安全杂项"}],["$","time",null,{"className":"text-gray-500 text-sm sm:text-base","children":"2026-07-20"}]]}],["$","div",null,{"className":"prose-container overflow-x-auto","children":["$","$La",null,{"htmlContent":"$b"}]}]]}],["$","aside",null,{"className":"w-full lg:w-64 flex-shrink-0","children":["$","$Lc",null,{"headings":[{"id":"写在前面","text":"写在前面","level":2},{"id":"1-信息搜集技术","text":"1. 信息搜集技术","level":2},{"id":"1-1-网络信息搜集技巧","text":"1.1 网络信息搜集技巧","level":3},{"id":"1-2-基本搜索技巧","text":"1.2 基本搜索技巧","level":3},{"id":"1-3-地图和街景搜索","text":"1.3 地图和街景搜索","level":3},{"id":"2-隐写综合","text":"2. 隐写综合","level":2},{"id":"2-1-图片隐写","text":"2.1 图片隐写","level":3},{"id":"2-1-1-总览","text":"2.1.1 总览","level":4},{"id":"2-1-2-zsteg-使用","text":"2.1.2 zsteg 使用","level":4},{"id":"2-1-3-普通盲水印","text":"2.1.3 普通盲水印","level":4},{"id":"2-1-4-频域盲水印","text":"2.1.4 频域盲水印","level":4},{"id":"2-1-5-f5隐写","text":"2.1.5.F5隐写","level":4},{"id":"2-1-6-idat隐写","text":"2.1.6.IDAT隐写","level":4},{"id":"2-1-7-十六进制高位-低位隐藏信息-hao-高位低位","text":"2.1.7 十六进制高位/低位隐藏信息（hao/高位低位）","level":4},{"id":"2-1-8-其他hint","text":"2.1.8 其他hint","level":4},{"id":"2-2-音频隐写","text":"2.2 音频隐写","level":3},{"id":"2-2-1-总览","text":"2.2.1 总览","level":4},{"id":"2-2-2-mp3stego","text":"2.2.2  MP3stego","level":4},{"id":"2-2-3-字母解释法","text":"2.2.3 字母解释法","level":4},{"id":"2-2-4-拨号音解密","text":"2.2.4 拨号音解密","level":4},{"id":"2-2-5-grc文件fm解调","text":"2.2.5  grc文件fm解调","level":4},{"id":"2-2-6-其他hint","text":"2.2.6 其他hint","level":4},{"id":"2-3-文档隐写","text":"2.3 文档隐写","level":3},{"id":"2-3-1-总览","text":"2.3.1 总览","level":4},{"id":"2-3-2-加密-word-爆破与宏破解","text":"2.3.2 加密 Word 爆破与宏破解","level":4},{"id":"3-压缩包分析","text":"3. 压缩包分析","level":2},{"id":"3-1-总览","text":"3.1 总览","level":3},{"id":"3-2-lzip解压-lzip-d-1-lzip","text":"3.2 lzip解压：lzip -d 1.lzip","level":3},{"id":"3-3-bkcrack明文攻击","text":"3.3 bkcrack明文攻击","level":3},{"id":"3-3-1-基本用法","text":"3.3.1 基本用法","level":4},{"id":"3-3-2-高级用法","text":"3.3.2 高级用法","level":4},{"id":"七-流量分析","text":"七、流量分析","level":2},{"id":"蓝牙协议","text":"蓝牙协议","level":3},{"id":"键盘流量","text":"键盘流量","level":3},{"id":"无线流量-tp-link-802-11","text":"无线流量（Tp-link）802.11","level":3},{"id":"ssl-tls流量","text":"SSL/TLS流量","level":3},{"id":"哥斯拉流量","text":"哥斯拉流量","level":3},{"id":"常用payload句法","text":"常用payload句法","level":3},{"id":"八-工控","text":"八、工控","level":2},{"id":"modbus协议","text":"Modbus协议","level":3},{"id":"九-漏洞相关","text":"九、漏洞相关","level":2},{"id":"apache-shiro-cve-2016-4437-反序列化漏洞","text":"Apache Shiro（CVE-2016-4437）反序列化漏洞","level":3},{"id":"dnslog外带","text":"DNSLog外带","level":3},{"id":"十-杂项技巧","text":"十、杂项技巧","level":2},{"id":"pyc隐写","text":"pyc隐写","level":3},{"id":"shell命令","text":"Shell命令","level":3},{"id":"volatility3-完整使用手册","text":"Volatility3 完整使用手册","level":2},{"id":"目录","text":"目录","level":3},{"id":"1-简介","text":"1. 简介","level":3},{"id":"2-命令语法","text":"2. 命令语法","level":3},{"id":"3-选项详解","text":"3. 选项详解","level":3},{"id":"基础选项","text":"基础选项","level":4},{"id":"配置选项","text":"配置选项","level":4},{"id":"路径选项","text":"路径选项","level":4},{"id":"输出选项","text":"输出选项","level":4},{"id":"内存层选项","text":"内存层选项","level":4},{"id":"过滤选项","text":"过滤选项","level":4},{"id":"4-插件列表","text":"4. 插件列表","level":3},{"id":"4-1-通用插件","text":"4.1 通用插件","level":4},{"id":"4-2-linux-插件","text":"4.2 Linux 插件","level":4},{"id":"4-3-linux-恶意软件检测插件","text":"4.3 Linux 恶意软件检测插件","level":4},{"id":"4-4-macos-插件","text":"4.4 macOS 插件","level":4},{"id":"4-5-windows-插件","text":"4.5 Windows 插件","level":4},{"id":"4-6-windows-注册表插件","text":"4.6 Windows 注册表插件","level":4},{"id":"4-7-windows-恶意软件检测插件","text":"4.7 Windows 恶意软件检测插件","level":4},{"id":"5-使用示例","text":"5. 使用示例","level":3},{"id":"sm4解密","text":"SM4解密","level":3},{"id":"应急响应","text":"应急响应","level":2},{"id":"恶意文件检测","text":"恶意文件检测","level":3},{"id":"ip识别网站","text":"IP识别网站","level":3},{"id":"勒索病毒解密","text":"勒索病毒解密","level":3},{"id":"云沙箱","text":"云沙箱","level":3},{"id":"威胁情报","text":"威胁情报","level":3},{"id":"病毒查杀","text":"病毒查杀","level":3},{"id":"rootkit后门检测工具","text":"Rootkit后门检测工具","level":3},{"id":"进程类常用工具","text":"进程类常用工具","level":3},{"id":"侧信道攻击","text":"侧信道攻击","level":2},{"id":"能量轨迹","text":"能量轨迹","level":3},{"id":"攻击分类","text":"攻击分类","level":3},{"id":"pyjail沙箱逃逸","text":"pyjail沙箱逃逸","level":2},{"id":"python-jail-读文件相关限制","text":"Python jail：读文件相关限制","level":3},{"id":"python-jail-unicode-与过滤","text":"Python jail：Unicode 与过滤","level":3}]}]}]]}]]}],["$","footer",null,{"className":"bg-gray-900 text-gray-300","children":[["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-12","children":["$","div",null,{"className":"flex flex-col md:flex-row justify-between","children":["$","div",null,{"children":[["$","h4",null,{"className":"text-gray-400 mb-4","children":"链接"}],["$","ul",null,{"className":"space-y-2","children":["$","li",null,{"children":["$","a",null,{"href":"https://github.com/hao0632","target":"_blank","rel":"noopener noreferrer","className":"hover:text-white transition-colors","children":"GitHub"}]}]}]]}]}]}],["$","div",null,{"className":"border-t border-gray-800","children":["$","div",null,{"className":"px-4 py-4","children":["$","p",null,{"className":"text-center text-gray-500 text-sm","children":"© 2026 hao-0632's blog"}]}]}]]}]]}]
+<h3 id="python-jail-unicode-与过滤">Python jail：Unicode 与过滤</h3>2:["$","div",null,{"className":"min-h-screen","children":[["$","$L8",null,{}],["$","div",null,{"className":"max-w-6xl mx-auto px-3 sm:px-4 py-8 sm:py-12","children":[["$","$L9",null,{"href":"/","className":"inline-block mb-6 sm:mb-8 text-primary hover:underline","children":"← 返回首页"}],["$","div",null,{"className":"flex flex-col lg:flex-row gap-6 lg:gap-8","children":[["$","article",null,{"className":"flex-1 min-w-0","children":[["$","header",null,{"className":"mb-6 sm:mb-8","children":[["$","h1",null,{"className":"text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4","children":"misc-安全杂项"}],["$","time",null,{"className":"text-gray-500 text-sm sm:text-base","children":"2026-07-20"}]]}],["$","div",null,{"className":"prose-container overflow-x-auto","children":["$","$La",null,{"htmlContent":"$b"}]}]]}],["$","aside",null,{"className":"w-full lg:w-64 flex-shrink-0","children":["$","$Lc",null,{"headings":[{"id":"写在前面","text":"写在前面","level":2},{"id":"1-信息搜集技术","text":"1. 信息搜集技术","level":2},{"id":"1-1-网络信息搜集技巧","text":"1.1 网络信息搜集技巧","level":3},{"id":"1-2-基本搜索技巧","text":"1.2 基本搜索技巧","level":3},{"id":"1-3-地图和街景搜索","text":"1.3 地图和街景搜索","level":3},{"id":"2-隐写综合","text":"2. 隐写综合","level":2},{"id":"2-1-图片隐写","text":"2.1 图片隐写","level":3},{"id":"2-1-1-总览","text":"2.1.1 总览","level":4},{"id":"2-1-2-zsteg-使用","text":"2.1.2 zsteg 使用","level":4},{"id":"2-1-3-普通盲水印","text":"2.1.3 普通盲水印","level":4},{"id":"2-1-4-频域盲水印","text":"2.1.4 频域盲水印","level":4},{"id":"2-1-5-f5隐写","text":"2.1.5.F5隐写","level":4},{"id":"2-1-6-idat隐写","text":"2.1.6.IDAT隐写","level":4},{"id":"2-1-7-十六进制高位-低位隐藏信息-hao-高位低位","text":"2.1.7 十六进制高位/低位隐藏信息（hao/高位低位）","level":4},{"id":"2-1-8-其他hint","text":"2.1.8 其他hint","level":4},{"id":"2-2-音频隐写","text":"2.2 音频隐写","level":3},{"id":"2-2-1-总览","text":"2.2.1 总览","level":4},{"id":"2-2-2-mp3stego","text":"2.2.2  MP3stego","level":4},{"id":"2-2-3-字母解释法","text":"2.2.3 字母解释法","level":4},{"id":"2-2-4-拨号音解密","text":"2.2.4 拨号音解密","level":4},{"id":"2-2-5-grc文件fm解调","text":"2.2.5  grc文件fm解调","level":4},{"id":"2-2-6-其他hint","text":"2.2.6 其他hint","level":4},{"id":"2-3-文档隐写","text":"2.3 文档隐写","level":3},{"id":"2-3-1-总览","text":"2.3.1 总览","level":4},{"id":"2-3-2-加密-word-爆破与宏破解","text":"2.3.2 加密 Word 爆破与宏破解","level":4},{"id":"3-压缩包分析","text":"3. 压缩包分析","level":2},{"id":"3-1-总览","text":"3.1 总览","level":3},{"id":"3-2-lzip解压-lzip-d-1-lzip","text":"3.2 lzip解压：lzip -d 1.lzip","level":3},{"id":"3-3-bkcrack明文攻击","text":"3.3 bkcrack明文攻击","level":3},{"id":"3-3-1-基本用法","text":"3.3.1 基本用法","level":4},{"id":"3-3-2-高级用法","text":"3.3.2 高级用法","level":4},{"id":"七-流量分析","text":"七、流量分析","level":2},{"id":"蓝牙协议","text":"蓝牙协议","level":3},{"id":"键盘流量","text":"键盘流量","level":3},{"id":"无线流量-tp-link-802-11","text":"无线流量（Tp-link）802.11","level":3},{"id":"ssl-tls流量","text":"SSL/TLS流量","level":3},{"id":"哥斯拉流量","text":"哥斯拉流量","level":3},{"id":"常用payload句法","text":"常用payload句法","level":3},{"id":"八-工控","text":"八、工控","level":2},{"id":"modbus协议","text":"Modbus协议","level":3},{"id":"九-漏洞相关","text":"九、漏洞相关","level":2},{"id":"apache-shiro-cve-2016-4437-反序列化漏洞","text":"Apache Shiro（CVE-2016-4437）反序列化漏洞","level":3},{"id":"dnslog外带","text":"DNSLog外带","level":3},{"id":"十-杂项技巧","text":"十、杂项技巧","level":2},{"id":"pyc隐写","text":"pyc隐写","level":3},{"id":"shell命令","text":"Shell命令","level":3},{"id":"volatility3-完整使用手册","text":"Volatility3 完整使用手册","level":2},{"id":"目录","text":"目录","level":3},{"id":"1-简介","text":"1. 简介","level":3},{"id":"2-命令语法","text":"2. 命令语法","level":3},{"id":"3-选项详解","text":"3. 选项详解","level":3},{"id":"基础选项","text":"基础选项","level":4},{"id":"配置选项","text":"配置选项","level":4},{"id":"路径选项","text":"路径选项","level":4},{"id":"输出选项","text":"输出选项","level":4},{"id":"内存层选项","text":"内存层选项","level":4},{"id":"过滤选项","text":"过滤选项","level":4},{"id":"4-插件列表","text":"4. 插件列表","level":3},{"id":"4-1-通用插件","text":"4.1 通用插件","level":4},{"id":"4-2-linux-插件","text":"4.2 Linux 插件","level":4},{"id":"4-3-linux-恶意软件检测插件","text":"4.3 Linux 恶意软件检测插件","level":4},{"id":"4-4-macos-插件","text":"4.4 macOS 插件","level":4},{"id":"4-5-windows-插件","text":"4.5 Windows 插件","level":4},{"id":"4-6-windows-注册表插件","text":"4.6 Windows 注册表插件","level":4},{"id":"4-7-windows-恶意软件检测插件","text":"4.7 Windows 恶意软件检测插件","level":4},{"id":"5-使用示例","text":"5. 使用示例","level":3},{"id":"sm4解密","text":"SM4解密","level":3},{"id":"应急响应","text":"应急响应","level":2},{"id":"恶意文件检测","text":"恶意文件检测","level":3},{"id":"ip识别网站","text":"IP识别网站","level":3},{"id":"勒索病毒解密","text":"勒索病毒解密","level":3},{"id":"云沙箱","text":"云沙箱","level":3},{"id":"威胁情报","text":"威胁情报","level":3},{"id":"病毒查杀","text":"病毒查杀","level":3},{"id":"rootkit后门检测工具","text":"Rootkit后门检测工具","level":3},{"id":"进程类常用工具","text":"进程类常用工具","level":3},{"id":"侧信道攻击","text":"侧信道攻击","level":2},{"id":"能量轨迹","text":"能量轨迹","level":3},{"id":"攻击分类","text":"攻击分类","level":3},{"id":"pyjail沙箱逃逸","text":"pyjail沙箱逃逸","level":2},{"id":"python-jail-读文件相关限制","text":"Python jail：读文件相关限制","level":3},{"id":"python-jail-unicode-与过滤","text":"Python jail：Unicode 与过滤","level":3}]}]}]]}]]}],["$","footer",null,{"className":"bg-gray-900 text-gray-300","children":[["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-12","children":["$","div",null,{"className":"flex flex-col md:flex-row justify-between","children":["$","div",null,{"children":[["$","h4",null,{"className":"text-gray-400 mb-4","children":"链接"}],["$","ul",null,{"className":"space-y-2","children":["$","li",null,{"children":["$","a",null,{"href":"https://github.com/hao0632","target":"_blank","rel":"noopener noreferrer","className":"hover:text-white transition-colors","children":"GitHub"}]}]}]]}]}]}],["$","div",null,{"className":"border-t border-gray-800","children":["$","div",null,{"className":"px-4 py-4","children":["$","p",null,{"className":"text-center text-gray-500 text-sm","children":"© 2026 hao-0632's blog"}]}]}]]}]]}]
 7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"misc-安全杂项"}],["$","meta","3",{"name":"description","content":"misc个人食用指北，持续更新"}],["$","link","4",{"rel":"icon","href":"/cat.ico"}]]
 1:null

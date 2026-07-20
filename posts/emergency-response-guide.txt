@@ -2,13 +2,13 @@
 5:I[1343,[],""]
 6:I[4160,["231","static/chunks/231-4760956769979d51.js","185","static/chunks/app/layout-cf1eee64ea0339e6.js"],"default"]
 4:["slug","emergency-response-guide","d"]
-0:["Vu_wo3O8e-w9_kIQy_KY8",[[["",{"children":["posts",{"children":[["slug","emergency-response-guide","d"],{"children":["__PAGE__?{\"slug\":\"emergency-response-guide\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["slug","emergency-response-guide","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"min-h-screen bg-gray-50","children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/my-blog/_next/static/css/52967a4f0e01b0e9.css","precedence":"next","crossOrigin":"$undefined"}]],"$L7"]]]]
+0:["tw2XuU0mMjm5wuoyc_Y0k",[[["",{"children":["posts",{"children":[["slug","emergency-response-guide","d"],{"children":["__PAGE__?{\"slug\":\"emergency-response-guide\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["slug","emergency-response-guide","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"min-h-screen bg-gray-50","children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/my-blog/_next/static/css/52967a4f0e01b0e9.css","precedence":"next","crossOrigin":"$undefined"}]],"$L7"]]]]
 8:I[7311,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-4c59b816d8fdf804.js"],"default"]
 9:I[231,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-4c59b816d8fdf804.js"],""]
 a:I[3132,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-4c59b816d8fdf804.js"],"default"]
 c:I[7125,["231","static/chunks/231-4760956769979d51.js","333","static/chunks/app/posts/%5Bslug%5D/page-4c59b816d8fdf804.js"],"default"]
-b:T105fd,<h1>应急响应经验总结——全生命周期实战指南</h1>
-<h2 id="">一、应急响应概述</h2>
+b:T10a74,<h1>应急响应经验总结——全生命周期实战指南</h1>
+<h2 id="一-应急响应概述">一、应急响应概述</h2>
 <p>应急响应（Incident Response）是指在安全事件发生后，快速识别、评估、遏制、根除和恢复的过程。有效的应急响应能够最大限度地减少安全事件造成的损失，保护组织的关键资产。</p>
 <p><strong>核心原则：</strong></p>
 <ul>
@@ -23,8 +23,8 @@ b:T105fd,<h1>应急响应经验总结——全生命周期实战指南</h1>
 <li><strong>NIST SP 800-61</strong>：计算机安全事件处理指南</li>
 </ul>
 <hr>
-<h2 id="preparation">二、准备阶段（Preparation）</h2>
-<h3 id="2-1">2.1 应急响应团队组建</h3>
+<h2 id="二-准备阶段-preparation">二、准备阶段（Preparation）</h2>
+<h3 id="2-1-应急响应团队组建">2.1 应急响应团队组建</h3>
 <p><strong>团队角色：</strong></p>
 <ul>
 <li><strong>应急响应负责人</strong>：协调整个响应过程</li>
@@ -39,7 +39,7 @@ b:T105fd,<h1>应急响应经验总结——全生命周期实战指南</h1>
 <li>测试紧急呼叫流程</li>
 <li>确保备用联系方式可用</li>
 </ul>
-<h3 id="2-2">2.2 工具包准备</h3>
+<h3 id="2-2-工具包准备">2.2 工具包准备</h3>
 <p><strong>必备工具清单：</strong></p>
 <table>
 <thead>
@@ -159,7 +159,7 @@ b:T105fd,<h1>应急响应经验总结——全生命周期实战指南</h1>
 <li>制作哈希校验值</li>
 <li>定期更新工具版本</li>
 </ol>
-<h3 id="2-3">2.3 预案制定</h3>
+<h3 id="2-3-预案制定">2.3 预案制定</h3>
 <p><strong>预案内容：</strong></p>
 <ul>
 <li><strong>事件分类标准</strong>：根据严重程度分级</li>
@@ -175,8 +175,8 @@ b:T105fd,<h1>应急响应经验总结——全生命周期实战指南</h1>
 <li>评估响应时间和效果</li>
 </ul>
 <hr>
-<h2 id="identification">三、识别阶段（Identification）</h2>
-<h3 id="3-1">3.1 检测异常指标</h3>
+<h2 id="三-识别阶段-identification">三、识别阶段（Identification）</h2>
+<h3 id="3-1-检测异常指标">3.1 检测异常指标</h3>
 <p><strong>常见异常信号：</strong></p>
 <ul>
 <li>大量失败登录尝试</li>
@@ -194,7 +194,7 @@ b:T105fd,<h1>应急响应经验总结——全生命周期实战指南</h1>
 <li>系统日志</li>
 <li>用户报告</li>
 </ul>
-<h3 id="3-2">3.2 初步评估</h3>
+<h3 id="3-2-初步评估">3.2 初步评估</h3>
 <p><strong>评估维度：</strong></p>
 <ul>
 <li><strong>影响范围</strong>：哪些系统受到影响</li>
@@ -210,8 +210,8 @@ b:T105fd,<h1>应急响应经验总结——全生命周期实战指南</h1>
 <li>用户描述</li>
 </ul>
 <hr>
-<h2 id="containment">四、遏制阶段（Containment）</h2>
-<h3 id="4-1">4.1 短期遏制</h3>
+<h2 id="四-遏制阶段-containment">四、遏制阶段（Containment）</h2>
+<h3 id="4-1-短期遏制">4.1 短期遏制</h3>
 <p><strong>目标：</strong> 快速限制攻击范围，防止进一步扩散</p>
 <p><strong>措施：</strong></p>
 <ul>
@@ -226,7 +226,7 @@ b:T105fd,<h1>应急响应经验总结——全生命周期实战指南</h1>
 <li>记录所有操作</li>
 <li>保留证据链</li>
 </ul>
-<h3 id="4-2">4.2 长期遏制</h3>
+<h3 id="4-2-长期遏制">4.2 长期遏制</h3>
 <p><strong>目标：</strong> 在根除前维持安全状态</p>
 <p><strong>措施：</strong></p>
 <ul>
@@ -235,8 +235,8 @@ b:T105fd,<h1>应急响应经验总结——全生命周期实战指南</h1>
 <li><strong>监控增强</strong>：增加对受影响系统的监控</li>
 </ul>
 <hr>
-<h2 id="windows">五、Windows系统取证</h2>
-<h3 id="5-1">5.1 日志分析</h3>
+<h2 id="五-windows系统取证">五、Windows系统取证</h2>
+<h3 id="5-1-日志分析">5.1 日志分析</h3>
 <p><strong>关键日志文件：</strong></p>
 <table>
 <thead>
@@ -459,7 +459,7 @@ Get-WinEvent -LogName Security | Export-Csv -Path security_logs.csv -NoTypeInfor
 # 查看PowerShell执行日志
 Get-WinEvent -LogName "Microsoft-Windows-PowerShell/Operational" | Where-Object { $_.Id -eq 4104 }
 </code></pre>
-<h3 id="5-2">5.2 注册表分析</h3>
+<h3 id="5-2-注册表分析">5.2 注册表分析</h3>
 <p><strong>关键注册表路径：</strong></p>
 <table>
 <thead>
@@ -523,7 +523,7 @@ reg export HKLM\Software\Microsoft\Windows\CurrentVersion\Run run_keys.reg
 
 # 使用Regshot对比注册表变化
 </code></pre>
-<h3 id="5-3">5.3 进程分析</h3>
+<h3 id="5-3-进程分析">5.3 进程分析</h3>
 <p><strong>Process Explorer使用技巧：</strong></p>
 <ol>
 <li><strong>查看进程树</strong>：了解进程父子关系</li>
@@ -545,7 +545,7 @@ Get-WmiObject -Class Win32_Process | Select-Object Name, CommandLine
 # 终止可疑进程
 Stop-Process -Id &#x3C;PID> -Force
 </code></pre>
-<h3 id="5-4">5.4 服务分析</h3>
+<h3 id="5-4-服务分析">5.4 服务分析</h3>
 <p><strong>服务分析命令：</strong></p>
 <pre><code class="hljs language-powershell"># 列出所有服务
 Get-Service
@@ -563,7 +563,7 @@ sc querydepend &#x3C;ServiceName>
 Stop-Service -Name &#x3C;ServiceName> -Force
 Set-Service -Name &#x3C;ServiceName> -StartupType Disabled
 </code></pre>
-<h3 id="5-5">5.5 计划任务分析</h3>
+<h3 id="5-5-计划任务分析">5.5 计划任务分析</h3>
 <p><strong>计划任务分析命令：</strong></p>
 <pre><code class="hljs language-powershell"># 列出所有计划任务
 Get-ScheduledTask
@@ -580,7 +580,7 @@ Disable-ScheduledTask -TaskName &#x3C;TaskName>
 # 删除计划任务
 Unregister-ScheduledTask -TaskName &#x3C;TaskName> -Confirm:$false
 </code></pre>
-<h3 id="5-6">5.6 文件系统分析</h3>
+<h3 id="5-6-文件系统分析">5.6 文件系统分析</h3>
 <p><strong>关键文件检查：</strong></p>
 <table>
 <thead>
@@ -638,8 +638,8 @@ Get-FileHash -Path &#x3C;FilePath> -Algorithm SHA256
 Select-String -Path C:\*.txt -Pattern "password|secret|key"
 </code></pre>
 <hr>
-<h2 id="linux">六、Linux系统取证</h2>
-<h3 id="6-1">6.1 日志分析</h3>
+<h2 id="六-linux系统取证">六、Linux系统取证</h2>
+<h3 id="6-1-日志分析">6.1 日志分析</h3>
 <p><strong>关键日志文件：</strong></p>
 <table>
 <thead>
@@ -724,7 +724,7 @@ journalctl -u sshd
 <span class="hljs-comment"># 导出日志到文件</span>
 <span class="hljs-built_in">cat</span> /var/log/auth.log > auth_logs.txt
 </code></pre>
-<h3 id="6-2">6.2 用户账户分析</h3>
+<h3 id="6-2-用户账户分析">6.2 用户账户分析</h3>
 <p><strong>用户分析命令：</strong></p>
 <pre><code class="hljs language-bash"><span class="hljs-comment"># 列出所有用户</span>
 <span class="hljs-built_in">cat</span> /etc/passwd
@@ -753,7 +753,7 @@ lastb
 <span class="hljs-comment"># 查看用户sudo历史</span>
 grep -i <span class="hljs-built_in">sudo</span> /var/log/auth.log
 </code></pre>
-<h3 id="6-3">6.3 进程分析</h3>
+<h3 id="6-3-进程分析">6.3 进程分析</h3>
 <p><strong>进程分析命令：</strong></p>
 <pre><code class="hljs language-bash"><span class="hljs-comment"># 列出所有进程</span>
 ps aux
@@ -773,7 +773,7 @@ netstat -tulnpa | grep &#x3C;PID>
 <span class="hljs-comment"># 终止进程</span>
 <span class="hljs-built_in">kill</span> -9 &#x3C;PID>
 </code></pre>
-<h3 id="6-4">6.4 网络分析</h3>
+<h3 id="6-4-网络分析">6.4 网络分析</h3>
 <p><strong>网络分析命令：</strong></p>
 <pre><code class="hljs language-bash"><span class="hljs-comment"># 查看网络连接</span>
 netstat -tulnpa
@@ -796,7 +796,7 @@ netstat -tuln
 <span class="hljs-comment"># 抓包分析</span>
 tcpdump -i eth0 -w capture.pcap
 </code></pre>
-<h3 id="6-5">6.5 计划任务分析</h3>
+<h3 id="6-5-计划任务分析">6.5 计划任务分析</h3>
 <p><strong>计划任务路径：</strong></p>
 <table>
 <thead>
@@ -849,7 +849,7 @@ crontab -l
 <span class="hljs-comment"># 查看所有cron任务</span>
 <span class="hljs-keyword">for</span> user <span class="hljs-keyword">in</span> $(<span class="hljs-built_in">cut</span> -f1 -d: /etc/passwd); <span class="hljs-keyword">do</span> <span class="hljs-built_in">echo</span> <span class="hljs-string">"=== <span class="hljs-variable">$user</span> ==="</span>; crontab -u <span class="hljs-variable">$user</span> -l 2>/dev/null; <span class="hljs-keyword">done</span>
 </code></pre>
-<h3 id="6-6">6.6 启动项分析</h3>
+<h3 id="6-6-启动项分析">6.6 启动项分析</h3>
 <p><strong>启动项路径：</strong></p>
 <table>
 <thead>
@@ -912,7 +912,7 @@ systemctl status &#x3C;ServiceName>
 <span class="hljs-comment"># 查看profile配置</span>
 <span class="hljs-built_in">cat</span> ~/.profile
 </code></pre>
-<h3 id="6-7">6.7 文件系统分析</h3>
+<h3 id="6-7-文件系统分析">6.7 文件系统分析</h3>
 <p><strong>文件分析命令：</strong></p>
 <pre><code class="hljs language-bash"><span class="hljs-comment"># 查找最近修改的文件</span>
 find / -<span class="hljs-built_in">type</span> f -mtime -1 -<span class="hljs-built_in">ls</span> 2>/dev/null
@@ -938,7 +938,7 @@ grep -r <span class="hljs-string">"password\|secret\|key"</span> /home/ 2>/dev/n
 <span class="hljs-comment"># 查看文件十六进制内容</span>
 xxd &#x3C;FilePath> | <span class="hljs-built_in">head</span> -20
 </code></pre>
-<h3 id="6-8">6.8 文件完整性校验</h3>
+<h3 id="6-8-文件完整性校验">6.8 文件完整性校验</h3>
 <p><strong>文件完整性校验是检测rootkit和恶意修改的重要手段。</strong></p>
 <p><strong>RPM包完整性校验（RHEL/CentOS）：</strong></p>
 <pre><code class="hljs language-bash"><span class="hljs-comment"># 校验所有已安装包的完整性</span>
@@ -1012,8 +1012,8 @@ lsmod
 ps aux | grep -E <span class="hljs-string">"\["</span>
 </code></pre>
 <hr>
-<h2 id="">七、内存取证</h2>
-<h3 id="7-1">7.1 内存获取</h3>
+<h2 id="七-内存取证">七、内存取证</h2>
+<h3 id="7-1-内存获取">7.1 内存获取</h3>
 <p><strong>获取工具：</strong></p>
 <table>
 <thead>
@@ -1061,7 +1061,7 @@ insmod lime-$(<span class="hljs-built_in">uname</span> -r).ko <span class="hljs-
 <span class="hljs-comment"># Windows内存获取（使用WinPmem）</span>
 winpmem.exe --output memory.raw
 </code></pre>
-<h3 id="7-2-volatility">7.2 Volatility框架使用</h3>
+<h3 id="7-2-volatility框架使用">7.2 Volatility框架使用</h3>
 <p><strong>Volatility基本命令：</strong></p>
 <pre><code class="hljs language-bash"><span class="hljs-comment"># 识别内存profile</span>
 volatility -f memory.raw imageinfo
@@ -1191,8 +1191,8 @@ volatility -f memory.raw --profile=&#x3C;Profile> timeliner
 </tbody>
 </table>
 <hr>
-<h2 id="">八、攻击溯源</h2>
-<h3 id="8-1-webshell">8.1 Webshell检测</h3>
+<h2 id="八-攻击溯源">八、攻击溯源</h2>
+<h3 id="8-1-webshell检测">8.1 Webshell检测</h3>
 <p><strong>Webshell特征：</strong></p>
 <table>
 <thead>
@@ -1242,7 +1242,7 @@ find /var/www -<span class="hljs-built_in">type</span> f -mtime -1 -<span class=
 <li><strong>ASP Webshell</strong>：Execute、Eval、WScript.Shell</li>
 <li><strong>JSP Webshell</strong>：Runtime.getRuntime().exec()</li>
 </ul>
-<h3 id="8-2">8.2 暴力破解分析</h3>
+<h3 id="8-2-暴力破解分析">8.2 暴力破解分析</h3>
 <p><strong>暴力破解特征：</strong></p>
 <table>
 <thead>
@@ -1286,7 +1286,7 @@ grep <span class="hljs-string">"Accepted"</span> /var/log/auth.log
 <span class="hljs-comment"># 查看暴力破解时间线</span>
 grep <span class="hljs-string">"Failed password"</span> /var/log/auth.log | awk <span class="hljs-string">'{print $1, $2, $3, $9, $11}'</span>
 </code></pre>
-<h3 id="8-3">8.3 横向移动分析</h3>
+<h3 id="8-3-横向移动分析">8.3 横向移动分析</h3>
 <p><strong>横向移动方法：</strong></p>
 <table>
 <thead>
@@ -1339,7 +1339,7 @@ Get-WinEvent -LogName Security | Where-Object { $_.Id -eq 5140 }
 # 查看WinRM连接
 Get-WinEvent -LogName "Microsoft-Windows-WinRM/Operational"
 </code></pre>
-<h3 id="8-4">8.4 权限维持分析</h3>
+<h3 id="8-4-权限维持分析">8.4 权限维持分析</h3>
 <p><strong>权限维持方法：</strong></p>
 <table>
 <thead>
@@ -1401,8 +1401,8 @@ Get-WinEvent -LogName Security | Where-Object { $_.Id -eq 4697 }
 Get-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Run"
 </code></pre>
 <hr>
-<h2 id="">九、恶意软件分析</h2>
-<h3 id="9-1">9.1 静态分析</h3>
+<h2 id="九-恶意软件分析">九、恶意软件分析</h2>
+<h3 id="9-1-静态分析">9.1 静态分析</h3>
 <p><strong>静态分析步骤：</strong></p>
 <ol>
 <li><strong>文件信息收集</strong>：文件类型、大小、哈希值</li>
@@ -1431,7 +1431,7 @@ peid &#x3C;FilePath>
 <span class="hljs-comment"># 使用ExifTool查看元数据</span>
 exiftool &#x3C;FilePath>
 </code></pre>
-<h3 id="9-2">9.2 动态分析</h3>
+<h3 id="9-2-动态分析">9.2 动态分析</h3>
 <p><strong>动态分析步骤：</strong></p>
 <ol>
 <li><strong>沙箱环境准备</strong>：隔离的虚拟机环境</li>
@@ -1471,7 +1471,7 @@ exiftool &#x3C;FilePath>
 </tr>
 </tbody>
 </table>
-<h3 id="9-3">9.3 常见恶意软件类型</h3>
+<h3 id="9-3-常见恶意软件类型">9.3 常见恶意软件类型</h3>
 <table>
 <thead>
 <tr>
@@ -1519,8 +1519,8 @@ exiftool &#x3C;FilePath>
 </tbody>
 </table>
 <hr>
-<h2 id="">十、证据保全</h2>
-<h3 id="10-1">10.1 证据链管理</h3>
+<h2 id="十-证据保全">十、证据保全</h2>
+<h3 id="10-1-证据链管理">10.1 证据链管理</h3>
 <p><strong>证据链原则：</strong></p>
 <ul>
 <li><strong>完整性</strong>：证据不得被篡改</li>
@@ -1536,7 +1536,7 @@ exiftool &#x3C;FilePath>
 <li><strong>存储证据</strong>：安全存储证据</li>
 <li><strong>移交证据</strong>：按法律程序移交</li>
 </ol>
-<h3 id="10-2-order-of-volatility">10.2 证据收集顺序（Order of Volatility）</h3>
+<h3 id="10-2-证据收集顺序-order-of-volatility">10.2 证据收集顺序（Order of Volatility）</h3>
 <p>根据NIST指导原则，证据收集应按照易失性从高到低的顺序进行，避免关机导致重要证据丢失。</p>
 <p><strong>证据易失性排序（从高到低）：</strong></p>
 <table>
@@ -1630,7 +1630,7 @@ exiftool &#x3C;FilePath>
 <li><strong>计算哈希值</strong>：确保证据完整性</li>
 <li><strong>记录操作步骤</strong>：确保证据链完整</li>
 </ol>
-<h3 id="10-3-kape">10.3 KAPE工具使用</h3>
+<h3 id="10-3-kape工具使用">10.3 KAPE工具使用</h3>
 <p><strong>KAPE（Kroll Artifact Parser and Extractor）</strong> 是目前Windows应急响应最高效的一键取证工具，能够快速收集和解析系统中的大量取证数据。</p>
 <p><strong>下载地址：</strong> <a href="https://www.kroll.com/en/services/cyber-risk/incident-response/kape">https://www.kroll.com/en/services/cyber-risk/incident-response/kape</a></p>
 <p><strong>基本使用方法：</strong></p>
@@ -1701,7 +1701,7 @@ kape.exe --tsource C: --tdest D:\evidence --tmodule Network
 </tr>
 </tbody>
 </table>
-<h3 id="10-4-plaso-log2timeline">10.4 时间线分析（Plaso/log2timeline）</h3>
+<h3 id="10-4-时间线分析-plaso-log2timeline">10.4 时间线分析（Plaso/log2timeline）</h3>
 <p><strong>Plaso</strong> 是一个强大的数字取证时间线分析工具，能够从多种来源提取时间戳并生成统一的时间线。</p>
 <p><strong>安装方法：</strong></p>
 <pre><code class="hljs language-bash"><span class="hljs-comment"># Ubuntu/Debian</span>
@@ -1777,7 +1777,7 @@ psort.py -o html timeline.plaso > timeline.html
 </tr>
 </tbody>
 </table>
-<h3 id="10-5">10.5 证据收集清单</h3>
+<h3 id="10-5-证据收集清单">10.5 证据收集清单</h3>
 <p><strong>必须收集的证据：</strong></p>
 <table>
 <thead>
@@ -1825,7 +1825,7 @@ psort.py -o html timeline.plaso > timeline.html
 </tr>
 </tbody>
 </table>
-<h3 id="10-6">10.6 哈希校验</h3>
+<h3 id="10-6-哈希校验">10.6 哈希校验</h3>
 <p><strong>哈希算法选择：</strong></p>
 <ul>
 <li><strong>MD5</strong>：128位，已被破解，不推荐用于安全目的</li>
@@ -1845,8 +1845,8 @@ Get-FileHash -Path &#x3C;FilePath> -Algorithm SHA256
 <span class="hljs-built_in">echo</span> <span class="hljs-string">"&#x3C;HashValue> &#x3C;FilePath>"</span> | <span class="hljs-built_in">sha256sum</span> -c
 </code></pre>
 <hr>
-<h2 id="">十一、根除与恢复</h2>
-<h3 id="11-1">11.1 根除步骤</h3>
+<h2 id="十一-根除与恢复">十一、根除与恢复</h2>
+<h3 id="11-1-根除步骤">11.1 根除步骤</h3>
 <p><strong>根除方法：</strong></p>
 <ol>
 <li><strong>移除恶意软件</strong>：使用杀毒软件或手动删除</li>
@@ -1869,7 +1869,7 @@ net user &#x3C;Username> &#x3C;NewPassword>
 usermod -L &#x3C;Username>  <span class="hljs-comment"># Linux</span>
 net user &#x3C;Username> /active:no  <span class="hljs-comment"># Windows</span>
 </code></pre>
-<h3 id="11-2">11.2 恢复步骤</h3>
+<h3 id="11-2-恢复步骤">11.2 恢复步骤</h3>
 <p><strong>恢复方法：</strong></p>
 <ol>
 <li><strong>系统恢复</strong>：从备份恢复系统</li>
@@ -1886,8 +1886,8 @@ net user &#x3C;Username> /active:no  <span class="hljs-comment"># Windows</span>
 <li><strong>合规验证</strong>：确保符合安全合规要求</li>
 </ol>
 <hr>
-<h2 id="lessons-learned">十二、总结阶段（Lessons Learned）</h2>
-<h3 id="12-1">12.1 事件总结报告</h3>
+<h2 id="十二-总结阶段-lessons-learned">十二、总结阶段（Lessons Learned）</h2>
+<h3 id="12-1-事件总结报告">12.1 事件总结报告</h3>
 <p><strong>报告内容：</strong></p>
 <ul>
 <li><strong>事件概述</strong>：事件发生时间、地点、影响范围</li>
@@ -1897,7 +1897,7 @@ net user &#x3C;Username> /active:no  <span class="hljs-comment"># Windows</span>
 <li><strong>修复措施</strong>：已采取的修复措施</li>
 <li><strong>改进建议</strong>：预防未来事件的建议</li>
 </ul>
-<h3 id="12-2">12.2 经验教训</h3>
+<h3 id="12-2-经验教训">12.2 经验教训</h3>
 <p><strong>常见经验教训：</strong></p>
 <ul>
 <li><strong>准备不足</strong>：应急预案不完善，工具准备不充分</li>
@@ -1906,7 +1906,7 @@ net user &#x3C;Username> /active:no  <span class="hljs-comment"># Windows</span>
 <li><strong>沟通不畅</strong>：内部和外部沟通不及时</li>
 <li><strong>知识不足</strong>：团队缺乏必要的技术知识</li>
 </ul>
-<h3 id="12-3">12.3 持续改进</h3>
+<h3 id="12-3-持续改进">12.3 持续改进</h3>
 <p><strong>改进措施：</strong></p>
 <ul>
 <li><strong>更新预案</strong>：根据经验更新应急预案</li>
@@ -1916,8 +1916,8 @@ net user &#x3C;Username> /active:no  <span class="hljs-comment"># Windows</span>
 <li><strong>监控增强</strong>：增强安全监控和检测能力</li>
 </ul>
 <hr>
-<h2 id="">十三、常用工具速览</h2>
-<h3 id="13-1">13.1 取证工具</h3>
+<h2 id="十三-常用工具速览">十三、常用工具速览</h2>
+<h3 id="13-1-取证工具">13.1 取证工具</h3>
 <table>
 <thead>
 <tr>
@@ -1959,7 +1959,7 @@ net user &#x3C;Username> /active:no  <span class="hljs-comment"># Windows</span>
 </tr>
 </tbody>
 </table>
-<h3 id="13-2">13.2 系统分析工具</h3>
+<h3 id="13-2-系统分析工具">13.2 系统分析工具</h3>
 <table>
 <thead>
 <tr>
@@ -2011,7 +2011,7 @@ net user &#x3C;Username> /active:no  <span class="hljs-comment"># Windows</span>
 </tr>
 </tbody>
 </table>
-<h3 id="13-3">13.3 网络分析工具</h3>
+<h3 id="13-3-网络分析工具">13.3 网络分析工具</h3>
 <table>
 <thead>
 <tr>
@@ -2048,7 +2048,7 @@ net user &#x3C;Username> /active:no  <span class="hljs-comment"># Windows</span>
 </tr>
 </tbody>
 </table>
-<h3 id="13-4">13.4 恶意软件分析工具</h3>
+<h3 id="13-4-恶意软件分析工具">13.4 恶意软件分析工具</h3>
 <table>
 <thead>
 <tr>
@@ -2086,22 +2086,22 @@ net user &#x3C;Username> /active:no  <span class="hljs-comment"># Windows</span>
 </tbody>
 </table>
 <hr>
-<h2 id="">十四、学习资源推荐</h2>
-<h3 id="14-1">14.1 在线资源</h3>
+<h2 id="十四-学习资源推荐">十四、学习资源推荐</h2>
+<h3 id="14-1-在线资源">14.1 在线资源</h3>
 <ul>
 <li><a href="https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final">NIST SP 800-61</a>：计算机安全事件处理指南</li>
 <li><a href="https://www.sans.org/white-papers/">SANS Institute</a>：安全白皮书和指南</li>
 <li><a href="https://dfirreport.com/">DFIR Report</a>：数字取证和事件响应报告</li>
 <li><a href="https://volatility.readthedocs.io/">Volatility Documentation</a>：Volatility框架文档</li>
 </ul>
-<h3 id="14-2">14.2 练习平台</h3>
+<h3 id="14-2-练习平台">14.2 练习平台</h3>
 <ul>
 <li><a href="https://www.hackthebox.com/">Hack The Box</a>：渗透测试和取证练习</li>
 <li><a href="https://tryhackme.com/">TryHackMe</a>：安全学习平台</li>
 <li><a href="https://ctftime.org/">CTF练习平台</a>：CTF比赛和练习</li>
 <li><a href="https://www.cybrary.it/">Cybrary</a>：在线安全课程</li>
 </ul>
-<h3 id="14-3">14.3 书籍推荐</h3>
+<h3 id="14-3-书籍推荐">14.3 书籍推荐</h3>
 <ul>
 <li>《计算机取证与调查》（Computer Forensics and Investigation）</li>
 <li>《网络安全监控实战》（Network Security Monitoring）</li>
@@ -2109,8 +2109,8 @@ net user &#x3C;Username> /active:no  <span class="hljs-comment"># Windows</span>
 <li>《Windows取证分析》（Windows Forensic Analysis）</li>
 </ul>
 <hr>
-<h2 id="">十五、应急响应快速检查清单</h2>
-<h3 id="15-1-windows">15.1 Windows快速检查清单</h3>
+<h2 id="十五-应急响应快速检查清单">十五、应急响应快速检查清单</h2>
+<h3 id="15-1-windows快速检查清单">15.1 Windows快速检查清单</h3>
 <p><strong>基础信息收集（前5分钟）：</strong></p>
 <table>
 <thead>
@@ -2237,7 +2237,7 @@ net user &#x3C;Username> /active:no  <span class="hljs-comment"># Windows</span>
 </tr>
 </tbody>
 </table>
-<h3 id="15-2-linux">15.2 Linux快速检查清单</h3>
+<h3 id="15-2-linux快速检查清单">15.2 Linux快速检查清单</h3>
 <p><strong>基础信息收集（前5分钟）：</strong></p>
 <table>
 <thead>
@@ -2374,7 +2374,7 @@ net user &#x3C;Username> /active:no  <span class="hljs-comment"># Windows</span>
 </tr>
 </tbody>
 </table>
-<h3 id="15-3">15.3 应急响应流程检查清单</h3>
+<h3 id="15-3-应急响应流程检查清单">15.3 应急响应流程检查清单</h3>
 <p><strong>识别阶段：</strong></p>
 <ul class="contains-task-list">
 <li class="task-list-item"><input type="checkbox" disabled> 确认事件发生时间和影响范围</li>
@@ -2432,7 +2432,7 @@ net user &#x3C;Username> /active:no  <span class="hljs-comment"># Windows</span>
 <li class="task-list-item"><input type="checkbox" disabled> 改进安全措施</li>
 </ul>
 <hr>
-<h2 id="">十六、总结</h2>
+<h2 id="十六-总结">十六、总结</h2>
 <p>应急响应是网络安全的重要组成部分，需要：</p>
 <ol>
 <li><strong>充分准备</strong>：建立完善的预案和工具包</li>

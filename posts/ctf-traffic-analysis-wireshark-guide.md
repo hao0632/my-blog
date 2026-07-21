@@ -125,20 +125,46 @@ matches   # 正则表达式匹配
 | `http.request.uri contains "login"` | 过滤登录相关请求 |
 | `dns` | 显示所有DNS流量 |
 | `dns.qry.type == 1` | 过滤A记录查询 |
+| `dns.qry.type == 16` | 过滤TXT记录 |
 | `dns.flags.response == 1` | 过滤DNS响应 |
-| `dns contains "base64"` | 过滤包含base64的DNS流量 |
+| `dns contains "="` | 过滤可能包含base64的DNS流量 |
 | `ftp` | 显示所有FTP流量 |
 | `ftp.request.command == "USER"` | 过滤FTP用户名 |
 | `ftp.request.command == "PASS"` | 过滤FTP密码 |
 | `icmp` | 显示所有ICMP流量 |
 | `icmp.type == 8` | 过滤Ping请求 |
 | `icmp.type == 0` | 过滤Ping响应 |
+| `tcp` | 显示所有TCP流量 |
+| `tcp.flags.syn == 1` | 过滤SYN包 |
+| `tcp.flags.fin == 1` | 过滤FIN包 |
 | `tcp.analysis.retransmission` | 过滤TCP重传 |
 | `tcp.analysis.out_of_order` | 过滤TCP乱序 |
-| `tcp.port == 443` | 过滤HTTPS流量 |
+| `udp` | 显示所有UDP流量 |
+| `udp.port == 53` | 过滤DNS流量 |
+| `udp.port == 123` | 过滤NTP流量 |
+| `ssh` | 显示所有SSH流量 |
+| `tcp.port == 22` | 过滤SSH端口 |
+| `telnet` | 显示所有Telnet流量 |
+| `tcp.port == 23` | 过滤Telnet端口 |
+| `smtp` | 显示所有SMTP流量 |
+| `tcp.port == 25` | 过滤SMTP端口 |
+| `pop` | 显示所有POP3流量 |
+| `tcp.port == 110` | 过滤POP3端口 |
+| `imap` | 显示所有IMAP流量 |
+| `tcp.port == 143` | 过滤IMAP端口 |
+| `snmp` | 显示所有SNMP流量 |
+| `udp.port == 161` | 过滤SNMP端口 |
+| `arp` | 显示所有ARP流量 |
+| `bootp` | 显示所有DHCP流量 |
+| `rdp` | 显示所有RDP流量 |
+| `tcp.port == 3389` | 过滤RDP端口 |
 | `smb` | 显示所有SMB流量 |
+| `ssl` 或 `tls` | 显示所有SSL/TLS流量 |
+| `tcp.port == 443` | 过滤HTTPS流量 |
 | `usb.capdata` | 显示USB数据 |
+| `usb.endpoint_address == 0x81` | 过滤USB键盘数据 |
 | `eapol` | 显示WiFi握手包 |
+| `wlan.fc.type_subtype == 0x08` | 过滤Beacon帧 |
 
 ---
 
@@ -312,6 +338,401 @@ matches   # 正则表达式匹配
    - 查找 `SMB Negotiate Protocol Request` 数据包
    - 查看 `smb.native_os` 和 `smb.native_lm` 字段
 
+### 5.7 TCP协议深度分析
+
+**核心考点：三次握手、四次挥手、序列号分析、重传检测**
+
+1. **TCP三次握手分析**
+   - 过滤 `tcp.flags.syn == 1` 查看SYN包
+   - 过滤 `tcp.flags.syn == 1 && tcp.flags.ack == 1` 查看SYN+ACK包
+   - 过滤 `tcp.flags.ack == 1 && tcp.seq == 1` 查看ACK包
+   - 分析序列号（`tcp.seq`）和确认号（`tcp.ack`）的关系
+
+2. **TCP四次挥手分析**
+   - 过滤 `tcp.flags.fin == 1` 查看FIN包
+   - 观察FIN-WAIT、TIME-WAIT等状态
+   - 分析 `tcp.window_size` 的变化
+
+3. **序列号分析**
+   - `tcp.seq`：发送方的序列号
+   - `tcp.ack`：期望接收的下一个字节序号
+   - `tcp.window_size`：接收窗口大小（流量控制）
+
+4. **TCP标志位详解**
+
+| 标志位 | 名称 | 含义 |
+|--------|------|------|
+| SYN | Synchronize | 同步序列号，用于建立连接 |
+| ACK | Acknowledgment | 确认已收到数据 |
+| FIN | Finish | 请求关闭连接 |
+| RST | Reset | 强制重置连接 |
+| PSH | Push | 立即推送数据到应用层 |
+| URG | Urgent | 紧急指针有效 |
+
+5. **异常TCP行为检测**
+   - `tcp.analysis.retransmission`：重传包
+   - `tcp.analysis.out_of_order`：乱序包
+   - `tcp.analysis.duplicate_ack`：重复ACK
+   - `tcp.analysis.lost_segment`：丢失的分段
+
+6. **TCP流追踪**
+   - 右键点击数据包 → `Follow → TCP Stream`
+   - 查看完整的TCP会话
+   - 注意流窗口底部的流编号
+
+**CTF常见考点：**
+- 通过序列号预测进行攻击（如TCP劫持）
+- 从乱序数据包中重组数据
+- 分析TCP选项（`tcp.options`）中的隐藏信息
+- 通过时间戳（`tcp.options.timestamp`）分析延迟
+
+### 5.8 UDP协议分析
+
+**核心考点：无连接特性、DNS隧道、NTP放大攻击**
+
+1. **基本过滤**
+   - `udp`：显示所有UDP流量
+   - `udp.port == <端口号>`：过滤特定端口
+
+2. **UDP特征分析**
+   - 无握手过程，直接发送数据
+   - 无序列号和确认机制
+   - 数据包可能丢失或乱序
+
+3. **UDP常用端口**
+
+| 端口 | 协议 | 用途 |
+|------|------|------|
+| 53 | DNS | 域名解析 |
+| 67/68 | DHCP | 动态IP分配 |
+| 123 | NTP | 网络时间协议 |
+| 161/162 | SNMP | 网络管理 |
+| 500 | IKE | VPN密钥交换 |
+| 1900 | SSDP | 设备发现 |
+
+4. **UDP隧道检测**
+   - 检查是否有大量UDP数据包
+   - 分析数据包内容模式（如base64编码）
+   - 观察非标准端口的UDP通信
+
+5. **UDP数据提取**
+   - 右键点击数据包 → `Follow → UDP Stream`
+   - 在流窗口中查看数据内容
+   - 使用十六进制视图分析原始数据
+
+**CTF常见考点：**
+- DNS隧道（通过UDP端口53传输数据）
+- NTP协议中的时间信息
+- 通过UDP载荷隐藏数据
+- UDP碎片化攻击分析
+
+### 5.9 SSH协议分析
+
+**核心考点：密钥交换、协议版本、认证过程**
+
+1. **基本过滤**
+   - `ssh`：显示所有SSH流量
+   - `tcp.port == 22`：过滤SSH端口
+
+2. **SSH握手过程**
+   - **第一步：版本协商**
+     - 客户端发送 `SSH-2.0-<客户端版本>`
+     - 服务端回复 `SSH-2.0-<服务端版本>`
+   - **第二步：密钥交换**
+     - 交换算法协商（Kex）
+     - 公钥交换和签名验证
+   - **第三步：认证**
+     - 支持密码认证、公钥认证等
+
+3. **查看SSH版本信息**
+   - 在数据包详情中展开 `Secure Shell → Protocol Version Exchange`
+   - 查看客户端和服务端版本字符串
+
+4. **SSH协议字段**
+   - `ssh.protocol_version`：协议版本
+   - `ssh.kex.algo`：密钥交换算法
+   - `ssh.host_key.algo`：主机密钥算法
+
+5. **SSH加密流量处理**
+   - SSH流量默认加密，无法直接查看内容
+   - 如果获取到私钥，可以尝试解密
+   - 关注握手阶段的明文信息
+
+**CTF常见考点：**
+- 从版本字符串中提取隐藏信息
+- 通过密钥交换过程分析加密强度
+- 识别弱密钥或已知漏洞版本
+- SSH隧道中的隐蔽通信
+
+### 5.10 Telnet协议分析
+
+**核心考点：明文传输、控制字符、认证信息**
+
+1. **基本过滤**
+   - `telnet`：显示所有Telnet流量
+   - `tcp.port == 23`：过滤Telnet端口
+
+2. **Telnet特征**
+   - 明文传输，所有数据可见
+   - 使用控制字符（IAC = 0xFF）进行协议协商
+   - 常用选项：ECHO、SUPPRESS GO AHEAD
+
+3. **提取Telnet数据**
+   - 右键点击数据包 → `Follow → TCP Stream`
+   - 在流窗口中查看完整的Telnet会话
+   - 注意过滤控制字符
+
+4. **Telnet控制字符**
+
+| 字符 | 名称 | 含义 |
+|------|------|------|
+| 0xFF | IAC | Interpret As Command |
+| 0xFB | WILL | 同意启用选项 |
+| 0xFC | WONT | 拒绝启用选项 |
+| 0xFD | DO | 请求启用选项 |
+| 0xFE | DONT | 请求禁用选项 |
+
+5. **分析Telnet会话**
+   - 查找用户名和密码输入
+   - 观察命令执行过程
+   - 提取命令输出内容
+
+**CTF常见考点：**
+- 直接从流量中提取用户名和密码
+- 分析命令执行历史
+- 通过控制字符隐藏数据
+- 识别Telnet服务版本
+
+### 5.11 SMTP协议分析
+
+**核心考点：邮件传输、认证信息、邮件内容**
+
+1. **基本过滤**
+   - `smtp`：显示所有SMTP流量
+   - `tcp.port == 25`：过滤SMTP端口
+
+2. **SMTP命令详解**
+
+| 命令 | 含义 | 示例 |
+|------|------|------|
+| HELO/EHLO | 客户端标识 | `EHLO example.com` |
+| MAIL FROM | 指定发件人 | `MAIL FROM:<user@example.com>` |
+| RCPT TO | 指定收件人 | `RCPT TO:<recipient@example.com>` |
+| DATA | 开始邮件内容 | `DATA` |
+| AUTH | 认证 | `AUTH LOGIN` |
+| QUIT | 退出 | `QUIT` |
+
+3. **提取邮件内容**
+   - 过滤 `smtp` 查看邮件传输过程
+   - 在DATA命令后查找邮件内容
+   - 邮件内容以 `.` 结束
+
+4. **SMTP认证分析**
+   - 查找 `AUTH LOGIN` 命令
+   - 用户名和密码通常为base64编码
+   - 解码格式：`echo "<编码>" | base64 -d`
+
+5. **查看邮件头**
+   - 展开 `Simple Mail Transfer Protocol`
+   - 查看 `smtp.mail_from` 和 `smtp.rcpt_to`
+
+**CTF常见考点：**
+- 从AUTH命令中提取base64编码的用户名和密码
+- 分析邮件内容中的隐藏信息
+- 通过邮件头追踪发件人
+- 识别邮件伪造攻击
+
+### 5.12 POP3协议分析
+
+**核心考点：邮件接收、认证信息、邮件内容**
+
+1. **基本过滤**
+   - `pop`：显示所有POP3流量
+   - `tcp.port == 110`：过滤POP3端口
+
+2. **POP3命令详解**
+
+| 命令 | 含义 | 示例 |
+|------|------|------|
+| USER | 用户名 | `USER test` |
+| PASS | 密码 | `PASS password` |
+| LIST | 列出邮件 | `LIST` |
+| RETR | 获取邮件内容 | `RETR 1` |
+| DELE | 删除邮件 | `DELE 1` |
+| QUIT | 退出 | `QUIT` |
+
+3. **提取POP3认证信息**
+   - 查找 `USER` 和 `PASS` 命令
+   - 用户名和密码通常为明文
+   - 在数据包详情中查看命令参数
+
+4. **获取邮件内容**
+   - 查找 `RETR` 命令及其响应
+   - 邮件内容在响应中以 `.` 结束
+   - 使用 `Follow → TCP Stream` 查看完整会话
+
+**CTF常见考点：**
+- 直接提取用户名和密码
+- 分析邮件内容中的敏感信息
+- 通过邮件列表了解邮箱结构
+- 识别弱认证机制
+
+### 5.13 IMAP协议分析
+
+**核心考点：邮件同步、文件夹操作、认证信息**
+
+1. **基本过滤**
+   - `imap`：显示所有IMAP流量
+   - `tcp.port == 143`：过滤IMAP端口
+   - `tcp.port == 993`：过滤IMAPS端口
+
+2. **IMAP命令详解**
+
+| 命令 | 含义 | 示例 |
+|------|------|------|
+| LOGIN | 认证登录 | `A001 LOGIN user pass` |
+| SELECT | 选择文件夹 | `A002 SELECT INBOX` |
+| FETCH | 获取邮件 | `A003 FETCH 1 BODY[]` |
+| LIST | 列出文件夹 | `A004 LIST "" *` |
+| LOGOUT | 退出 | `A005 LOGOUT` |
+
+3. **提取IMAP认证信息**
+   - 查找 `LOGIN` 命令
+   - 用户名和密码通常为明文
+   - 注意命令中的标签（如A001）
+
+4. **分析IMAP会话**
+   - 使用 `Follow → TCP Stream` 查看完整会话
+   - 关注SELECT和FETCH命令
+   - 提取邮件内容和文件夹结构
+
+**CTF常见考点：**
+- 提取认证凭据
+- 分析邮件内容
+- 识别邮箱结构
+- 通过文件夹名称发现线索
+
+### 5.14 SNMP协议分析
+
+**核心考点：社区字符串、MIB信息、设备配置**
+
+1. **基本过滤**
+   - `snmp`：显示所有SNMP流量
+   - `udp.port == 161`：过滤SNMP端口
+   - `udp.port == 162`：过滤SNMP Trap端口
+
+2. **SNMP版本**
+   - **SNMPv1**：使用明文社区字符串认证
+   - **SNMPv2c**：增强功能，仍使用社区字符串
+   - **SNMPv3**：支持加密和认证
+
+3. **SNMP操作类型**
+
+| PDU类型 | 名称 | 含义 |
+|---------|------|------|
+| 0 | GetRequest | 获取单个OID的值 |
+| 1 | GetNextRequest | 获取下一个OID的值 |
+| 2 | GetResponse | 响应请求 |
+| 3 | SetRequest | 设置OID的值 |
+| 4 | Trap | 发送陷阱通知 |
+
+4. **提取社区字符串**
+   - 在数据包详情中展开 `Simple Network Management Protocol`
+   - 查看 `snmp.community` 字段
+   - 默认社区字符串：public、private
+
+5. **分析MIB数据**
+   - 查找 `GetResponse` 数据包
+   - 展开 `snmp.smi` 查看OID和对应值
+   - 常见OID：系统信息、接口状态、路由表
+
+**CTF常见考点：**
+- 提取明文社区字符串
+- 通过MIB数据获取设备信息
+- 识别弱社区字符串配置
+- 分析SNMP陷阱中的告警信息
+
+### 5.15 ARP协议分析
+
+**核心考点：地址解析、ARP欺骗、MAC地址**
+
+1. **基本过滤**
+   - `arp`：显示所有ARP流量
+
+2. **ARP操作类型**
+
+| 操作码 | 名称 | 含义 |
+|--------|------|------|
+| 1 | Request | ARP请求（询问MAC地址） |
+| 2 | Reply | ARP响应（返回MAC地址） |
+
+3. **查看ARP数据包**
+   - 展开 `Address Resolution Protocol`
+   - `arp.src.proto_ipv4`：源IP地址
+   - `arp.src.hw_mac`：源MAC地址
+   - `arp.dst.proto_ipv4`：目标IP地址
+   - `arp.dst.hw_mac`：目标MAC地址
+
+4. **ARP欺骗检测**
+   - 过滤 `arp && arp.opcode == 2` 查看所有ARP响应
+   - 检查是否有多个MAC地址对应同一个IP
+   - 观察ARP响应频率是否异常
+
+5. **提取IP-MAC映射**
+   - 使用 `Statistics → Endpoints` 查看MAC地址列表
+   - 分析IP和MAC地址的对应关系
+
+**CTF常见考点：**
+- 识别ARP欺骗攻击
+- 提取IP和MAC地址映射
+- 通过ARP请求发现存活主机
+- 分析MAC地址中的厂商信息
+
+### 5.16 DHCP协议分析
+
+**核心考点：IP分配、租约信息、配置参数**
+
+1. **基本过滤**
+   - `bootp` 或 `dhcp`：显示DHCP流量
+   - `udp.port == 67`：DHCP服务器端口
+   - `udp.port == 68`：DHCP客户端端口
+
+2. **DHCP工作流程**
+   - **DHCP Discover**：客户端广播发现服务器
+   - **DHCP Offer**：服务器提供IP地址
+   - **DHCP Request**：客户端请求IP地址
+   - **DHCP ACK**：服务器确认分配
+
+3. **DHCP消息类型**
+
+| 类型码 | 名称 | 含义 |
+|--------|------|------|
+| 1 | Discover | 发现服务器 |
+| 2 | Offer | 提供IP地址 |
+| 3 | Request | 请求IP地址 |
+| 4 | Decline | 拒绝提供 |
+| 5 | ACK | 确认 |
+| 6 | NAK | 拒绝 |
+
+4. **提取DHCP配置信息**
+   - 在数据包详情中展开 `Dynamic Host Configuration Protocol`
+   - `dhcp.option.dhcp_message_type`：消息类型
+   - `dhcp.option.subnet_mask`：子网掩码
+   - `dhcp.option.router`：网关地址
+   - `dhcp.option.dns_server`：DNS服务器
+   - `dhcp.option.ip_address`：分配的IP地址
+
+5. **分析DHCP会话**
+   - 使用 `Follow → UDP Stream` 查看完整DHCP会话
+   - 关注租约时间（`dhcp.option.lease_time`）
+   - 检查是否有异常的DHCP服务器
+
+**CTF常见考点：**
+- 提取分配的IP地址和配置参数
+- 识别恶意DHCP服务器
+- 通过DHCP选项发现网络拓扑
+- 分析DHCP租约时间
+
 ---
 
 ## 六、特殊流量分析
@@ -432,6 +853,83 @@ with open('keydata.txt', 'r') as f:
 - Probe Requests可泄露曾经连接过的SSID
 - Beacon帧包含网络名称、加密类型等信息
 - Deauthentication帧可能表示攻击行为
+
+### 6.3 RDP协议分析
+
+**核心考点：远程桌面连接、认证信息、剪贴板数据**
+
+1. **基本过滤**
+   - `rdp`：显示所有RDP流量
+   - `tcp.port == 3389`：过滤RDP端口
+
+2. **RDP协议阶段**
+   - **X.224连接初始化**：建立基本连接
+   - **RDP协商**：协商协议版本和参数
+   - **安全交换**：认证和加密协商
+   - **通道连接**：建立虚拟通道（剪贴板、磁盘等）
+
+3. **RDP安全层**
+   - **RDP Security Layer**：使用标准RDP加密
+   - **TLS**：使用SSL/TLS加密
+   - **CredSSP**：使用Kerberos或NTLM认证
+
+4. **提取剪贴板数据**
+   - 过滤 `rdpdr`（RDP重定向）流量
+   - 查找剪贴板操作相关数据包
+   - 在数据包详情中查看剪贴板内容
+
+5. **分析RDP会话**
+   - 使用 `Follow → TCP Stream` 查看完整会话
+   - 关注安全协商过程
+   - 检查是否有弱加密配置
+
+**CTF常见考点：**
+- 提取剪贴板中的敏感数据
+- 通过安全协商分析加密强度
+- 识别弱认证机制
+- RDP会话中的文件传输
+
+### 6.4 流量隐蔽技术分析
+
+**核心考点：数据隐藏、协议滥用、编码方式**
+
+1. **DNS隧道检测**
+   - 过滤 `dns.qry.name` 查看查询名称
+   - 检查子域名是否有编码特征（如base64）
+   - 使用 `dns contains "="` 过滤可能的编码数据
+   - 观察DNS查询频率是否异常
+
+2. **ICMP隧道检测**
+   - 过滤 `icmp.type == 8` 查看Ping请求
+   - 检查ICMP数据部分（`icmp.data`）是否包含非随机数据
+   - 观察ICMP数据包大小是否异常
+
+3. **TCP/UDP载荷隐藏**
+   - 追踪TCP/UDP流查看数据内容
+   - 检查数据包载荷是否有编码模式
+   - 使用十六进制视图分析原始数据
+
+4. **HTTP头隐藏**
+   - 过滤HTTP流量查看请求/响应头部
+   - 关注自定义头部字段
+   - 检查Cookie、User-Agent等字段中的隐藏信息
+
+5. **数据编码识别**
+   - **Base64**：包含A-Z、a-z、0-9、+、/、=
+   - **Hex**：包含0-9、a-f
+   - **URL编码**：包含%和十六进制字符
+   - **Unicode编码**：包含\u开头的转义序列
+
+6. **时间通道分析**
+   - 使用 `IO Graphs` 分析数据包时间间隔
+   - 检查是否有规律的时间模式
+   - 通过数据包间隔编码数据
+
+**CTF常见考点：**
+- 识别和提取DNS隧道数据
+- 还原ICMP隧道中的隐藏信息
+- 分析TCP/UDP载荷中的编码数据
+- 识别时间通道等隐蔽通信方式
 
 ---
 
@@ -905,13 +1403,35 @@ tcp_port:add(12345, custom_proto)
 
 ## 十二、总结
 
-Wireshark是CTF流量分析的核心工具，掌握其使用技巧对于解题至关重要：
+Wireshark是CTF流量分析的核心工具，掌握其使用技巧对于解题至关重要。本文系统总结了各类协议的分析技巧和CTF考点：
 
-1. **扎实的网络协议基础**：理解TCP/IP模型、常见协议工作原理
-2. **熟练的Wireshark操作**：掌握过滤语法、统计功能、文件提取等
-3. **敏锐的观察能力**：发现异常模式和隐藏信息
+### 协议分析考点速览
+
+| 协议类别 | 核心考点 |
+|---------|---------|
+| **基础协议** | TCP三次握手/四次挥手、序列号分析、UDP特征、ICMP隧道 |
+| **Web协议** | HTTP参数提取、HTTPS解密、Cookie分析、请求头隐藏信息 |
+| **邮件协议** | SMTP认证(base64)、POP3明文密码、IMAP文件夹结构 |
+| **远程访问** | SSH版本信息、Telnet明文传输、RDP剪贴板数据 |
+| **网络服务** | DNS隧道、FTP凭证、SNMP社区字符串、DHCP配置信息 |
+| **链路层** | ARP欺骗检测、MAC地址分析、WiFi握手包解密 |
+| **特殊流量** | USB键盘还原、USB鼠标轨迹、RDP协议分析、流量隐蔽技术 |
+
+### 核心解题能力
+
+1. **扎实的网络协议基础**：理解TCP/IP模型、常见协议工作原理和交互过程
+2. **熟练的Wireshark操作**：掌握过滤语法、统计功能、文件提取、流追踪等
+3. **敏锐的观察能力**：发现异常模式、编码特征和隐藏信息
 4. **灵活的思维方式**：尝试多种可能性，不局限于单一方法
-5. **耐心和细心**：处理大量数据时保持专注
+5. **编码识别能力**：快速识别base64、hex、URL编码等数据格式
+6. **耐心和细心**：处理大量数据时保持专注，注意细节
+
+### 解题流程总结
+
+```
+1. 打开PCAP → 2. 协议统计(Protocol Hierarchy) → 3. 识别关键协议 → 
+4. 过滤筛选 → 5. 追踪流分析 → 6. 提取数据 → 7. 解码还原 → 8. Flag验证
+```
 
 通过不断练习和总结，流量分析能力会逐渐提升，成为CTF比赛中的强力武器。
 

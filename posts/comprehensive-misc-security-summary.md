@@ -1,4 +1,11 @@
-## 全面 MISC（Miscellaneous）安全总结
+---
+title: "MISC"
+slug: "comprehensive-misc-security-summary"
+date: "2026-08-13"
+excerpt: "MISC 个人总结"
+---
+
+## MISC 总结
 
 ### 目录
 

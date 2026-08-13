@@ -2,12 +2,12 @@
 5:I[1343,[],""]
 6:I[4160,["231","static/chunks/231-b93649757f649385.js","185","static/chunks/app/layout-603d8450bfb17fff.js"],"default"]
 4:["slug","ctf-traffic-analysis-wireshark-guide","d"]
-0:["LSUCvymUwzmU59fbxoRXD",[[["",{"children":["posts",{"children":[["slug","ctf-traffic-analysis-wireshark-guide","d"],{"children":["__PAGE__?{\"slug\":\"ctf-traffic-analysis-wireshark-guide\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["slug","ctf-traffic-analysis-wireshark-guide","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"min-h-screen bg-gray-50","children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/my-blog/_next/static/css/dcff1c60784e8674.css","precedence":"next","crossOrigin":"$undefined"}]],"$L7"]]]]
+0:["DCEOCuOMtFkZUF1bhCTvk",[[["",{"children":["posts",{"children":[["slug","ctf-traffic-analysis-wireshark-guide","d"],{"children":["__PAGE__?{\"slug\":\"ctf-traffic-analysis-wireshark-guide\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["slug","ctf-traffic-analysis-wireshark-guide","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"min-h-screen bg-gray-50","children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/my-blog/_next/static/css/dcff1c60784e8674.css","precedence":"next","crossOrigin":"$undefined"}]],"$L7"]]]]
 8:I[7311,["231","static/chunks/231-b93649757f649385.js","333","static/chunks/app/posts/%5Bslug%5D/page-acbdac4e5e2638c9.js"],"default"]
 9:I[231,["231","static/chunks/231-b93649757f649385.js","333","static/chunks/app/posts/%5Bslug%5D/page-acbdac4e5e2638c9.js"],""]
 a:I[3132,["231","static/chunks/231-b93649757f649385.js","333","static/chunks/app/posts/%5Bslug%5D/page-acbdac4e5e2638c9.js"],"default"]
 c:I[7125,["231","static/chunks/231-b93649757f649385.js","333","static/chunks/app/posts/%5Bslug%5D/page-acbdac4e5e2638c9.js"],"default"]
-b:T12215,<h2 id="一-流量分析概述">一、流量分析概述</h2>
+b:T15bb9,<h2 id="一-流量分析概述">一、流量分析概述</h2>
 <p>流量分析（Traffic Analysis）是CTF中取证类题目的重要分支，主要通过分析网络数据包捕获文件（PCAP）来提取关键信息、还原攻击过程、挖掘隐藏数据。流量分析考验选手的网络协议知识、工具使用能力和逻辑推理能力。</p>
 <p><strong>核心工具：Wireshark</strong> —— 业界最强大的图形化网络协议分析器，提供直观的界面和丰富的功能。</p>
 <hr>
@@ -158,6 +158,19 @@ b:T12215,<h2 id="一-流量分析概述">一、流量分析概述</h2>
 <li>在过滤器栏输入过滤条件</li>
 <li>右键点击数据包 → <code>Follow</code> 追踪流</li>
 <li>使用 <code>Statistics → Endpoints</code> 或 <code>Conversations</code> 查看通信端点</li>
+</ul>
+<h3 id="3-3-ctf-通用分析思路速查">3.3 CTF 通用分析思路速查</h3>
+<p>拿到 PCAP 后，可按以下思路快速定位 flag：</p>
+<ul>
+<li>分组字节流直接搜索 <code>flag</code>、<code>flag{</code>、<code>f</code>、<code>fl</code> 等关键词（注意编码与干扰字符）。</li>
+<li>包长度、响应时间、包间隔可能隐藏信息（时间通道）。</li>
+<li>大量 GET/POST 参数可能是 SQL 盲注，可尝试回放重放。</li>
+<li>TCP 流中可能隐藏编码信息；隐藏压缩包直接搜索 <code>504B0304</code>（PK 头），优先用 <code>File → Export Objects</code> 导出。</li>
+<li>数据包 Info 字段中可能隐藏 base64 字符串。</li>
+<li>一般 TCP 无信息、无密钥的 TLS 流量可先跳过。</li>
+<li>ICMP 流量重点看 data 块长度与时间。</li>
+<li>菜刀等 WebShell 流量可能 gzip 压缩，直接搜 <code>flag</code> 搜不到，需先解压。</li>
+<li>不可打印字符可能是控制字符，对照 ASCII 表逐字节分析。</li>
 </ul>
 <hr>
 <h2 id="四-显示过滤器详解">四、显示过滤器详解</h2>
@@ -1534,8 +1547,13 @@ matches   # 正则表达式匹配
 <li>
 <p><strong>提取按键数据</strong></p>
 <ul>
-<li>右键点击数据包 → <code>Copy → Fields → usb.capdata</code></li>
-<li>或使用 <code>File → Export Packet Dissections → As Plain Text</code></li>
+<li>GUI：右键点击数据包 → <code>Copy → Fields → usb.capdata</code></li>
+<li>GUI：或使用 <code>File → Export Packet Dissections → As Plain Text</code></li>
+<li>CLI（tshark 一键提取，推荐自动化）：
+<pre><code class="hljs language-bash"><span class="hljs-comment"># 字段名 usbhid.data / usb.capdata 视捕获方式而定，可按需替换</span>
+tshark -r 1.pcapng -T fields -e usbhid.data | Where-Object { <span class="hljs-variable">$_</span> -notmatch <span class="hljs-string">'^0000000000000000$'</span> -and <span class="hljs-variable">$_</span> -notmatch <span class="hljs-string">'^\s*$'</span> } > usbdata.txt
+</code></pre>
+</li>
 </ul>
 </li>
 <li>
@@ -1691,6 +1709,15 @@ usb_keyboard_codes = {
 </ul>
 </li>
 </ol>
+<p><strong>WPA 握手包离线破解：</strong></p>
+<pre><code class="hljs language-bash"><span class="hljs-comment"># 提取握手包为 hc22000 格式（供 hashcat 使用）</span>
+hcxpcapngtool ctf.pcap -o 123.hc22000
+<span class="hljs-comment"># 字典爆破</span>
+hashcat -m 22000 123.hc22000 rockyou.txt
+<span class="hljs-comment"># 解密流量（aircrack-ng 套件）</span>
+airdecap-ng -e ctf -p password1 ctf.pcap
+<span class="hljs-comment"># 或 Wireshark：编辑 -> 首选项 -> Protocols -> IEEE 802.11 -> wpa-pwd:password:ssid</span>
+</code></pre>
 <p><strong>分析要点：</strong></p>
 <ul>
 <li>Probe Requests可泄露曾经连接过的SSID</li>
@@ -1809,6 +1836,181 @@ usb_keyboard_codes = {
 <li>分析TCP/UDP载荷中的编码数据</li>
 <li>识别时间通道等隐蔽通信方式</li>
 </ul>
+<h3 id="6-5-蓝牙协议分析-obex">6.5 蓝牙协议分析（OBEX）</h3>
+<p>蓝牙流量（如 <code>.btsnoop</code> 格式）在 CTF 中相对少见，出现时可用以下思路：</p>
+<ul>
+<li>分组字节流直接搜索 <code>flag</code> 等关键词。</li>
+<li>使用协议分级中的 OBEX（Object Exchange，对象交换）作为过滤器，定位文件传输对象。</li>
+<li>蓝牙配对 PIN 码：在数据包详情中搜索 <code>pin</code>（例如 <code>pin code:141854</code>），往往直接给出配对口令。</li>
+</ul>
+<h3 id="6-6-哥斯拉-godzilla-webshell-流量特征">6.6 哥斯拉（Godzilla）WebShell 流量特征</h3>
+<p>哥斯拉是一款常见的 Java WebShell 管理工具，其流量特征可用于流量侧检测：</p>
+<ul>
+<li>初始化阶段产生一个较大的数据包（第一个），后续数据包较小；第一个响应体一般为空。</li>
+<li>Cookie 末尾可能出现分号（有时没有）。</li>
+<li>第二次请求携带 Cookie；响应体为 64 字节（前 16 + 中间 32 + 结尾 16）。</li>
+<li>第三次及后续请求：前 16 与后 16 字节与第二次响应包一致（原因是 32 位 MD5 被拆成两部分，分别放在 base64 前后）。</li>
+<li>关键参数：<code>xc</code>（加密密钥）、<code>pass</code>（解密密码）。</li>
+<li>后门反连通道：TCP、HTTP、DNS、ICMP 等。</li>
+</ul>
+<p>常见 payload 句法特征：<code>[::-1]</code>（字符串反转）、<code>base64.b64decode(...)</code>、<code>zlib.decompress(...)</code>、<code>exec(...)</code>。</p>
+<h3 id="6-7-webshell-流量分析详解">6.7 Webshell 流量分析详解</h3>
+<blockquote>
+<p>提示：若响应数据为 gzip 格式，注意提取位置，gzip 文件头为 <code>1F 8B 08 00</code>。</p>
+</blockquote>
+<h4 id="6-7-1-菜刀">6.7.1 菜刀</h4>
+<p>特征：响应里可能有 <code>->| |&#x3C;-</code> 字符串。分析难度低，一般就是明文流量或 Base64 编码。</p>
+<h4 id="6-7-2-哥斯拉">6.7.2 哥斯拉</h4>
+<ul>
+<li>默认密钥：<code>3c6e0b8a9c15224a</code></li>
+<li>加密方式：通常为异或（插件加持下也可能用 AES）</li>
+<li>异或时从密钥的<strong>第二位</strong>开始（即 <code>key[(i+1) &#x26; 15]</code>），因此 CyberChef 解密时需把密钥第一位移动到最后</li>
+<li>流量解密密钥 = 明文密钥（可读字符串）MD5 的<strong>前 16 位</strong></li>
+</ul>
+<p>PHP 加密逻辑示例：</p>
+<pre><code class="hljs language-php"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">encode</span>(<span class="hljs-params"><span class="hljs-variable">$D</span>,<span class="hljs-variable">$K</span></span>)</span>{
+    <span class="hljs-keyword">for</span>(<span class="hljs-variable">$i</span>=0;<span class="hljs-variable">$i</span>&#x3C;<span class="hljs-title function_ invoke__">strlen</span>(<span class="hljs-variable">$D</span>);<span class="hljs-variable">$i</span>++){
+        <span class="hljs-variable">$c</span> = <span class="hljs-variable">$K</span>[<span class="hljs-variable">$i</span>+1 &#x26; 15];
+        <span class="hljs-variable">$D</span>[<span class="hljs-variable">$i</span>] = <span class="hljs-variable">$D</span>[<span class="hljs-variable">$i</span>]^<span class="hljs-variable">$c</span>;
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-variable">$D</span>;
+}
+</code></pre>
+<p><strong>密钥爆破：</strong> 响应包会输出 <code>MD5(连接密码 + 流量解密密钥)</code> 的前后 16 位：</p>
+<pre><code class="hljs language-php"><span class="hljs-keyword">echo</span> <span class="hljs-title function_ invoke__">substr</span>(<span class="hljs-title function_ invoke__">md5</span>(<span class="hljs-variable">$pass</span>.<span class="hljs-variable">$key</span>),0,16);
+<span class="hljs-keyword">echo</span> <span class="hljs-title function_ invoke__">base64_encode</span>(<span class="hljs-title function_ invoke__">encode</span>(@<span class="hljs-title function_ invoke__">run</span>(<span class="hljs-variable">$data</span>),<span class="hljs-variable">$key</span>));
+<span class="hljs-keyword">echo</span> <span class="hljs-title function_ invoke__">substr</span>(<span class="hljs-title function_ invoke__">md5</span>(<span class="hljs-variable">$pass</span>.<span class="hljs-variable">$key</span>),16);
+</code></pre>
+<p>连接密码可从请求包 POST 参数得到，据此可爆破密钥：</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> hashlib
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">md5_encode</span>(<span class="hljs-params">text</span>):
+    <span class="hljs-keyword">return</span> hashlib.md5(text.encode(<span class="hljs-string">'utf-8'</span>)).hexdigest()
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">crack_key</span>(<span class="hljs-params">key_list, target_hash</span>):
+    pwd = <span class="hljs-string">"Antsword"</span>  <span class="hljs-comment"># 哥斯拉的连接密码</span>
+    <span class="hljs-keyword">for</span> key <span class="hljs-keyword">in</span> key_list:
+        tmp = md5_encode(key)            <span class="hljs-comment"># 明文密钥的 MD5</span>
+        tmp_hash = md5_encode(pwd + tmp[:<span class="hljs-number">16</span>])
+        <span class="hljs-keyword">if</span> tmp_hash == target_hash:
+            <span class="hljs-built_in">print</span>(<span class="hljs-string">f"[+] 密钥爆破成功: <span class="hljs-subst">{key}</span>"</span>)
+            <span class="hljs-built_in">print</span>(<span class="hljs-string">f"[+] 用于解密哥斯拉流量的密钥为 <span class="hljs-subst">{tmp[:<span class="hljs-number">16</span>]}</span>"</span>)
+
+<span class="hljs-comment"># 响应中返回的 hash 与字典</span>
+crack_key([<span class="hljs-string">"Antsw0rd"</span>], <span class="hljs-string">"e71f50e9773b23f9792dea3a7ae385ca"</span>)
+</code></pre>
+<p>异或解密核心（密钥第二位开始）：</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">xor_decode</span>(<span class="hljs-params">data: <span class="hljs-built_in">bytes</span>, key: <span class="hljs-built_in">bytes</span></span>) -> <span class="hljs-built_in">bytes</span>:
+    result = <span class="hljs-built_in">bytearray</span>()
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(data)):
+        c = key[(i + <span class="hljs-number">1</span>) &#x26; <span class="hljs-number">15</span>]
+        result.append(data[i] ^ c)
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">bytes</span>(result)
+</code></pre>
+<h4 id="6-7-3-冰蝎">6.7.3 冰蝎</h4>
+<ul>
+<li>默认密钥：<code>e45e329feb5d925b</code>（<code>md5("rebeyond")</code> 的前 16 位）</li>
+<li>加密方式：异或（与哥斯拉类似）或 AES（ECB/CBC）</li>
+<li>找不到密钥时可先尝试默认密钥，或用 PuzzleSolver 爆破</li>
+</ul>
+<p><strong>XOR 解密：</strong> 把密钥第一位放到最后一位再异或。</p>
+<p><strong>AES-CBC 解密（默认 PHP Webshell）：</strong></p>
+<ul>
+<li>冰蝎 4.0 默认 IV 为 16 个 <code>\x00</code></li>
+<li><code>openssl_decrypt($post, "AES128", $key)</code> 未传 IV，默认使用全 0 IV（AES-128-CBC）</li>
+<li>自定义 IV 时需填入对应 IV（如 <code>0123456789abcdef</code>）</li>
+</ul>
+<pre><code class="hljs language-python"><span class="hljs-comment"># AES-CBC 解密</span>
+<span class="hljs-keyword">from</span> Crypto.Cipher <span class="hljs-keyword">import</span> AES
+<span class="hljs-keyword">import</span> base64
+
+key = <span class="hljs-string">"e45e329feb5d925b"</span>.encode(<span class="hljs-string">'utf-8'</span>).ljust(<span class="hljs-number">16</span>, <span class="hljs-string">b'\x00'</span>)
+iv = <span class="hljs-string">b'\x00'</span> * <span class="hljs-number">16</span>
+cipher = AES.new(key, AES.MODE_CBC, iv)
+decrypted = cipher.decrypt(base64.b64decode(ciphertext))
+</code></pre>
+<h4 id="6-7-4-蚁剑">6.7.4 蚁剑</h4>
+<p>蚁剑支持多种编码器（Reverse、ROT13、RSA 等），分析注意点：</p>
+<ul>
+<li>先判断攻击者用的编码器</li>
+<li>路径 base64 字符串需<strong>去除前两个字符</strong>后再解码</li>
+<li>响应数据头尾有额外字符，需先去除再 base64 解码</li>
+</ul>
+<hr>
+<h3 id="6-8-sql-注入流量分析">6.8 SQL 注入流量分析</h3>
+<p>用 Wireshark 过滤器过滤出注入流量并导出，再用 tshark 按字段提取注入语句；盲注直接写正则匹配脚本提取数据即可。</p>
+<pre><code class="hljs language-bash">tshark -r traffic.pcap -Y <span class="hljs-string">"http.request"</span> -T fields -e http.request.uri | grep -i <span class="hljs-string">"union\|select\|sleep"</span>
+</code></pre>
+<hr>
+<h3 id="6-9-cobaltstrike-流量分析">6.9 CobaltStrike 流量分析</h3>
+<p>CobaltStrike 的 Beacon 与 Team Server 之间使用 AES（CBC）加密 + HMAC 校验通信。</p>
+<ul>
+<li><strong>解密条件</strong>：需要 <code>AES key</code> 与 <code>HMAC key</code>，可从 <code>.cobaltstrike.beacon_keys</code> 密钥对文件提取，或从 Beacon 配置中提取</li>
+<li><strong>Beacon 特征</strong>：HTTP 心跳请求间隔固定、特定 Cookie/URI 模式</li>
+<li><strong>工具</strong>：<code>cs-decrypt-traffic.py</code>、<code>1768.py</code> 等</li>
+</ul>
+<pre><code>AES key:  9fe14473479a283821241e2af78017e8
+HMAC key: 1e3d54f1b9f0e106773a59b7c379a89d
+</code></pre>
+<hr>
+<h3 id="6-10-ntlm-认证流量分析">6.10 NTLM 认证流量分析</h3>
+<p>NTLM 是 Windows 挑战/响应认证协议，消息嵌入在 SMB/HTTP/LDAP 等上层协议中，由三种消息构成：</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Type 1（协商）</td>
+<td>客户端告知协议版本与功能</td>
+</tr>
+<tr>
+<td>Type 2（质询）</td>
+<td>服务器下发 8 字节 Challenge</td>
+</tr>
+<tr>
+<td>Type 3（验证）</td>
+<td>客户端返回用户名、域名与 Response</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Net-NTLM Hash 格式：</strong></p>
+<ul>
+<li>Net-NTLMv1：<code>username::hostname:LM response:NTLM response:challenge</code>（已废弃，易破解）</li>
+<li>Net-NTLMv2：<code>username::domain:challenge:HMAC-MD5:blob</code></li>
+</ul>
+<p><strong>NTLMv2 提取与爆破（SMB/HTTP）：</strong></p>
+<ol>
+<li>过滤 <code>ntlmssp</code>，在成功认证的包的 <code>Security Blob</code> 中复制 <code>User name</code>、<code>Domain name</code></li>
+<li>从 <code>NTLMSSP_AUTH</code> 复制 <code>ntlmv2_response</code>（其开头即 <code>NTProofStr</code>）</li>
+<li>从 <code>Session Setup Response</code> 复制 <code>NTLM Server Challenge</code></li>
+<li>组合为：<code>username::domain:ServerChallenge:NTProofStr:ntlmv2_response</code></li>
+</ol>
+<pre><code class="hljs language-bash">hashcat -m 5600 hash.txt rockyou.txt
+</code></pre>
+<p>示例：</p>
+<pre><code>administrator::WIN2008:9a88373dbb4f5e36:4eb74543b9962bb2ca36e938909bb930:0101000000000000...
+</code></pre>
+<blockquote>
+<p>SMTP 中的 NTLM 信息可能 base64 编码，分析前需先解码。</p>
+</blockquote>
+<hr>
+<h3 id="6-11-kerberos-认证流量分析">6.11 Kerberos 认证流量分析</h3>
+<p>Kerberos 是 MIT 提出的网络认证协议，通过 KDC（密钥分发中心）签发票据控制访问。三个角色：客户端、服务器、KDC。</p>
+<p><strong>认证流程：</strong></p>
+<ol>
+<li><strong>AS Exchange</strong>：<code>AS-REQ</code>（客户端请求）→ <code>AS-REP</code>（KDC 返回 TGT）</li>
+<li><strong>TGS Exchange</strong>：<code>TGS-REQ</code>（请求服务票据）→ <code>TGS-REP</code>（返回 Service Ticket）</li>
+<li><strong>AP Exchange</strong>：<code>AP-REQ</code>（访问服务）→ <code>AP-REP</code>（权限验证）</li>
+</ol>
+<p><strong>PAC</strong>：微软扩展，在票据中嵌入用户 SID 与组信息，用 KDC 密钥与服务端哈希双重签名。</p>
+<p><strong>解密 Kerberos 流量：</strong> 制作 keytab 文件并在 Wireshark <code>协议 → KRB5</code> 导入。Realm（域名）与 principal（主体名）从 <code>AS-REP</code> 获取（注意大小写），salt = Realm + principal。</p>
+<pre><code class="hljs language-bash"><span class="hljs-comment"># 生成 keytab（需要 Realm、principal、密码）</span>
+ktpass -princ &#x3C;principal> -pass &#x3C;password> -ptype KRB5_NT_PRINCIPAL -out keytab
+</code></pre>
 <hr>
 <h2 id="七-wireshark高级功能">七、Wireshark高级功能</h2>
 <h3 id="7-1-follow-stream-追踪流">7.1 Follow Stream（追踪流）</h3>
@@ -2383,6 +2585,6 @@ tcp_port:add(<span class="hljs-number">12345</span>, custom_proto)
 </code></pre>
 <p>通过不断练习和总结，流量分析能力会逐渐提升，成为CTF比赛中的强力武器。</p>
 <hr>
-<p><em>本文总结了CTF流量分析中Wireshark的核心使用技巧和实战经验，希望对大家有所帮助。如有补充或疑问，欢迎交流讨论！</em></p>2:["$","div",null,{"className":"min-h-screen","children":[["$","$L8",null,{}],["$","div",null,{"className":"max-w-6xl mx-auto px-3 sm:px-4 py-8 sm:py-12","children":[["$","$L9",null,{"href":"/","className":"inline-block mb-6 sm:mb-8 text-primary hover:underline","children":"← 返回首页"}],["$","div",null,{"className":"flex flex-col lg:flex-row gap-6 lg:gap-8","children":[["$","article",null,{"className":"flex-1 min-w-0","children":[["$","header",null,{"className":"mb-6 sm:mb-8","children":[["$","h1",null,{"className":"text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4","children":"CTF流量分析经验总结——Wireshark实战指南"}],["$","time",null,{"className":"text-gray-500 text-sm sm:text-base","children":"2026-07-20"}]]}],["$","div",null,{"className":"prose-container overflow-x-auto","children":["$","$La",null,{"htmlContent":"$b"}]}]]}],["$","aside",null,{"className":"w-full lg:w-64 flex-shrink-0","children":["$","$Lc",null,{"headings":[{"id":"一-流量分析概述","text":"一、流量分析概述","level":2},{"id":"二-wireshark界面详解","text":"二、Wireshark界面详解","level":2},{"id":"2-1-主界面布局","text":"2.1 主界面布局","level":3},{"id":"2-2-工具栏按钮说明","text":"2.2 工具栏按钮说明","level":3},{"id":"三-分析方法论","text":"三、分析方法论","level":2},{"id":"3-1-常规分析流程","text":"3.1 常规分析流程","level":3},{"id":"3-2-快速定位策略","text":"3.2 快速定位策略","level":3},{"id":"四-显示过滤器详解","text":"四、显示过滤器详解","level":2},{"id":"4-1-基础语法","text":"4.1 基础语法","level":3},{"id":"4-2-常用过滤表达式速查表","text":"4.2 常用过滤表达式速查表","level":3},{"id":"五-常见协议分析技巧-wireshark操作","text":"五、常见协议分析技巧（Wireshark操作）","level":2},{"id":"5-1-http协议分析","text":"5.1 HTTP协议分析","level":3},{"id":"5-2-https-tls协议分析","text":"5.2 HTTPS/TLS协议分析","level":3},{"id":"5-3-dns协议分析","text":"5.3 DNS协议分析","level":3},{"id":"5-4-ftp协议分析","text":"5.4 FTP协议分析","level":3},{"id":"5-5-icmp协议分析","text":"5.5 ICMP协议分析","level":3},{"id":"5-6-smb协议分析","text":"5.6 SMB协议分析","level":3},{"id":"5-7-tcp协议深度分析","text":"5.7 TCP协议深度分析","level":3},{"id":"5-8-udp协议分析","text":"5.8 UDP协议分析","level":3},{"id":"5-9-ssh协议分析","text":"5.9 SSH协议分析","level":3},{"id":"5-10-telnet协议分析","text":"5.10 Telnet协议分析","level":3},{"id":"5-11-smtp协议分析","text":"5.11 SMTP协议分析","level":3},{"id":"5-12-pop3协议分析","text":"5.12 POP3协议分析","level":3},{"id":"5-13-imap协议分析","text":"5.13 IMAP协议分析","level":3},{"id":"5-14-snmp协议分析","text":"5.14 SNMP协议分析","level":3},{"id":"5-15-arp协议分析","text":"5.15 ARP协议分析","level":3},{"id":"5-16-dhcp协议分析","text":"5.16 DHCP协议分析","level":3},{"id":"六-特殊流量分析","text":"六、特殊流量分析","level":2},{"id":"6-1-usb流量分析","text":"6.1 USB流量分析","level":3},{"id":"6-2-无线流量分析-802-11","text":"6.2 无线流量分析（802.11）","level":3},{"id":"6-3-rdp协议分析","text":"6.3 RDP协议分析","level":3},{"id":"6-4-流量隐蔽技术分析","text":"6.4 流量隐蔽技术分析","level":3},{"id":"七-wireshark高级功能","text":"七、Wireshark高级功能","level":2},{"id":"7-1-follow-stream-追踪流","text":"7.1 Follow Stream（追踪流）","level":3},{"id":"7-2-expert-information-专家信息","text":"7.2 Expert Information（专家信息）","level":3},{"id":"7-3-统计功能详解","text":"7.3 统计功能详解","level":3},{"id":"7-3-1-protocol-hierarchy-协议层次","text":"7.3.1 Protocol Hierarchy（协议层次）","level":4},{"id":"7-3-2-endpoints-端点统计","text":"7.3.2 Endpoints（端点统计）","level":4},{"id":"7-3-3-conversations-会话统计","text":"7.3.3 Conversations（会话统计）","level":4},{"id":"7-3-4-io-graphs-io图表","text":"7.3.4 IO Graphs（IO图表）","level":4},{"id":"7-3-5-flow-graph-流图","text":"7.3.5 Flow Graph（流图）","level":4},{"id":"7-4-文件提取","text":"7.4 文件提取","level":3},{"id":"7-4-1-导出http对象","text":"7.4.1 导出HTTP对象","level":4},{"id":"7-4-2-导出smb对象","text":"7.4.2 导出SMB对象","level":4},{"id":"7-4-3-手动提取数据","text":"7.4.3 手动提取数据","level":4},{"id":"7-5-数据包标记","text":"7.5 数据包标记","level":3},{"id":"7-6-时间显示格式","text":"7.6 时间显示格式","level":3},{"id":"八-实战案例分析","text":"八、实战案例分析","level":2},{"id":"案例一-http流量中的隐藏flag","text":"案例一：HTTP流量中的隐藏Flag","level":3},{"id":"案例二-dns隧道数据提取","text":"案例二：DNS隧道数据提取","level":3},{"id":"案例三-usb键盘流量还原","text":"案例三：USB键盘流量还原","level":3},{"id":"案例四-自定义协议分析","text":"案例四：自定义协议分析","level":3},{"id":"九-常见坑与避坑指南","text":"九、常见坑与避坑指南","level":2},{"id":"9-1-时间同步问题","text":"9.1 时间同步问题","level":3},{"id":"9-2-加密流量处理","text":"9.2 加密流量处理","level":3},{"id":"9-3-大数据量处理","text":"9.3 大数据量处理","level":3},{"id":"9-4-协议混淆","text":"9.4 协议混淆","level":3},{"id":"9-5-usb设备地址识别","text":"9.5 USB设备地址识别","level":3},{"id":"十-wireshark配置优化","text":"十、Wireshark配置优化","level":2},{"id":"10-1-界面配置","text":"10.1 界面配置","level":3},{"id":"10-2-协议配置","text":"10.2 协议配置","level":3},{"id":"10-3-性能优化","text":"10.3 性能优化","level":3},{"id":"10-4-profile管理","text":"10.4 Profile管理","level":3},{"id":"10-5-lua脚本解析自定义协议","text":"10.5 Lua脚本解析自定义协议","level":3},{"id":"十一-学习资源推荐","text":"十一、学习资源推荐","level":2},{"id":"11-1-在线资源","text":"11.1 在线资源","level":3},{"id":"11-2-练习平台","text":"11.2 练习平台","level":3},{"id":"11-3-社区资源","text":"11.3 社区资源","level":3},{"id":"十二-总结","text":"十二、总结","level":2},{"id":"协议分析考点速览","text":"协议分析考点速览","level":3},{"id":"核心解题能力","text":"核心解题能力","level":3},{"id":"解题流程总结","text":"解题流程总结","level":3}]}]}]]}]]}],["$","footer",null,{"className":"bg-gray-900 text-gray-300","children":[["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-12","children":["$","div",null,{"className":"flex flex-col md:flex-row justify-between","children":["$","div",null,{"children":[["$","h4",null,{"className":"text-gray-400 mb-4","children":"链接"}],["$","ul",null,{"className":"space-y-2","children":["$","li",null,{"children":["$","a",null,{"href":"https://github.com/hao0632","target":"_blank","rel":"noopener noreferrer","className":"hover:text-white transition-colors","children":"GitHub"}]}]}]]}]}]}],["$","div",null,{"className":"border-t border-gray-800","children":["$","div",null,{"className":"px-4 py-4","children":["$","p",null,{"className":"text-center text-gray-500 text-sm","children":"© 2026 hao-0632's blog"}]}]}]]}]]}]
+<p><em>本文总结了CTF流量分析中Wireshark的核心使用技巧和实战经验，希望对大家有所帮助。如有补充或疑问，欢迎交流讨论！</em></p>2:["$","div",null,{"className":"min-h-screen","children":[["$","$L8",null,{}],["$","div",null,{"className":"max-w-6xl mx-auto px-3 sm:px-4 py-8 sm:py-12","children":[["$","$L9",null,{"href":"/","className":"inline-block mb-6 sm:mb-8 text-primary hover:underline","children":"← 返回首页"}],["$","div",null,{"className":"flex flex-col lg:flex-row gap-6 lg:gap-8","children":[["$","article",null,{"className":"flex-1 min-w-0","children":[["$","header",null,{"className":"mb-6 sm:mb-8","children":[["$","h1",null,{"className":"text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4","children":"CTF流量分析经验总结——Wireshark实战指南"}],["$","time",null,{"className":"text-gray-500 text-sm sm:text-base","children":"2026-07-20"}]]}],["$","div",null,{"className":"prose-container overflow-x-auto","children":["$","$La",null,{"htmlContent":"$b"}]}]]}],["$","aside",null,{"className":"w-full lg:w-64 flex-shrink-0","children":["$","$Lc",null,{"headings":[{"id":"一-流量分析概述","text":"一、流量分析概述","level":2},{"id":"二-wireshark界面详解","text":"二、Wireshark界面详解","level":2},{"id":"2-1-主界面布局","text":"2.1 主界面布局","level":3},{"id":"2-2-工具栏按钮说明","text":"2.2 工具栏按钮说明","level":3},{"id":"三-分析方法论","text":"三、分析方法论","level":2},{"id":"3-1-常规分析流程","text":"3.1 常规分析流程","level":3},{"id":"3-2-快速定位策略","text":"3.2 快速定位策略","level":3},{"id":"3-3-ctf-通用分析思路速查","text":"3.3 CTF 通用分析思路速查","level":3},{"id":"四-显示过滤器详解","text":"四、显示过滤器详解","level":2},{"id":"4-1-基础语法","text":"4.1 基础语法","level":3},{"id":"4-2-常用过滤表达式速查表","text":"4.2 常用过滤表达式速查表","level":3},{"id":"五-常见协议分析技巧-wireshark操作","text":"五、常见协议分析技巧（Wireshark操作）","level":2},{"id":"5-1-http协议分析","text":"5.1 HTTP协议分析","level":3},{"id":"5-2-https-tls协议分析","text":"5.2 HTTPS/TLS协议分析","level":3},{"id":"5-3-dns协议分析","text":"5.3 DNS协议分析","level":3},{"id":"5-4-ftp协议分析","text":"5.4 FTP协议分析","level":3},{"id":"5-5-icmp协议分析","text":"5.5 ICMP协议分析","level":3},{"id":"5-6-smb协议分析","text":"5.6 SMB协议分析","level":3},{"id":"5-7-tcp协议深度分析","text":"5.7 TCP协议深度分析","level":3},{"id":"5-8-udp协议分析","text":"5.8 UDP协议分析","level":3},{"id":"5-9-ssh协议分析","text":"5.9 SSH协议分析","level":3},{"id":"5-10-telnet协议分析","text":"5.10 Telnet协议分析","level":3},{"id":"5-11-smtp协议分析","text":"5.11 SMTP协议分析","level":3},{"id":"5-12-pop3协议分析","text":"5.12 POP3协议分析","level":3},{"id":"5-13-imap协议分析","text":"5.13 IMAP协议分析","level":3},{"id":"5-14-snmp协议分析","text":"5.14 SNMP协议分析","level":3},{"id":"5-15-arp协议分析","text":"5.15 ARP协议分析","level":3},{"id":"5-16-dhcp协议分析","text":"5.16 DHCP协议分析","level":3},{"id":"六-特殊流量分析","text":"六、特殊流量分析","level":2},{"id":"6-1-usb流量分析","text":"6.1 USB流量分析","level":3},{"id":"6-2-无线流量分析-802-11","text":"6.2 无线流量分析（802.11）","level":3},{"id":"6-3-rdp协议分析","text":"6.3 RDP协议分析","level":3},{"id":"6-4-流量隐蔽技术分析","text":"6.4 流量隐蔽技术分析","level":3},{"id":"6-5-蓝牙协议分析-obex","text":"6.5 蓝牙协议分析（OBEX）","level":3},{"id":"6-6-哥斯拉-godzilla-webshell-流量特征","text":"6.6 哥斯拉（Godzilla）WebShell 流量特征","level":3},{"id":"6-7-webshell-流量分析详解","text":"6.7 Webshell 流量分析详解","level":3},{"id":"6-7-1-菜刀","text":"6.7.1 菜刀","level":4},{"id":"6-7-2-哥斯拉","text":"6.7.2 哥斯拉","level":4},{"id":"6-7-3-冰蝎","text":"6.7.3 冰蝎","level":4},{"id":"6-7-4-蚁剑","text":"6.7.4 蚁剑","level":4},{"id":"6-8-sql-注入流量分析","text":"6.8 SQL 注入流量分析","level":3},{"id":"6-9-cobaltstrike-流量分析","text":"6.9 CobaltStrike 流量分析","level":3},{"id":"6-10-ntlm-认证流量分析","text":"6.10 NTLM 认证流量分析","level":3},{"id":"6-11-kerberos-认证流量分析","text":"6.11 Kerberos 认证流量分析","level":3},{"id":"七-wireshark高级功能","text":"七、Wireshark高级功能","level":2},{"id":"7-1-follow-stream-追踪流","text":"7.1 Follow Stream（追踪流）","level":3},{"id":"7-2-expert-information-专家信息","text":"7.2 Expert Information（专家信息）","level":3},{"id":"7-3-统计功能详解","text":"7.3 统计功能详解","level":3},{"id":"7-3-1-protocol-hierarchy-协议层次","text":"7.3.1 Protocol Hierarchy（协议层次）","level":4},{"id":"7-3-2-endpoints-端点统计","text":"7.3.2 Endpoints（端点统计）","level":4},{"id":"7-3-3-conversations-会话统计","text":"7.3.3 Conversations（会话统计）","level":4},{"id":"7-3-4-io-graphs-io图表","text":"7.3.4 IO Graphs（IO图表）","level":4},{"id":"7-3-5-flow-graph-流图","text":"7.3.5 Flow Graph（流图）","level":4},{"id":"7-4-文件提取","text":"7.4 文件提取","level":3},{"id":"7-4-1-导出http对象","text":"7.4.1 导出HTTP对象","level":4},{"id":"7-4-2-导出smb对象","text":"7.4.2 导出SMB对象","level":4},{"id":"7-4-3-手动提取数据","text":"7.4.3 手动提取数据","level":4},{"id":"7-5-数据包标记","text":"7.5 数据包标记","level":3},{"id":"7-6-时间显示格式","text":"7.6 时间显示格式","level":3},{"id":"八-实战案例分析","text":"八、实战案例分析","level":2},{"id":"案例一-http流量中的隐藏flag","text":"案例一：HTTP流量中的隐藏Flag","level":3},{"id":"案例二-dns隧道数据提取","text":"案例二：DNS隧道数据提取","level":3},{"id":"案例三-usb键盘流量还原","text":"案例三：USB键盘流量还原","level":3},{"id":"案例四-自定义协议分析","text":"案例四：自定义协议分析","level":3},{"id":"九-常见坑与避坑指南","text":"九、常见坑与避坑指南","level":2},{"id":"9-1-时间同步问题","text":"9.1 时间同步问题","level":3},{"id":"9-2-加密流量处理","text":"9.2 加密流量处理","level":3},{"id":"9-3-大数据量处理","text":"9.3 大数据量处理","level":3},{"id":"9-4-协议混淆","text":"9.4 协议混淆","level":3},{"id":"9-5-usb设备地址识别","text":"9.5 USB设备地址识别","level":3},{"id":"十-wireshark配置优化","text":"十、Wireshark配置优化","level":2},{"id":"10-1-界面配置","text":"10.1 界面配置","level":3},{"id":"10-2-协议配置","text":"10.2 协议配置","level":3},{"id":"10-3-性能优化","text":"10.3 性能优化","level":3},{"id":"10-4-profile管理","text":"10.4 Profile管理","level":3},{"id":"10-5-lua脚本解析自定义协议","text":"10.5 Lua脚本解析自定义协议","level":3},{"id":"十一-学习资源推荐","text":"十一、学习资源推荐","level":2},{"id":"11-1-在线资源","text":"11.1 在线资源","level":3},{"id":"11-2-练习平台","text":"11.2 练习平台","level":3},{"id":"11-3-社区资源","text":"11.3 社区资源","level":3},{"id":"十二-总结","text":"十二、总结","level":2},{"id":"协议分析考点速览","text":"协议分析考点速览","level":3},{"id":"核心解题能力","text":"核心解题能力","level":3},{"id":"解题流程总结","text":"解题流程总结","level":3}]}]}]]}]]}],["$","footer",null,{"className":"bg-gray-900 text-gray-300","children":[["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-12","children":["$","div",null,{"className":"flex flex-col md:flex-row justify-between","children":["$","div",null,{"children":[["$","h4",null,{"className":"text-gray-400 mb-4","children":"链接"}],["$","ul",null,{"className":"space-y-2","children":["$","li",null,{"children":["$","a",null,{"href":"https://github.com/hao0632","target":"_blank","rel":"noopener noreferrer","className":"hover:text-white transition-colors","children":"GitHub"}]}]}]]}]}]}],["$","div",null,{"className":"border-t border-gray-800","children":["$","div",null,{"className":"px-4 py-4","children":["$","p",null,{"className":"text-center text-gray-500 text-sm","children":"© 2026 hao-0632's blog"}]}]}]]}]]}]
 7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"CTF流量分析经验总结——Wireshark实战指南"}],["$","meta","3",{"name":"description","content":"全面总结CTF流量分析中Wireshark的核心使用技巧和实战经验"}],["$","link","4",{"rel":"icon","href":"/cat.ico"}]]
 1:null

@@ -2,12 +2,12 @@
 5:I[1343,[],""]
 6:I[4160,["231","static/chunks/231-b93649757f649385.js","185","static/chunks/app/layout-603d8450bfb17fff.js"],"default"]
 4:["slug","emergency-response-guide","d"]
-0:["LSUCvymUwzmU59fbxoRXD",[[["",{"children":["posts",{"children":[["slug","emergency-response-guide","d"],{"children":["__PAGE__?{\"slug\":\"emergency-response-guide\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["slug","emergency-response-guide","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"min-h-screen bg-gray-50","children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/my-blog/_next/static/css/dcff1c60784e8674.css","precedence":"next","crossOrigin":"$undefined"}]],"$L7"]]]]
+0:["DCEOCuOMtFkZUF1bhCTvk",[[["",{"children":["posts",{"children":[["slug","emergency-response-guide","d"],{"children":["__PAGE__?{\"slug\":\"emergency-response-guide\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["slug","emergency-response-guide","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"min-h-screen bg-gray-50","children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/my-blog/_next/static/css/dcff1c60784e8674.css","precedence":"next","crossOrigin":"$undefined"}]],"$L7"]]]]
 8:I[7311,["231","static/chunks/231-b93649757f649385.js","333","static/chunks/app/posts/%5Bslug%5D/page-acbdac4e5e2638c9.js"],"default"]
 9:I[231,["231","static/chunks/231-b93649757f649385.js","333","static/chunks/app/posts/%5Bslug%5D/page-acbdac4e5e2638c9.js"],""]
 a:I[3132,["231","static/chunks/231-b93649757f649385.js","333","static/chunks/app/posts/%5Bslug%5D/page-acbdac4e5e2638c9.js"],"default"]
 c:I[7125,["231","static/chunks/231-b93649757f649385.js","333","static/chunks/app/posts/%5Bslug%5D/page-acbdac4e5e2638c9.js"],"default"]
-b:T10a74,<h1>应急响应经验总结——全生命周期实战指南</h1>
+b:T11c47,<h1>应急响应经验总结——全生命周期实战指南</h1>
 <h2 id="一-应急响应概述">一、应急响应概述</h2>
 <p>应急响应（Incident Response）是指在安全事件发生后，快速识别、评估、遏制、根除和恢复的过程。有效的应急响应能够最大限度地减少安全事件造成的损失，保护组织的关键资产。</p>
 <p><strong>核心原则：</strong></p>
@@ -1518,6 +1518,180 @@ exiftool &#x3C;FilePath>
 </tr>
 </tbody>
 </table>
+<h3 id="9-4-在线恶意文件检测平台">9.4 在线恶意文件检测平台</h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VirusTotal</td>
+<td><a href="https://www.virustotal.com/gui/home/upload">https://www.virustotal.com/gui/home/upload</a></td>
+</tr>
+<tr>
+<td>VirSCAN</td>
+<td><a href="https://www.virscan.org/">https://www.virscan.org/</a></td>
+</tr>
+<tr>
+<td>Virus Scan by Jotti</td>
+<td><a href="https://virusscan.jotti.org/">https://virusscan.jotti.org/</a></td>
+</tr>
+<tr>
+<td>ScanVir</td>
+<td><a href="http://www.scanvir.com/">http://www.scanvir.com/</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="9-5-ip-识别与威胁情报">9.5 IP 识别与威胁情报</h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IP138</td>
+<td><a href="http://www.ip138.com/">http://www.ip138.com/</a></td>
+</tr>
+<tr>
+<td>微步在线</td>
+<td><a href="https://x.threatbook.cn/">https://x.threatbook.cn/</a></td>
+</tr>
+<tr>
+<td>站长工具</td>
+<td><a href="https://ip.tool.chinaz.com/">https://ip.tool.chinaz.com/</a></td>
+</tr>
+<tr>
+<td>深信服 TI</td>
+<td><a href="https://ti.sangfor.com.cn/analysis-platform">https://ti.sangfor.com.cn/analysis-platform</a></td>
+</tr>
+<tr>
+<td>360 威胁情报</td>
+<td><a href="https://ti.360.net/">https://ti.360.net/</a></td>
+</tr>
+<tr>
+<td>绿盟 TI</td>
+<td><a href="https://ti.nsfocus.com/">https://ti.nsfocus.com/</a></td>
+</tr>
+<tr>
+<td>IBM X-Force</td>
+<td><a href="https://exchange.xforce.ibmcloud.com/">https://exchange.xforce.ibmcloud.com/</a></td>
+</tr>
+<tr>
+<td>ThreatMiner</td>
+<td><a href="https://www.threatminer.org/">https://www.threatminer.org/</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>IOC 情报</strong>：域名、IP、URL、SSL 证书、Hash 等。</p>
+<h3 id="9-6-勒索病毒解密资源">9.6 勒索病毒解密资源</h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No More Ransom</td>
+<td><a href="https://www.nomoreransom.org/zh/index.html">https://www.nomoreransom.org/zh/index.html</a></td>
+</tr>
+<tr>
+<td>360 勒索病毒解密</td>
+<td><a href="http://lesuobingdu.360.cn/">http://lesuobingdu.360.cn/</a></td>
+</tr>
+<tr>
+<td>ID-Ransomware</td>
+<td><a href="https://id-ransomware.malwarehunterteam.com/">https://id-ransomware.malwarehunterteam.com/</a></td>
+</tr>
+<tr>
+<td>腾讯管家</td>
+<td><a href="https://guanjia.qq.com/pr/ls/">https://guanjia.qq.com/pr/ls/</a></td>
+</tr>
+<tr>
+<td>启明星辰</td>
+<td><a href="https://lesuo.venuseye.com.cn/">https://lesuo.venuseye.com.cn/</a></td>
+</tr>
+<tr>
+<td>奇安信</td>
+<td><a href="https://lesuobingdu.qianxin.com/">https://lesuobingdu.qianxin.com/</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="9-7-云沙箱平台">9.7 云沙箱平台</h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>链接</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Any.Run</td>
+<td><a href="https://app.any.run/">https://app.any.run/</a></td>
+<td>交互式沙箱</td>
+</tr>
+<tr>
+<td>微步云沙箱</td>
+<td><a href="https://s.threatbook.cn/">https://s.threatbook.cn/</a></td>
+<td>信息详细</td>
+</tr>
+<tr>
+<td>VirusTotal</td>
+<td><a href="https://www.virustotal.com/gui/">https://www.virustotal.com/gui/</a></td>
+<td>多引擎扫描</td>
+</tr>
+<tr>
+<td>JoeSandbox</td>
+<td><a href="https://www.joesandbox.com/">https://www.joesandbox.com/</a></td>
+<td>深度行为分析</td>
+</tr>
+<tr>
+<td>腾讯哈勃</td>
+<td><a href="https://habo.qq.com/">https://habo.qq.com/</a></td>
+<td>—</td>
+</tr>
+<tr>
+<td>360 沙箱云</td>
+<td><a href="https://ata.360.cn/detection">https://ata.360.cn/detection</a></td>
+<td>APK 分析</td>
+</tr>
+<tr>
+<td>奇安信沙箱</td>
+<td><a href="https://sandbox.ti.qianxin.com/sandbox/page">https://sandbox.ti.qianxin.com/sandbox/page</a></td>
+<td>—</td>
+</tr>
+<tr>
+<td>微点沙箱</td>
+<td><a href="https://sandbox.depthsec.com.cn/index.php/">https://sandbox.depthsec.com.cn/index.php/</a></td>
+<td>—</td>
+</tr>
+<tr>
+<td>大圣云沙箱</td>
+<td><a href="https://mac-cloud.riskivy.com">https://mac-cloud.riskivy.com</a></td>
+<td>—</td>
+</tr>
+<tr>
+<td>魔盾安全分析</td>
+<td><a href="https://www.maldun.com/analysis/">https://www.maldun.com/analysis/</a></td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3 id="9-8-病毒查杀与-rootkit-检测">9.8 病毒查杀与 Rootkit 检测</h3>
+<ul>
+<li>杀毒：360 杀毒、火绒、ClamAV（Linux）、Dr.Web CureIt。</li>
+<li>Rootkit 检测：<code>chkrootkit</code>、<code>rkhunter</code>。</li>
+<li>进程类工具：PC Hunter、Procmon、Process Explorer。</li>
+</ul>
 <hr>
 <h2 id="十-证据保全">十、证据保全</h2>
 <h3 id="10-1-证据链管理">10.1 证据链管理</h3>
@@ -2444,6 +2618,6 @@ net user &#x3C;Username> /active:no  <span class="hljs-comment"># Windows</span>
 </ol>
 <p>通过不断学习和实践，应急响应能力会逐渐提升，成为保护组织安全的中坚力量。</p>
 <hr>
-<p><em>本文总结了应急响应全生命周期的核心知识点和实战经验，希望对大家有所帮助。如有补充或疑问，欢迎交流讨论！</em></p>2:["$","div",null,{"className":"min-h-screen","children":[["$","$L8",null,{}],["$","div",null,{"className":"max-w-6xl mx-auto px-3 sm:px-4 py-8 sm:py-12","children":[["$","$L9",null,{"href":"/","className":"inline-block mb-6 sm:mb-8 text-primary hover:underline","children":"← 返回首页"}],["$","div",null,{"className":"flex flex-col lg:flex-row gap-6 lg:gap-8","children":[["$","article",null,{"className":"flex-1 min-w-0","children":[["$","header",null,{"className":"mb-6 sm:mb-8","children":[["$","h1",null,{"className":"text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4","children":"应急响应经验总结——全生命周期实战指南"}],["$","time",null,{"className":"text-gray-500 text-sm sm:text-base","children":"2026-07-20"}]]}],["$","div",null,{"className":"prose-container overflow-x-auto","children":["$","$La",null,{"htmlContent":"$b"}]}]]}],["$","aside",null,{"className":"w-full lg:w-64 flex-shrink-0","children":["$","$Lc",null,{"headings":[{"id":"一-应急响应概述","text":"一、应急响应概述","level":2},{"id":"二-准备阶段-preparation","text":"二、准备阶段（Preparation）","level":2},{"id":"2-1-应急响应团队组建","text":"2.1 应急响应团队组建","level":3},{"id":"2-2-工具包准备","text":"2.2 工具包准备","level":3},{"id":"2-3-预案制定","text":"2.3 预案制定","level":3},{"id":"三-识别阶段-identification","text":"三、识别阶段（Identification）","level":2},{"id":"3-1-检测异常指标","text":"3.1 检测异常指标","level":3},{"id":"3-2-初步评估","text":"3.2 初步评估","level":3},{"id":"四-遏制阶段-containment","text":"四、遏制阶段（Containment）","level":2},{"id":"4-1-短期遏制","text":"4.1 短期遏制","level":3},{"id":"4-2-长期遏制","text":"4.2 长期遏制","level":3},{"id":"五-windows系统取证","text":"五、Windows系统取证","level":2},{"id":"5-1-日志分析","text":"5.1 日志分析","level":3},{"id":"5-2-注册表分析","text":"5.2 注册表分析","level":3},{"id":"5-3-进程分析","text":"5.3 进程分析","level":3},{"id":"5-4-服务分析","text":"5.4 服务分析","level":3},{"id":"5-5-计划任务分析","text":"5.5 计划任务分析","level":3},{"id":"5-6-文件系统分析","text":"5.6 文件系统分析","level":3},{"id":"六-linux系统取证","text":"六、Linux系统取证","level":2},{"id":"6-1-日志分析","text":"6.1 日志分析","level":3},{"id":"6-2-用户账户分析","text":"6.2 用户账户分析","level":3},{"id":"6-3-进程分析","text":"6.3 进程分析","level":3},{"id":"6-4-网络分析","text":"6.4 网络分析","level":3},{"id":"6-5-计划任务分析","text":"6.5 计划任务分析","level":3},{"id":"6-6-启动项分析","text":"6.6 启动项分析","level":3},{"id":"6-7-文件系统分析","text":"6.7 文件系统分析","level":3},{"id":"6-8-文件完整性校验","text":"6.8 文件完整性校验","level":3},{"id":"七-内存取证","text":"七、内存取证","level":2},{"id":"7-1-内存获取","text":"7.1 内存获取","level":3},{"id":"7-2-volatility框架使用","text":"7.2 Volatility框架使用","level":3},{"id":"八-攻击溯源","text":"八、攻击溯源","level":2},{"id":"8-1-webshell检测","text":"8.1 Webshell检测","level":3},{"id":"8-2-暴力破解分析","text":"8.2 暴力破解分析","level":3},{"id":"8-3-横向移动分析","text":"8.3 横向移动分析","level":3},{"id":"8-4-权限维持分析","text":"8.4 权限维持分析","level":3},{"id":"九-恶意软件分析","text":"九、恶意软件分析","level":2},{"id":"9-1-静态分析","text":"9.1 静态分析","level":3},{"id":"9-2-动态分析","text":"9.2 动态分析","level":3},{"id":"9-3-常见恶意软件类型","text":"9.3 常见恶意软件类型","level":3},{"id":"十-证据保全","text":"十、证据保全","level":2},{"id":"10-1-证据链管理","text":"10.1 证据链管理","level":3},{"id":"10-2-证据收集顺序-order-of-volatility","text":"10.2 证据收集顺序（Order of Volatility）","level":3},{"id":"10-3-kape工具使用","text":"10.3 KAPE工具使用","level":3},{"id":"10-4-时间线分析-plaso-log2timeline","text":"10.4 时间线分析（Plaso/log2timeline）","level":3},{"id":"10-5-证据收集清单","text":"10.5 证据收集清单","level":3},{"id":"10-6-哈希校验","text":"10.6 哈希校验","level":3},{"id":"十一-根除与恢复","text":"十一、根除与恢复","level":2},{"id":"11-1-根除步骤","text":"11.1 根除步骤","level":3},{"id":"11-2-恢复步骤","text":"11.2 恢复步骤","level":3},{"id":"十二-总结阶段-lessons-learned","text":"十二、总结阶段（Lessons Learned）","level":2},{"id":"12-1-事件总结报告","text":"12.1 事件总结报告","level":3},{"id":"12-2-经验教训","text":"12.2 经验教训","level":3},{"id":"12-3-持续改进","text":"12.3 持续改进","level":3},{"id":"十三-常用工具速览","text":"十三、常用工具速览","level":2},{"id":"13-1-取证工具","text":"13.1 取证工具","level":3},{"id":"13-2-系统分析工具","text":"13.2 系统分析工具","level":3},{"id":"13-3-网络分析工具","text":"13.3 网络分析工具","level":3},{"id":"13-4-恶意软件分析工具","text":"13.4 恶意软件分析工具","level":3},{"id":"十四-学习资源推荐","text":"十四、学习资源推荐","level":2},{"id":"14-1-在线资源","text":"14.1 在线资源","level":3},{"id":"14-2-练习平台","text":"14.2 练习平台","level":3},{"id":"14-3-书籍推荐","text":"14.3 书籍推荐","level":3},{"id":"十五-应急响应快速检查清单","text":"十五、应急响应快速检查清单","level":2},{"id":"15-1-windows快速检查清单","text":"15.1 Windows快速检查清单","level":3},{"id":"15-2-linux快速检查清单","text":"15.2 Linux快速检查清单","level":3},{"id":"15-3-应急响应流程检查清单","text":"15.3 应急响应流程检查清单","level":3},{"id":"十六-总结","text":"十六、总结","level":2}]}]}]]}]]}],["$","footer",null,{"className":"bg-gray-900 text-gray-300","children":[["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-12","children":["$","div",null,{"className":"flex flex-col md:flex-row justify-between","children":["$","div",null,{"children":[["$","h4",null,{"className":"text-gray-400 mb-4","children":"链接"}],["$","ul",null,{"className":"space-y-2","children":["$","li",null,{"children":["$","a",null,{"href":"https://github.com/hao0632","target":"_blank","rel":"noopener noreferrer","className":"hover:text-white transition-colors","children":"GitHub"}]}]}]]}]}]}],["$","div",null,{"className":"border-t border-gray-800","children":["$","div",null,{"className":"px-4 py-4","children":["$","p",null,{"className":"text-center text-gray-500 text-sm","children":"© 2026 hao-0632's blog"}]}]}]]}]]}]
+<p><em>本文总结了应急响应全生命周期的核心知识点和实战经验，希望对大家有所帮助。如有补充或疑问，欢迎交流讨论！</em></p>2:["$","div",null,{"className":"min-h-screen","children":[["$","$L8",null,{}],["$","div",null,{"className":"max-w-6xl mx-auto px-3 sm:px-4 py-8 sm:py-12","children":[["$","$L9",null,{"href":"/","className":"inline-block mb-6 sm:mb-8 text-primary hover:underline","children":"← 返回首页"}],["$","div",null,{"className":"flex flex-col lg:flex-row gap-6 lg:gap-8","children":[["$","article",null,{"className":"flex-1 min-w-0","children":[["$","header",null,{"className":"mb-6 sm:mb-8","children":[["$","h1",null,{"className":"text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4","children":"应急响应经验总结——全生命周期实战指南"}],["$","time",null,{"className":"text-gray-500 text-sm sm:text-base","children":"2026-07-20"}]]}],["$","div",null,{"className":"prose-container overflow-x-auto","children":["$","$La",null,{"htmlContent":"$b"}]}]]}],["$","aside",null,{"className":"w-full lg:w-64 flex-shrink-0","children":["$","$Lc",null,{"headings":[{"id":"一-应急响应概述","text":"一、应急响应概述","level":2},{"id":"二-准备阶段-preparation","text":"二、准备阶段（Preparation）","level":2},{"id":"2-1-应急响应团队组建","text":"2.1 应急响应团队组建","level":3},{"id":"2-2-工具包准备","text":"2.2 工具包准备","level":3},{"id":"2-3-预案制定","text":"2.3 预案制定","level":3},{"id":"三-识别阶段-identification","text":"三、识别阶段（Identification）","level":2},{"id":"3-1-检测异常指标","text":"3.1 检测异常指标","level":3},{"id":"3-2-初步评估","text":"3.2 初步评估","level":3},{"id":"四-遏制阶段-containment","text":"四、遏制阶段（Containment）","level":2},{"id":"4-1-短期遏制","text":"4.1 短期遏制","level":3},{"id":"4-2-长期遏制","text":"4.2 长期遏制","level":3},{"id":"五-windows系统取证","text":"五、Windows系统取证","level":2},{"id":"5-1-日志分析","text":"5.1 日志分析","level":3},{"id":"5-2-注册表分析","text":"5.2 注册表分析","level":3},{"id":"5-3-进程分析","text":"5.3 进程分析","level":3},{"id":"5-4-服务分析","text":"5.4 服务分析","level":3},{"id":"5-5-计划任务分析","text":"5.5 计划任务分析","level":3},{"id":"5-6-文件系统分析","text":"5.6 文件系统分析","level":3},{"id":"六-linux系统取证","text":"六、Linux系统取证","level":2},{"id":"6-1-日志分析","text":"6.1 日志分析","level":3},{"id":"6-2-用户账户分析","text":"6.2 用户账户分析","level":3},{"id":"6-3-进程分析","text":"6.3 进程分析","level":3},{"id":"6-4-网络分析","text":"6.4 网络分析","level":3},{"id":"6-5-计划任务分析","text":"6.5 计划任务分析","level":3},{"id":"6-6-启动项分析","text":"6.6 启动项分析","level":3},{"id":"6-7-文件系统分析","text":"6.7 文件系统分析","level":3},{"id":"6-8-文件完整性校验","text":"6.8 文件完整性校验","level":3},{"id":"七-内存取证","text":"七、内存取证","level":2},{"id":"7-1-内存获取","text":"7.1 内存获取","level":3},{"id":"7-2-volatility框架使用","text":"7.2 Volatility框架使用","level":3},{"id":"八-攻击溯源","text":"八、攻击溯源","level":2},{"id":"8-1-webshell检测","text":"8.1 Webshell检测","level":3},{"id":"8-2-暴力破解分析","text":"8.2 暴力破解分析","level":3},{"id":"8-3-横向移动分析","text":"8.3 横向移动分析","level":3},{"id":"8-4-权限维持分析","text":"8.4 权限维持分析","level":3},{"id":"九-恶意软件分析","text":"九、恶意软件分析","level":2},{"id":"9-1-静态分析","text":"9.1 静态分析","level":3},{"id":"9-2-动态分析","text":"9.2 动态分析","level":3},{"id":"9-3-常见恶意软件类型","text":"9.3 常见恶意软件类型","level":3},{"id":"9-4-在线恶意文件检测平台","text":"9.4 在线恶意文件检测平台","level":3},{"id":"9-5-ip-识别与威胁情报","text":"9.5 IP 识别与威胁情报","level":3},{"id":"9-6-勒索病毒解密资源","text":"9.6 勒索病毒解密资源","level":3},{"id":"9-7-云沙箱平台","text":"9.7 云沙箱平台","level":3},{"id":"9-8-病毒查杀与-rootkit-检测","text":"9.8 病毒查杀与 Rootkit 检测","level":3},{"id":"十-证据保全","text":"十、证据保全","level":2},{"id":"10-1-证据链管理","text":"10.1 证据链管理","level":3},{"id":"10-2-证据收集顺序-order-of-volatility","text":"10.2 证据收集顺序（Order of Volatility）","level":3},{"id":"10-3-kape工具使用","text":"10.3 KAPE工具使用","level":3},{"id":"10-4-时间线分析-plaso-log2timeline","text":"10.4 时间线分析（Plaso/log2timeline）","level":3},{"id":"10-5-证据收集清单","text":"10.5 证据收集清单","level":3},{"id":"10-6-哈希校验","text":"10.6 哈希校验","level":3},{"id":"十一-根除与恢复","text":"十一、根除与恢复","level":2},{"id":"11-1-根除步骤","text":"11.1 根除步骤","level":3},{"id":"11-2-恢复步骤","text":"11.2 恢复步骤","level":3},{"id":"十二-总结阶段-lessons-learned","text":"十二、总结阶段（Lessons Learned）","level":2},{"id":"12-1-事件总结报告","text":"12.1 事件总结报告","level":3},{"id":"12-2-经验教训","text":"12.2 经验教训","level":3},{"id":"12-3-持续改进","text":"12.3 持续改进","level":3},{"id":"十三-常用工具速览","text":"十三、常用工具速览","level":2},{"id":"13-1-取证工具","text":"13.1 取证工具","level":3},{"id":"13-2-系统分析工具","text":"13.2 系统分析工具","level":3},{"id":"13-3-网络分析工具","text":"13.3 网络分析工具","level":3},{"id":"13-4-恶意软件分析工具","text":"13.4 恶意软件分析工具","level":3},{"id":"十四-学习资源推荐","text":"十四、学习资源推荐","level":2},{"id":"14-1-在线资源","text":"14.1 在线资源","level":3},{"id":"14-2-练习平台","text":"14.2 练习平台","level":3},{"id":"14-3-书籍推荐","text":"14.3 书籍推荐","level":3},{"id":"十五-应急响应快速检查清单","text":"十五、应急响应快速检查清单","level":2},{"id":"15-1-windows快速检查清单","text":"15.1 Windows快速检查清单","level":3},{"id":"15-2-linux快速检查清单","text":"15.2 Linux快速检查清单","level":3},{"id":"15-3-应急响应流程检查清单","text":"15.3 应急响应流程检查清单","level":3},{"id":"十六-总结","text":"十六、总结","level":2}]}]}]]}]]}],["$","footer",null,{"className":"bg-gray-900 text-gray-300","children":[["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-12","children":["$","div",null,{"className":"flex flex-col md:flex-row justify-between","children":["$","div",null,{"children":[["$","h4",null,{"className":"text-gray-400 mb-4","children":"链接"}],["$","ul",null,{"className":"space-y-2","children":["$","li",null,{"children":["$","a",null,{"href":"https://github.com/hao0632","target":"_blank","rel":"noopener noreferrer","className":"hover:text-white transition-colors","children":"GitHub"}]}]}]]}]}]}],["$","div",null,{"className":"border-t border-gray-800","children":["$","div",null,{"className":"px-4 py-4","children":["$","p",null,{"className":"text-center text-gray-500 text-sm","children":"© 2026 hao-0632's blog"}]}]}]]}]]}]
 7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"应急响应经验总结——全生命周期实战指南"}],["$","meta","3",{"name":"description","content":"全面总结应急响应全生命周期的核心知识点和实战经验，覆盖Windows/Linux取证、内存分析、攻击溯源等领域"}],["$","link","4",{"rel":"icon","href":"/cat.ico"}]]
 1:null

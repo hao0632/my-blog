@@ -63,11 +63,17 @@ function TocItem({ heading, allHeadings, depth }: TocItemProps) {
         </a>
       </div>
       {isCollapsible && (
-        <ul className={`overflow-hidden transition-all duration-200 ${isExpanded ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-          {children.map((child) => (
-            <TocItem key={child.id} heading={child} allHeadings={allHeadings} depth={depth + 1} />
-          ))}
-        </ul>
+        <div
+          className={`grid transition-all duration-200 ${isExpanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
+        >
+          <div className="overflow-hidden min-h-0">
+            <ul>
+              {children.map((child) => (
+                <TocItem key={child.id} heading={child} allHeadings={allHeadings} depth={depth + 1} />
+              ))}
+            </ul>
+          </div>
+        </div>
       )}
     </li>
   );

@@ -72,6 +72,20 @@ Wireshark主界面分为以下几个区域：
 - 右键点击数据包 → `Follow` 追踪流
 - 使用 `Statistics → Endpoints` 或 `Conversations` 查看通信端点
 
+### 3.3 CTF 通用分析思路速查
+
+拿到 PCAP 后，可按以下思路快速定位 flag：
+
+- 分组字节流直接搜索 `flag`、`flag{`、`f`、`fl` 等关键词（注意编码与干扰字符）。
+- 包长度、响应时间、包间隔可能隐藏信息（时间通道）。
+- 大量 GET/POST 参数可能是 SQL 盲注，可尝试回放重放。
+- TCP 流中可能隐藏编码信息；隐藏压缩包直接搜索 `504B0304`（PK 头），优先用 `File → Export Objects` 导出。
+- 数据包 Info 字段中可能隐藏 base64 字符串。
+- 一般 TCP 无信息、无密钥的 TLS 流量可先跳过。
+- ICMP 流量重点看 data 块长度与时间。
+- 菜刀等 WebShell 流量可能 gzip 压缩，直接搜 `flag` 搜不到，需先解压。
+- 不可打印字符可能是控制字符，对照 ASCII 表逐字节分析。
+
 ---
 
 ## 四、显示过滤器详解
@@ -749,8 +763,13 @@ matches   # 正则表达式匹配
    - 数据格式：第1字节=修饰键，第2字节=保留，第3-8字节=按键码
 
 3. **提取按键数据**
-   - 右键点击数据包 → `Copy → Fields → usb.capdata`
-   - 或使用 `File → Export Packet Dissections → As Plain Text`
+   - GUI：右键点击数据包 → `Copy → Fields → usb.capdata`
+   - GUI：或使用 `File → Export Packet Dissections → As Plain Text`
+   - CLI（tshark 一键提取，推荐自动化）：
+     ```bash
+     # 字段名 usbhid.data / usb.capdata 视捕获方式而定，可按需替换
+     tshark -r 1.pcapng -T fields -e usbhid.data | Where-Object { $_ -notmatch '^0000000000000000$' -and $_ -notmatch '^\s*$' } > usbdata.txt
+     ```
 
 4. **按键码映射表（部分）：**
 
@@ -849,6 +868,18 @@ with open('keydata.txt', 'r') as f:
    - 过滤 `wlan.fc.type_subtype == 0x04` 查看Probe Request
    - 过滤 `wlan.fc.type_subtype == 0x0c` 查看Deauthentication帧
 
+**WPA 握手包离线破解：**
+
+```bash
+# 提取握手包为 hc22000 格式（供 hashcat 使用）
+hcxpcapngtool ctf.pcap -o 123.hc22000
+# 字典爆破
+hashcat -m 22000 123.hc22000 rockyou.txt
+# 解密流量（aircrack-ng 套件）
+airdecap-ng -e ctf -p password1 ctf.pcap
+# 或 Wireshark：编辑 -> 首选项 -> Protocols -> IEEE 802.11 -> wpa-pwd:password:ssid
+```
+
 **分析要点：**
 - Probe Requests可泄露曾经连接过的SSID
 - Beacon帧包含网络名称、加密类型等信息
@@ -930,6 +961,201 @@ with open('keydata.txt', 'r') as f:
 - 还原ICMP隧道中的隐藏信息
 - 分析TCP/UDP载荷中的编码数据
 - 识别时间通道等隐蔽通信方式
+
+### 6.5 蓝牙协议分析（OBEX）
+
+蓝牙流量（如 `.btsnoop` 格式）在 CTF 中相对少见，出现时可用以下思路：
+
+- 分组字节流直接搜索 `flag` 等关键词。
+- 使用协议分级中的 OBEX（Object Exchange，对象交换）作为过滤器，定位文件传输对象。
+- 蓝牙配对 PIN 码：在数据包详情中搜索 `pin`（例如 `pin code:141854`），往往直接给出配对口令。
+
+### 6.6 哥斯拉（Godzilla）WebShell 流量特征
+
+哥斯拉是一款常见的 Java WebShell 管理工具，其流量特征可用于流量侧检测：
+
+- 初始化阶段产生一个较大的数据包（第一个），后续数据包较小；第一个响应体一般为空。
+- Cookie 末尾可能出现分号（有时没有）。
+- 第二次请求携带 Cookie；响应体为 64 字节（前 16 + 中间 32 + 结尾 16）。
+- 第三次及后续请求：前 16 与后 16 字节与第二次响应包一致（原因是 32 位 MD5 被拆成两部分，分别放在 base64 前后）。
+- 关键参数：`xc`（加密密钥）、`pass`（解密密码）。
+- 后门反连通道：TCP、HTTP、DNS、ICMP 等。
+
+常见 payload 句法特征：`[::-1]`（字符串反转）、`base64.b64decode(...)`、`zlib.decompress(...)`、`exec(...)`。
+
+### 6.7 Webshell 流量分析详解
+
+> 提示：若响应数据为 gzip 格式，注意提取位置，gzip 文件头为 `1F 8B 08 00`。
+
+#### 6.7.1 菜刀
+
+特征：响应里可能有 `->| |<-` 字符串。分析难度低，一般就是明文流量或 Base64 编码。
+
+#### 6.7.2 哥斯拉
+
+- 默认密钥：`3c6e0b8a9c15224a`
+- 加密方式：通常为异或（插件加持下也可能用 AES）
+- 异或时从密钥的**第二位**开始（即 `key[(i+1) & 15]`），因此 CyberChef 解密时需把密钥第一位移动到最后
+- 流量解密密钥 = 明文密钥（可读字符串）MD5 的**前 16 位**
+
+PHP 加密逻辑示例：
+```php
+function encode($D,$K){
+    for($i=0;$i<strlen($D);$i++){
+        $c = $K[$i+1 & 15];
+        $D[$i] = $D[$i]^$c;
+    }
+    return $D;
+}
+```
+
+**密钥爆破：** 响应包会输出 `MD5(连接密码 + 流量解密密钥)` 的前后 16 位：
+```php
+echo substr(md5($pass.$key),0,16);
+echo base64_encode(encode(@run($data),$key));
+echo substr(md5($pass.$key),16);
+```
+连接密码可从请求包 POST 参数得到，据此可爆破密钥：
+
+```python
+import hashlib
+
+def md5_encode(text):
+    return hashlib.md5(text.encode('utf-8')).hexdigest()
+
+def crack_key(key_list, target_hash):
+    pwd = "Antsword"  # 哥斯拉的连接密码
+    for key in key_list:
+        tmp = md5_encode(key)            # 明文密钥的 MD5
+        tmp_hash = md5_encode(pwd + tmp[:16])
+        if tmp_hash == target_hash:
+            print(f"[+] 密钥爆破成功: {key}")
+            print(f"[+] 用于解密哥斯拉流量的密钥为 {tmp[:16]}")
+
+# 响应中返回的 hash 与字典
+crack_key(["Antsw0rd"], "e71f50e9773b23f9792dea3a7ae385ca")
+```
+
+异或解密核心（密钥第二位开始）：
+```python
+def xor_decode(data: bytes, key: bytes) -> bytes:
+    result = bytearray()
+    for i in range(len(data)):
+        c = key[(i + 1) & 15]
+        result.append(data[i] ^ c)
+    return bytes(result)
+```
+
+#### 6.7.3 冰蝎
+
+- 默认密钥：`e45e329feb5d925b`（`md5("rebeyond")` 的前 16 位）
+- 加密方式：异或（与哥斯拉类似）或 AES（ECB/CBC）
+- 找不到密钥时可先尝试默认密钥，或用 PuzzleSolver 爆破
+
+**XOR 解密：** 把密钥第一位放到最后一位再异或。
+
+**AES-CBC 解密（默认 PHP Webshell）：**
+- 冰蝎 4.0 默认 IV 为 16 个 `\x00`
+- `openssl_decrypt($post, "AES128", $key)` 未传 IV，默认使用全 0 IV（AES-128-CBC）
+- 自定义 IV 时需填入对应 IV（如 `0123456789abcdef`）
+
+```python
+# AES-CBC 解密
+from Crypto.Cipher import AES
+import base64
+
+key = "e45e329feb5d925b".encode('utf-8').ljust(16, b'\x00')
+iv = b'\x00' * 16
+cipher = AES.new(key, AES.MODE_CBC, iv)
+decrypted = cipher.decrypt(base64.b64decode(ciphertext))
+```
+
+#### 6.7.4 蚁剑
+
+蚁剑支持多种编码器（Reverse、ROT13、RSA 等），分析注意点：
+
+- 先判断攻击者用的编码器
+- 路径 base64 字符串需**去除前两个字符**后再解码
+- 响应数据头尾有额外字符，需先去除再 base64 解码
+
+---
+
+### 6.8 SQL 注入流量分析
+
+用 Wireshark 过滤器过滤出注入流量并导出，再用 tshark 按字段提取注入语句；盲注直接写正则匹配脚本提取数据即可。
+
+```bash
+tshark -r traffic.pcap -Y "http.request" -T fields -e http.request.uri | grep -i "union\|select\|sleep"
+```
+
+---
+
+### 6.9 CobaltStrike 流量分析
+
+CobaltStrike 的 Beacon 与 Team Server 之间使用 AES（CBC）加密 + HMAC 校验通信。
+
+- **解密条件**：需要 `AES key` 与 `HMAC key`，可从 `.cobaltstrike.beacon_keys` 密钥对文件提取，或从 Beacon 配置中提取
+- **Beacon 特征**：HTTP 心跳请求间隔固定、特定 Cookie/URI 模式
+- **工具**：`cs-decrypt-traffic.py`、`1768.py` 等
+
+```
+AES key:  9fe14473479a283821241e2af78017e8
+HMAC key: 1e3d54f1b9f0e106773a59b7c379a89d
+```
+
+---
+
+### 6.10 NTLM 认证流量分析
+
+NTLM 是 Windows 挑战/响应认证协议，消息嵌入在 SMB/HTTP/LDAP 等上层协议中，由三种消息构成：
+
+| 类型 | 作用 |
+|------|------|
+| Type 1（协商） | 客户端告知协议版本与功能 |
+| Type 2（质询） | 服务器下发 8 字节 Challenge |
+| Type 3（验证） | 客户端返回用户名、域名与 Response |
+
+**Net-NTLM Hash 格式：**
+- Net-NTLMv1：`username::hostname:LM response:NTLM response:challenge`（已废弃，易破解）
+- Net-NTLMv2：`username::domain:challenge:HMAC-MD5:blob`
+
+**NTLMv2 提取与爆破（SMB/HTTP）：**
+
+1. 过滤 `ntlmssp`，在成功认证的包的 `Security Blob` 中复制 `User name`、`Domain name`
+2. 从 `NTLMSSP_AUTH` 复制 `ntlmv2_response`（其开头即 `NTProofStr`）
+3. 从 `Session Setup Response` 复制 `NTLM Server Challenge`
+4. 组合为：`username::domain:ServerChallenge:NTProofStr:ntlmv2_response`
+
+```bash
+hashcat -m 5600 hash.txt rockyou.txt
+```
+
+示例：
+```
+administrator::WIN2008:9a88373dbb4f5e36:4eb74543b9962bb2ca36e938909bb930:0101000000000000...
+```
+
+> SMTP 中的 NTLM 信息可能 base64 编码，分析前需先解码。
+
+---
+
+### 6.11 Kerberos 认证流量分析
+
+Kerberos 是 MIT 提出的网络认证协议，通过 KDC（密钥分发中心）签发票据控制访问。三个角色：客户端、服务器、KDC。
+
+**认证流程：**
+1. **AS Exchange**：`AS-REQ`（客户端请求）→ `AS-REP`（KDC 返回 TGT）
+2. **TGS Exchange**：`TGS-REQ`（请求服务票据）→ `TGS-REP`（返回 Service Ticket）
+3. **AP Exchange**：`AP-REQ`（访问服务）→ `AP-REP`（权限验证）
+
+**PAC**：微软扩展，在票据中嵌入用户 SID 与组信息，用 KDC 密钥与服务端哈希双重签名。
+
+**解密 Kerberos 流量：** 制作 keytab 文件并在 Wireshark `协议 → KRB5` 导入。Realm（域名）与 principal（主体名）从 `AS-REP` 获取（注意大小写），salt = Realm + principal。
+
+```bash
+# 生成 keytab（需要 Realm、principal、密码）
+ktpass -princ <principal> -pass <password> -ptype KRB5_NT_PRINCIPAL -out keytab
+```
 
 ---
 

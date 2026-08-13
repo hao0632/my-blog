@@ -963,6 +963,62 @@ exiftool <FilePath>
 | 广告软件 | 显示广告 | 弹出广告 |
 | Rootkit | 隐藏自身和恶意活动 | 深度隐藏 |
 
+### 9.4 在线恶意文件检测平台
+
+| 名称 | 链接 |
+|------|------|
+| VirusTotal | https://www.virustotal.com/gui/home/upload |
+| VirSCAN | https://www.virscan.org/ |
+| Virus Scan by Jotti | https://virusscan.jotti.org/ |
+| ScanVir | http://www.scanvir.com/ |
+
+### 9.5 IP 识别与威胁情报
+
+| 名称 | 链接 |
+|------|------|
+| IP138 | http://www.ip138.com/ |
+| 微步在线 | https://x.threatbook.cn/ |
+| 站长工具 | https://ip.tool.chinaz.com/ |
+| 深信服 TI | https://ti.sangfor.com.cn/analysis-platform |
+| 360 威胁情报 | https://ti.360.net/ |
+| 绿盟 TI | https://ti.nsfocus.com/ |
+| IBM X-Force | https://exchange.xforce.ibmcloud.com/ |
+| ThreatMiner | https://www.threatminer.org/ |
+
+**IOC 情报**：域名、IP、URL、SSL 证书、Hash 等。
+
+### 9.6 勒索病毒解密资源
+
+| 名称 | 链接 |
+|------|------|
+| No More Ransom | https://www.nomoreransom.org/zh/index.html |
+| 360 勒索病毒解密 | http://lesuobingdu.360.cn/ |
+| ID-Ransomware | https://id-ransomware.malwarehunterteam.com/ |
+| 腾讯管家 | https://guanjia.qq.com/pr/ls/ |
+| 启明星辰 | https://lesuo.venuseye.com.cn/ |
+| 奇安信 | https://lesuobingdu.qianxin.com/ |
+
+### 9.7 云沙箱平台
+
+| 名称 | 链接 | 说明 |
+|------|------|------|
+| Any.Run | https://app.any.run/ | 交互式沙箱 |
+| 微步云沙箱 | https://s.threatbook.cn/ | 信息详细 |
+| VirusTotal | https://www.virustotal.com/gui/ | 多引擎扫描 |
+| JoeSandbox | https://www.joesandbox.com/ | 深度行为分析 |
+| 腾讯哈勃 | https://habo.qq.com/ | — |
+| 360 沙箱云 | https://ata.360.cn/detection | APK 分析 |
+| 奇安信沙箱 | https://sandbox.ti.qianxin.com/sandbox/page | — |
+| 微点沙箱 | https://sandbox.depthsec.com.cn/index.php/ | — |
+| 大圣云沙箱 | https://mac-cloud.riskivy.com | — |
+| 魔盾安全分析 | https://www.maldun.com/analysis/ | — |
+
+### 9.8 病毒查杀与 Rootkit 检测
+
+- 杀毒：360 杀毒、火绒、ClamAV（Linux）、Dr.Web CureIt。
+- Rootkit 检测：`chkrootkit`、`rkhunter`。
+- 进程类工具：PC Hunter、Procmon、Process Explorer。
+
 ---
 
 ## 十、证据保全

@@ -219,6 +219,161 @@ volatility -f memory.raw --profile=Win7SP1x64 consoles
 - 识别C2服务器地址
 - 分析进程内存中的隐藏数据
 
+### 2.6 Volatility3 完整命令与插件速查
+
+Volatility3 支持 Windows / Linux / macOS 镜像分析，命令语法为：
+
+```bash
+vol [选项] 插件 [插件参数]
+# 或使用旧式 vol.py 调用
+vol.py -f memory.dmp windows.pslist.PsList
+```
+
+**常用选项：**
+
+| 选项 | 说明 |
+|------|------|
+| `-f, --file FILE` | 指定内存镜像 |
+| `-o, --output-dir DIR` | 输出目录 |
+| `-r, --renderer TYPE` | 输出格式（quick / csv / json 等） |
+| `-q, --quiet` | 禁用进度反馈 |
+
+**Windows 核心插件（完整命名）：**
+
+| 插件 | 说明 |
+|------|------|
+| `windows.pslist.PsList` | 列出进程 |
+| `windows.pstree.PsTree` | 进程树 |
+| `windows.cmdline.CmdLine` | 命令行参数 |
+| `windows.filescan.FileScan` | 扫描文件对象 |
+| `windows.dumpfiles.DumpFiles` | 导出缓存文件 |
+| `windows.netscan.NetScan` | 扫描网络连接 |
+| `windows.registry.hivelist.HiveList` | 列出注册表配置单元 |
+| `windows.registry.printkey.PrintKey` | 列出注册表键值 |
+| `windows.registry.hashdump.Hashdump` | 导出用户哈希 |
+| `windows.malfind.Malfind` | 检测注入代码 |
+| `windows.envars.Envars` | 环境变量 |
+| `windows.handles.Handles` | 进程句柄 |
+
+**Linux 核心插件：**
+
+| 插件 | 说明 |
+|------|------|
+| `linux.psaux.PsAux` | 进程列表（含命令行） |
+| `linux.pslist.PsList` | 进程列表 |
+| `linux.bash.Bash` | Bash 历史命令 |
+| `linux.lsof.Lsof` | 打开的文件 |
+| `linux.envars.Envars` | 环境变量 |
+
+**使用示例：**
+
+```bash
+vol -f memory.dmp windows.pslist.PsList
+vol -f memory.dmp windows.netscan.NetScan
+vol -f memory.dmp windows.registry.hashdump.Hashdump
+vol -f linux.img linux.bash.Bash
+vol -f memory.dmp yarascan.YaraScan --yara-rules rules.yar
+vol -f memory.dmp windows.pslist.PsList -r csv
+vol -f memory.dmp windows.pslist.PsList --pid 1234
+```
+
+> 说明：Volatility3 支持 `windows.pslist` 与 `windows.pslist.PsList` 两种写法，后者为完整插件名；`yarascan.YaraScan` 用于在内存中运行 YARA 规则，定位恶意代码与敏感字符串。
+
+### 2.7 Volatility2 完整命令速查
+
+> Volatility2 插件众多，Windows 10 镜像的部分功能建议改用 Volatility3。先 `vol.py -f mem.dump imageinfo` 识别 Profile，再代入下面的 `--profile`。
+
+```bash
+# 获取镜像哈希（证据完整性校验）
+sha1sum filename
+md5sum filename
+
+# 识别操作系统基本信息
+vol.py mem.dump imageinfo
+
+# 进程相关
+vol.py -f OtterCTF.vmem --profile=Win7SP1x64 pslist          # 进程列表
+vol.py -f OtterCTF.vmem --profile=Win7SP1x64 pstree          # 进程树（含隐藏/解链进程）
+vol.py -f OtterCTF.vmem --profile=Win7SP1x64 memdump -p 3036 --dump-dir=./   # 转储进程
+vol.py -f memory.raw --profile=Win7SP1x64 envars             # 环境变量
+vol.py -f memory.raw --profile=Win7SP1x64 cmdscan            # 命令行历史
+vol.py -f memory.raw --profile=Win7SP1x64 cmdline            # 进程命令行
+vol.py -f memory.img --profile=Win2003SP1x86 dlllist         # 动态库列表
+vol.py -f memory.img --profile=Win2003SP1x86 ldrmodules      # 加载模块
+vol.py -f memory.img --profile=Win2003SP1x86 malfind         # 检测恶意代码/注入
+
+# 文件相关
+vol.py -f memory.raw --profile=Win7SP1x64 filescan                       # 扫描文件
+vol.py -f example.raw --profile=Win7SP1x64 filescan | grep -E 'txt|png|jpg|gif|zip|rar|7z|pdf|doc'  # 按后缀筛选
+vol.py -f OtterCTF.vmem --profile=Win7SP1x64 dumpfiles -Q 0x000000007e410890 --dump-dir=./   # 导出文件
+
+# 注册表与凭据
+vol.py -f memory.raw --profile=Win7SP1x64 hivelist           # 注册表配置单元
+vol.py -f OtterCTF.vmem --profile=Win7SP1x64 printkey        # 注册表键值
+vol.py -f OtterCTF.vmem --profile=Win7SP1x64 hashdump        # 导出用户名与 NTLM 哈希
+vol.py -f mem.dump --profile=Win7SP1x64 mimikatz             # 提取明文密码（需 mimikatz 插件）
+
+# 网络相关
+vol.py -f memory.raw --profile=Win7SP1x64 connscan           # TCP 连接扫描
+vol.py -f mem.raw --profile=Win7SP1x64 netscan               # 网络连接/端口
+vol.py -f mem.raw --profile=Win7SP1x64 connections
+
+# 用户行为与痕迹
+vol.py -f 1.vmem --profile=Win7SP1x64 iehistory              # IE 浏览历史
+vol.py -f 1.vmem --profile=Win7SP1x64 editbox                # 编辑框内容
+vol.py -f 1.vmem --profile=Win7SP1x64 notepad                # 记事本内容
+vol.py -f 1.vmem --profile=Win7SP1x64 screenshot --dump-dir=./   # 屏幕截图
+vol.py -f 1.vmem --profile=Win7SP1x64 clipboard              # 剪贴板
+vol.py -f 1.vmem --profile=Win7SP1x64 userassist             # 程序运行记录
+vol.py -f 1.vmem --profile=Win7SP1x64 timeliner              # 时间线提取
+vol.py -f 1.vmem --profile=Win7SP1x64 mftparser              # 恢复被删除文件
+
+# 其他常用插件
+vol.py -f OtterCTF.vmem --profile=Win7SP1x64 usbstor         # USB 连接信息
+vol.py -f OtterCTF.vmem --profile=Win7SP1x64 ndispktscan     # 内核网络流量包
+vol.py -f OtterCTF.vmem --profile=Win7SP1x64 bitlocker       # Bitlocker 密钥
+vol.py -f OtterCTF.vmem --profile=Win7SP1x64 svcscan         # 服务扫描
+```
+
+> 提示：部分插件（mimikatz、voldiff、usbstor 等）需 `--plugins=/path/to/plugins` 指定插件目录。
+
+### 2.8 特殊进程与特殊文件
+
+**特殊进程（重点取证目标）：**
+
+| 进程 | 说明 |
+|------|------|
+| StikyNot.exe | 便签，`.snt` 文件位于 `C:\Users\XXX\AppData\Roaming\Microsoft\Sticky Notes\`（用 Win7 便签/记事本打开） |
+| mspaint.exe | 画图，`memdump -p <PID>` 导出 dmp 后改后缀为 `.data`，拖入 GIMP 调整位移与分辨率还原画面 |
+| wab.exe | 联系人，`.contact` 文件 |
+
+> 导出进程内存后用 GIMP 还原的方法不限于 mspaint，任何进程都适用；若已知屏幕分辨率会方便很多，可先用 `screenshot` 导出截图获取分辨率信息。
+
+**特殊文件：**
+- `evtx`：Windows 系统日志
+- `dat`：导出失败时可加 `-u` 参数，如 `volatility -f mem.data dumpfiles -r pdf$ -i --name -D dumpfiles/ -u`
+
+### 2.9 Linux 内存取证与符号制作
+
+**常见文件后缀：** `.vmem` / `.dump` / `.raw` / `.img`。除 Volatility 外，提取文件还可尝试 R-Stdio，拿到镜像后可先用 PasswareKit 扫描密码。
+
+**识别内核版本：**
+```bash
+python3 volatility3/vol.py -f Ez_Linux.mem banner
+# 输出 Linux version 5.4.0-100-generic ... 即可确定内核版本
+```
+
+**制作 Profile（Volatility2）：** 一个 Profile 由 `system.map` 和 `module.dwarf` 两个文件组成。官方 vol2 不支持 Ubuntu 22.04+ 的 Profile 制作，需打补丁；也可先去 [已制作好的 Profile 仓库](https://github.com/volatilityfoundation/profiles) 查找。制作流程一般在 Docker 中安装对应版本内核头文件，编译生成 `module.dwarf`，配合 `/boot/System.map` 打包为 Profile。
+
+**制作 symbols（Volatility3）：** 使用 `dwarf2json` 工具从 `vmlinux` 或 `module.dwarf` 生成 ISF JSON 文件，放到 Volatility3 的 `symbols/linux/` 目录即可。
+
+```bash
+# 用 IsfInfo 校验符号文件是否与题目内核一致
+vol3.py -f Ez_Linux.mem linux.pslist
+vol3.py -f Ez_Linux.mem linux.bash
+vol3.py -f Ez_Linux.mem linux.lsof
+```
+
 ---
 
 ## 三、磁盘取证

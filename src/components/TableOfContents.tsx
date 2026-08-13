@@ -63,7 +63,7 @@ function TocItem({ heading, allHeadings, depth }: TocItemProps) {
         </a>
       </div>
       {isCollapsible && (
-        <ul className={`overflow-hidden transition-all duration-200 ${isExpanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+        <ul className={`overflow-hidden transition-all duration-200 ${isExpanded ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'}`}>
           {children.map((child) => (
             <TocItem key={child.id} heading={child} allHeadings={allHeadings} depth={depth + 1} />
           ))}
@@ -87,7 +87,7 @@ export default function TableOfContents({ headings }: TableOfContentsProps) {
       <h3 className="font-semibold text-gray-800 mb-3 pb-2 border-b border-gray-200">
         目录
       </h3>
-      <nav className="toc-nav max-h-[calc(100vh-12rem)] overflow-y-auto overflow-x-hidden pr-1">
+      <nav className="toc-nav max-h-[calc(100vh-12rem)] overflow-y-scroll overflow-x-hidden pr-1">
         <ul className="space-y-1">
           {level2Headings.map((heading) => (
             <TocItem key={heading.id} heading={heading} allHeadings={headings} depth={0} />

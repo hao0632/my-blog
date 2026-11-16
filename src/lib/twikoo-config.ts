@@ -16,7 +16,8 @@
  */
 
 /** 留空则整站不显示评论区。填好地址后重新构建即可生效。 */
-export const TWIKOO_ENV_ID = "";
+export const TWIKOO_ENV_ID =
+  "https://mellow-semifreddo-e83d00.netlify.app/.netlify/functions/twikoo";
 
 /** 是否已配置评论后端，未配置时页面不会渲染评论区 */
 export const TWIKOO_ENABLED = TWIKOO_ENV_ID.trim().length > 0;

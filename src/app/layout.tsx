@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "hao-0632's blog",
-  description: "分享技术与生活",
+  description: "悟已往之不谏，知来者之可追",
   icons: {
     icon: "/cat.ico",
   },

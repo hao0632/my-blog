@@ -19,7 +19,7 @@ export default function About() {
         </h2>
         <div className="space-y-3 text-gray-600 leading-relaxed">
           <p>
-            你好，欢迎来到 <span className="font-semibold text-gray-900">hao-0632&apos;s blog</span>！ 这是我的博客。
+            你好，欢迎来到 <span className="font-semibold text-gray-900">hao-0632&apos;s blog</span>！这是我的博客。
           </p>
           <p>
             这是一个存放碎片的地方，记录日常，收藏想法，慢慢往前走。

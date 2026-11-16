@@ -19,15 +19,13 @@ export default function About() {
         </h2>
         <div className="space-y-3 text-gray-600 leading-relaxed">
           <p>
-            你好，欢迎来到 <span className="font-semibold text-gray-900">hao-0632&apos;s blog</span>！
-            这是一个专注于技术分享与生活记录的个人博客。
+            你好，欢迎来到 <span className="font-semibold text-gray-900">hao-0632&apos;s blog</span>！ 这是我的博客。
           </p>
           <p>
-            这里主要会分享 CTF
-            竞赛、安全攻防、应急响应等技术内容，也会偶尔记录一些生活随笔和学习笔记。
+            这是一个存放碎片的地方，记录日常，收藏想法，慢慢往前走。
           </p>
           <p>
-            如果文章对你有帮助，欢迎留言交流。让我们一起在技术的道路上不断成长 🚀
+            且行且记。
           </p>
         </div>
       </section>
@@ -40,11 +38,23 @@ export default function About() {
         <div className="grid sm:grid-cols-2 gap-3 text-gray-600">
           <div className="flex items-center gap-2">
             <span className="text-gray-400">GitHub：</span>
-            <span className="text-gray-500">hao-0632</span>
+            <a
+              href="https://github.com/hao0632"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:text-blue-600"
+            >
+              hao-0632
+            </a>
           </div>
           <div className="flex items-center gap-2">
             <span className="text-gray-400">邮箱：</span>
-            <span className="text-gray-500">待补充</span>
+            <a
+              href="mailto:2640706787@qq.com"
+              className="text-blue-500 hover:text-blue-600 break-all"
+            >
+              2640706787@qq.com
+            </a>
           </div>
         </div>
       </section>

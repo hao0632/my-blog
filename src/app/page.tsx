@@ -9,7 +9,7 @@ export default function Home() {
       <div className="max-w-4xl mx-auto px-3 sm:px-4 py-8 sm:py-12">
         <header className="text-center mb-8 sm:mb-12">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">欢迎来到hao的博客</h1>
-          <p className="text-gray-600 text-base sm:text-lg">分享技术与生活，记录成长点滴</p>
+          <p className="text-gray-600 text-base sm:text-lg">悟已往之不谏，知来者之可追</p>
         </header>
 
         <main>

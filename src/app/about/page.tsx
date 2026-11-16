@@ -1,5 +1,3 @@
-import Busuanzi from '@/components/Busuanzi';
-
 export const metadata = {
   title: '关于 | hao-0632\'s blog',
 };
@@ -32,26 +30,6 @@ export default function About() {
             如果文章对你有帮助，欢迎留言交流。让我们一起在技术的道路上不断成长 🚀
           </p>
         </div>
-      </section>
-
-      {/* 访客统计 */}
-      <section className="mb-12">
-        <h2 className="text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
-          <span>📊</span> 访客统计
-        </h2>
-        <Busuanzi />
-        <p className="text-center text-xs text-gray-400 mt-4">
-          数据由
-          <a
-            href="https://www.busuanzi.cc/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 hover:text-blue-600 mx-1"
-          >
-            不蒜子
-          </a>
-          提供
-        </p>
       </section>
 
       {/* 联系方式 */}

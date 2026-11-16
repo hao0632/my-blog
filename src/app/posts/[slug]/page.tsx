@@ -3,6 +3,8 @@ import { getPostBySlugWithHeadings, getAllPosts, markdownToHtml } from "@/lib/po
 import CodeBlockWrapper from "@/components/CodeBlockWrapper";
 import TableOfContents from "@/components/TableOfContents";
 import BackToTop from "@/components/BackToTop";
+import Twikoo from "@/components/Twikoo";
+import { TWIKOO_ENABLED } from "@/lib/twikoo-config";
 
 interface Props {
   params: { slug: string };
@@ -79,6 +81,13 @@ export default async function Post({ params }: Props) {
             <TableOfContents headings={post.headings} />
           </aside>
         </div>
+
+        {TWIKOO_ENABLED && (
+          <section className="mt-10 sm:mt-14 pt-8 border-t border-gray-200">
+            <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-4">评论</h2>
+            <Twikoo path={`/posts/${post.slug}`} />
+          </section>
+        )}
       </div>
 
       <footer className="bg-gray-900 text-gray-300">

@@ -1,7 +1,7 @@
 ---
 title: "my blog 技术栈"
 slug: "my-blog-tech-stack"
-date: "2026-05-24"
+date: "2026-11-17"
 excerpt: "前端框架、样式方案、Markdown 处理、评论系统、部署流程"
 ---
 
@@ -24,7 +24,7 @@ excerpt: "前端框架、样式方案、Markdown 处理、评论系统、部署�
 | **HTML转换** | rehype | - | Markdown 到 HTML 转换 |
 | **代码高亮** | highlight.js | 11.11.1 | 代码语法高亮 |
 | **评论系统** | Twikoo | 2.0.17 | 博客评论（前端脚本 + 云函数） |
-| **部署工具** | gh-pages | 6.3.0 | GitHub Pages 部署 |
+| **部署方式** | GitHub Actions | - | 构建并发布到 GitHub Pages |
 
 ---
 
@@ -120,11 +120,15 @@ await twikoo.init({
 采用 **GitHub Pages** 作为托管平台：
 
 **部署流程：**
-1. `npm run build` - 构建静态站点到 `out` 目录
-2. `gh-pages -d out` - 将构建产物推送到 `gh-pages` 分支
 
-**自动化部署：**
-通过 `.github/workflows/deploy.yml` 配置 GitHub Actions，实现提交代码自动部署。
+推送到 `main` 分支后由 GitHub Actions 全自动完成，无需本地操作：
+
+1. `npm ci` - 按锁文件安装依赖
+2. `npm run build` - 构建静态站点到 `out` 目录（CI 中注入 `NEXT_PUBLIC_BASE_PATH=/my-blog`）
+3. `peaceiris/actions-gh-pages` - 将 `out` 目录推送到 `gh-pages` 分支，由 GitHub Pages 对外提供服务
+
+**本地构建：**
+`npm run export` 会以同样的 `basePath` 生成一份可本地预览的 `out` 目录。
 
 ---
 

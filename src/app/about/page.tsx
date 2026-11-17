@@ -8,8 +8,7 @@ export default function About() {
       {/* 头部 */}
       <div className="text-center mb-12">
         <div className="text-6xl mb-4">🐱</div>
-        <h1 className="text-3xl font-bold text-fg mb-3">关于本站</h1>
-        <p className="text-muted">分享技术，记录生活</p>
+        <h1 className="text-3xl font-bold text-fg">关于本站</h1>
       </div>
 
       {/* 站点介绍 */}

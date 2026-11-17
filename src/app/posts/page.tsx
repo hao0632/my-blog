@@ -6,10 +6,10 @@ export default function Posts() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold text-gray-900 mb-8 text-center">文章</h1>
+      <h1 className="text-3xl font-bold text-fg mb-8 text-center">文章</h1>
       
       {posts.length === 0 ? (
-        <div className="text-center py-12 text-gray-500">
+        <div className="text-center py-12 text-muted">
           <p className="text-xl">暂无文章</p>
         </div>
       ) : (
@@ -17,14 +17,14 @@ export default function Posts() {
           {posts.map((post) => (
             <article
               key={post.slug}
-              className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow p-6"
+              className="bg-surface rounded-lg shadow-sm hover:shadow-md transition-shadow p-6"
             >
               <Link href={`/posts/${post.slug}`} className="block">
-                <h3 className="text-xl font-semibold text-primary mb-2 hover:underline">
+                <h3 className="text-xl font-semibold text-accent mb-2 hover:underline">
                   {post.title}
                 </h3>
-                <p className="text-gray-600 mb-3">{post.excerpt}</p>
-                <time className="text-sm text-gray-400">{post.date}</time>
+                <p className="text-muted mb-3">{post.excerpt}</p>
+                <time className="text-sm text-subtle">{post.date}</time>
               </Link>
             </article>
           ))}

@@ -33,7 +33,7 @@ function TocItem({ heading, allHeadings, depth }: TocItemProps) {
         {isCollapsible && (
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="flex-shrink-0 w-5 h-5 flex items-center justify-center text-gray-400 hover:text-gray-600 transition-colors"
+            className="flex-shrink-0 w-5 h-5 flex items-center justify-center text-subtle hover:text-fg transition-colors"
             aria-label={isExpanded ? '折叠' : '展开'}
           >
             <svg
@@ -49,14 +49,14 @@ function TocItem({ heading, allHeadings, depth }: TocItemProps) {
         {!isCollapsible && <span className="w-5" />}
         <a
           href={`#${heading.id}`}
-          className={`flex-1 block py-1.5 px-2 rounded text-sm transition-colors hover:bg-gray-100 ${
+          className={`flex-1 block py-1.5 px-2 rounded text-sm transition-colors hover:bg-raised ${
             heading.level === 2
-              ? 'text-gray-800 font-medium'
+              ? 'text-fg font-medium'
               : heading.level === 3
-              ? 'text-gray-700 pl-2'
+              ? 'text-fg/80 pl-2'
               : heading.level === 4
-              ? 'text-gray-600 pl-4'
-              : 'text-gray-500 pl-6'
+              ? 'text-muted pl-4'
+              : 'text-subtle pl-6'
           }`}
         >
           {heading.text}
@@ -89,8 +89,8 @@ export default function TableOfContents({ headings }: TableOfContentsProps) {
   const level2Headings = headings.filter((h) => h.level === 2);
 
   return (
-    <div className="sticky top-8 bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
-      <h3 className="font-semibold text-gray-800 mb-3 pb-2 border-b border-gray-200">
+    <div className="sticky top-8 bg-surface rounded-lg border border-line p-4 shadow-sm">
+      <h3 className="font-semibold text-fg mb-3 pb-2 border-b border-line">
         目录
       </h3>
       <nav className="toc-nav max-h-[calc(100vh-12rem)] overflow-y-scroll overflow-x-hidden pr-1">

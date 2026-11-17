@@ -41,8 +41,8 @@ export default async function Post({ params }: Props) {
   if (!post) {
     return (
       <div className="max-w-4xl mx-auto px-4 py-12 text-center">
-        <h1 className="text-2xl font-bold text-gray-900 mb-4">文章未找到</h1>
-        <Link href="/" className="text-primary hover:underline">
+        <h1 className="text-2xl font-bold text-fg mb-4">文章未找到</h1>
+        <Link href="/" className="text-accent hover:underline">
           返回首页
         </Link>
       </div>
@@ -58,7 +58,7 @@ export default async function Post({ params }: Props) {
       <div className="max-w-6xl mx-auto px-3 sm:px-4 py-8 sm:py-12">
         <Link
           href="/"
-          className="inline-block mb-6 sm:mb-8 text-primary hover:underline"
+          className="inline-block mb-6 sm:mb-8 text-accent hover:underline"
         >
           ← 返回首页
         </Link>
@@ -66,10 +66,10 @@ export default async function Post({ params }: Props) {
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
           <article className="flex-1 min-w-0">
             <header className="mb-6 sm:mb-8">
-              <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
+              <h1 className="text-2xl sm:text-3xl font-bold text-fg mb-3 sm:mb-4">
                 {post.title}
               </h1>
-              <time className="text-gray-500 text-sm sm:text-base">{post.date}</time>
+              <time className="text-muted text-sm sm:text-base">{post.date}</time>
             </header>
 
             <div className="prose-container overflow-x-auto">
@@ -83,14 +83,14 @@ export default async function Post({ params }: Props) {
         </div>
 
         {TWIKOO_ENABLED && (
-          <section className="mt-10 sm:mt-14 pt-8 border-t border-gray-200">
-            <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-4">评论</h2>
+          <section className="mt-10 sm:mt-14 pt-8 border-t border-line">
+            <h2 className="text-lg sm:text-xl font-bold text-fg mb-4">评论</h2>
             <Twikoo path={`/posts/${post.slug}`} />
           </section>
         )}
       </div>
 
-      <footer className="bg-gray-900 text-gray-300">
+      <footer className="bg-footer text-gray-300">
         <div className="max-w-6xl mx-auto px-4 py-12">
           <div className="flex flex-col md:flex-row justify-between">
             <div>

@@ -147,12 +147,12 @@ export default function Twikoo({ path, fallback }: TwikooProps) {
   return (
     <div>
       {failed && (
-        <div className="mb-4 rounded-lg border border-gray-200 bg-white px-4 py-3 text-sm text-gray-500">
+        <div className="mb-4 rounded-lg border border-line bg-surface px-4 py-3 text-sm text-muted">
           评论加载失败，请刷新页面重试。
         </div>
       )}
       {shouldLoad && !ready && !failed && (
-        <p className="mb-4 text-sm text-gray-400">评论加载中…</p>
+        <p className="mb-4 text-sm text-subtle">评论加载中…</p>
       )}
       <div ref={containerRef} className="min-h-[64px]" />
     </div>

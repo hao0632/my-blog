@@ -21,17 +21,17 @@ export default function CodeBlockWrapper({ htmlContent }: { htmlContent: string 
       const codeContent = codeElement.innerHTML;
       
       const wrapper = document.createElement('div');
-      wrapper.className = 'code-block-wrapper rounded-lg overflow-hidden border border-gray-200 bg-gray-50 w-full';
+      wrapper.className = 'code-block-wrapper rounded-lg overflow-hidden border border-line w-full';
       
       const header = document.createElement('div');
-      header.className = 'code-header flex items-center justify-between px-3 py-2 bg-gray-100 border-b border-gray-200';
+      header.className = 'code-header flex items-center justify-between px-3 py-2 bg-raised border-b border-line';
       
       const langLabel = document.createElement('span');
-      langLabel.className = 'text-xs text-gray-500 font-medium';
+      langLabel.className = 'text-xs text-muted font-medium';
       langLabel.textContent = language;
       
       const copyBtn = document.createElement('button');
-      copyBtn.className = 'copy-btn px-2 py-1 text-xs text-gray-500 hover:text-gray-700 hover:bg-gray-200 rounded transition-colors';
+      copyBtn.className = 'copy-btn px-2 py-1 text-xs text-muted hover:text-fg hover:bg-line rounded transition-colors';
       copyBtn.textContent = '复制';
       
       copyBtn.addEventListener('click', async () => {
@@ -40,7 +40,7 @@ export default function CodeBlockWrapper({ htmlContent }: { htmlContent: string 
         copyBtn.className = 'copy-btn px-2 py-1 text-xs text-white bg-green-500 rounded transition-colors';
         setTimeout(() => {
           copyBtn.textContent = '复制';
-          copyBtn.className = 'copy-btn px-2 py-1 text-xs text-gray-500 hover:text-gray-700 hover:bg-gray-200 rounded transition-colors';
+          copyBtn.className = 'copy-btn px-2 py-1 text-xs text-muted hover:text-fg hover:bg-line rounded transition-colors';
         }, 2000);
       });
       
@@ -77,7 +77,7 @@ export default function CodeBlockWrapper({ htmlContent }: { htmlContent: string 
 
   return (
     <div
-      className="prose prose-lg max-w-none text-gray-700"
+      className="prose prose-lg max-w-none"
       dangerouslySetInnerHTML={{ __html: htmlContent }}
     />
   );

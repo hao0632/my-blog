@@ -2,6 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ============================================================
+   主题变量
+   ------------------------------------------------------------
+   全站颜色都从这里取。切主题 = 给 <html> 加 / 去掉 .dark 类，
+   变量整体切换，组件里不需要写任何 dark: 变体。
+   变量存 RGB 三元组，这样 Tailwind 的透明度修饰符（bg-surface/50）也能用。
+   ============================================================ */
+:root {
+  color-scheme: light;
+
+  --c-page: 249 250 251;          /* 页面底色 #f9fafb */
+  --c-surface: 255 255 255;       /* 卡片 #ffffff */
+  --c-raised: 243 244 246;        /* 次级面 / hover #f3f4f6 */
+  --c-fg: 17 24 39;               /* 主文字 #111827 */
+  --c-muted: 75 85 99;            /* 次要文字 #4b5563 */
+  --c-subtle: 156 163 175;        /* 弱化文字 #9ca3af */
+  --c-line: 229 231 235;          /* 描边 #e5e7eb */
+  --c-accent: 37 99 235;          /* 强调色 #2563eb */
+  --c-accent-soft: 239 246 255;   /* 强调色浅底 #eff6ff */
+  --c-footer: 17 24 39;           /* 页脚 #111827 */
+  --c-code: 255 255 255;          /* 代码块底，与 highlight.js github 主题一致 #ffffff */
+  --c-scrollbar: 203 213 225;
+  --c-scrollbar-hover: 148 163 184;
+}
+
+.dark {
+  color-scheme: dark;
+
+  --c-page: 17 24 39;             /* #111827 */
+  --c-surface: 31 41 55;          /* #1f2937 */
+  --c-raised: 55 65 81;           /* #374151 */
+  --c-fg: 243 244 246;            /* #f3f4f6 */
+  --c-muted: 156 163 175;         /* #9ca3af */
+  --c-subtle: 107 114 128;        /* #6b7280 */
+  --c-line: 55 65 81;             /* #374151 */
+  --c-accent: 96 165 250;         /* #60a5fa，深底上保证对比度 */
+  --c-accent-soft: 30 58 138;     /* #1e3a8a */
+  --c-footer: 3 7 18;             /* #030712，比页面更深一档 */
+  --c-code: 13 17 23;             /* #0d1117，与 highlight.js github-dark 主题一致 */
+  --c-scrollbar: 75 85 99;
+  --c-scrollbar-hover: 107 114 128;
+}
+
 /* 全局移动端适配 */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -10,6 +53,7 @@
 html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
+  background-color: rgb(var(--c-page));
 }
 
 /* 移除代码块的伪元素反引号 */
@@ -22,29 +66,44 @@ html {
   content: '' !important;
 }
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-rgb: 255, 255, 255;
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+  color: rgb(var(--c-fg));
+  background-color: rgb(var(--c-page));
   overflow-x: hidden;
 }
 
+/* 让 @tailwindcss/typography 的默认配色也跟随主题变量 */
+.prose {
+  --tw-prose-body: rgb(var(--c-muted));
+  --tw-prose-headings: rgb(var(--c-fg));
+  --tw-prose-lead: rgb(var(--c-muted));
+  --tw-prose-links: rgb(var(--c-accent));
+  --tw-prose-bold: rgb(var(--c-fg));
+  --tw-prose-counters: rgb(var(--c-muted));
+  --tw-prose-bullets: rgb(var(--c-subtle));
+  --tw-prose-hr: rgb(var(--c-line));
+  --tw-prose-quotes: rgb(var(--c-fg));
+  --tw-prose-quote-borders: rgb(var(--c-line));
+  --tw-prose-captions: rgb(var(--c-subtle));
+  --tw-prose-code: rgb(var(--c-fg));
+  --tw-prose-pre-code: rgb(var(--c-fg));
+  --tw-prose-pre-bg: rgb(var(--c-code));
+  --tw-prose-th-borders: rgb(var(--c-line));
+  --tw-prose-td-borders: rgb(var(--c-line));
+}
+
 .prose a {
-  color: #2563eb;
+  color: rgb(var(--c-accent));
   text-decoration: underline;
 }
 
 .prose a:hover {
-  color: #1d4ed8;
+  opacity: 0.8;
 }
 
 .prose del {
   text-decoration: line-through;
-  color: #6b7280;
+  color: rgb(var(--c-subtle));
 }
 
 .prose table {
@@ -53,7 +112,7 @@ body {
   border-collapse: collapse;
   border-spacing: 0;
   margin-bottom: 1rem;
-  border: 1px solid #e5e7eb;
+  border: 1px solid rgb(var(--c-line));
   border-radius: 0.5rem;
   overflow: hidden;
   display: table;
@@ -61,8 +120,8 @@ body {
 
 .prose th,
 .prose td {
-  border-bottom: 1px solid #e5e7eb;
-  border-right: 1px solid #e5e7eb;
+  border-bottom: 1px solid rgb(var(--c-line));
+  border-right: 1px solid rgb(var(--c-line));
   padding: 0.75rem 1rem;
   text-align: left;
 }
@@ -73,7 +132,7 @@ body {
 }
 
 .prose th {
-  background-color: #f3f4f6;
+  background-color: rgb(var(--c-raised));
   font-weight: 600;
 }
 
@@ -82,11 +141,11 @@ body {
 }
 
 .prose tr:nth-child(even) {
-  background-color: #f9fafb;
+  background-color: rgb(var(--c-raised) / 0.45);
 }
 
 .prose tr:hover {
-  background-color: #f3f4f6;
+  background-color: rgb(var(--c-raised));
 }
 
 .prose img {
@@ -98,7 +157,7 @@ body {
 }
 
 .prose code {
-  background-color: #f3f4f6;
+  background-color: rgb(var(--c-raised));
   padding: 0.125rem 0.25rem;
   border-radius: 0.25rem;
   font-size: 0.875em;
@@ -118,14 +177,13 @@ body {
 }
 
 .code-content {
-  background-color: #f8fafc;
+  background-color: rgb(var(--c-code));
   width: 100%;
 }
 
 .code-content code {
   background-color: transparent;
   padding: 1rem;
-  color: #1e293b;
   display: block;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 0.875rem;
@@ -141,12 +199,6 @@ body {
   overflow-x: auto;
 }
 
-/* 确保图片在移动端不溢出 */
-.prose img {
-  max-width: 100%;
-  height: auto;
-}
-
 /* 代码块移动端优化 */
 pre {
   overflow-x: auto;
@@ -157,67 +209,90 @@ code {
   word-wrap: break-word;
 }
 
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-built_in,
-.hljs-name,
-.hljs-tag {
-  color: #9333ea;
+/* ------------------------------------------------------------
+   代码高亮配色
+   ------------------------------------------------------------
+   浅色直接使用 highlight.js 官方主题 github.css（在 layout.tsx 中引入）。
+   深色主题 github-dark.css 是全局规则，不能直接再引一次，否则会把浅色也覆盖掉，
+   所以下面把它的配色规则逐条加上 .dark 前缀，颜色值保持官方原样。
+   官方主题升级后如果需要同步，重新生成这一段即可。
+   ------------------------------------------------------------ */
+.dark .hljs {
+  color: #c9d1d9; background: #0d1117
 }
-
-.hljs-string,
-.hljs-title,
-.hljs-section,
-.hljs-attribute,
-.hljs-literal,
-.hljs-template-tag,
-.hljs-template-variable,
-.hljs-type,
-.hljs-addition {
-  color: #059669;
+.dark .hljs-doctag,
+.dark .hljs-keyword,
+.dark .hljs-meta .hljs-keyword,
+.dark .hljs-template-tag,
+.dark .hljs-template-variable,
+.dark .hljs-type,
+.dark .hljs-variable.language_ {
+  color: #ff7b72
 }
-
-.hljs-comment,
-.hljs-quote,
-.hljs-deletion,
-.hljs-meta {
-  color: #9ca3af;
-  font-style: italic;
+.dark .hljs-title,
+.dark .hljs-title.class_,
+.dark .hljs-title.class_.inherited__,
+.dark .hljs-title.function_ {
+  color: #d2a8ff
 }
-
-.hljs-number,
-.hljs-regexp,
-.hljs-selector-attr,
-.hljs-selector-pseudo,
-.hljs-variable {
-  color: #f97316;
+.dark .hljs-attr,
+.dark .hljs-attribute,
+.dark .hljs-literal,
+.dark .hljs-meta,
+.dark .hljs-number,
+.dark .hljs-operator,
+.dark .hljs-variable,
+.dark .hljs-selector-attr,
+.dark .hljs-selector-class,
+.dark .hljs-selector-id {
+  color: #79c0ff
 }
-
-.hljs-function,
-.hljs-title.function_ {
-  color: #2563eb;
+.dark .hljs-regexp,
+.dark .hljs-string,
+.dark .hljs-meta .hljs-string {
+  color: #a5d6ff
 }
-
-.hljs-params {
-  color: #d946ef;
+.dark .hljs-built_in,
+.dark .hljs-symbol {
+  color: #ffa657
 }
-
-.hljs-class .hljs-title {
-  color: #0891b2;
+.dark .hljs-comment,
+.dark .hljs-code,
+.dark .hljs-formula {
+  color: #8b949e
 }
-
-.hljs-type {
-  color: #0891b2;
+.dark .hljs-name,
+.dark .hljs-quote,
+.dark .hljs-selector-tag,
+.dark .hljs-selector-pseudo {
+  color: #7ee787
 }
-
-.hljs-builtin-name {
-  color: #2563eb;
+.dark .hljs-subst {
+  color: #c9d1d9
+}
+.dark .hljs-section {
+  color: #1f6feb; font-weight: bold
+}
+.dark .hljs-bullet {
+  color: #f2cc60
+}
+.dark .hljs-emphasis {
+  color: #c9d1d9; font-style: italic
+}
+.dark .hljs-strong {
+  color: #c9d1d9; font-weight: bold
+}
+.dark .hljs-addition {
+  color: #aff5b4; background-color: #033a16
+}
+.dark .hljs-deletion {
+  color: #ffdcd7; background-color: #67060c
 }
 
 /* TOC 目录滚动条样式 */
 .toc-nav {
   scrollbar-width: thin;
-  scrollbar-color: #cbd5e1 transparent;
+  scrollbar-color: rgb(var(--c-scrollbar)) transparent;
 }
 
 .toc-nav::-webkit-scrollbar {
@@ -229,10 +304,10 @@ code {
 }
 
 .toc-nav::-webkit-scrollbar-thumb {
-  background-color: #cbd5e1;
+  background-color: rgb(var(--c-scrollbar));
   border-radius: 3px;
 }
 
 .toc-nav::-webkit-scrollbar-thumb:hover {
-  background-color: #94a3b8;
+  background-color: rgb(var(--c-scrollbar-hover));
 }

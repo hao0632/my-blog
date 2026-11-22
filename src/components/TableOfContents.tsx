@@ -1,36 +1,33 @@
 'use client';
 
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { Heading } from '@/lib/posts';
 
+interface TocNode extends Heading {
+  children: TocNode[];
+}
+
 interface TocItemProps {
-  heading: Heading;
-  allHeadings: Heading[];
+  node: TocNode;
   depth: number;
 }
 
-function TocItem({ heading, allHeadings, depth }: TocItemProps) {
+const DEPTH_CLASS = [
+  'text-fg font-medium',
+  'text-fg/80 pl-2',
+  'text-muted pl-4',
+  'text-subtle pl-6',
+];
+
+function TocItem({ node, depth }: TocItemProps) {
   const [isExpanded, setIsExpanded] = useState(depth <= 1);
-  const childLevel = heading.level + 1;
-  const currentIndex = allHeadings.findIndex((h) => h.id === heading.id);
-  
-  const children: Heading[] = [];
-  for (let i = currentIndex + 1; i < allHeadings.length; i++) {
-    const h = allHeadings[i];
-    if (h.level === childLevel) {
-      children.push(h);
-    } else if (h.level <= heading.level) {
-      break;
-    }
-  }
-  
-  const hasChildren = children.length > 0;
-  const isCollapsible = hasChildren;
+  const hasChildren = node.children.length > 0;
+  const depthClass = DEPTH_CLASS[Math.min(depth, DEPTH_CLASS.length - 1)];
 
   return (
-    <li key={heading.id}>
+    <li>
       <div className="flex items-center">
-        {isCollapsible && (
+        {hasChildren ? (
           <button
             onClick={() => setIsExpanded(!isExpanded)}
             className="flex-shrink-0 w-5 h-5 flex items-center justify-center text-subtle hover:text-fg transition-colors"
@@ -45,31 +42,25 @@ function TocItem({ heading, allHeadings, depth }: TocItemProps) {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>
+        ) : (
+          <span className="w-5" />
         )}
-        {!isCollapsible && <span className="w-5" />}
         <a
-          href={`#${heading.id}`}
-          className={`flex-1 block py-1.5 px-2 rounded text-sm transition-colors hover:bg-raised ${
-            heading.level === 2
-              ? 'text-fg font-medium'
-              : heading.level === 3
-              ? 'text-fg/80 pl-2'
-              : heading.level === 4
-              ? 'text-muted pl-4'
-              : 'text-subtle pl-6'
-          }`}
+          href={`#${node.id}`}
+          title={node.text}
+          className={`flex-1 min-w-0 truncate block py-1.5 px-2 rounded text-sm transition-colors hover:bg-raised ${depthClass}`}
         >
-          {heading.text}
+          {node.text}
         </a>
       </div>
-      {isCollapsible && (
+      {hasChildren && (
         <div
           className={`grid transition-all duration-200 ${isExpanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
         >
           <div className="overflow-hidden min-h-0">
             <ul>
-              {children.map((child) => (
-                <TocItem key={child.id} heading={child} allHeadings={allHeadings} depth={depth + 1} />
+              {node.children.map((child) => (
+                <TocItem key={child.id} node={child} depth={depth + 1} />
               ))}
             </ul>
           </div>
@@ -83,10 +74,37 @@ interface TableOfContentsProps {
   headings: Heading[];
 }
 
-export default function TableOfContents({ headings }: TableOfContentsProps) {
-  if (headings.length === 0) return null;
+/**
+ * 按标题层级构建目录树。允许跳级（如 h2 下面直接是 h4），
+ * 跳级的标题会挂到最近的、层级更浅的祖先上。
+ */
+function buildTree(headings: Heading[]): TocNode[] {
+  const roots: TocNode[] = [];
+  const stack: TocNode[] = [];
 
-  const level2Headings = headings.filter((h) => h.level === 2);
+  for (const heading of headings) {
+    const node: TocNode = { ...heading, children: [] };
+
+    while (stack.length > 0 && stack[stack.length - 1].level >= node.level) {
+      stack.pop();
+    }
+
+    if (stack.length === 0) {
+      roots.push(node);
+    } else {
+      stack[stack.length - 1].children.push(node);
+    }
+
+    stack.push(node);
+  }
+
+  return roots;
+}
+
+export default function TableOfContents({ headings }: TableOfContentsProps) {
+  const tree = useMemo(() => buildTree(headings), [headings]);
+
+  if (tree.length === 0) return null;
 
   return (
     <div className="sticky top-8 bg-surface rounded-lg border border-line p-4 shadow-sm">
@@ -95,8 +113,8 @@ export default function TableOfContents({ headings }: TableOfContentsProps) {
       </h3>
       <nav className="toc-nav max-h-[calc(100vh-12rem)] overflow-y-scroll overflow-x-hidden pr-1">
         <ul className="space-y-1">
-          {level2Headings.map((heading) => (
-            <TocItem key={heading.id} heading={heading} allHeadings={headings} depth={0} />
+          {tree.map((node) => (
+            <TocItem key={node.id} node={node} depth={0} />
           ))}
         </ul>
       </nav>
